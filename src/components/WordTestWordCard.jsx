@@ -1,14 +1,14 @@
 function WordTestWordCard() {
   return (
-    <div className="bg-[var(--color-white)] p-8 rounded-3xl shadow-lg text-center max-w-md mx-auto min-h-[55vh]">
+    <div className="bg-[var(--color-white)] p-8 rounded-3xl shadow-lg text-center max-w-md mx-auto min-h-[50vh] flex flex-col justify-between">
       {/* Play Button */}
-      <img src="/WordTestWordCard_PlayButton.svg" alt="Play" className="w-16 h-16 mx-auto cursor-pointer hover:scale-105 transition-transform mb-6" />
+      <img src="/WordTestWordCard_PlayButton.svg" alt="Play" className="w-16 h-16 mx-auto cursor-pointer hover:scale-105 transition-transform" />
       
       {/* Chinese Prompt */}
-      <p className="text-[var(--color-primary)] text-xl font-medium mb-8">根据读音拼写单词:</p>
+      <p className="text-[var(--color-primary)] text-xl font-medium">根据读音拼写单词:</p>
       
       {/* Character Input Boxes */}
-      <div className="flex justify-center gap-2 mb-8">
+      <div className="flex justify-center gap-2">
         {[...Array(6)].map((_, index) => (
           <input
             key={index}
