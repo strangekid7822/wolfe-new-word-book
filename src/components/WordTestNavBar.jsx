@@ -1,9 +1,9 @@
 function WordTestNavBar() {
   return (
-    <div className="flex justify-around items-center p-4 bg-grey rounded-full shadow-lg">
-      <a href="/" className="text-gray-400">Home</a>
-      <a href="/write" className="text-blue-500 font-bold">Write</a>
-      <a href="/profile" className="text-gray-400">Profile</a>
+    <div className="flex justify-around items-center p-4 bg-[var(--color-grey)] rounded-full shadow-lg">
+      <a href="/" className="text-[var(--color-black)]">Home</a>
+      <a href="/write" className="text-[var(--color-primary)] font-bold">Write</a>
+      <a href="/profile" className="text-[var(--color-black)]">Profile</a>
     </div>
   );
 }
