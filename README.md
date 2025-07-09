@@ -106,6 +106,28 @@ Tailwind CSS v4.1 requires modern browsers:
 - Enhanced browser compatibility
 - Performance optimizations
 
+## Commit Guidelines
+
+Use [Conventional Commits](https://www.conventionalcommits.org/) for clarity and consistency:
+
+- `feat:` for new features (功能新增)
+- `fix:` for bug fixes (修复问题)
+- `docs:` for documentation updates (文档更新)
+- `refactor:` for code refactoring without feature changes (代码重构)
+- `style:` for formatting, missing semi colons, etc. (格式调整)
+- `test:` for adding or updating tests (测试)
+- `chore:` for maintenance tasks (项目杂务)
+
+**Example:**
+
+```bash
+git add .
+git commit -m "feat: add dark mode support"
+git push
+```
+
+This will help maintain clear, organized commit history in your Wolfe Word Book project.
+
 ---
 
 Built with ❤️ using the latest web technologies.
