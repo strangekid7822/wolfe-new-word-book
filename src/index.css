@@ -1,7 +1,16 @@
+
+
 @import "tailwindcss";
 
-/* Custom theme variables */
+/* Wolfe Word Book Theme Colors */
 @theme {
-  --color-primary: #646cff;
-  --color-primary-hover: #535bf2;
+  --color-primary: #0080BB;
+  --color-secondary: #87D9FF;
+  --color-secondary-2: #CEEAF9;
+  --color-tertiary: #F3FBFF;
+  --color-grey: #D9D9D9;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-orange: #FF5900;
+  --color-orange-yellow: #FFC800;
 }
