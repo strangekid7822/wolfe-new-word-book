@@ -9,7 +9,14 @@ function WordTestCardGallery() {
   const currentX = useRef(0);
   const isDragging = useRef(false);
 
-  // Sample data - replace with actual word data
+  const cardWidth = 85; // Percentage of screen width
+
+  const updateTransform = (index, offset = 0) => {
+    if (containerRef.current) {
+      const translateX = -(index * cardWidth) + offset;
+      containerRef.current.style.transform = `translateX(${translateX}vw)`;
+    }
+  };
   const cards = [
     { id: 1, word: "hello", length: 5 },
     { id: 2, word: "world", length: 5 },
@@ -27,15 +34,11 @@ function WordTestCardGallery() {
 
   const handleTouchMove = (e) => {
     if (!isDragging.current || isTransitioning) return;
+    e.preventDefault();
     currentX.current = e.touches[0].clientX;
     const deltaX = currentX.current - startX.current;
-    
-    // Apply transform during drag
-    if (containerRef.current) {
-      const baseTransform = -activeIndex * 100;
-      const dragOffset = (deltaX / window.innerWidth) * 100;
-      containerRef.current.style.transform = `translateX(${baseTransform + dragOffset}vw)`;
-    }
+    const dragOffset = (deltaX / window.innerWidth) * 100;
+    updateTransform(activeIndex, dragOffset);
   };
 
   const handleTouchEnd = () => {
@@ -43,20 +46,24 @@ function WordTestCardGallery() {
     isDragging.current = false;
     
     const deltaX = currentX.current - startX.current;
-    const threshold = window.innerWidth * 0.2; // 20% of screen width
+    const threshold = window.innerWidth * 0.25;
+    let newIndex = activeIndex;
     
     if (Math.abs(deltaX) > threshold) {
       if (deltaX > 0 && activeIndex > 0) {
-        // Swipe right - go to previous card
-        setActiveIndex(activeIndex - 1);
+        newIndex = activeIndex - 1;
       } else if (deltaX < 0 && activeIndex < cards.length - 1) {
-        // Swipe left - go to next card
-        setActiveIndex(activeIndex + 1);
+        newIndex = activeIndex + 1;
       }
     }
     
-    // Reset transform and trigger transition
     setIsTransitioning(true);
+    if (newIndex !== activeIndex) {
+      setActiveIndex(newIndex);
+    } else {
+      updateTransform(activeIndex);
+    }
+    
     setTimeout(() => setIsTransitioning(false), 300);
   };
 
@@ -72,12 +79,8 @@ function WordTestCardGallery() {
     if (!isDragging.current || isTransitioning) return;
     currentX.current = e.clientX;
     const deltaX = currentX.current - startX.current;
-    
-    if (containerRef.current) {
-      const baseTransform = -activeIndex * 100;
-      const dragOffset = (deltaX / window.innerWidth) * 100;
-      containerRef.current.style.transform = `translateX(${baseTransform + dragOffset}vw)`;
-    }
+    const dragOffset = (deltaX / window.innerWidth) * 100;
+    updateTransform(activeIndex, dragOffset);
   };
 
   const handleMouseUp = () => {
@@ -85,25 +88,29 @@ function WordTestCardGallery() {
     isDragging.current = false;
     
     const deltaX = currentX.current - startX.current;
-    const threshold = window.innerWidth * 0.2;
+    const threshold = window.innerWidth * 0.25;
+    let newIndex = activeIndex;
     
     if (Math.abs(deltaX) > threshold) {
       if (deltaX > 0 && activeIndex > 0) {
-        setActiveIndex(activeIndex - 1);
+        newIndex = activeIndex - 1;
       } else if (deltaX < 0 && activeIndex < cards.length - 1) {
-        setActiveIndex(activeIndex + 1);
+        newIndex = activeIndex + 1;
       }
     }
     
     setIsTransitioning(true);
+    if (newIndex !== activeIndex) {
+      setActiveIndex(newIndex);
+    } else {
+      updateTransform(activeIndex);
+    }
+    
     setTimeout(() => setIsTransitioning(false), 300);
   };
 
   useEffect(() => {
-    // Update transform when activeIndex changes
-    if (containerRef.current) {
-      containerRef.current.style.transform = `translateX(-${activeIndex * 100}vw)`;
-    }
+    updateTransform(activeIndex);
   }, [activeIndex]);
 
   useEffect(() => {
@@ -122,14 +129,14 @@ function WordTestCardGallery() {
       <div
         ref={containerRef}
         className={`flex transition-transform ${isTransitioning ? 'duration-300 ease-out' : 'duration-0'}`}
-        style={{ transform: `translateX(-${activeIndex * 100}vw)` }}
+        style={{ transform: `translateX(-${activeIndex * cardWidth}vw)` }}
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
         onMouseDown={handleMouseDown}
       >
         {cards.map((card, index) => (
-          <div key={card.id} className="w-full flex-shrink-0 px-4">
+          <div key={card.id} className="flex-shrink-0 px-2" style={{ width: `${cardWidth}vw` }}>
             <WordTestWordCard 
               isActive={index === activeIndex}
               wordLength={card.length}
