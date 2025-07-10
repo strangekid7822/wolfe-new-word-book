@@ -1,13 +1,13 @@
 import WordTestTimer from '../components/WordTestTimer';
-import WordTestWordCard from '../components/WordTestWordCard';
+import WordTestCardGallery from '../components/WordTestCardGallery';
 import WordTestNavBar from '../components/WordTestNavBar';
 
 function WordTest() {
   return (
-    <div className="flex flex-col min-h-screen bg-[var(--color-tertiary)] px-4 py-6">
+    <div className="flex flex-col min-h-screen bg-[var(--color-tertiary)] px-4 py-6 overflow-y-hidden" style={{ touchAction: 'pan-x' }}>
       <WordTestTimer />
       <div className="flex-grow flex items-center justify-center py-8">
-        <WordTestWordCard />
+        <WordTestCardGallery />
       </div>
       <WordTestNavBar />
     </div>
