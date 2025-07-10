@@ -1,133 +1,50 @@
-# Wolfe's Word Book
+# Wolfe Word Book
 
-A modern word book application built with React, Vite, and Tailwind CSS v4.1.
+A modern Chinese word learning app built with React, Vite, and Tailwind CSS v4.1.
+
+## Features
+
+- 🎯 Interactive word spelling tests with audio playback
+- 🎨 Clean UI with custom theme colors and inner shadows
+- ⚡ Built with Tailwind CSS v4.1 (100x faster builds)
+- 📱 Responsive design optimized for learning
 
 ## Tech Stack
 
 - **React 18.2.0** - UI framework
-- **Vite 5.2.0** - Build tool and dev server
-- **Tailwind CSS 4.1** - Utility-first CSS framework
+- **Vite 5.2.0** - Build tool and dev server  
+- **Tailwind CSS 4.1** - CSS framework with @theme configuration
 - **Node.js 24.3.0** - Runtime environment
 
-## Features
+## Components
 
-- ✨ Tailwind CSS v4.1 with text shadows
-- 🎨 Colored drop shadows and masking utilities
-- ⚡ 100x faster incremental builds with Oxide engine
-- 🔧 Zero-configuration setup
-- 📱 Responsive design
+- **WordTestTimer** - Progress indicator with theme colors
+- **WordTestWordCard** - Main learning interface with character inputs
+- **WordTestNavBar** - Navigation with SVG icons
 
-## Setup Process
+## Custom Theme
 
-### Initial Setup
-1. Created React + Vite project template
-2. Encountered Node.js compatibility issues with v18.17.0
-3. Upgraded Node.js from v18.17.0 to v24.3.0 using Homebrew
-4. Switched from Tailwind v3.4 to v4.1
-
-### Node.js Upgrade
-```bash
-# Upgraded via Homebrew
-brew upgrade node
-# v18.17.0 → v24.3.0
-```
-
-### Dependencies
-```bash
-npm install
-```
-
-Key packages:
-- `@tailwindcss/vite@4.1.11` - First-party Vite plugin
-- `react@^18.2.0` - Stable React version
-- `vite@^5.2.0` - Compatible with Node.js 24.x
-
-## Development
-
-### Start Dev Server
-```bash
-npm run dev
-```
-
-### Build for Production
-```bash
-npm run build
-```
-
-### Preview Production Build
-```bash
-npm run preview
-```
-
-## Configuration
-
-### Tailwind CSS v4.1
-- Uses new `@import "tailwindcss"` syntax
-- CSS-first configuration with `@theme` blocks
-- No separate config files needed
-- Automatic content detection
-
-### Custom Theme
 ```css
 @theme {
-  --color-primary: #646cff;
-  --color-primary-hover: #535bf2;
+  --color-primary: #0080BB;
+  --color-secondary: #87D9FF;
+  --color-secondary-2: #CEEAF9;
+  --color-tertiary: #F3FBFF;
+  --color-grey: #D9D9D9;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-orange: #FF5900;
+  --color-orange-yellow: #FFC800;
 }
 ```
 
-## Project Structure
+## Development
 
-```
-src/
-├── App.jsx          # Main app component
-├── index.css        # Tailwind imports and theme
-└── main.jsx         # React entry point
+```bash
+npm install
+npm run dev
 ```
 
 ## Browser Support
 
-Tailwind CSS v4.1 requires modern browsers:
-- Safari 16.4+
-- Chrome 111+
-- Firefox 128+
-
-## Issues Resolved
-
-1. **Node.js Compatibility**: Upgraded from v18.17.0 to v24.3.0
-2. **Vite Version Conflicts**: Used compatible Vite 5.2.0
-3. **Tailwind Migration**: Moved from v3.4 to v4.1 syntax
-4. **ES Module Config**: Updated PostCSS config for ES modules
-
-## New Features (v4.1)
-
-- `text-shadow-*` utilities
-- `mask-*` utilities for CSS masking
-- Colored drop shadows (`drop-shadow-indigo-500`)
-- Enhanced browser compatibility
-- Performance optimizations
-
-## Commit Guidelines
-
-Use [Conventional Commits](https://www.conventionalcommits.org/) for clarity and consistency:
-
-- `feat:` for new features (功能新增)
-- `fix:` for bug fixes (修复问题)
-- `docs:` for documentation updates (文档更新)
-- `refactor:` for code refactoring without feature changes (代码重构)
-- `style:` for formatting, missing semi colons, etc. (格式调整)
-- `test:` for adding or updating tests (测试)
-- `chore:` for maintenance tasks (项目杂务)
-
-**Example:**
-
-```bash
-git add .
-git commit -m "feat: add dark mode support"
-git push
-```
-
-This will help maintain clear, organized commit history in your Wolfe Word Book project.
-
----
-
-Built with ❤️ using the latest web technologies.
+Modern browsers only (Safari 16.4+, Chrome 111+, Firefox 128+)
