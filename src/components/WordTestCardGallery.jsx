@@ -53,7 +53,7 @@ function WordTestCardGallery() {
     <div className="w-full relative">
       <div
         ref={containerRef}
-        className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar"
+        className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar py-6"
         onScroll={handleScroll}
         style={{
           scrollSnapType: 'x mandatory',
