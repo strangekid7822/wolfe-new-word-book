@@ -83,7 +83,7 @@ function WordTestCardGallery() {
         <div className="flex-shrink-0" style={{ width: '7.5vw' }} />
       </div>
       
-      {/* Progress indicator */}
+      {/* Progress indicator - COMMENTED OUT 
       <div className="flex justify-center mt-4 gap-2">
         {cards.map((_, index) => (
           <button
@@ -97,6 +97,7 @@ function WordTestCardGallery() {
           />
         ))}
       </div>
+      */}
     </div>
   );
 }
