@@ -138,7 +138,7 @@ function WordTestCardGallery() {
         {cards.map((card, index) => (
           <div key={card.id} className="flex-shrink-0 px-2" style={{ width: `${cardWidth}vw` }}>
             <WordTestWordCard 
-              isActive={index === activeIndex}
+              isActive={Math.abs(index - activeIndex) <= 1}
               wordLength={card.length}
               cardData={card}
             />
