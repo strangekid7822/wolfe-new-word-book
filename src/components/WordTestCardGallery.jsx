@@ -128,7 +128,7 @@ function WordTestCardGallery() {
     <div className="w-full overflow-hidden relative">
       <div
         ref={containerRef}
-        className={`flex transition-transform ${isTransitioning ? 'duration-300 ease-out' : 'duration-0'}`}
+        className={`flex transition-transform ${isTransitioning ? 'duration-[450ms] ease-out' : 'duration-0'}`}
         style={{ transform: `translateX(-${activeIndex * cardWidth}vw)` }}
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
