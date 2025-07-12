@@ -4,7 +4,7 @@ import WordTestNavBar from '../components/WordTestNavBar';
 
 function WordTest() {
   return (
-    <div className="flex flex-col min-h-screen bg-[var(--color-tertiary)] px-4 py-6 overflow-y-hidden" style={{ touchAction: 'pan-x' }}>
+    <div className="flex flex-col min-h-[100dvh] bg-[var(--color-tertiary)] px-4 py-6 overflow-y-hidden" style={{ touchAction: 'pan-x' }}>
       <WordTestTimer />
       <div className="flex-grow flex items-center justify-center py-8">
         <WordTestCardGallery />
