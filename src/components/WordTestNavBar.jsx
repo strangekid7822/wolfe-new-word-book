@@ -1,6 +1,6 @@
 function WordTestNavBar() {
   return (
-    <div className="flex justify-around items-center h-13 mx-9 bg-[var(--color-secondary)] rounded-full shadow-lg">
+    <div className="flex justify-around items-center h-13 w-[var(--content-width)] mx-auto bg-[var(--color-secondary)] rounded-full shadow-lg">
       <a href="/" className="p-2">
         <img src="/WordTestNavBar_HomeButton.svg" alt="Home" className="w-6 h-6" />
       </a>
