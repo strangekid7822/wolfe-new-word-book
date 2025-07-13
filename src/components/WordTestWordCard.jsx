@@ -21,7 +21,7 @@ function WordTestWordCard({ wordLength = 6, cardData = {} }) {
       </div>
       
       {/* Confirm Button */}
-      <button className="bg-[var(--color-secondary)] text-[var(--color-black)] px-8 py-3 rounded-full text-base font-medium hover:bg-[var(--color-secondary-2)] transition-colors shadow-md w-full mx-auto">
+      <button className="bg-[var(--color-secondary)] text-[var(--color-black)] px-8 py-2.5 rounded-full text-base font-medium hover:bg-[var(--color-secondary-2)] transition-colors shadow-md mx-auto">
         确定
       </button>
     </div>
