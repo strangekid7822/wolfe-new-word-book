@@ -51,6 +51,7 @@ function WordTestCardGallery() {
 
   return (
     <div className="w-full relative">
+      {/* Gallery internal div - py-6 adds 24px padding */}
       <div
         ref={containerRef}
         className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar py-6"

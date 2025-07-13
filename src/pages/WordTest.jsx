@@ -5,10 +5,11 @@ import WordTestNavBar from '../components/WordTestNavBar';
 
 function WordTest() {
   return (
-    <div className="flex flex-col min-h-[100dvh] bg-[var(--color-tertiary)] px-4 py-6 overflow-y-hidden" style={{ touchAction: 'pan-x' }}>
+    <div className="flex flex-col min-h-[100dvh] bg-[var(--color-tertiary)] px-4 pt-12 pb-6 gap-2 overflow-y-hidden" style={{ touchAction: 'pan-x' }}>
       <WordTestTimer />
       <WordTestStats />
-      <div className="flex-grow flex items-center justify-center py-8">
+      {/* Gallery wrapper div - py-8 adds 32px padding */}
+      <div className="flex-grow flex justify-center py-0">
         <div className="w-screen ml-[-1rem] mr-[-1rem]">
           <WordTestCardGallery />
         </div>
