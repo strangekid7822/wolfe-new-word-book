@@ -72,7 +72,6 @@ function WordTestCardGallery() {
             style={{ width: '85vw' }}
           >
             <WordTestWordCard 
-              isActive={index === activeIndex}
               wordLength={card.length}
               cardData={card}
             />
