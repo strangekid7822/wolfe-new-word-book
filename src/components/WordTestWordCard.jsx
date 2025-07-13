@@ -14,8 +14,7 @@ function WordTestWordCard({ wordLength = 6, cardData = {} }) {
             key={index}
             type="text"
             maxLength={1}
-            className="w-8 h-10 sm:w-7 sm:h-9 rounded-lg text-center text-base font-medium bg-[var(--color-tertiary)] focus:outline-none"
-            style={{ boxShadow: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.25)' }}
+            className="w-8 h-10 sm:w-7 sm:h-9 rounded-lg text-center text-base font-medium bg-[var(--color-tertiary)] focus:outline-none shadow-[var(--shadow-input)]"
           />
         ))}
       </div>

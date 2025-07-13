@@ -11,6 +11,7 @@
   --color-white: #FFFFFF;
   --color-orange: #FF5900;
   --color-orange-yellow: #FFC800;
+  --shadow-input: inset 0 2px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 /* Hide scrollbars for all browsers */
