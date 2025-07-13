@@ -54,7 +54,7 @@ function WordTestCardGallery() {
       {/* Gallery internal div - py-6 adds 24px padding */}
       <div
         ref={containerRef}
-        className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar pt-2 pb-4"
+        className="flex overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar pt-2 pb-6"
         onScroll={handleScroll}
         style={{
           scrollSnapType: 'x mandatory',
