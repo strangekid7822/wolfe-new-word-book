@@ -1,4 +1,4 @@
-# Wolfe Word Book
+# Wolfe's Word Book
 
 A modern Chinese word learning app built with React, Vite, and Tailwind CSS v4.1. Features an interactive swipeable card gallery for word spelling practice.
 
@@ -18,6 +18,10 @@ A modern Chinese word learning app built with React, Vite, and Tailwind CSS v4.1
 - **Vite 5.2.0** - Build tool and dev server with network access
 - **Tailwind CSS 4.1** - CSS framework with @theme configuration
 - **Node.js 24.3.0** - Runtime environment
+
+## Design Philosophy
+
+This project follows a mobile-first design approach, ensuring a seamless experience on smaller screens. The UI is built around a custom color theme, with a focus on clean layouts, intuitive interactions, and smooth animations.
 
 ## Project Structure
 
@@ -93,6 +97,12 @@ server: {
   host: true  // Enables network access
 }
 ```
+
+The `index.html` file also includes the `interactive-widget=resizes-content` meta tag to help manage the virtual keyboard on iOS.
+
+## Known Issues
+
+-   **iOS Keyboard Layout:** On iOS Safari, the virtual keyboard can cause layout issues. When the keyboard is dismissed, a white space may appear at the bottom of the page. Various solutions have been attempted, but a fully reliable fix has not yet been implemented.
 
 ## Browser Support
 
