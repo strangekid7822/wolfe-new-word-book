@@ -113,6 +113,13 @@ The `index.html` file also includes the `interactive-widget=resizes-content` met
 
 ## Design System
 
+### Typography
+- **Primary Actions**: `text-lg` (18px) - Chinese prompts, main headings
+- **Standard Text**: `text-base` (16px) - Buttons, input fields
+- **Secondary Info**: `text-sm` (14px) - Stats, metadata
+- **Font Weight**: `font-medium` for emphasis, default for body text
+
+### Layout
 - **Typography** - Responsive text sizing for mobile
 - **Shadows** - Inner shadows on inputs, drop shadows on cards
 - **Animations** - Smooth transitions and hover effects
