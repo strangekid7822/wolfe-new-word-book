@@ -5,7 +5,7 @@ function WordTestWordCard({ wordLength = 6, cardData = {} }) {
       <img src="/WordTestWordCard_PlayButton_Clean.svg" alt="Play" className="w-14 h-14 mx-auto cursor-pointer hover:scale-105 transition-transform drop-shadow-[var(--shadow-play-button)]" />
       
       {/* Chinese Prompt */}
-      <p className="text-[var(--color-primary)] text-lg font-medium">根据读音拼写单词:</p>
+      <p className="text-[var(--color-black)] text-lg font-light">根据读音拼写单词:</p>
       
       {/* Character Input Boxes */}
       <div className="flex justify-center gap-1">
