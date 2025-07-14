@@ -14,7 +14,9 @@
   --color-green: #22d850;
   --shadow-input: inset 1px 3px 4px 0 rgba(0, 0, 0, 0.25);
   --shadow-play-button: 2px 2px 2px rgba(0, 0, 0, 0.25);
+  --shadow-timer: 0 0px 4px 3px rgba(0, 0, 0, 0.05);
   --content-width: 89%;
+  --content-width-2: 86%;
 }
 
 /* Hide scrollbars for all browsers */
