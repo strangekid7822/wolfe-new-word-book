@@ -1,127 +1,75 @@
 # Wolfe's Word Book
 
-A modern Chinese word learning app built with React, Vite, and Tailwind CSS v4.1. Features an interactive swipeable card gallery for word spelling practice.
+Wolfe's Word Book is an interactive web application designed to help Chinese students learn and memorize English words. It features a modern, mobile-first design with a swipeable card interface for engaging spelling practice.
 
-## Features
+## ✨ Features
 
-- 🎯 **Interactive Word Gallery** - Swipeable card interface with edge previews
-- 📝 **Character Input System** - Individual character boxes with inner shadows
-- 🎵 **Audio Playback** - Play button for word pronunciation
-- 🎨 **Modern UI Design** - Clean interface with custom theme colors
-- 📱 **Mobile-First** - Optimized for touch interactions and mobile screens
-- ⚡ **High Performance** - Built with Tailwind CSS v4.1 (100x faster builds)
-- 🎭 **Smooth Animations** - Gallery transitions and interactive feedback
+-   **Interactive Word Cards:** Swipe through a gallery of word cards to practice spelling.
+-   **Character Input:** Type characters into individual boxes with a clean, focused design.
+-   **Audio Pronunciation:** Listen to word pronunciations with a simple click.
+-   **Responsive Design:** Optimized for a seamless experience on both mobile and desktop devices.
+-   **Modern UI:** A clean and intuitive interface built with a custom color theme.
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-- **React 18.2.0** - UI framework with hooks
-- **Vite 5.2.0** - Build tool and dev server with network access
-- **Tailwind CSS 4.1** - CSS framework with @theme configuration
-- **Node.js 24.3.0** - Runtime environment
+-   **Frontend:** [React](https://react.dev/)
+-   **Build Tool:** [Vite](https://vitejs.dev/)
+-   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+-   **Linting:** [ESLint](https://eslint.org/)
 
-## Design Philosophy
+## 🚀 Getting Started
 
-This project follows a mobile-first design approach, ensuring a seamless experience on smaller screens. The UI is built around a custom color theme, with a focus on clean layouts, intuitive interactions, and smooth animations.
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-## Project Structure
+### Prerequisites
 
-```
-src/
-├── components/
-│   ├── WordTestCardGallery.jsx  # Swipeable card gallery with touch/mouse events
-│   ├── WordTestWordCard.jsx     # Individual word card with conditional rendering
-│   ├── WordTestTimer.jsx        # Progress indicator bar
-│   └── WordTestNavBar.jsx       # Bottom navigation with SVG icons
-├── pages/
-│   └── WordTest.jsx            # Main test page layout
-├── assets/
-└── index.css                   # Theme configuration and global styles
+-   [Node.js](https://nodejs.org/en) (v20.x or later recommended)
+-   [npm](https://www.npmjs.com/) (comes with Node.js)
 
-public/
-├── WordTestNavBar_*.svg        # Navigation icons
-└── WordTestWordCard_*.svg      # Play button icons
-```
+### Installation
 
-## Components
+1.  Clone the repository to your local machine:
+    ```bash
+    git clone <your-repository-url>
+    ```
+2.  Navigate to the project directory:
+    ```bash
+    cd wolfe_word_book
+    ```
+3.  Install the dependencies:
+    ```bash
+    npm install
+    ```
 
-- **WordTestCardGallery** - Swipeable gallery with 85% card width, edge previews, and boundary spring-back
-- **WordTestWordCard** - Conditional content rendering, responsive character inputs with inner shadows
-- **WordTestTimer** - Horizontal progress bar with primary/grey theme colors
-- **WordTestNavBar** - SVG icon navigation with secondary color background
+### Running the Development Server
 
-## Custom Theme
-
-```css
-@theme {
-  --color-primary: #0080BB;      /* Blue - primary actions, progress */
-  --color-secondary: #87D9FF;    /* Light blue - buttons, navigation */
-  --color-secondary-2: #CEEAF9;  /* Lighter blue - hover states */
-  --color-tertiary: #F3FBFF;     /* Very light blue - backgrounds, inputs */
-  --color-grey: #D9D9D9;         /* Grey - borders, inactive states */
-  --color-black: #000000;        /* Text */
-  --color-white: #FFFFFF;        /* Card backgrounds */
-  --color-orange: #FF5900;       /* Accent color */
-  --color-orange-yellow: #FFC800; /* Secondary accent */
-}
-```
-
-## Gallery Features
-
-- **Touch/Mouse Support** - Works on both mobile and desktop
-- **Edge Visibility** - Shows previews of adjacent cards
-- **Snap Positioning** - Cards snap to center position
-- **Boundary Handling** - Spring-back animation at first/last cards
-- **Progress Indicators** - Dot navigation at bottom
-- **Conditional Rendering** - Only active cards render interactive content
-
-## Development
+To start the development server, run the following command:
 
 ```bash
-# Install dependencies
-npm install
-
-# Start dev server (with network access)
 npm run dev
-
-# Access from mobile device
-# Use the Network URL shown in terminal
 ```
 
-## Mobile Development
+This will start the Vite development server. The `host: true` setting in `vite.config.js` allows you to access the application from other devices on the same network (e.g., your mobile phone for testing).
 
-The app includes network access configuration for testing on mobile devices:
+## 📁 Project Structure
 
-```js
-// vite.config.js
-server: {
-  host: true  // Enables network access
-}
+```
+wolfe_word_book/
+├── public/              # Static assets
+├── src/                 # Source code
+│   ├── assets/          # Images, icons, etc.
+│   ├── components/      # Reusable React components
+│   ├── pages/           # Main page components
+│   ├── App.jsx          # Main application component
+│   ├── index.css        # Global styles and Tailwind CSS configuration
+│   └── main.jsx         # Application entry point
+├── .gitignore           # Git ignore file
+├── index.html           # Main HTML file
+├── package.json         # Project dependencies and scripts
+├── README.md            # This file
+└── vite.config.js       # Vite configuration
 ```
 
-The `index.html` file also includes the `interactive-widget=resizes-content` meta tag to help manage the virtual keyboard on iOS.
+## 📄 License
 
-## Known Issues
-
--   **iOS Keyboard Layout:** On iOS Safari, the virtual keyboard can cause layout issues. When the keyboard is dismissed, a white space may appear at the bottom of the page. Various solutions have been attempted, but a fully reliable fix has not yet been implemented.
-
-## Browser Support
-
-**Mobile-first design** requires modern browsers:
-- Safari 16.4+ (iOS)
-- Chrome 111+ (Android/iOS)
-- Firefox 128+
-
-## Design System
-
-### Typography
-- **Primary Actions**: `text-lg` (18px) - Chinese prompts, main headings
-- **Standard Text**: `text-base` (16px) - Buttons, input fields
-- **Secondary Info**: `text-sm` (14px) - Stats, metadata
-- **Font Weight**: `font-medium` for emphasis, default for body text
-
-### Layout
-- **Typography** - Responsive text sizing for mobile
-- **Shadows** - Inner shadows on inputs, drop shadows on cards
-- **Animations** - Smooth transitions and hover effects
-- **Touch Targets** - Optimized for finger interaction
-- **Edge Cases** - Boundary handling and spring-back animations
+This project is licensed under the MIT License.
