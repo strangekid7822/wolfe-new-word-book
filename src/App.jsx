@@ -1,24 +1,20 @@
-import { useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
+import Home from './pages/Home';
 import WordTest from './pages/WordTest';
+import Profile from './pages/Profile';
 
 function App() {
-  useEffect(() => {
-    const setAppHeight = () => {
-      const doc = document.documentElement;
-      doc.style.setProperty('--app-height', `${window.innerHeight}px`);
-    };
-    window.addEventListener('resize', setAppHeight);
-    setAppHeight();
-
-    return () => {
-      window.removeEventListener('resize', setAppHeight);
-    };
-  }, []);
-
   return (
-    <div className="min-h-[var(--app-height)]">
-      <WordTest />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="write" element={<WordTest />} />
+          <Route path="profile" element={<Profile />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
