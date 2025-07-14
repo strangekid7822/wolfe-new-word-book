@@ -9,7 +9,7 @@ function WordTest() {
       <WordTestTimer />
       <WordTestStats />
       {/* Gallery wrapper div - py-8 adds 32px padding */}
-      <div className="flex-grow flex justify-center py-0">
+      <div className="flex-grow flex justify-center py-0 mt-4">
         <div className="w-screen ml-[-1rem] mr-[-1rem]">
           <WordTestCardGallery />
         </div>
