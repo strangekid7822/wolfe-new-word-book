@@ -2,7 +2,7 @@ function WordTestWordCard({ wordLength = 6, cardData = {} }) {
   return (
     <div className="bg-[var(--color-white)] p-6 rounded-3xl shadow-lg text-center w-full mx-auto min-h-[50vh] flex flex-col justify-between">
       {/* Play Button */}
-      <img src="/WordTestWordCard_PlayButton_Clean.svg" alt="Play" className="w-14 h-14 mx-auto cursor-pointer hover:scale-105 transition-transform drop-shadow-[var(--shadow-play-button)]" />
+      <img src="/WordTestWordCard_PlayButton_Secondary.svg" alt="Play" className="w-14 h-14 mx-auto cursor-pointer hover:scale-105 transition-transform drop-shadow-[var(--shadow-play-button)]" />
       
       {/* Chinese Prompt */}
       <p className="text-[var(--color-black)] text-lg font-light">根据读音拼写单词:</p>
