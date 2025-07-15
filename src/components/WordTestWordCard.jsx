@@ -33,18 +33,18 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
   };
 
   const handleInputClick = (e, index) => {
-    const hasFilledInputs = cardData.inputs.some(input => input !== "");
-    
-    // Rule 1: If all empty, only allow first input
-    if (!hasFilledInputs && index !== 0) {
-      e.preventDefault();
+    // Find the index of the first input that is empty.
+    const firstEmptyIndex = cardData.inputs.findIndex(input => input === "");
+
+    // If all inputs are filled, allow the click (the component logic will handle disabled state).
+    if (firstEmptyIndex === -1) {
       return;
     }
-    
-    // Rule 2&3: If some filled, only allow filled inputs
-    if (hasFilledInputs && cardData.inputs[index] === "") {
+
+    // If the clicked input is beyond the first empty one, prevent the click.
+    // This allows the user to click on any previously filled input or the single next empty one.
+    if (index > firstEmptyIndex) {
       e.preventDefault();
-      return;
     }
   };
 
