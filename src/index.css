@@ -19,6 +19,13 @@
   --shadow-timer: 0 0px 4px 3px rgba(0, 0, 0, 0.05);
   --content-width: 89%;
   --content-width-2: 86%;
+
+  /* Pulse keyframes */
+  @keyframes pulse {
+    0%   { transform: translate(-50%, -50%) scale(1);   opacity: 1;   }
+    50%  { transform: translate(-50%, -50%) scale(1.4); opacity: 0.7; }
+    100% { transform: translate(-50%, -50%) scale(1);   opacity: 0;   }
+  }
 }
 
 /* Hide scrollbars for all browsers */
@@ -55,5 +62,38 @@
   }
   .btn-animated {
     @apply w-full px-4 py-1.5 rounded-full text-base font-medium transition-colors bg-[var(--color-secondary)] text-white hover:bg-[var(--color-secondary-2)];
+  }
+
+  /* WordTestWordCard play-button styles */
+  .play-button-wrapper {
+    @apply relative w-20 h-20 mx-auto cursor-pointer;
+  }
+
+  .play-button-container {
+    @apply relative w-full h-full;
+  }
+
+  .play-button-pulse {
+    @apply absolute top-1/2 left-1/2 w-[60px] h-[60px] rounded-full bg-[var(--color-secondary-2)] opacity-0;
+    /* Manually center with pure CSS (avoids translate utilities being overridden by keyframes) */
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+  }
+
+  .play-button-pulse.animate {
+    animation: pulse 2s ease;
+  }
+
+  .play-button-main {
+    @apply absolute top-1/2 left-1/2 w-[60px] h-[60px] rounded-full bg-[var(--color-secondary)] flex items-center justify-center -translate-x-1/2 -translate-y-1/2 transition-all duration-300;
+  }
+
+  .play-button-main:hover {
+    @apply scale-110;
+  }
+
+  .play-button-svg {
+    @apply w-[30px] h-[30px] fill-[var(--color-primary)] stroke-[var(--color-primary)] stroke-2;
+    stroke-linejoin: round;
   }
 }

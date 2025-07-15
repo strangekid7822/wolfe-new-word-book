@@ -59,84 +59,6 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
   const isButtonDisabled = cardData.submitted || !areAllInputsFilled;
 
   return (
-    <>
-      <style>{`
-        .play-button-wrapper {
-          position: relative;
-          width: 80px;
-          height: 80px;
-          margin: 0 auto;
-          cursor: pointer;
-        }
-        
-        .play-button-container {
-          position: relative;
-          width: 100%;
-          height: 100%;
-        }
-        
-        .play-button-pulse {
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 60px;
-          height: 60px;
-          border-radius: 50%;
-          background-color: var(--color-secondary-2);
-          margin: auto;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          opacity: 0;
-        }
-        
-        .play-button-pulse.animate {
-          animation: pulse 2s ease;
-        }
-        
-        .play-button-main {
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-          width: 60px;
-          height: 60px;
-          border-radius: 50%;
-          background-color: var(--color-secondary);
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          transition: all 0.3s;
-        }
-        
-        .play-button-main:hover {
-          transform: translate(-50%, -50%) scale(1.1);
-        }
-        
-        .play-button-svg {
-          width: 30px;
-          height: 30px;
-          fill: var(--color-primary);
-          stroke: var(--color-primary);
-          stroke-linejoin: round;
-          stroke-width: 2;
-        }
-        
-        @keyframes pulse {
-          0% {
-            transform: translate(-50%, -50%) scale(1);
-            opacity: 1;
-          }
-          50% {
-            transform: translate(-50%, -50%) scale(1.4);
-            opacity: 0.7;
-          }
-          100% {
-            transform: translate(-50%, -50%) scale(1);
-            opacity: 0;
-          }
-        }
-      `}</style>
     <div className="bg-[var(--color-white)] p-6 rounded-3xl shadow-lg text-center w-full mx-auto min-h-[50vh] flex flex-col justify-between">
       <div className="play-button-wrapper" onClick={handlePlayButtonClick}>
         <div className="play-button-container">
@@ -194,7 +116,6 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
         </div>
       )}
     </div>
-    </>
   );
 });
 
