@@ -59,20 +59,25 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
       
       <div className="flex justify-center gap-1">
         {cardData.inputs.map((value, index) => (
-          <input
+          // Input Wrapper: Handles all styling, including focus states, for cross-browser consistency.
+          <div
             key={index}
-            ref={el => inputRefs.current[index] = el}
-            type="text"
-            maxLength={1}
-            inputMode="latin"
-            value={value}
-            onChange={(e) => handleInputChange(e, index)}
-            onKeyDown={(e) => handleKeyDown(e, index)}
-            onMouseDown={(e) => handleInputClick(e, index)}
-            disabled={cardData.submitted}
-            className="w-8 h-10 sm:w-7 sm:h-9 rounded-lg text-base font-medium bg-gray-100 border border-gray-300 focus:bg-white focus:outline-none transition-transform duration-150 focus:scale-110 flex items-center justify-center text-center"
-            style={{ color: cardData.submitted ? 'grey' : 'black' }}
-          />
+            className="w-8 h-10 sm:w-7 sm:h-9 rounded-lg border border-gray-300 bg-gray-100 transition-transform duration-150 flex items-center justify-center focus-within:scale-110 focus-within:bg-white"
+          >
+            <input
+              ref={el => inputRefs.current[index] = el}
+              type="text"
+              maxLength={1}
+              inputMode="latin"
+              value={value}
+              onChange={(e) => handleInputChange(e, index)}
+              onKeyDown={(e) => handleKeyDown(e, index)}
+              onMouseDown={(e) => handleInputClick(e, index)}
+              disabled={cardData.submitted}
+              className="w-full h-full bg-transparent outline-none text-center text-base font-medium appearance-none"
+              style={{ color: cardData.submitted ? 'grey' : 'black' }}
+            />
+          </div>
         ))}
       </div>
       
