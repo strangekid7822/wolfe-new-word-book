@@ -1,7 +1,8 @@
-import { forwardRef, useRef, useImperativeHandle, useEffect } from 'react';
+import { forwardRef, useRef, useImperativeHandle, useEffect, useState } from 'react';
 
 const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConfirm }, ref) => {
   const inputRefs = useRef([]);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   useEffect(() => {
     inputRefs.current = inputRefs.current.slice(0, cardData.word.length);
@@ -48,12 +49,105 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
     }
   };
 
+  const handlePlayButtonClick = () => {
+    if (isAnimating) return;
+    setIsAnimating(true);
+    setTimeout(() => setIsAnimating(false), 2000);
+  };
+
   const areAllInputsFilled = cardData.inputs.every(input => input.trim() !== '');
   const isButtonDisabled = cardData.submitted || !areAllInputsFilled;
 
   return (
+    <>
+      <style>{`
+        .play-button-wrapper {
+          position: relative;
+          width: 56px;
+          height: 56px;
+          margin: 0 auto;
+          cursor: pointer;
+        }
+        
+        .play-button-container {
+          position: relative;
+          width: 100%;
+          height: 100%;
+        }
+        
+        .play-button-pulse {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: var(--color-secondary-2);
+          margin: auto;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          opacity: 0;
+        }
+        
+        .play-button-pulse.animate {
+          animation: pulse 2s ease;
+        }
+        
+        .play-button-main {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          background-color: var(--color-secondary);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          transition: all 0.3s;
+        }
+        
+        .play-button-main:hover {
+          transform: translate(-50%, -50%) scale(1.1);
+        }
+        
+        .play-button-svg {
+          width: 20px;
+          height: 20px;
+          fill: var(--color-primary);
+          stroke: var(--color-primary);
+          stroke-linejoin: round;
+          stroke-width: 2;
+        }
+        
+        @keyframes pulse {
+          0% {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 1;
+          }
+          50% {
+            transform: translate(-50%, -50%) scale(1.4);
+            opacity: 0.7;
+          }
+          100% {
+            transform: translate(-50%, -50%) scale(1);
+            opacity: 0;
+          }
+        }
+      `}</style>
     <div className="bg-[var(--color-white)] p-6 rounded-3xl shadow-lg text-center w-full mx-auto min-h-[50vh] flex flex-col justify-between">
-      <img src="/WordTestWordCard_PlayButton_Secondary.svg" alt="Play" className="w-14 h-14 mx-auto cursor-pointer hover:scale-105 transition-transform drop-shadow-[var(--shadow-play-button)]" />
+      <div className="play-button-wrapper" onClick={handlePlayButtonClick}>
+        <div className="play-button-container">
+          <div className={`play-button-pulse ${isAnimating ? 'animate' : ''}`}></div>
+          <div className="play-button-main">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" className="play-button-svg">
+              <polygon points="40,30 65,50 40,70" />
+            </svg>
+          </div>
+        </div>
+      </div>
       
       <p className="text-[var(--color-black)] text-lg font-light">根据读音拼写单词:</p>
       
@@ -100,6 +194,7 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
         </div>
       )}
     </div>
+    </>
   );
 });
 
