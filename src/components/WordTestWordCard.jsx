@@ -93,7 +93,7 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
         <div className="rounded-full p-1 mx-auto shadow-md bg-[conic-gradient(from_var(--border-angle),_#ec4899_0%,_#3b82f6_25%,_#facc15_50%,_#22c55e_75%,_#ec4899_100%)] [animation:border-spin_4s_linear_infinite]">
           <button 
             onClick={() => onConfirm(cardData.id)}
-            className="w-full px-4 py-1.5 rounded-full text-base font-medium transition-colors bg-[var(--color-secondary)] text-[var(--color-primary)] hover:bg-[var(--color-secondary-2)]"
+            className="w-full px-4 py-1.5 rounded-full text-base font-medium transition-colors bg-[var(--color-secondary)] text-white hover:bg-[var(--color-secondary-2)]"
           >
             确定
           </button>
