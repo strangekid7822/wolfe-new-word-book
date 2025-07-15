@@ -63,7 +63,7 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
       <div className="play-button-wrapper" onClick={handlePlayButtonClick}>
         <div className="play-button-container">
           <div className={`play-button-pulse ${isAnimating ? 'animate' : ''}`}></div>
-          <div className="play-button-main">
+          <div className="play-button-main shadow-[var(--shadow-play-button)]">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" className="play-button-svg">
               <polygon points="30,20 85,55 30,90" />
             </svg>
