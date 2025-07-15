@@ -63,8 +63,8 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
       <style>{`
         .play-button-wrapper {
           position: relative;
-          width: 56px;
-          height: 56px;
+          width: 80px;
+          height: 80px;
           margin: 0 auto;
           cursor: pointer;
         }
@@ -79,8 +79,8 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
           position: absolute;
           top: 0;
           left: 0;
-          width: 40px;
-          height: 40px;
+          width: 60px;
+          height: 60px;
           border-radius: 50%;
           background-color: var(--color-secondary-2);
           margin: auto;
@@ -99,8 +99,8 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
-          width: 40px;
-          height: 40px;
+          width: 60px;
+          height: 60px;
           border-radius: 50%;
           background-color: var(--color-secondary);
           display: flex;
@@ -114,8 +114,8 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
         }
         
         .play-button-svg {
-          width: 20px;
-          height: 20px;
+          width: 30px;
+          height: 30px;
           fill: var(--color-primary);
           stroke: var(--color-primary);
           stroke-linejoin: round;
@@ -143,7 +143,7 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
           <div className={`play-button-pulse ${isAnimating ? 'animate' : ''}`}></div>
           <div className="play-button-main">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" className="play-button-svg">
-              <polygon points="40,30 65,50 40,70" />
+              <polygon points="30,20 85,55 30,90" />
             </svg>
           </div>
         </div>
