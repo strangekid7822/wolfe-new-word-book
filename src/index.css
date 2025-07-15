@@ -38,6 +38,7 @@
   display: none; /* Chrome, Safari, Opera */
 }
 
+/*Define and animate a custom angle property (--border-angle) for spinning conic gradient effects. Used in .btn-animated-wrapper to create a rotating border animation.*/
 @property --border-angle {
   syntax: '<angle>';
   inherits: false;
