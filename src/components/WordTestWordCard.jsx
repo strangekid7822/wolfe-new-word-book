@@ -19,7 +19,11 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
   }));
 
   const handleInputChange = (e, index) => {
-    const value = e.target.value.toLowerCase().replace(/[^a-z]/g, '');
+    let value = e.target.value.toLowerCase().replace(/[^a-z]/g, '');
+    // Force single character
+    if (value.length > 1) {
+      value = value.slice(0, 1);
+    }
     onInputChange(cardData.id, index, value);
 
     if (value && index < cardData.word.length - 1) {
