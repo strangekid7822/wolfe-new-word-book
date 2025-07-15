@@ -32,6 +32,22 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
     }
   };
 
+  const handleInputClick = (e, index) => {
+    const hasFilledInputs = cardData.inputs.some(input => input !== "");
+    
+    // Rule 1: If all empty, only allow first input
+    if (!hasFilledInputs && index !== 0) {
+      e.preventDefault();
+      return;
+    }
+    
+    // Rule 2&3: If some filled, only allow filled inputs
+    if (hasFilledInputs && cardData.inputs[index] === "") {
+      e.preventDefault();
+      return;
+    }
+  };
+
   return (
     <div className="bg-[var(--color-white)] p-6 rounded-3xl shadow-lg text-center w-full mx-auto min-h-[50vh] flex flex-col justify-between">
       <img src="/WordTestWordCard_PlayButton_Secondary.svg" alt="Play" className="w-14 h-14 mx-auto cursor-pointer hover:scale-105 transition-transform drop-shadow-[var(--shadow-play-button)]" />
@@ -49,6 +65,7 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
             value={value}
             onChange={(e) => handleInputChange(e, index)}
             onKeyDown={(e) => handleKeyDown(e, index)}
+            onMouseDown={(e) => handleInputClick(e, index)}
             disabled={cardData.submitted}
             className="w-8 h-10 sm:w-7 sm:h-9 rounded-lg text-center text-base font-medium bg-gray-100 border border-gray-300 focus:bg-white focus:outline-none"
             style={{ color: cardData.submitted ? 'grey' : 'black' }}
