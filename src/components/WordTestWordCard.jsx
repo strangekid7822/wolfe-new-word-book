@@ -70,7 +70,7 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
             onKeyDown={(e) => handleKeyDown(e, index)}
             onMouseDown={(e) => handleInputClick(e, index)}
             disabled={cardData.submitted}
-            className="w-8 h-10 sm:w-7 sm:h-9 rounded-lg text-center text-base font-medium bg-gray-100 border border-gray-300 focus:bg-white focus:outline-none"
+            className="w-8 h-10 sm:w-7 sm:h-9 rounded-lg text-base font-medium bg-gray-100 border border-gray-300 focus:bg-white focus:outline-none transition-transform duration-150 focus:scale-110 flex items-center justify-center text-center"
             style={{ color: cardData.submitted ? 'grey' : 'black' }}
           />
         ))}
