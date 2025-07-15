@@ -2,7 +2,7 @@ import { forwardRef, useRef, useImperativeHandle, useEffect, useState } from 're
 
 const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConfirm }, ref) => {
   const inputRefs = useRef([]);
-  const [isAnimating, setIsAnimating] = useState(false);
+  const pulseRef = useRef(null);
 
   useEffect(() => {
     inputRefs.current = inputRefs.current.slice(0, cardData.word.length);
@@ -50,9 +50,12 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
   };
 
   const handlePlayButtonClick = () => {
-    if (isAnimating) return;
-    setIsAnimating(true);
-    setTimeout(() => setIsAnimating(false), 2000);
+    // Restart animation by removing and re-adding class
+    if (pulseRef.current) {
+      pulseRef.current.classList.remove('animate');
+      void pulseRef.current.offsetWidth; // Force reflow
+      pulseRef.current.classList.add('animate');
+    }
   };
 
   const areAllInputsFilled = cardData.inputs.every(input => input.trim() !== '');
@@ -62,7 +65,7 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
     <div className="bg-[var(--color-white)] p-6 rounded-3xl shadow-lg text-center w-full mx-auto min-h-[50vh] flex flex-col justify-between">
       <div className="play-button-wrapper" onClick={handlePlayButtonClick}>
         <div className="play-button-container">
-          <div className={`play-button-pulse ${isAnimating ? 'animate' : ''}`}></div>
+          <div ref={pulseRef} className="play-button-pulse"></div>
           <div className="play-button-main shadow-[var(--shadow-play-button)]">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" className="play-button-svg">
               <polygon points="30,20 85,55 30,90" />
