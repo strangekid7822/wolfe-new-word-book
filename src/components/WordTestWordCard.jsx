@@ -85,15 +85,15 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
       {isButtonDisabled ? (
         <button 
           disabled
-          className="px-[calc(1rem+4px)] py-[calc(0.375rem+4px)] rounded-full text-base font-medium transition-colors shadow-md mx-auto bg-gray-300 text-black cursor-not-allowed"
+          className="btn-disabled"
         >
           确定
         </button>
       ) : (
-        <div className="rounded-full p-1 mx-auto shadow-md bg-[conic-gradient(from_var(--border-angle),_#ec4899_0%,_#3b82f6_25%,_#facc15_50%,_#22c55e_75%,_#ec4899_100%)] [animation:border-spin_4s_linear_infinite]">
+        <div className="btn-animated-wrapper">
           <button 
             onClick={() => onConfirm(cardData.id)}
-            className="w-full px-4 py-1.5 rounded-full text-base font-medium transition-colors bg-[var(--color-secondary)] text-white hover:bg-[var(--color-secondary-2)]"
+            className="btn-animated"
           >
             确定
           </button>
