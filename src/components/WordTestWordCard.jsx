@@ -48,6 +48,9 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
     }
   };
 
+  const areAllInputsFilled = cardData.inputs.every(input => input.trim() !== '');
+  const isButtonDisabled = cardData.submitted || !areAllInputsFilled;
+
   return (
     <div className="bg-[var(--color-white)] p-6 rounded-3xl shadow-lg text-center w-full mx-auto min-h-[50vh] flex flex-col justify-between">
       <img src="/WordTestWordCard_PlayButton_Secondary.svg" alt="Play" className="w-14 h-14 mx-auto cursor-pointer hover:scale-105 transition-transform drop-shadow-[var(--shadow-play-button)]" />
@@ -75,8 +78,12 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
       
       <button 
         onClick={() => onConfirm(cardData.id)}
-        disabled={cardData.submitted}
-        className="bg-[var(--color-secondary)] text-[var(--color-primary)] px-8 py-2.5 rounded-full text-base font-medium hover:bg-[var(--color-secondary-2)] transition-colors shadow-md mx-auto"
+        disabled={isButtonDisabled}
+        className={`px-8 py-2.5 rounded-full text-base font-medium transition-colors shadow-md mx-auto ${
+          isButtonDisabled
+            ? 'bg-gray-300 text-black cursor-not-allowed'
+            : 'bg-[var(--color-secondary)] text-[var(--color-primary)] hover:bg-[var(--color-secondary-2)]'
+        }`}
       >
         确定
       </button>
