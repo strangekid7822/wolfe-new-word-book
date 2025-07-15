@@ -30,3 +30,18 @@
 *::-webkit-scrollbar {
   display: none; /* Chrome, Safari, Opera */
 }
+
+@property --border-angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes border-spin {
+  from {
+    --border-angle: 0deg;
+  }
+  to {
+    --border-angle: 360deg;
+  }
+}

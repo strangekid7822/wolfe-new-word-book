@@ -81,17 +81,24 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
         ))}
       </div>
       
-      <button 
-        onClick={() => onConfirm(cardData.id)}
-        disabled={isButtonDisabled}
-        className={`px-8 py-2.5 rounded-full text-base font-medium transition-colors shadow-md mx-auto ${
-          isButtonDisabled
-            ? 'bg-gray-300 text-black cursor-not-allowed'
-            : 'bg-[var(--color-secondary)] text-[var(--color-primary)] hover:bg-[var(--color-secondary-2)]'
-        }`}
-      >
-        确定
-      </button>
+      {/* Conditionally render animated button or disabled button */}
+      {isButtonDisabled ? (
+        <button 
+          disabled
+          className="px-[calc(1rem+4px)] py-[calc(0.375rem+4px)] rounded-full text-base font-medium transition-colors shadow-md mx-auto bg-gray-300 text-black cursor-not-allowed"
+        >
+          确定
+        </button>
+      ) : (
+        <div className="rounded-full p-1 mx-auto shadow-md bg-[conic-gradient(from_var(--border-angle),_#ec4899_0%,_#3b82f6_25%,_#facc15_50%,_#22c55e_75%,_#ec4899_100%)] [animation:border-spin_4s_linear_infinite]">
+          <button 
+            onClick={() => onConfirm(cardData.id)}
+            className="w-full px-4 py-1.5 rounded-full text-base font-medium transition-colors bg-[var(--color-secondary)] text-[var(--color-primary)] hover:bg-[var(--color-secondary-2)]"
+          >
+            确定
+          </button>
+        </div>
+      )}
     </div>
   );
 });
