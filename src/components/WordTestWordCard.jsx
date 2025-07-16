@@ -3,15 +3,6 @@ import { forwardRef, useRef, useImperativeHandle, useEffect, useState } from 're
 const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConfirm }, ref) => {
   const inputRefs = useRef([]);
   const pulseRef = useRef(null);
-  // State to control the visibility of the submit button, allowing for a delayed fade-out.
-  const [isButtonVisible, setIsButtonVisible] = useState(true);
-
-  // Reset button visibility when cardData.submitted changes from true to false (e.g., new card).
-  useEffect(() => {
-    if (!cardData.submitted) {
-      setIsButtonVisible(true);
-    }
-  }, [cardData.submitted]);
 
   useEffect(() => {
     inputRefs.current = inputRefs.current.slice(0, cardData.word.length);
@@ -74,17 +65,6 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
   const areAllInputsFilled = cardData.inputs.every(input => input.trim() !== '');
   const isButtonDisabled = cardData.submitted || !areAllInputsFilled;
 
-  // Function to handle the submit button click
-  const handleSubmitClick = () => {
-    // Call the original onConfirm function immediately to update cardData.submitted
-    onConfirm(cardData.id);
-    // After a short delay, set the button to invisible to trigger the fade-out.
-    // This allows the faster spin animation to be seen before the button disappears.
-    setTimeout(() => {
-      setIsButtonVisible(false);
-    }, 300); // 300ms delay before fade-out starts
-  };
-
   return (
     <div className="bg-[var(--color-white)] p-6 rounded-3xl shadow-lg text-center w-full mx-auto min-h-[50vh] flex flex-col justify-between">
       <div className="play-button-wrapper" onClick={handlePlayButtonClick}>
@@ -124,14 +104,10 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
         ))}
       </div>
       
-      {/* The btn-animated-wrapper's opacity is now controlled by a combined logic: */}
-      {/* - Hidden if inputs are not filled AND not submitted (initial state). */}
-      {/* - Hidden if submitted AND isButtonVisible is false (after fade-out delay). */}
-      {/* - Visible otherwise (ready to submit, or submitted and spinning fast before fade-out). */}
-      <div className={`btn-animated-wrapper ${((!areAllInputsFilled && !cardData.submitted) || (cardData.submitted && !isButtonVisible)) ? 'border-transparent' : 'border-visible'} ${cardData.submitted ? 'fast-spin' : ''}`}>
+      <div className={`btn-animated-wrapper ${isButtonDisabled ? 'border-transparent' : 'border-visible'}`}>
         <button 
-          onClick={handleSubmitClick} // Use the new handler for delayed fade-out
-          disabled={isButtonDisabled} // Button is functionally disabled immediately on submit
+          onClick={() => onConfirm(cardData.id)}
+          disabled={isButtonDisabled}
           className={isButtonDisabled ? 'btn-disabled' : 'btn-animated'}
         >
           确定
