@@ -62,7 +62,7 @@
   .btn-animated-wrapper {
     @apply rounded-full p-1 mx-auto shadow-md [animation:border-spin_1.3s_linear_infinite];
     background: conic-gradient(from var(--border-angle), #ec4899 0%, #3b82f6 25%, #facc15 50%, #22c55e 75%, #ec4899 100%);
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
   }
   .btn-animated-wrapper.border-transparent {
     opacity: 0;
