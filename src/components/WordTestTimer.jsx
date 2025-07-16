@@ -12,7 +12,7 @@ function WordTestTimer() {
         <div className="bg-[var(--color-white)] rounded-full h-2.5 flex items-center">
           {/* Timer progress bar - width decreases as time runs out, color changes based on remaining time */}
           <div 
-            className="h-2.5 rounded-full ml-auto transition-all duration-300 glowing-text-wrapper" 
+            className="h-2.5 rounded-full ml-auto transition-all duration-300 animated-glow-wrapper" 
             style={{ 
               width: `${percentage}%`,  // Width represents time remaining percentage
               backgroundColor: timerColor  // Color changes: secondary → orange-yellow → orange

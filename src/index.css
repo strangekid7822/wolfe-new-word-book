@@ -108,13 +108,13 @@
   }
 
   /* Glowing text animation for the Chinese prompt */
-  .glowing-text-wrapper {
+  .animated-glow-wrapper {
     position: relative;
     overflow: hidden;
     display: inline-block; /* Ensures the pseudo-element is contained within the text width */
   }
 
-  .glowing-text-wrapper::before {
+  .animated-glow-wrapper::before {
     content: '';
     position: absolute;
     top: 0;
