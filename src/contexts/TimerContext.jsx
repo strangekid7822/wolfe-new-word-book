@@ -37,25 +37,35 @@ export const TimerProvider = ({ children }) => {
     }
   };
   
-  // Start countdown timer when provider mounts
+  // Start smooth countdown timer when provider mounts
   useEffect(() => {
-    // Only start timer if there's time remaining
-    if (timeLeft <= 0) return;
+    // Record the start time for smooth countdown calculation
+    const startTime = Date.now();
+    let animationFrame;
     
-    // Set up interval to decrease time every second
-    const timer = setInterval(() => {
-      setTimeLeft(prevTime => {
-        // Stop at 0, don't go negative
-        if (prevTime <= 1) {
-          return 0;
-        }
-        return prevTime - 1;
-      });
-    }, 1000);
+    // Use requestAnimationFrame for smooth, constant timer updates
+    const updateTimer = () => {
+      const elapsed = (Date.now() - startTime) / 1000; // Elapsed time in seconds
+      const remaining = Math.max(0, TOTAL_TIME - elapsed); // Calculate remaining time
+      
+      setTimeLeft(remaining);
+      
+      // Continue animation if time remaining, otherwise stop
+      if (remaining > 0) {
+        animationFrame = requestAnimationFrame(updateTimer);
+      }
+    };
     
-    // Cleanup interval on component unmount or when timer reaches 0
-    return () => clearInterval(timer);
-  }, [timeLeft]);
+    // Start the smooth timer animation
+    animationFrame = requestAnimationFrame(updateTimer);
+    
+    // Cleanup animation frame on component unmount
+    return () => {
+      if (animationFrame) {
+        cancelAnimationFrame(animationFrame);
+      }
+    };
+  }, []); // Empty dependency - only run once on mount
   
   // Context value object containing timer state and utilities
   const value = {
