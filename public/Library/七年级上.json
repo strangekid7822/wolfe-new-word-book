@@ -1,0 +1,415 @@
+{
+    "textbooks": [
+        {
+            "source_file": "七年级上",
+            "vocabulary": [
+                {
+                    "unit": "Starter Unit 1",
+                    "word": "good",
+                    "phonetic": "/gud/",
+                    "part_of_speech": "adj.",
+                    "meaning": "好的"
+                },
+                {
+                    "unit": "Starter Unit 1",
+                    "word": "morning",
+                    "phonetic": "/'mɔ:(r)niŋ/",
+                    "part_of_speech": "n.",
+                    "meaning": "早晨;上午"
+                },
+                {
+                    "unit": "Starter Unit 1",
+                    "word": "hi",
+                    "phonetic": "/hat/",
+                    "part_of_speech": "interj.",
+                    "meaning": "(用于打招呼)嗨;喂"
+                },
+                {
+                    "unit": "Starter Unit 1",
+                    "word": "hello",
+                    "phonetic": "/hələu/",
+                    "part_of_speech": "interj.",
+                    "meaning": "你好;喂"
+                },
+                {
+                    "unit": "Starter Unit 1",
+                    "word": "afternoon",
+                    "phonetic": "/a:ftə'nu:n/, /,æftər'nu:n/",
+                    "part_of_speech": "n.",
+                    "meaning": "下午"
+                },
+                {
+                    "unit": "Starter Unit 1",
+                    "word": "evening",
+                    "phonetic": "/'i:vnıŋ/",
+                    "part_of_speech": "n.",
+                    "meaning": "晚上;傍晚"
+                },
+                {
+                    "unit": "Starter Unit 1",
+                    "word": "how",
+                    "phonetic": "/hau/",
+                    "part_of_speech": "adv.",
+                    "meaning": "怎样;如何"
+                },
+                {
+                    "unit": "Starter Unit 1",
+                    "word": "are",
+                    "phonetic": "/a:(r); ə(r)/",
+                    "part_of_speech": "v.",
+                    "meaning": "是"
+                },
+                {
+                    "unit": "Starter Unit 1",
+                    "word": "you",
+                    "phonetic": "/ju:/",
+                    "part_of_speech": "pron.",
+                    "meaning": "你;你们"
+                },
+                {
+                    "unit": "Starter Unit 1",
+                    "word": "I",
+                    "phonetic": "/a1/",
+                    "part_of_speech": "pron.",
+                    "meaning": "我"
+                },
+                {
+                    "unit": "Starter Unit 1",
+                    "word": "am",
+                    "phonetic": "/æm/",
+                    "part_of_speech": "v.",
+                    "meaning": "是"
+                },
+                {
+                    "unit": "Starter Unit 1",
+                    "word": "fine",
+                    "phonetic": "/fain/",
+                    "part_of_speech": "adj.",
+                    "meaning": "健康的;美好的"
+                },
+                {
+                    "unit": "Starter Unit 1",
+                    "word": "thanks",
+                    "phonetic": "/θænks/",
+                    "part_of_speech": "interj. & n.",
+                    "meaning": "感谢;谢谢"
+                },
+                {
+                    "unit": "Starter Unit 1",
+                    "word": "OK",
+                    "phonetic": "/ǝukeı/",
+                    "part_of_speech": "interj. & adv.",
+                    "meaning": "好;可以"
+                },
+                {
+                    "unit": "Starter Unit 1",
+                    "word": "HB",
+                    "phonetic": "/extf'bi:/",
+                    "part_of_speech": "",
+                    "meaning": "(铅笔芯)硬黑"
+                },
+                {
+                    "unit": "Starter Unit 1",
+                    "word": "CD",
+                    "phonetic": "/si: 'di:/",
+                    "part_of_speech": "",
+                    "meaning": "光盘;激光唱片"
+                },
+                {
+                    "unit": "Starter Unit 1",
+                    "word": "BBC",
+                    "phonetic": "/,bi:bi: 'si:/",
+                    "part_of_speech": "",
+                    "meaning": "英国广播公司"
+                },
+                {
+                    "unit": "Starter Unit 2",
+                    "word": "what",
+                    "phonetic": "/wpt/,/wa:t/",
+                    "part_of_speech": "pron. & adj.",
+                    "meaning": "什么"
+                },
+                {
+                    "unit": "Starter Unit 2",
+                    "word": "is",
+                    "phonetic": "/Iz/",
+                    "part_of_speech": "v.",
+                    "meaning": "是"
+                },
+                {
+                    "unit": "Starter Unit 2",
+                    "word": "this",
+                    "phonetic": "/ðis/",
+                    "part_of_speech": "pron.",
+                    "meaning": "这;这个"
+                },
+                {
+                    "unit": "Starter Unit 2",
+                    "word": "in",
+                    "phonetic": "/in/",
+                    "part_of_speech": "prep.",
+                    "meaning": "(表示使用语言、材料等)用;以"
+                },
+                {
+                    "unit": "Starter Unit 2",
+                    "word": "English",
+                    "phonetic": "/'Inglis/",
+                    "part_of_speech": "n.",
+                    "meaning": "英语"
+                },
+                {
+                    "unit": "Starter Unit 2",
+                    "word": "map",
+                    "phonetic": "/mæp/",
+                    "part_of_speech": "n.",
+                    "meaning": "地图"
+                },
+                {
+                    "unit": "Starter Unit 2",
+                    "word": "cup",
+                    "phonetic": "/kop/",
+                    "part_of_speech": "n.",
+                    "meaning": "杯子"
+                },
+                {
+                    "unit": "Starter Unit 2",
+                    "word": "ruler",
+                    "phonetic": "/'ru:lə(r)/",
+                    "part_of_speech": "n.",
+                    "meaning": "尺;直尺"
+                },
+                {
+                    "unit": "Starter Unit 2",
+                    "word": "pen",
+                    "phonetic": "/pen/",
+                    "part_of_speech": "n.",
+                    "meaning": "笔;钢笔"
+                },
+                {
+                    "unit": "Starter Unit 2",
+                    "word": "orange",
+                    "phonetic": "/'brınd3/, /'ɔ:rınd3/",
+                    "part_of_speech": "n.",
+                    "meaning": "橙子"
+                },
+                {
+                    "unit": "Starter Unit 2",
+                    "word": "jacket",
+                    "phonetic": "/'dzækit/",
+                    "part_of_speech": "n.",
+                    "meaning": "夹克衫;短上衣"
+                },
+                {
+                    "unit": "Starter Unit 2",
+                    "word": "key",
+                    "phonetic": "/ki:/",
+                    "part_of_speech": "n.",
+                    "meaning": "钥匙"
+                },
+                {
+                    "unit": "Starter Unit 2",
+                    "word": "quilt",
+                    "phonetic": "/kwilt/",
+                    "part_of_speech": "n.",
+                    "meaning": "被子;床罩"
+                },
+                {
+                    "unit": "Starter Unit 2",
+                    "word": "it",
+                    "phonetic": "/it/",
+                    "part_of_speech": "pron.",
+                    "meaning": "它"
+                },
+                {
+                    "unit": "Starter Unit 2",
+                    "word": "a",
+                    "phonetic": "/er; ǝ/",
+                    "part_of_speech": "art.",
+                    "meaning": "(用于单数可数名词前,表示未曾提到的)一(人、事、物)"
+                },
+                {
+                    "unit": "Starter Unit 2",
+                    "word": "that",
+                    "phonetic": "/ðæt/",
+                    "part_of_speech": "pron.",
+                    "meaning": "那;那个"
+                },
+                {
+                    "unit": "Starter Unit 2",
+                    "word": "spell",
+                    "phonetic": "/spel/",
+                    "part_of_speech": "v.",
+                    "meaning": "用字母拼;拼写"
+                },
+                {
+                    "unit": "Starter Unit 3",
+                    "word": "please",
+                    "phonetic": "/pli:z/",
+                    "part_of_speech": "interj.",
+                    "meaning": "(用于客气地请求或吩咐)请"
+                },
+                {
+                    "unit": "Starter Unit 3",
+                    "word": "NBA",
+                    "phonetic": "/,en bi: 'er/",
+                    "part_of_speech": "",
+                    "meaning": "(美国)全国篮球协会"
+                },
+                {
+                    "unit": "Starter Unit 3",
+                    "word": "P",
+                    "phonetic": "/pi:/",
+                    "part_of_speech": "",
+                    "meaning": "停车场;停车位"
+                },
+                {
+                    "unit": "Starter Unit 3",
+                    "word": "kg",
+                    "phonetic": "/ker 'dzi:/",
+                    "part_of_speech": "",
+                    "meaning": "千克;公斤"
+                },
+                {
+                    "unit": "Starter Unit 3",
+                    "word": "color",
+                    "phonetic": "/'kʌlə(r)/",
+                    "part_of_speech": "n.",
+                    "meaning": "(= colour)颜色"
+                },
+                {
+                    "unit": "Starter Unit 3",
+                    "word": "red",
+                    "phonetic": "/red/",
+                    "part_of_speech": "adj. & n.",
+                    "meaning": "红色(的)"
+                },
+                {
+                    "unit": "Starter Unit 3",
+                    "word": "yellow",
+                    "phonetic": "/'jelǝu/",
+                    "part_of_speech": "adj. & n.",
+                    "meaning": "黄色(的)"
+                },
+                {
+                    "unit": "Starter Unit 3",
+                    "word": "green",
+                    "phonetic": "/gri:n/",
+                    "part_of_speech": "adj. & n.",
+                    "meaning": "绿色(的)"
+                },
+                {
+                    "unit": "Starter Unit 3",
+                    "word": "blue",
+                    "phonetic": "/blu:/",
+                    "part_of_speech": "adj. & n.",
+                    "meaning": "蓝色(的)"
+                },
+                {
+                    "unit": "Starter Unit 3",
+                    "word": "black",
+                    "phonetic": "/blæk/",
+                    "part_of_speech": "adj. & n.",
+                    "meaning": "黑色(的)"
+                },
+                {
+                    "unit": "Starter Unit 3",
+                    "word": "white",
+                    "phonetic": "/wart/",
+                    "part_of_speech": "adj. & n.",
+                    "meaning": "白色(的)"
+                },
+                {
+                    "unit": "Starter Unit 3",
+                    "word": "purple",
+                    "phonetic": "/'p3:(r)pl/",
+                    "part_of_speech": "adj. & n.",
+                    "meaning": "紫色(的)"
+                },
+                {
+                    "unit": "Starter Unit 3",
+                    "word": "brown",
+                    "phonetic": "/braun/",
+                    "part_of_speech": "adj. & n.",
+                    "meaning": "棕色(的);褐色(的)"
+                },
+                {
+                    "unit": "Starter Unit 3",
+                    "word": "the",
+                    "phonetic": "/ði; də/",
+                    "part_of_speech": "art.",
+                    "meaning": "指已提到或易领会到的人或事物"
+                },
+                {
+                    "unit": "Starter Unit 3",
+                    "word": "now",
+                    "phonetic": "/nau/",
+                    "part_of_speech": "adv.",
+                    "meaning": "现在;目前"
+                },
+                {
+                    "unit": "Starter Unit 3",
+                    "word": "see",
+                    "phonetic": "/si:/",
+                    "part_of_speech": "v.",
+                    "meaning": "理解;明白"
+                },
+                {
+                    "unit": "Starter Unit 3",
+                    "word": "can",
+                    "phonetic": "/kæn; kən/",
+                    "part_of_speech": "modal v.",
+                    "meaning": "能;会"
+                },
+                {
+                    "unit": "Starter Unit 3",
+                    "word": "say",
+                    "phonetic": "/sex/",
+                    "part_of_speech": "v.",
+                    "meaning": "说;讲"
+                },
+                {
+                    "unit": "Starter Unit 3",
+                    "word": "my",
+                    "phonetic": "/mai/",
+                    "part_of_speech": "pron.",
+                    "meaning": "我的"
+                },
+                {
+                    "unit": "Starter Unit 3",
+                    "word": "S",
+                    "phonetic": "/es/",
+                    "part_of_speech": "",
+                    "meaning": "(尤指服装的尺码)小号的"
+                },
+                {
+                    "unit": "Starter Unit 3",
+                    "word": "M",
+                    "phonetic": "/em/",
+                    "part_of_speech": "",
+                    "meaning": "(尤指服装的尺码)中号的"
+                },
+                {
+                    "unit": "Starter Unit 3",
+                    "word": "L",
+                    "phonetic": "/el/",
+                    "part_of_speech": "",
+                    "meaning": "(尤指服装的尺码)大号的"
+                },
+                {
+                    "unit": "Starter Unit 3",
+                    "word": "UFO",
+                    "phonetic": "/ju: ef'ǝu/",
+                    "part_of_speech": "",
+                    "meaning": "不明飞行物"
+                },
+                {
+                    "unit": "Starter Unit 3",
+                    "word": "CCTV",
+                    "phonetic": "/si: si: ti: 'vi:/",
+                    "part_of_speech": "",
+                    "meaning": "中国中央电视台"
+                }
+            ]
+        }
+    ]
+}
