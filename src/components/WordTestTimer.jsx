@@ -6,9 +6,14 @@ function WordTestTimer() {
   
   return (
     <div className="flex flex-col items-center">
-      {/* Digital timer display above progress bar */}
+      {/* Digital timer display above progress bar - color changes with time remaining like timer bar */}
       <div className="text-center mb-2">
-        <span className="text-lg font-mono text-gray-600">{formattedTime}</span>
+        <span 
+          className="text-lg font-mono font-semibold transition-colors duration-300" 
+          style={{ color: timerColor }}
+        >
+          {formattedTime}
+        </span>
       </div>
       
       {/* Timer progress bar wrapper */}
