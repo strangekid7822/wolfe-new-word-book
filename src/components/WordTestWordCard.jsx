@@ -66,7 +66,7 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
   const isButtonDisabled = cardData.submitted || !areAllInputsFilled;
 
   return (
-    <div className="bg-[var(--color-white)] p-6 rounded-3xl shadow-lg text-center w-full mx-auto min-h-[50vh] flex flex-col justify-between">
+    <div className="word-card-style p-6 text-center w-full mx-auto min-h-[50vh] flex flex-col justify-between">
       <div className="play-button-wrapper" onClick={handlePlayButtonClick}>
         <div className="play-button-container">
           <div ref={pulseRef} className="play-button-pulse"></div>
@@ -78,7 +78,7 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
         </div>
       </div>
       
-      <p className="text-[var(--color-black)] text-lg font-light animated-glow-wrapper">根据读音拼写单词:</p>
+      <p className="text-[var(--color-black)] text-lg font-light"><span className="animated-glow-wrapper">根据读音拼写单词:</span></p>
       
       <div className="flex justify-center gap-1">
         {cardData.inputs.map((value, index) => (

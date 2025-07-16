@@ -136,4 +136,12 @@
       left: 100%; /* Move completely off-screen to the right */
     }
   }
+
+  .word-card-style {
+    border-radius: 30px;
+    background: var(--color-tertiary);
+    box-shadow: 15px 15px 30px var(--color-secondary),
+               -15px -15px 30px var(--color-white);
+    border: 3px solid var(--color-white);
+  }
 }
