@@ -140,8 +140,7 @@
   .word-card-style {
     border-radius: 30px;
     background: var(--color-tertiary);
-    box-shadow: 15px 15px 30px var(--color-secondary),
-               -15px -15px 30px var(--color-white);
+    box-shadow: 15px 15px 30px var(--color-secondary-2);
     border: 3px solid var(--color-white);
   }
 }
