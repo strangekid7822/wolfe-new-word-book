@@ -37,32 +37,37 @@ export const TimerProvider = ({ children }) => {
     }
   };
   
-  // Start smooth countdown timer when provider mounts
+  // Start countdown timer when provider mounts
   useEffect(() => {
-    // Record the start time for smooth countdown calculation
+    // Record the start time for accurate countdown calculation
     const startTime = Date.now();
-    let animationFrame;
+    let timer;
     
-    // Use requestAnimationFrame for smooth, constant timer updates
+    // Mobile Safari-friendly timer implementation
+    // Uses setInterval with frequent updates for cross-platform compatibility
     const updateTimer = () => {
       const elapsed = (Date.now() - startTime) / 1000; // Elapsed time in seconds
       const remaining = Math.max(0, TOTAL_TIME - elapsed); // Calculate remaining time
       
       setTimeLeft(remaining);
       
-      // Continue animation if time remaining, otherwise stop
-      if (remaining > 0) {
-        animationFrame = requestAnimationFrame(updateTimer);
+      // Stop timer when time is up
+      if (remaining <= 0) {
+        clearInterval(timer);
       }
     };
     
-    // Start the smooth timer animation
-    animationFrame = requestAnimationFrame(updateTimer);
+    // Start timer with 50ms intervals for smooth updates on all platforms
+    // More frequent than 100ms to ensure smooth animation on mobile Safari
+    timer = setInterval(updateTimer, 50);
     
-    // Cleanup animation frame on component unmount
+    // Initial update to start immediately
+    updateTimer();
+    
+    // Cleanup timer on component unmount
     return () => {
-      if (animationFrame) {
-        cancelAnimationFrame(animationFrame);
+      if (timer) {
+        clearInterval(timer);
       }
     };
   }, []); // Empty dependency - only run once on mount
