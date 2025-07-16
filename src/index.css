@@ -154,6 +154,14 @@
     border: 3px solid var(--color-white);
   }
 
+  /* Timer wrapper styling matching word card design */
+  .timer-wrapper-style {
+    border-radius: 30px;
+    background: var(--color-white);
+    box-shadow: 15px 15px 30px var(--color-secondary-2);
+    border: 3px solid var(--color-white);
+  }
+
   /* Main container style for the app layout */
   .main-container-style {
     /* Applies an inner shadow to the top of the container, matching the word card's shadow style */
