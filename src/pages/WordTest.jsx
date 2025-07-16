@@ -2,6 +2,7 @@ import { useEffect } from 'react'; // Import useEffect
 import WordTestTimer from '../components/WordTestTimer';
 import WordTestStats from '../components/WordTestStats';
 import WordTestCardGallery from '../components/WordTestCardGallery';
+import { TimerProvider } from '../contexts/TimerContext'; // Import timer context provider
 
 function WordTest() {
   useEffect(() => {
@@ -21,7 +22,8 @@ function WordTest() {
   }, []); // Empty dependency array ensures this runs once on mount and cleanup on unmount
 
   return (
-    <>
+    // Wrap entire WordTest content with TimerProvider to enable 3-minute countdown
+    <TimerProvider>
       <WordTestTimer />
       <WordTestStats />
       {/* Gallery wrapper div - py-8 adds 32px padding */}
@@ -30,7 +32,7 @@ function WordTest() {
           <WordTestCardGallery />
         </div>
       </div>
-    </>
+    </TimerProvider>
   );
 }
 
