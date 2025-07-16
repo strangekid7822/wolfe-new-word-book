@@ -104,24 +104,15 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
         ))}
       </div>
       
-      {/* Conditionally render animated button or disabled button */}
-      {isButtonDisabled ? (
+      <div className={`btn-animated-wrapper ${isButtonDisabled ? 'border-transparent' : 'border-visible'}`}>
         <button 
-          disabled
-          className="btn-disabled"
+          onClick={() => onConfirm(cardData.id)}
+          disabled={isButtonDisabled}
+          className={isButtonDisabled ? 'btn-disabled' : 'btn-animated'}
         >
           确定
         </button>
-      ) : (
-        <div className="btn-animated-wrapper">
-          <button 
-            onClick={() => onConfirm(cardData.id)}
-            className="btn-animated"
-          >
-            确定
-          </button>
-        </div>
-      )}
+      </div>
     </div>
   );
 });
