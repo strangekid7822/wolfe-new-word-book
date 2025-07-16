@@ -106,4 +106,34 @@
     @apply w-[30px] h-[30px] fill-[var(--color-primary)] stroke-[var(--color-primary)] stroke-2;
     stroke-linejoin: round;
   }
+
+  /* Glowing text animation for the Chinese prompt */
+  .glowing-text-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block; /* Ensures the pseudo-element is contained within the text width */
+  }
+
+  .glowing-text-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; /* Start off-screen to the left */
+    width: 100%;
+    height: 100%;
+    /* Create the glowing line effect using a linear gradient */
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.8), transparent);
+    /* Apply the animation: glow-line (defined below), 4 seconds duration, linear timing, infinite loop */
+    animation: glow-line 3s linear infinite;
+  }
+
+  /* Keyframes for the glowing line animation */
+  @keyframes glow-line {
+    0% {
+      left: -100%; /* Start completely off-screen to the left */
+    }
+    100% {
+      left: 100%; /* Move completely off-screen to the right */
+    }
+  }
 }
