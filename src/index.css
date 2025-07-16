@@ -122,9 +122,9 @@
     width: 100%;
     height: 100%;
     /* Create the glowing line effect using a linear gradient */
-    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.8), transparent);
+    background: linear-gradient(to right, transparent, var(--color-tertiary), transparent);
     /* Apply the animation: glow-line (defined below), 4 seconds duration, linear timing, infinite loop */
-    animation: glow-line 3s linear infinite;
+    animation: glow-line 4s linear infinite;
   }
 
   /* Keyframes for the glowing line animation */
