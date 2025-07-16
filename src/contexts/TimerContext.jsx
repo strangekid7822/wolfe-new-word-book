@@ -72,13 +72,24 @@ export const TimerProvider = ({ children }) => {
     };
   }, []); // Empty dependency - only run once on mount
   
+  // Format time as MM:SS:ms (minutes:seconds:centiseconds)
+  const formatTime = (seconds) => {
+    const minutes = Math.floor(seconds / 60);
+    const secs = Math.floor(seconds % 60);
+    const centiseconds = Math.floor((seconds % 1) * 100); // Convert decimal to centiseconds (0-99)
+    
+    return `${minutes.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}:${centiseconds.toString().padStart(2, '0')}`;
+  };
+
   // Context value object containing timer state and utilities
   const value = {
     timeLeft,           // Remaining seconds
     percentage,         // Percentage remaining (0-100)
     timerColor: getTimerColor(), // Current color based on time left
     isTimeUp: timeLeft === 0,    // Boolean flag for time expiration
-    totalTime: TOTAL_TIME        // Total duration for reference
+    totalTime: TOTAL_TIME,       // Total duration for reference
+    formatTime,         // Time formatting utility function
+    formattedTime: formatTime(timeLeft) // Pre-formatted time string
   };
   
   return (

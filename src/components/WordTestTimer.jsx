@@ -1,12 +1,17 @@
 import { useTimer } from '../contexts/TimerContext';
 
 function WordTestTimer() {
-  // Get timer state from context (percentage, color, and time remaining)
-  const { percentage, timerColor } = useTimer();
+  // Get timer state from context (percentage, color, time remaining, and formatted time)
+  const { percentage, timerColor, formattedTime } = useTimer();
   
   return (
-    <div className="flex justify-center">
-      {/* Timer wrapper with white background and shadow */}
+    <div className="flex flex-col items-center">
+      {/* Digital timer display above progress bar */}
+      <div className="text-center mb-2">
+        <span className="text-lg font-mono text-gray-600">{formattedTime}</span>
+      </div>
+      
+      {/* Timer progress bar wrapper */}
       <div className="bg-[var(--color-white)] rounded-full p-1 w-64 shadow-[var(--shadow-timer)] w-[var(--content-width-2)]">
         {/* Timer track (background bar) */}
         <div className="bg-[var(--color-white)] rounded-full h-2.5 flex items-center">
