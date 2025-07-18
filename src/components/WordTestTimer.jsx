@@ -17,7 +17,7 @@ function WordTestTimer() {
       </div>
       
       {/* Timer progress bar with enhanced darker shadow for better visibility */}
-      <div className="timer-shadow-style w-[var(--content-width-2)] h-6 overflow-hidden relative flex">
+      <div className="timer-shadow-style w-[var(--content-width-2)] h-5 overflow-hidden relative flex">
         {/* The actual progress bar that now shrinks from left to right with continuous glow effect */}
         <div 
           className="animated-glow-wrapper h-full transition-all duration-300 ml-auto" 
