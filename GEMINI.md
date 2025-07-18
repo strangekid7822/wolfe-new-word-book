@@ -32,8 +32,12 @@ This is a React-based word learning application built with Vite and styled with 
 - `Layout.jsx` - Main layout wrapper with navigation
 - `WordTestNavBar.jsx` - Navigation bar component
 
+**Context Providers** (`src/contexts/`):
+- `TimerContext.jsx` - Centralized timer state management with 3-minute countdown functionality
+
 ### State Management
-- Uses React's built-in state (useState, useRef) - no external state management library
+- Uses React Context for timer state (TimerContext) and React's built-in state (useState, useRef) for other components
+- TimerContext manages 3-minute countdown with color-coded progress indicators
 - Word cards contain: `{ id, word, inputs: [], submitted: boolean }`
 - Gallery manages active card index and horizontal scrolling position
 
@@ -45,13 +49,13 @@ This is a React-based word learning application built with Vite and styled with 
 - **Audio Integration**: Play button with pulse animation for word pronunciation
 
 ### Styling
-- **Tailwind CSS 4.x** with Vite plugin integration
+- **Tailwind CSS 4.1.11** with Vite plugin integration
 - **Custom CSS Variables**: Defined in `index.css` for colors and shadows
 - **Responsive Design**: Uses viewport units (vw) for card sizing and spacing
 - **Cross-browser Input Styling**: Custom wrapper divs for consistent focus states
 
 ### Navigation
-- React Router DOM with nested routes under Layout component
+- React Router DOM 7.6.3 with nested routes under Layout component
 - Routes: `/` (Home), `/write` (WordTest), `/profile` (Profile)
 
 ### Build Configuration
