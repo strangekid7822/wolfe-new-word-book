@@ -16,11 +16,11 @@ function WordTestTimer() {
         </span>
       </div>
       
-      {/* Simplified timer progress bar */}
-      <div className="timer-wrapper-style w-64 w-[var(--content-width-2)] h-4 overflow-hidden">
-        {/* The actual progress bar that grows/shrinks and changes color, now aligned to the right */}
+      {/* Timer progress bar with enhanced darker shadow for better visibility */}
+      <div className="timer-shadow-style w-[var(--content-width-2)] h-6 overflow-hidden relative">
+        {/* The actual progress bar that shrinks from right to left with continuous glow effect */}
         <div 
-          className="h-full transition-all duration-300 ml-auto" 
+          className="animated-glow-wrapper h-full transition-all duration-300" 
           style={{ 
             width: `${percentage}%`,
             backgroundColor: timerColor

@@ -146,6 +146,15 @@
     border: 3px solid var(--color-white);
   }
 
+  /* Timer wrapper with darker shadow for better visibility */
+  .timer-shadow-style {
+    border-radius: 30px;
+    background: var(--color-tertiary);
+    /* Darker shadow using color-grey for better visibility against page background */
+    box-shadow: 5px 5px 15px var(--color-secondary-2);
+    border: 3px solid var(--color-white);
+  }
+
   /* Nav bar styling matching word card design */
   .nav-bar-style {
     border-radius: 30px;
