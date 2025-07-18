@@ -16,19 +16,16 @@ function WordTestTimer() {
         </span>
       </div>
       
-      {/* Timer progress bar wrapper with word card styling */}
-      <div className="timer-wrapper-style p-1 w-64 w-[var(--content-width-2)]">
-        {/* Timer track (background bar) - increased height to make white border appear thinner */}
-        <div className="bg-[var(--color-white)] rounded-full h-2 flex items-center">
-          {/* Timer progress bar - increased height and width decreases as time runs out, color changes based on remaining time */}
-          <div 
-            className="h-3 rounded-full ml-auto transition-all duration-300 animated-glow-wrapper" 
-            style={{ 
-              width: `${percentage}%`,  // Width represents time remaining percentage
-              backgroundColor: timerColor  // Color changes: secondary → orange-yellow → orange
-            }}
-          ></div>
-        </div>
+      {/* Simplified timer progress bar */}
+      <div className="timer-wrapper-style w-64 w-[var(--content-width-2)] h-4 overflow-hidden">
+        {/* The actual progress bar that grows/shrinks and changes color, now aligned to the right */}
+        <div 
+          className="h-full transition-all duration-300 ml-auto" 
+          style={{ 
+            width: `${percentage}%`,
+            backgroundColor: timerColor
+          }}
+        ></div>
       </div>
     </div>
   );
