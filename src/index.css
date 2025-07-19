@@ -13,6 +13,8 @@
   --color-orange: #FF5900;
   --color-orange-yellow: #FFC800;
   --color-green: #22d850;
+  /* A consistent, theme-aligned shadow color. Using a semi-transparent version of the primary color ensures cross-browser consistency. */
+  --color-shadow: rgba(0, 128, 187, 0.3);
   /* The shadow input was for inputs in wordcard initially, but now it seems that we don't need it anymore. */
   --shadow-input: inset 1px 3px 4px 0 rgba(0, 0, 0, 0.25);
   --shadow-play-button: 0px 1px 2px rgba(0, 0, 0, 0.25);
@@ -142,7 +144,7 @@
   .word-card-style {
     border-radius: 30px;
     background: var(--color-tertiary);
-    box-shadow: 15px 15px 30px var(--color-secondary-2);
+    box-shadow: 15px 15px 30px var(--color-shadow);
     border: 3px solid var(--color-white);
     transition: transform 0.3s ease, opacity 0.3s ease;
   }
@@ -198,7 +200,7 @@
     border-radius: 30px;
     background: var(--color-tertiary);
     /* Darker shadow using color-grey for better visibility against page background */
-    box-shadow: 5px 5px 15px var(--color-secondary-2);
+    box-shadow: 5px 5px 15px var(--color-shadow);
     border: 3px solid var(--color-white);
   }
 
@@ -206,7 +208,7 @@
   .nav-bar-style {
     border-radius: 30px;
     background: var(--color-tertiary);
-    box-shadow: 15px 15px 30px var(--color-secondary-2);
+    box-shadow: 15px 15px 30px var(--color-shadow);
     border: 3px solid var(--color-white);
   }
 
@@ -214,13 +216,13 @@
   .timer-wrapper-style {
     border-radius: 30px;
     background: var(--color-tertiary);
-    box-shadow: 15px 15px 30px var(--color-secondary-2);
+    box-shadow: 15px 15px 30px var(--color-shadow);
     border: 3px solid var(--color-white);
   }
 
   /* Main container style for the app layout */
   .main-container-style {
     /* Applies an inner shadow to the top of the container, matching the word card's shadow style */
-    box-shadow: inset 0px 15px 30px var(--color-secondary-2);
+    box-shadow: inset 0px 15px 30px var(--color-shadow);
   }
 }
