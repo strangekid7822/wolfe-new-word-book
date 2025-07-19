@@ -28,19 +28,7 @@ function WordTestCardGallery() {
     return () => clearTimeout(focusTimeout);
   }, [activeIndex]);
 
-  const handleScroll = () => {
-    if (!containerRef.current) return;
-    
-    const container = containerRef.current;
-    const scrollLeft = container.scrollLeft;
-    const containerWidth = container.offsetWidth;
-    const cardWidth = containerWidth * 0.85;
-    
-    const newIndex = Math.round(scrollLeft / cardWidth);
-    if (newIndex !== activeIndex && newIndex >= 0 && newIndex < wordCards.length) {
-      setActiveIndex(newIndex);
-    }
-  };
+  // Removed handleScroll to prevent re-renders during scrolling
 
   const scrollToCard = (index) => {
     if (!containerRef.current || index < 0 || index >= wordCards.length) return;
@@ -90,7 +78,6 @@ function WordTestCardGallery() {
       <div
         ref={containerRef}
         className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar pt-2 pb-12"
-        onScroll={handleScroll}
         style={{
           scrollSnapType: 'x mandatory',
           WebkitOverflowScrolling: 'touch',
@@ -103,7 +90,7 @@ function WordTestCardGallery() {
         {wordCards.map((card, index) => (
           <div 
             key={card.id} 
-            className="flex-shrink-0 px-2 snap-center" 
+            className="flex-shrink-0 px-2 snap-center word-card-container" 
             style={{ width: '85vw' }}
           >
             <WordTestWordCard 

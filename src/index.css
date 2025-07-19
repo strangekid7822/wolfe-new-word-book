@@ -144,6 +144,53 @@
     background: var(--color-tertiary);
     box-shadow: 15px 15px 30px var(--color-secondary-2);
     border: 3px solid var(--color-white);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  /* CSS-only active card detection using scroll-driven animations */
+  @supports (animation-timeline: scroll()) {
+    .word-card-container {
+      animation: detect-active linear;
+      animation-timeline: scroll(inline nearest);
+      animation-range: contain;
+    }
+    
+    @keyframes detect-active {
+      0%, 100% { 
+        opacity: 0.7;
+        transform: scale(0.95);
+      }
+      40%, 60% { 
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
+
+  /* Fallback for browsers without scroll-driven animations */
+  @supports not (animation-timeline: scroll()) {
+    .word-card-container {
+      position: relative;
+    }
+    
+    .word-card-container .word-card-style {
+      opacity: 0.7;
+      transform: scale(0.95);
+    }
+    
+    /* Use IntersectionObserver-like behavior with scroll-snap */
+    @media (hover: none) and (pointer: coarse) {
+      .snap-center .word-card-style {
+        animation: fade-in 0.3s ease forwards;
+      }
+      
+      @keyframes fade-in {
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    }
   }
 
   /* Timer wrapper with darker shadow for better visibility */
