@@ -4,7 +4,8 @@ import WordTestWordCard from './WordTestWordCard';
 function WordTestCardGallery() {
   const [activeIndex, setActiveIndex] = useState(0);
   const containerRef = useRef(null);
-  const cardRefs = useRef([]);
+  const cardComponentRefs = useRef([]); // For calling focus() on the component
+  const cardElementRefs = useRef([]); // For scrolling to the DOM element
 
   const [wordCards, setWordCards] = useState([
     { id: 1, word: "hello", inputs: ["", "", "", "", ""], submitted: false },
@@ -15,33 +16,31 @@ function WordTestCardGallery() {
   ]);
 
   useEffect(() => {
-    cardRefs.current = cardRefs.current.slice(0, wordCards.length);
+    cardComponentRefs.current = cardComponentRefs.current.slice(0, wordCards.length);
+    cardElementRefs.current = cardElementRefs.current.slice(0, wordCards.length);
   }, [wordCards]);
 
   useEffect(() => {
+    scrollToCard(activeIndex);
     const focusTimeout = setTimeout(() => {
-      if (cardRefs.current[activeIndex]) {
-        cardRefs.current[activeIndex].focus();
+      if (cardComponentRefs.current[activeIndex]) {
+        // Focus on the input without causing a scroll jump
+        cardComponentRefs.current[activeIndex].focus({ preventScroll: true });
       }
-    }, 100);
+    }, 350); // A bit longer to allow for scroll animation
 
     return () => clearTimeout(focusTimeout);
   }, [activeIndex]);
 
-  // Removed handleScroll to prevent re-renders during scrolling
-
   const scrollToCard = (index) => {
-    if (!containerRef.current || index < 0 || index >= wordCards.length) return;
-    
-    const container = containerRef.current;
-    const containerWidth = container.offsetWidth;
-    const cardWidth = containerWidth * 0.85;
-    const scrollPosition = index * cardWidth;
-    
-    container.scrollTo({
-      left: scrollPosition,
-      behavior: 'smooth'
-    });
+    const cardElement = cardElementRefs.current[index];
+    if (cardElement) {
+      cardElement.scrollIntoView({
+        behavior: 'smooth',
+        inline: 'center',
+        block: 'nearest'
+      });
+    }
   };
 
   const handleInputChange = (cardId, inputIndex, value) => {
@@ -65,12 +64,13 @@ function WordTestCardGallery() {
     );
     const nextIndex = activeIndex + 1;
     if (nextIndex < wordCards.length) {
-      setTimeout(() => scrollToCard(nextIndex), 300);
+      setActiveIndex(nextIndex);
     }
   };
 
   useEffect(() => {
-    scrollToCard(0);
+    // Initial scroll can be slightly delayed to ensure layout is stable
+    setTimeout(() => scrollToCard(0), 100);
   }, []);
 
   return (
@@ -89,12 +89,13 @@ function WordTestCardGallery() {
         
         {wordCards.map((card, index) => (
           <div 
-            key={card.id} 
+            key={card.id}
+            ref={el => cardElementRefs.current[index] = el}
             className="flex-shrink-0 px-2 snap-center word-card-container" 
             style={{ width: '85vw' }}
           >
             <WordTestWordCard 
-              ref={el => cardRefs.current[index] = el}
+              ref={el => cardComponentRefs.current[index] = el}
               cardData={card}
               isActive={index === activeIndex}
               onInputChange={handleInputChange}

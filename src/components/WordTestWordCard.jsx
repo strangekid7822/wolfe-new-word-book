@@ -9,11 +9,11 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
   }, [cardData.word]);
 
   useImperativeHandle(ref, () => ({
-    focus: () => {
+    focus: (options) => {
       if (cardData.submitted) return;
       const firstEmptyIndex = cardData.inputs.findIndex(input => input === "");
       if (firstEmptyIndex !== -1) {
-        inputRefs.current[firstEmptyIndex].focus();
+        inputRefs.current[firstEmptyIndex].focus(options);
       }
     }
   }));
