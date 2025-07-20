@@ -85,7 +85,7 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
           // Input Wrapper: Handles all styling, including focus states, for cross-browser consistency.
           <div
             key={index}
-            className="w-8 h-10 sm:w-7 sm:h-9 rounded-lg border border-gray-300 bg-gray-100 transition-transform duration-150 flex items-center justify-center focus-within:scale-110 focus-within:bg-white"
+            className="w-8 h-10 sm:w-7 sm:h-9 rounded-lg border-2 border-gray-300 bg-gray-100 transition-transform duration-150 flex items-center justify-center focus-within:scale-110 focus-within:bg-white focus-within:border-[var(--color-secondary)]"
           >
             <input
               ref={el => inputRefs.current[index] = el}
@@ -97,7 +97,7 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
               onKeyDown={(e) => handleKeyDown(e, index)}
               onMouseDown={(e) => handleInputClick(e, index)}
               disabled={cardData.submitted}
-              className="w-full h-full bg-transparent outline-none text-center text-base font-medium appearance-none"
+              className="w-full h-full bg-transparent outline-none text-center text-base font-medium appearance-none caret-[var(--color-secondary)]"
               style={{ color: cardData.submitted ? 'grey' : 'black' }}
             />
           </div>
