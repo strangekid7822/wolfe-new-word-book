@@ -78,7 +78,7 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
         </div>
       </div>
       
-      <p className="text-[var(--color-black)] text-lg font-light"><span className="animated-glow-wrapper">根据读音拼写单词:</span></p>
+      <p className="text-[var(--color-black)] text-lg font-light"><span>根据读音拼写单词:</span></p>
       
       <div className="flex justify-center gap-1">
         {cardData.inputs.map((value, index) => (
