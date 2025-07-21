@@ -73,8 +73,8 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
   const shouldShowSubmitButton = areAllInputsFilled && cardData.selectedOption && !cardData.submitted;
 
   return (
-    <div className="word-card-style p-6 text-center w-full mx-auto min-h-[50vh] flex flex-col justify-between">
-      {/* 1. Play button - align to top */}
+    <div className="word-card-style p-6 text-center w-full mx-auto flex flex-col gap-6">
+      {/* Play button */}
       <div className="glass-effect glass-play-button rounded-[1.5rem]" onClick={handlePlayButtonClick}>
         <div className="glass-content">
           <svg className="glass-play-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -83,12 +83,12 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
         </div>
       </div>
       
-      {/* 2. Chinese prompt */}
+      {/* Chinese prompt */}
       <p className="text-[var(--color-black)] text-lg font-light">
         <span>根据读音拼写单词:</span>
       </p>
       
-      {/* 3. Input fields */}
+      {/* Input fields */}
       <div className="flex justify-center gap-1">
         {cardData.inputs.map((value, index) => (
           <div
@@ -112,55 +112,33 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
         ))}
       </div>
       
-      {/* 4. Chinese meaning prompt - always render for consistent spacing */}
-      <p className="text-[var(--color-black)] text-lg font-light">
-        {shouldShowOptions ? <span>选择中文意思:</span> : <span>&nbsp;</span>}
-      </p>
-      
-      {/* 5. Options section - always render container for consistent spacing */}
-      <div className="grid grid-cols-2 gap-3">
-        {shouldShowOptions ? (
-          cardData.chineseMeanings.map((meaning, index) => (
-            <Option
-              key={index}
-              text={meaning}
-              label={String.fromCharCode(65 + index)}
-              isSelected={cardData.selectedOption === meaning}
-              onClick={() => onOptionSelect(cardData.id, meaning)}
-              disabled={cardData.submitted}
-            />
-          ))
-        ) : (
-          // Render invisible placeholders to maintain spacing
-          Array.from({ length: 4 }, (_, index) => (
-            <div key={index} className="invisible">
-              <div className="option-button">
-                <span className="option-label">.</span>
-                <span className="option-text">&nbsp;</span>
-              </div>
-            </div>
-          ))
-        )}
-      </div>
-
-      {/* 6. Submit Button - always render for consistent spacing, align to bottom */}
-      <div>
-        {shouldShowSubmitButton ? (
-          <SubmitButton
-            onClick={() => onConfirm(cardData.id)}
-            isDisabled={false}
-            buttonText="确定"
-          />
-        ) : (
-          <div className="invisible">
-            <SubmitButton
-              onClick={() => {}}
-              isDisabled={true}
-              buttonText="确定"
-            />
+      {/* Chinese meaning options - only render when needed */}
+      {shouldShowOptions && (
+        <div className="space-y-4">
+          <p className="text-[var(--color-black)] text-lg font-light">选择中文意思:</p>
+          <div className="grid grid-cols-2 gap-3">
+            {cardData.chineseMeanings.map((meaning, index) => (
+              <Option
+                key={index}
+                text={meaning}
+                label={String.fromCharCode(65 + index)}
+                isSelected={cardData.selectedOption === meaning}
+                onClick={() => onOptionSelect(cardData.id, meaning)}
+                disabled={cardData.submitted}
+              />
+            ))}
           </div>
-        )}
-      </div>
+        </div>
+      )}
+
+      {/* Submit Button - only render when needed */}
+      {shouldShowSubmitButton && (
+        <SubmitButton
+          onClick={() => onConfirm(cardData.id)}
+          isDisabled={false}
+          buttonText="确定"
+        />
+      )}
     </div>
   );
 });
