@@ -300,10 +300,10 @@
     @apply flex items-center gap-2 p-3 rounded-2xl font-medium text-left w-full;
     background: var(--color-white);
     /* Use consistent border structure for smooth transitions */
-    border-left: 1.5px solid var(--color-grey);
-    border-top: 1.5px solid var(--color-grey);
-    border-right: 1.5px solid var(--color-grey);
-    border-bottom: 1.5px solid var(--color-grey);
+    border-left: 2.5px solid var(--color-grey);
+    border-top: 2.5px solid var(--color-grey);
+    border-right: 2.5px solid var(--color-grey);
+    border-bottom: 2.5px solid var(--color-grey);
     color: var(--color-grey);
     /* Force hardware acceleration and smooth transitions */
     transform: translateZ(0);
@@ -324,10 +324,10 @@
 
   .option-selected {
     background: var(--color-secondary) !important;
-    border-left: 1.5px solid rgba(255, 255, 255, 0.5) !important;
-    border-top: 1.5px solid rgba(255, 255, 255, 0.5) !important;
-    border-right: 1.5px solid #0080bb20 !important;
-    border-bottom: 1.5px solid #0080bb20 !important;
+    border-left: 2.5px solid rgba(255, 255, 255, 0.5) !important;
+    border-top: 2.5px solid rgba(255, 255, 255, 0.5) !important;
+    border-right: 2.5px solid #0080bb20 !important;
+    border-bottom: 2.5px solid #0080bb20 !important;
     color: var(--color-white) !important;
     box-shadow: 0 0 15px rgba(135, 217, 255, 0.4);
     /* Force repaint on iOS Safari */
