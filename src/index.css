@@ -125,8 +125,8 @@
 
   /* Play button SVG styles */
   .glass-play-svg {
-    width: 33%;
-    height: 33%;
+    width: 20%;
+    height: 20%;
     fill: var(--color-white);
     transition: transform 1s ease;
   }
