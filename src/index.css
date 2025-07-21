@@ -170,7 +170,12 @@
     background: var(--color-tertiary);
     box-shadow: 15px 15px 30px var(--color-shadow);
     border: 3px solid var(--color-white);
-    transition: transform 0.3s ease, opacity 0.3s ease, height 0.4s ease-out;
+    transition: transform 0.3s ease, opacity 0.3s ease, max-height 0.4s ease-out;
+    max-height: 30vh; /* Default height */
+  }
+
+  .word-card-expanded {
+    max-height: 60vh; /* Expanded height */
   }
 
   /* Smooth growing animations for card sections */
