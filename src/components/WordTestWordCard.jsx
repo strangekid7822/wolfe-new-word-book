@@ -114,7 +114,7 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
       
       {/* Chinese meaning options - only render when needed */}
       {shouldShowOptions && (
-        <div className="space-y-4 options-section-enter">
+        <div className="space-y-4 submit-button-enter">
           <p className="text-[var(--color-black)] text-lg font-light">选择中文意思:</p>
           <div className="grid grid-cols-2 gap-3">
             {cardData.chineseMeanings.map((meaning, index) => (
