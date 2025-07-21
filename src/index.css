@@ -170,7 +170,67 @@
     background: var(--color-tertiary);
     box-shadow: 15px 15px 30px var(--color-shadow);
     border: 3px solid var(--color-white);
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease, height 0.4s ease-out;
+  }
+
+  /* Smooth growing animations for card sections */
+  .card-section-enter {
+    animation: slideInUp 0.4s ease-out forwards;
+  }
+
+  @keyframes slideInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px) scale(0.95);
+      max-height: 0;
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      max-height: 200px; /* Large enough to accommodate content */
+    }
+  }
+
+  /* Enhanced animation for options section */
+  .options-section-enter {
+    animation: expandIn 0.5s ease-out forwards;
+  }
+
+  @keyframes expandIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px) scale(0.9);
+      max-height: 0;
+    }
+    50% {
+      opacity: 0.7;
+      max-height: 120px;
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      max-height: 300px;
+    }
+  }
+
+  /* Submit button grow animation */
+  .submit-button-enter {
+    animation: bounceIn 0.3s ease-out forwards;
+  }
+
+  @keyframes bounceIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px) scale(0.8);
+    }
+    60% {
+      opacity: 1;
+      transform: translateY(-5px) scale(1.05);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
   }
 
   /* CSS-only active card detection using scroll-driven animations */
@@ -259,7 +319,7 @@
     border-top: 1.5px solid var(--color-grey);
     border-right: 1.5px solid var(--color-grey);
     border-bottom: 1.5px solid var(--color-grey);
-    color: var(--color-black);
+    color: var(--color-grey);
     /* Force hardware acceleration and smooth transitions */
     transform: translateZ(0);
     transition: all 0.2s ease-out, border-left 0.2s ease-out, border-top 0.2s ease-out, border-right 0.2s ease-out, border-bottom 0.2s ease-out;
