@@ -74,6 +74,7 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
 
   return (
     <div className="word-card-style p-6 text-center w-full mx-auto min-h-[50vh] flex flex-col justify-between">
+      {/* 1. Play button - align to top */}
       <div className="glass-effect glass-play-button rounded-[1.5rem]" onClick={handlePlayButtonClick}>
         <div className="glass-content">
           <svg className="glass-play-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -82,11 +83,14 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
         </div>
       </div>
       
-      <p className="text-[var(--color-black)] text-lg font-light"><span>根据读音拼写单词:</span></p>
+      {/* 2. Chinese prompt */}
+      <p className="text-[var(--color-black)] text-lg font-light">
+        <span>根据读音拼写单词:</span>
+      </p>
       
+      {/* 3. Input fields */}
       <div className="flex justify-center gap-1">
         {cardData.inputs.map((value, index) => (
-          // Input Wrapper: Handles all styling, including focus states, for cross-browser consistency.
           <div
             key={index}
             className="w-8 h-10 sm:w-7 sm:h-9 rounded-lg border-2 border-gray-300 bg-gray-100 transition-transform duration-150 flex items-center justify-center focus-within:scale-110 focus-within:bg-white focus-within:border-[var(--color-secondary)]"
@@ -108,35 +112,55 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
         ))}
       </div>
       
-      {/* Chinese Meaning Options - Show when all inputs are filled but not submitted */}
-      {shouldShowOptions && (
-        <div className="mt-6 space-y-4">
-          <p className="text-[var(--color-black)] text-lg font-light">选择中文意思:</p>
-          <div className="grid grid-cols-2 gap-3">
-            {cardData.chineseMeanings.map((meaning, index) => (
-              <Option
-                key={index}
-                text={meaning}
-                label={String.fromCharCode(65 + index)} // A, B, C, D
-                isSelected={cardData.selectedOption === meaning}
-                onClick={() => onOptionSelect(cardData.id, meaning)}
-                disabled={cardData.submitted}
-              />
-            ))}
-          </div>
-        </div>
-      )}
+      {/* 4. Chinese meaning prompt - always render for consistent spacing */}
+      <p className="text-[var(--color-black)] text-lg font-light">
+        {shouldShowOptions ? <span>选择中文意思:</span> : <span>&nbsp;</span>}
+      </p>
+      
+      {/* 5. Options section - always render container for consistent spacing */}
+      <div className="grid grid-cols-2 gap-3">
+        {shouldShowOptions ? (
+          cardData.chineseMeanings.map((meaning, index) => (
+            <Option
+              key={index}
+              text={meaning}
+              label={String.fromCharCode(65 + index)}
+              isSelected={cardData.selectedOption === meaning}
+              onClick={() => onOptionSelect(cardData.id, meaning)}
+              disabled={cardData.submitted}
+            />
+          ))
+        ) : (
+          // Render invisible placeholders to maintain spacing
+          Array.from({ length: 4 }, (_, index) => (
+            <div key={index} className="invisible">
+              <div className="option-button">
+                <span className="option-label">.</span>
+                <span className="option-text">&nbsp;</span>
+              </div>
+            </div>
+          ))
+        )}
+      </div>
 
-      {/* Submit Button - Show only when inputs filled and option selected */}
-      {shouldShowSubmitButton && (
-        <div className="mt-6">
+      {/* 6. Submit Button - always render for consistent spacing, align to bottom */}
+      <div>
+        {shouldShowSubmitButton ? (
           <SubmitButton
             onClick={() => onConfirm(cardData.id)}
             isDisabled={false}
             buttonText="确定"
           />
-        </div>
-      )}
+        ) : (
+          <div className="invisible">
+            <SubmitButton
+              onClick={() => {}}
+              isDisabled={true}
+              buttonText="确定"
+            />
+          </div>
+        )}
+      </div>
     </div>
   );
 });
