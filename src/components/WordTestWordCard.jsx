@@ -73,7 +73,7 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
   const shouldShowSubmitButton = areAllInputsFilled && cardData.selectedOption && !cardData.submitted;
 
   return (
-    <div className="word-card-style p-6 text-center w-full mx-auto flex flex-col gap-6">
+    <div className="word-card-style p-6 text-center w-full mx-auto flex flex-col gap-6 max-h-[60vh] overflow-y-auto">
       {/* Play button */}
       <div className="glass-effect glass-play-button rounded-[1.5rem]" onClick={handlePlayButtonClick}>
         <div className="glass-content">
