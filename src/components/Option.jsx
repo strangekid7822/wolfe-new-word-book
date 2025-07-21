@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 
 /**
  * Option Component
@@ -11,8 +11,25 @@ import React from 'react';
  * @param {boolean} props.disabled - Whether the option should be disabled
  */
 const Option = ({ text, label, isSelected, onClick, disabled }) => {
+  const buttonRef = useRef(null);
+
+  // Force repaint when selection state changes (fixes iOS Safari rendering issue)
+  useEffect(() => {
+    if (buttonRef.current) {
+      // Force a reflow by accessing offsetHeight
+      const element = buttonRef.current;
+      void element.offsetHeight;
+      
+      // Use requestAnimationFrame to ensure the repaint happens
+      requestAnimationFrame(() => {
+        element.style.transform = element.style.transform || 'translateZ(0)';
+      });
+    }
+  }, [isSelected]);
+
   return (
     <button
+      ref={buttonRef}
       onClick={onClick}
       disabled={disabled}
       className={`

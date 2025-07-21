@@ -54,10 +54,17 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
     }
   };
 
+  const [isGlowing, setIsGlowing] = useState(false);
+
   const handlePlayButtonClick = () => {
     // Handle audio play functionality here
-    // The liquid glass effect handles visual feedback automatically
     console.log('Play button clicked for word:', cardData.word);
+
+    // Trigger the glow animation
+    setIsGlowing(true);
+    setTimeout(() => {
+      setIsGlowing(false);
+    }, 1500); // Match the animation duration
   };
 
   // Logic for determining when to show options and submit button
@@ -67,7 +74,7 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
 
   return (
     <div className="word-card-style p-6 text-center w-full mx-auto min-h-[50vh] flex flex-col justify-between">
-      <div className="glass-effect glass-play-button rounded-[1.8rem]" onClick={handlePlayButtonClick}>
+      <div className="glass-effect glass-play-button rounded-[1.5rem]" onClick={handlePlayButtonClick}>
         <div className="glass-content">
           <svg className="glass-play-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M8 5v14l11-7z"/>
