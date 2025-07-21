@@ -10,11 +10,11 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
   }, [cardData.word]);
 
   useImperativeHandle(ref, () => ({
-    focus: () => {
+    focus: (options) => {
       if (cardData.submitted) return;
       const firstEmptyIndex = cardData.inputs.findIndex(input => input === "");
       if (firstEmptyIndex !== -1) {
-        inputRefs.current[firstEmptyIndex].focus();
+        inputRefs.current[firstEmptyIndex].focus(options);
       }
     }
   }));
@@ -79,14 +79,14 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
         </div>
       </div>
       
-      <p className="text-[var(--color-black)] text-lg font-light"><span className="animated-glow-wrapper">根据读音拼写单词:</span></p>
+      <p className="text-[var(--color-black)] text-lg font-light"><span>根据读音拼写单词:</span></p>
       
       <div className="flex justify-center gap-1">
         {cardData.inputs.map((value, index) => (
           // Input Wrapper: Handles all styling, including focus states, for cross-browser consistency.
           <div
             key={index}
-            className="w-8 h-10 sm:w-7 sm:h-9 rounded-lg border border-gray-300 bg-gray-100 transition-transform duration-150 flex items-center justify-center focus-within:scale-110 focus-within:bg-white"
+            className="w-8 h-10 sm:w-7 sm:h-9 rounded-lg border-2 border-gray-300 bg-gray-100 transition-transform duration-150 flex items-center justify-center focus-within:scale-110 focus-within:bg-white focus-within:border-[var(--color-secondary)]"
           >
             <input
               ref={el => inputRefs.current[index] = el}
@@ -98,7 +98,7 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
               onKeyDown={(e) => handleKeyDown(e, index)}
               onMouseDown={(e) => handleInputClick(e, index)}
               disabled={cardData.submitted}
-              className="w-full h-full bg-transparent outline-none text-center text-base font-medium appearance-none"
+              className="w-full h-full bg-transparent outline-none text-center text-base font-medium appearance-none caret-[var(--color-secondary)]"
               style={{ color: cardData.submitted ? 'grey' : 'black' }}
             />
           </div>

@@ -13,6 +13,8 @@
   --color-orange: #FF5900;
   --color-orange-yellow: #FFC800;
   --color-green: #22d850;
+  /* A consistent, theme-aligned shadow color. Using a semi-transparent version of the primary color ensures cross-browser consistency. */
+  --color-shadow: rgba(0, 128, 187, 0.3);
   /* The shadow input was for inputs in wordcard initially, but now it seems that we don't need it anymore. */
   --shadow-input: inset 1px 3px 4px 0 rgba(0, 0, 0, 0.25);
   --shadow-play-button: 0px 1px 2px rgba(0, 0, 0, 0.25);
@@ -105,7 +107,7 @@
   }
 
   .play-button-svg {
-    @apply w-[30px] h-[30px] fill-[var(--color-primary)] stroke-[var(--color-primary)] stroke-2;
+    @apply w-[30px] h-[30px] fill-[var(--color-white)] stroke-[var(--color-white)] stroke-2;
     stroke-linejoin: round;
   }
 
@@ -142,7 +144,85 @@
   .word-card-style {
     border-radius: 30px;
     background: var(--color-tertiary);
-    box-shadow: 15px 15px 30px var(--color-secondary-2);
+    box-shadow: 15px 15px 30px var(--color-shadow);
     border: 3px solid var(--color-white);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  /* CSS-only active card detection using scroll-driven animations */
+  @supports (animation-timeline: scroll()) {
+    .word-card-container {
+      animation: detect-active linear;
+      animation-timeline: scroll(inline nearest);
+      animation-range: contain;
+    }
+    
+    @keyframes detect-active {
+      0%, 100% { 
+        opacity: 0.7;
+        transform: scale(0.95);
+      }
+      40%, 60% { 
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  }
+
+  /* Fallback for browsers without scroll-driven animations */
+  @supports not (animation-timeline: scroll()) {
+    .word-card-container {
+      position: relative;
+    }
+    
+    .word-card-container .word-card-style {
+      opacity: 0.7;
+      transform: scale(0.95);
+    }
+    
+    /* Use IntersectionObserver-like behavior with scroll-snap */
+    @media (hover: none) and (pointer: coarse) {
+      .snap-center .word-card-style {
+        animation: fade-in 0.3s ease forwards;
+      }
+      
+      @keyframes fade-in {
+        to {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    }
+  }
+
+  /* Timer wrapper with darker shadow for better visibility */
+  .timer-shadow-style {
+    border-radius: 30px;
+    background: var(--color-tertiary);
+    /* Darker shadow using color-grey for better visibility against page background */
+    box-shadow: 5px 5px 15px var(--color-shadow);
+    border: 3px solid var(--color-white);
+  }
+
+  /* Nav bar styling matching word card design */
+  .nav-bar-style {
+    border-radius: 30px;
+    background: var(--color-tertiary);
+    box-shadow: 15px 15px 30px var(--color-shadow);
+    border: 3px solid var(--color-white);
+  }
+
+  /* Timer wrapper styling matching word card design */
+  .timer-wrapper-style {
+    border-radius: 30px;
+    background: var(--color-tertiary);
+    box-shadow: 15px 15px 30px var(--color-shadow);
+    border: 3px solid var(--color-white);
+  }
+
+  /* Main container style for the app layout */
+  .main-container-style {
+    /* Applies an inner shadow to the top of the container, matching the word card's shadow style */
+    box-shadow: inset 0px 15px 30px var(--color-shadow);
   }
 }
