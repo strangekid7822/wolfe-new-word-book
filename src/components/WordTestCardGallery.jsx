@@ -20,11 +20,46 @@ function WordTestCardGallery() {
 
   // wordCards: An array of objects, where each object represents a card's state.
   const [wordCards, setWordCards] = useState([
-    { id: 1, word: "hello", inputs: ["", "", "", "", ""], submitted: false },
-    { id: 2, word: "world", inputs: ["", "", "", "", ""], submitted: false },
-    { id: 3, word: "react", inputs: ["", "", "", "", ""], submitted: false },
-    { id: 4, word: "coding", inputs: ["", "", "", "", "", ""], submitted: false },
-    { id: 5, word: "swift", inputs: ["", "", "", "", ""], submitted: false },
+    { 
+      id: 1, 
+      word: "hello", 
+      inputs: ["", "", "", "", ""], 
+      submitted: false,
+      chineseMeanings: ["你好", "再见", "谢谢", "对不起"],
+      selectedOption: ""
+    },
+    { 
+      id: 2, 
+      word: "world", 
+      inputs: ["", "", "", "", ""], 
+      submitted: false,
+      chineseMeanings: ["世界", "国家", "城市", "地球"],
+      selectedOption: ""
+    },
+    { 
+      id: 3, 
+      word: "react", 
+      inputs: ["", "", "", "", ""], 
+      submitted: false,
+      chineseMeanings: ["反应", "行动", "思考", "学习"],
+      selectedOption: ""
+    },
+    { 
+      id: 4, 
+      word: "coding", 
+      inputs: ["", "", "", "", "", ""], 
+      submitted: false,
+      chineseMeanings: ["编码", "写作", "阅读", "计算"],
+      selectedOption: ""
+    },
+    { 
+      id: 5, 
+      word: "swift", 
+      inputs: ["", "", "", "", ""], 
+      submitted: false,
+      chineseMeanings: ["迅速的", "缓慢的", "安静的", "响亮的"],
+      selectedOption: ""
+    },
   ]);
 
   // --- EFFECTS ---
@@ -90,6 +125,18 @@ function WordTestCardGallery() {
     );
   };
 
+  // This function is called when the user selects a Chinese meaning option.
+  const handleOptionSelect = (cardId, selectedMeaning) => {
+    setWordCards(prevCards =>
+      prevCards.map(card => {
+        if (card.id === cardId) {
+          return { ...card, selectedOption: selectedMeaning };
+        }
+        return card;
+      })
+    );
+  };
+
   // This function is called when the user clicks the "Confirm" button on a card.
   const handleConfirm = (cardId) => {
     // First, update the state of the confirmed card to `submitted: true`.
@@ -140,6 +187,7 @@ function WordTestCardGallery() {
               isActive={index === activeIndex}
               onInputChange={handleInputChange}
               onConfirm={handleConfirm}
+              onOptionSelect={handleOptionSelect}
             />
           </div>
         ))}

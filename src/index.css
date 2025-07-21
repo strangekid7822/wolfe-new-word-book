@@ -225,4 +225,41 @@
     /* Applies an inner shadow to the top of the container, matching the word card's shadow style */
     box-shadow: inset 0px 15px 30px var(--color-shadow);
   }
+
+  /* Option button styles for Chinese meaning selection */
+  .option-button {
+    @apply flex items-center gap-2 p-3 rounded-lg transition-all duration-200 font-medium text-left w-full;
+    background: var(--color-white);
+    border: 2px solid var(--color-grey);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .option-button:hover:not(:disabled) {
+    @apply scale-105;
+    border-color: var(--color-secondary);
+  }
+
+  .option-default {
+    color: var(--color-black);
+  }
+
+  .option-selected {
+    background: var(--color-secondary);
+    border-color: var(--color-secondary);
+    color: var(--color-white);
+    box-shadow: 0 0 15px rgba(135, 217, 255, 0.4);
+  }
+
+  .option-disabled {
+    @apply cursor-not-allowed opacity-60;
+  }
+
+  .option-label {
+    @apply font-bold text-sm;
+    min-width: 20px;
+  }
+
+  .option-text {
+    @apply flex-1;
+  }
 }

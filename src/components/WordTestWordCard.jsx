@@ -1,7 +1,8 @@
 import { forwardRef, useRef, useImperativeHandle, useEffect, useState } from 'react';
 import SubmitButton from './SubmitButton';
+import Option from './Option';
 
-const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConfirm }, ref) => {
+const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConfirm, onOptionSelect }, ref) => {
   const inputRefs = useRef([]);
   const pulseRef = useRef(null);
 
@@ -63,8 +64,10 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
     }
   };
 
+  // Logic for determining when to show options and submit button
   const areAllInputsFilled = cardData.inputs.every(input => input.trim() !== '');
-  const isButtonDisabled = cardData.submitted || !areAllInputsFilled;
+  const shouldShowOptions = areAllInputsFilled && !cardData.submitted;
+  const shouldShowSubmitButton = areAllInputsFilled && cardData.selectedOption && !cardData.submitted;
 
   return (
     <div className="word-card-style p-6 text-center w-full mx-auto min-h-[50vh] flex flex-col justify-between">
@@ -105,11 +108,35 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
         ))}
       </div>
       
-      <SubmitButton
-        onClick={() => onConfirm(cardData.id)}
-        isDisabled={isButtonDisabled}
-        buttonText="确定"
-      />
+      {/* Chinese Meaning Options - Show when all inputs are filled but not submitted */}
+      {shouldShowOptions && (
+        <div className="mt-6 space-y-4">
+          <p className="text-[var(--color-black)] text-lg font-light">选择中文意思:</p>
+          <div className="grid grid-cols-2 gap-3">
+            {cardData.chineseMeanings.map((meaning, index) => (
+              <Option
+                key={index}
+                text={meaning}
+                label={String.fromCharCode(65 + index)} // A, B, C, D
+                isSelected={cardData.selectedOption === meaning}
+                onClick={() => onOptionSelect(cardData.id, meaning)}
+                disabled={cardData.submitted}
+              />
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Submit Button - Show only when inputs filled and option selected */}
+      {shouldShowSubmitButton && (
+        <div className="mt-6">
+          <SubmitButton
+            onClick={() => onConfirm(cardData.id)}
+            isDisabled={false}
+            buttonText="确定"
+          />
+        </div>
+      )}
     </div>
   );
 });
