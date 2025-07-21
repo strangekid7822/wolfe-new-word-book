@@ -1,4 +1,5 @@
 import { forwardRef, useRef, useImperativeHandle, useEffect, useState } from 'react';
+import SubmitButton from './SubmitButton';
 
 const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConfirm }, ref) => {
   const inputRefs = useRef([]);
@@ -104,15 +105,11 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
         ))}
       </div>
       
-      <div className={`btn-animated-wrapper ${isButtonDisabled ? 'border-transparent' : 'border-visible'}`}>
-        <button 
-          onClick={() => onConfirm(cardData.id)}
-          disabled={isButtonDisabled}
-          className={isButtonDisabled ? 'btn-disabled' : 'btn-animated'}
-        >
-          确定
-        </button>
-      </div>
+      <SubmitButton
+        onClick={() => onConfirm(cardData.id)}
+        isDisabled={isButtonDisabled}
+        buttonText="确定"
+      />
     </div>
   );
 });
