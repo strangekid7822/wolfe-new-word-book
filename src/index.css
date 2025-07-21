@@ -175,7 +175,7 @@
   }
 
   .word-card-expanded {
-    max-height: 60vh; /* Expanded height */
+    max-height: 75vh; /* Expanded height */
   }
 
   /* Smooth growing animations for card sections */
