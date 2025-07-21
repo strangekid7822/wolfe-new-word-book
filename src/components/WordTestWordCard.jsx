@@ -4,7 +4,6 @@ import Option from './Option';
 
 const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConfirm, onOptionSelect }, ref) => {
   const inputRefs = useRef([]);
-  const pulseRef = useRef(null);
 
   useEffect(() => {
     inputRefs.current = inputRefs.current.slice(0, cardData.word.length);
@@ -56,12 +55,9 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
   };
 
   const handlePlayButtonClick = () => {
-    // Restart animation by removing and re-adding class
-    if (pulseRef.current) {
-      pulseRef.current.classList.remove('animate');
-      void pulseRef.current.offsetWidth; // Force reflow
-      pulseRef.current.classList.add('animate');
-    }
+    // Handle audio play functionality here
+    // The liquid glass effect handles visual feedback automatically
+    console.log('Play button clicked for word:', cardData.word);
   };
 
   // Logic for determining when to show options and submit button
@@ -71,14 +67,11 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
 
   return (
     <div className="word-card-style p-6 text-center w-full mx-auto min-h-[50vh] flex flex-col justify-between">
-      <div className="play-button-wrapper" onClick={handlePlayButtonClick}>
-        <div className="play-button-container">
-          <div ref={pulseRef} className="play-button-pulse"></div>
-          <div className="play-button-main shadow-[var(--shadow-play-button)]">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" className="play-button-svg">
-              <polygon points="30,20 85,55 30,90" />
-            </svg>
-          </div>
+      <div className="glass-effect glass-play-button" onClick={handlePlayButtonClick}>
+        <div className="glass-content">
+          <svg className="glass-play-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8 5v14l11-7z"/>
+          </svg>
         </div>
       </div>
       

@@ -78,37 +78,88 @@
     @apply w-full px-6 py-2.5 rounded-full text-lg font-medium transition-colors bg-[var(--color-secondary)] text-white hover:bg-[var(--color-secondary-2)];
   }
 
-  /* WordTestWordCard play-button styles */
-  .play-button-wrapper {
-    @apply relative w-20 h-20 mx-auto cursor-pointer;
+  /* Liquid Glass Effect for play button and selected options */
+  .glass-effect {
+    position: relative;
+    width: 100%;
+    border-radius: 45px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    
+    /* Flex properties to center content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Base gradient using theme colors */
+    background-image: linear-gradient(180deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+
+    /* Combined shadows for inner and outer depth */
+    box-shadow: 
+        inset 5px 5px 15px rgba(255, 255, 255, 0.5),
+        0 10px 25px -5px var(--color-shadow), 
+        0 8px 10px -6px var(--color-shadow);
+
+    /* Edge reflection border */
+    border: 1px solid rgba(255, 255, 255, 0.3);
   }
 
-  .play-button-container {
-    @apply relative w-full h-full;
+  .glass-effect:active {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 
+        inset 5px 5px 15px rgba(255, 255, 255, 0.5),
+        0 20px 30px -5px var(--color-shadow), 
+        0 10px 15px -6px var(--color-shadow);
   }
 
-  .play-button-pulse {
-    @apply absolute top-1/2 left-1/2 w-[60px] h-[60px] rounded-full bg-[var(--color-secondary-2)] opacity-0;
-    /* Manually center with pure CSS (avoids translate utilities being overridden by keyframes) */
-    transform: translate(-50%, -50%);
-    transform-origin: center;
+  /* The main reflection highlight */
+  .glass-effect::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.9), transparent 60%);
+    filter: blur(30px);
+    opacity: 0.8;
+    transition: transform 0.5s ease;
   }
 
-  .play-button-pulse.animate {
-    animation: pulse 2s ease;
+  .glass-effect:active::before {
+    transform: scale(1.2);
   }
 
-  .play-button-main {
-    @apply absolute top-1/2 left-1/2 w-[60px] h-[60px] rounded-full bg-[var(--color-secondary)] flex items-center justify-center -translate-x-1/2 -translate-y-1/2 transition-all duration-300;
+  /* Play button specific styles */
+  .glass-play-button {
+    /* Height is 1/3 of parent's height, assuming parent has defined height */
+    height: calc(100% / 3);
+    margin: 0 auto;
   }
 
-  .play-button-main:hover {
-    @apply scale-110;
+  /* Content container for glass effect */
+  .glass-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
   }
 
-  .play-button-svg {
-    @apply w-[30px] h-[30px] fill-[var(--color-white)] stroke-[var(--color-white)] stroke-2;
-    stroke-linejoin: round;
+  /* Play button SVG styles */
+  .glass-play-svg {
+    width: 40%;
+    height: 40%;
+    fill: var(--color-white);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+    transition: transform 0.3s ease;
+  }
+  
+  .glass-effect:active .glass-play-svg {
+    transform: scale(1.1);
   }
 
   /* Glowing text animation for the Chinese prompt */
