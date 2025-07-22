@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-/* Wolfe Word Book Theme Colors */
+/* Wolfe Word Book Theme Colors and Fonts */
 @theme {
   --color-primary: #0080BB;
   --color-secondary: #87D9FF;
@@ -13,6 +13,16 @@
   --color-orange: #FF5900;
   --color-orange-yellow: #FFC800;
   --color-green: #22d850;
+  
+  /* Font family for bilingual text */
+  --font-family: Inter, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
+  
+  /* Typography tokens for consistent hierarchy */
+  --txt-display: text-xl lg:text-2xl font-semibold;
+  --txt-body-lg: text-lg font-medium;
+  --txt-body: text-base font-normal;
+  --txt-caption: text-sm font-medium;
+  --txt-label: text-sm font-semibold;
   /* A consistent, theme-aligned shadow color. Using a semi-transparent version of the primary color ensures cross-browser consistency. */
   --color-shadow: rgba(0, 128, 187, 0.3);
   /* The shadow input was for inputs in wordcard initially, but now it seems that we don't need it anymore. */
@@ -28,6 +38,11 @@
     50%  { transform: translate(-50%, -50%) scale(1.4); opacity: 0.7; }
     100% { transform: translate(-50%, -50%) scale(1);   opacity: 0;   }
   }
+}
+
+/* Global font family */
+body {
+  font-family: var(--font-family);
 }
 
 /* Hide scrollbars for all browsers */

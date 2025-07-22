@@ -9,7 +9,7 @@ function WordTestTimer() {
       {/* Digital timer display above progress bar - color changes with time remaining like timer bar */}
       <div className="text-center mb-2">
         <span 
-          className="text-lg font-mono font-semibold transition-colors duration-300" 
+          className="[--txt-display] font-mono transition-colors duration-300" 
           style={{ color: timerColor }}
         >
           {formattedTime}

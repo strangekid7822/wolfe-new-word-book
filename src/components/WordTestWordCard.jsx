@@ -84,7 +84,7 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
       </div>
       
       {/* Chinese prompt */}
-      <p className="text-[var(--color-black)] text-lg font-light">
+      <p className="text-[var(--color-black)] [--txt-body-lg]">
         <span>根据读音拼写单词:</span>
       </p>
       
@@ -105,7 +105,7 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
               onKeyDown={(e) => handleKeyDown(e, index)}
               onMouseDown={(e) => handleInputClick(e, index)}
               disabled={cardData.submitted}
-              className="w-full h-full bg-transparent outline-none text-center text-base font-medium appearance-none caret-[var(--color-secondary)]"
+              className="w-full h-full bg-transparent outline-none text-center [--txt-body] appearance-none caret-[var(--color-secondary)]"
               style={{ color: cardData.submitted ? 'grey' : 'black' }}
             />
           </div>
@@ -115,7 +115,7 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
       {/* Chinese meaning options - only render when needed */}
       {shouldShowOptions && (
         <div className="space-y-4 submit-button-enter">
-          <p className="text-[var(--color-black)] text-lg font-light">选择中文意思:</p>
+          <p className="text-[var(--color-black)] [--txt-body-lg]">选择中文意思:</p>
           <div className="grid grid-cols-2 gap-3">
             {cardData.chineseMeanings.map((meaning, index) => (
               <Option
