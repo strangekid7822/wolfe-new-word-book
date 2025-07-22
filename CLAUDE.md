@@ -15,56 +15,88 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Architecture
 
-This is a React-based word learning application built with Vite and styled with Tailwind CSS. The app helps Chinese students learn English through interactive spelling exercises.
+This is a React-based word learning application built with Vite and styled with Tailwind CSS. The app helps Chinese students learn English through interactive spelling and meaning selection exercises.
 
 ### Key Components Structure
 
 **Pages** (`src/pages/`):
-- `WordTest.jsx` - Main testing interface combining timer, stats, and card gallery
-- `Home.jsx` - Landing page
-- `Profile.jsx` - User profile page
+- `WordTest.jsx` - Main testing interface with timer and card gallery, includes navigation protection and beforeunload handling
+- `Home.jsx` - Simple landing page (placeholder)
+- `Profile.jsx` - User profile page (placeholder)
 
 **Core Components** (`src/components/`):
-- `WordTestCardGallery.jsx` - Horizontal scrolling gallery with snap-to-card behavior and touch gestures
-- `WordTestWordCard.jsx` - Individual word card with character input boxes and audio play button
-- `WordTestTimer.jsx` - Timer component for tracking session time
-- `WordTestStats.jsx` - Statistics display component
-- `Layout.jsx` - Main layout wrapper with navigation
-- `WordTestNavBar.jsx` - Navigation bar component
+- `WordTestCardGallery.jsx` - Horizontal scrolling gallery with snap-to-card behavior, touch gestures, and programmatic card transitions
+- `WordTestWordCard.jsx` - Individual word card with expandable sections: audio play button, spelling inputs, Chinese meaning options, and submit button
+- `WordTestTimer.jsx` - 3-minute countdown timer with color-coded progress bar and digital display
+- `Layout.jsx` - Main layout wrapper with navigation bar and consistent styling
+- `WordTestNavBar.jsx` - Bottom navigation bar with active state icons and navigation protection
+- `SubmitButton.jsx` - Animated submit button with colorful rotating border animation
+- `Option.jsx` - Multiple choice option buttons for Chinese meaning selection with glassmorphism effects
 
 **Context Providers** (`src/contexts/`):
-- `TimerContext.jsx` - Centralized timer state management with 3-minute countdown functionality
+- `TimerContext.jsx` - Centralized 3-minute countdown timer with accurate time tracking, color-coded states, and formatted display
 
 ### State Management
-- Uses React Context for timer state (TimerContext) and React's built-in state (useState, useRef) for other components
-- TimerContext manages 3-minute countdown with color-coded progress indicators
-- Word cards contain: `{ id, word, inputs: [], submitted: boolean }`
-- Gallery manages active card index and horizontal scrolling position
+- **React Context**: Timer state managed through TimerContext with 180-second countdown
+- **Local State**: Component-specific state using useState and useRef
+- **Word Card Data Structure**: 
+  ```javascript
+  {
+    id: number,
+    word: string,
+    inputs: string[],
+    submitted: boolean,
+    chineseMeanings: string[],
+    selectedOption: string
+  }
+  ```
+- **Gallery State**: Active card index, scroll position, and component references for focus management
 
 ### Key Features
-- **Mobile-First Design**: Optimized for touch interactions with horizontal card swiping
-- **Character Input Logic**: Individual input boxes for each letter with auto-focus progression
-- **Input Validation**: Only allows lowercase letters, auto-slices to single character
-- **Scroll-to-Card**: Programmatic navigation between cards with smooth scrolling
-- **Audio Integration**: Play button with pulse animation for word pronunciation
+- **Expandable Word Cards**: Cards grow vertically to show Chinese meaning options after spelling completion
+- **Smart Input Navigation**: Sequential input filling with auto-focus, backspace navigation, and click prevention beyond first empty input
+- **Audio Play Button**: Glassmorphism-styled play button with visual feedback animations
+- **Chinese Meaning Selection**: Multiple choice options with A/B/C/D labels and selection highlighting
+- **Navigation Protection**: Warns users before leaving the word test if they have entered answers
+- **Mobile-Optimized Scrolling**: Horizontal card gallery with snap-to-center behavior and touch-friendly interactions
+- **Timer Integration**: 3-minute countdown with color transitions (blue > orange-yellow > orange) based on remaining time
+- **Programmatic Card Transitions**: Automatic scrolling and focus management when moving between cards
 
-### Styling
-- **Tailwind CSS 4.1.11** with Vite plugin integration
-- **Custom CSS Variables**: Defined in `index.css` for colors and shadows
-- **Responsive Design**: Uses viewport units (vw) for card sizing and spacing
-- **Cross-browser Input Styling**: Custom wrapper divs for consistent focus states
+### Styling System
+- **Tailwind CSS 4.1.11** with modern `@theme` syntax in `index.css`
+- **Neumorphism Design**: Consistent shadow and border styling across all components
+- **Custom CSS Variables**: Comprehensive color palette and shadow definitions
+- **Advanced Animations**:
+  - Rotating conic gradient borders for submit buttons
+  - Glassmorphism effects with semi-transparent backgrounds
+  - Smooth card expansion animations with `slideInUp` keyframes
+  - Glowing line animation for timer bar
+  - CSS scroll-driven animations with fallbacks for older browsers
+- **Cross-Browser Compatibility**: Special handling for iOS Safari rendering issues and mobile touch interactions
 
-### Navigation
-- React Router DOM 7.6.3 with nested routes under Layout component
-- Routes: `/` (Home), `/write` (WordTest), `/profile` (Profile)
+### Navigation & Routing
+- **React Router DOM 7.6.3** with nested routes
+- **Layout Pattern**: All routes wrapped in Layout component with consistent navigation
+- **Routes**: 
+  - `/` - Home page
+  - `/write` - Word test interface
+  - `/profile` - User profile
+- **Active State Management**: Navigation icons change based on current route
+- **User Experience**: Confirmation dialogs prevent accidental navigation away from active tests
 
-### Build Configuration
-- **Vite**: Fast development server and build tool
-- **ESLint**: Code linting with React hooks and refresh plugins
-- **Host Setting**: `host: true` in vite.config.js enables network access for mobile testing
+### Build Configuration & Dependencies
+- **Vite 5.2.0**: Fast development server and build tool
+- **React 18.2.0**: Core framework with modern hooks and concurrent features
+- **Tailwind CSS 4.1.11**: Utility-first styling with Vite plugin integration
+- **ESLint 8.57.0**: Code quality and consistency checking
+- **Mobile Development**: `host: true` setting enables network access for mobile device testing
 
-### Input Handling Specifics
-- Prevents clicking beyond the first empty input box
-- Backspace navigation between input fields
-- Auto-progression to next field on character input
-- Disables all inputs when card is submitted
+### Data Integration
+- **Vocabulary Data**: JSON files in `public/Library/` (e.g., `七年级上.json`) containing structured word data with phonetics, meanings, and units
+- **Word Structure**: Each word entry includes unit classification, phonetic notation, part of speech, and Chinese meaning
+
+### Performance Optimizations
+- **Ref Management**: Separate refs for component instances and DOM elements for efficient focus/scroll operations
+- **Animation Performance**: CSS transforms and transitions optimized for mobile devices
+- **Scroll Performance**: Hardware-accelerated scrolling with `WebkitOverflowScrolling: touch`
+- **Memory Management**: Proper cleanup of timers and event listeners
