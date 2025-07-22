@@ -69,7 +69,7 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
 
   // Logic for determining when to show options and submit button
   const areAllInputsFilled = cardData.inputs.every(input => input.trim() !== '');
-  const shouldShowOptions = areAllInputsFilled && !cardData.submitted;
+  const shouldShowOptions = areAllInputsFilled; // Show options when inputs are filled, even after submission
   const shouldShowSubmitButton = areAllInputsFilled && cardData.selectedOption && !cardData.submitted;
 
   return (
@@ -112,7 +112,7 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
         ))}
       </div>
       
-      {/* Chinese meaning options - only render when needed */}
+      {/* Chinese meaning options - always render when inputs are filled */}
       {shouldShowOptions && (
         <div className="space-y-4 submit-button-enter">
           <p className="text-[var(--color-black)] [--txt-body-lg]">选择中文意思:</p>
@@ -131,12 +131,12 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
         </div>
       )}
 
-      {/* Submit Button - only render when needed */}
-      {shouldShowSubmitButton && (
+      {/* Submit Button - always render when an option is selected or after submission */}
+      {(areAllInputsFilled && cardData.selectedOption) && (
         <div className="submit-button-enter">
           <SubmitButton
             onClick={() => onConfirm(cardData.id)}
-            isDisabled={false}
+            isDisabled={cardData.submitted}
             buttonText="确定"
           />
         </div>
