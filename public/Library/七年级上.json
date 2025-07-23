@@ -8,406 +8,696 @@
                     "word": "good",
                     "phonetic": "/gud/",
                     "part_of_speech": "adj.",
-                    "meaning": "好的"
+                    "meaning": "好的",
+                    "false_meanings": [
+                        "我的",
+                        "说;讲",
+                        "(美国)全国篮球协会"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 1",
                     "word": "morning",
                     "phonetic": "/'mɔ:(r)niŋ/",
                     "part_of_speech": "n.",
-                    "meaning": "早晨;上午"
+                    "meaning": "早晨;上午",
+                    "false_meanings": [
+                        "英国广播公司",
+                        "(尤指服装的尺码)小号的",
+                        "它"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 1",
                     "word": "hi",
                     "phonetic": "/hat/",
                     "part_of_speech": "interj.",
-                    "meaning": "(用于打招呼)嗨;喂"
+                    "meaning": "(用于打招呼)嗨;喂",
+                    "false_meanings": [
+                        "下午",
+                        "好;可以",
+                        "现在;目前"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 1",
                     "word": "hello",
                     "phonetic": "/hələu/",
                     "part_of_speech": "interj.",
-                    "meaning": "你好;喂"
+                    "meaning": "你好;喂",
+                    "false_meanings": [
+                        "(表示使用语言、材料等)用;以",
+                        "杯子",
+                        "好的"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 1",
                     "word": "afternoon",
                     "phonetic": "/a:ftə'nu:n/, /,æftər'nu:n/",
                     "part_of_speech": "n.",
-                    "meaning": "下午"
+                    "meaning": "下午",
+                    "false_meanings": [
+                        "绿色(的)",
+                        "笔;钢笔",
+                        "光盘;激光唱片"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 1",
                     "word": "evening",
                     "phonetic": "/'i:vnıŋ/",
                     "part_of_speech": "n.",
-                    "meaning": "晚上;傍晚"
+                    "meaning": "晚上;傍晚",
+                    "false_meanings": [
+                        "下午",
+                        "停车场;停车位",
+                        "黄色(的)"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 1",
                     "word": "how",
                     "phonetic": "/hau/",
                     "part_of_speech": "adv.",
-                    "meaning": "怎样;如何"
+                    "meaning": "怎样;如何",
+                    "false_meanings": [
+                        "棕色(的);褐色(的)",
+                        "我的",
+                        "地图"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 1",
                     "word": "are",
                     "phonetic": "/a:(r); ə(r)/",
                     "part_of_speech": "v.",
-                    "meaning": "是"
+                    "meaning": "是",
+                    "false_meanings": [
+                        "好的",
+                        "那;那个",
+                        "我"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 1",
                     "word": "you",
                     "phonetic": "/ju:/",
                     "part_of_speech": "pron.",
-                    "meaning": "你;你们"
+                    "meaning": "你;你们",
+                    "false_meanings": [
+                        "说;讲",
+                        "(美国)全国篮球协会",
+                        "被子;床罩"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 1",
                     "word": "I",
                     "phonetic": "/a1/",
                     "part_of_speech": "pron.",
-                    "meaning": "我"
+                    "meaning": "我",
+                    "false_meanings": [
+                        "我的",
+                        "绿色(的)",
+                        "笔;钢笔"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 1",
                     "word": "am",
                     "phonetic": "/æm/",
                     "part_of_speech": "v.",
-                    "meaning": "是"
+                    "meaning": "是",
+                    "false_meanings": [
+                        "(美国)全国篮球协会",
+                        "钥匙",
+                        "我的"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 1",
                     "word": "fine",
                     "phonetic": "/fain/",
                     "part_of_speech": "adj.",
-                    "meaning": "健康的;美好的"
+                    "meaning": "健康的;美好的",
+                    "false_meanings": [
+                        "晚上;傍晚",
+                        "感谢;谢谢",
+                        "(铅笔芯)硬黑"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 1",
                     "word": "thanks",
                     "phonetic": "/θænks/",
                     "part_of_speech": "interj. & n.",
-                    "meaning": "感谢;谢谢"
+                    "meaning": "感谢;谢谢",
+                    "false_meanings": [
+                        "尺;直尺",
+                        "怎样;如何",
+                        "(尤指服装的尺码)小号的"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 1",
                     "word": "OK",
                     "phonetic": "/ǝukeı/",
                     "part_of_speech": "interj. & adv.",
-                    "meaning": "好;可以"
+                    "meaning": "好;可以",
+                    "false_meanings": [
+                        "(用于客气地请求或吩咐)请",
+                        "(铅笔芯)硬黑",
+                        "(尤指服装的尺码)小号的"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 1",
                     "word": "HB",
                     "phonetic": "/extf'bi:/",
                     "part_of_speech": "",
-                    "meaning": "(铅笔芯)硬黑"
+                    "meaning": "(铅笔芯)硬黑",
+                    "false_meanings": [
+                        "杯子",
+                        "(用于打招呼)嗨;喂",
+                        "(尤指服装的尺码)小号的"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 1",
                     "word": "CD",
                     "phonetic": "/si: 'di:/",
                     "part_of_speech": "",
-                    "meaning": "光盘;激光唱片"
+                    "meaning": "光盘;激光唱片",
+                    "false_meanings": [
+                        "早晨;上午",
+                        "(美国)全国篮球协会",
+                        "紫色(的)"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 1",
                     "word": "BBC",
                     "phonetic": "/,bi:bi: 'si:/",
                     "part_of_speech": "",
-                    "meaning": "英国广播公司"
+                    "meaning": "英国广播公司",
+                    "false_meanings": [
+                        "杯子",
+                        "千克;公斤",
+                        "白色(的)"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 2",
                     "word": "what",
                     "phonetic": "/wpt/,/wa:t/",
                     "part_of_speech": "pron. & adj.",
-                    "meaning": "什么"
+                    "meaning": "什么",
+                    "false_meanings": [
+                        "用字母拼;拼写",
+                        "这;这个",
+                        "(尤指服装的尺码)小号的"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 2",
                     "word": "is",
                     "phonetic": "/Iz/",
                     "part_of_speech": "v.",
-                    "meaning": "是"
+                    "meaning": "是",
+                    "false_meanings": [
+                        "夹克衫;短上衣",
+                        "这;这个",
+                        "紫色(的)"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 2",
                     "word": "this",
                     "phonetic": "/ðis/",
                     "part_of_speech": "pron.",
-                    "meaning": "这;这个"
+                    "meaning": "这;这个",
+                    "false_meanings": [
+                        "夹克衫;短上衣",
+                        "棕色(的);褐色(的)",
+                        "(用于客气地请求或吩咐)请"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 2",
                     "word": "in",
                     "phonetic": "/in/",
                     "part_of_speech": "prep.",
-                    "meaning": "(表示使用语言、材料等)用;以"
+                    "meaning": "(表示使用语言、材料等)用;以",
+                    "false_meanings": [
+                        "(= colour)颜色",
+                        "钥匙",
+                        "感谢;谢谢"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 2",
                     "word": "English",
                     "phonetic": "/'Inglis/",
                     "part_of_speech": "n.",
-                    "meaning": "英语"
+                    "meaning": "英语",
+                    "false_meanings": [
+                        "用字母拼;拼写",
+                        "好;可以",
+                        "(尤指服装的尺码)中号的"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 2",
                     "word": "map",
                     "phonetic": "/mæp/",
                     "part_of_speech": "n.",
-                    "meaning": "地图"
+                    "meaning": "地图",
+                    "false_meanings": [
+                        "下午",
+                        "(尤指服装的尺码)小号的",
+                        "棕色(的);褐色(的)"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 2",
                     "word": "cup",
                     "phonetic": "/kop/",
                     "part_of_speech": "n.",
-                    "meaning": "杯子"
+                    "meaning": "杯子",
+                    "false_meanings": [
+                        "(美国)全国篮球协会",
+                        "这;这个",
+                        "你好;喂"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 2",
                     "word": "ruler",
                     "phonetic": "/'ru:lə(r)/",
                     "part_of_speech": "n.",
-                    "meaning": "尺;直尺"
+                    "meaning": "尺;直尺",
+                    "false_meanings": [
+                        "(尤指服装的尺码)中号的",
+                        "怎样;如何",
+                        "好的"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 2",
                     "word": "pen",
                     "phonetic": "/pen/",
                     "part_of_speech": "n.",
-                    "meaning": "笔;钢笔"
+                    "meaning": "笔;钢笔",
+                    "false_meanings": [
+                        "千克;公斤",
+                        "好的",
+                        "我"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 2",
                     "word": "orange",
                     "phonetic": "/'brınd3/, /'ɔ:rınd3/",
                     "part_of_speech": "n.",
-                    "meaning": "橙子"
+                    "meaning": "橙子",
+                    "false_meanings": [
+                        "用字母拼;拼写",
+                        "(表示使用语言、材料等)用;以",
+                        "它"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 2",
                     "word": "jacket",
                     "phonetic": "/'dzækit/",
                     "part_of_speech": "n.",
-                    "meaning": "夹克衫;短上衣"
+                    "meaning": "夹克衫;短上衣",
+                    "false_meanings": [
+                        "好;可以",
+                        "杯子",
+                        "英语"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 2",
                     "word": "key",
                     "phonetic": "/ki:/",
                     "part_of_speech": "n.",
-                    "meaning": "钥匙"
+                    "meaning": "钥匙",
+                    "false_meanings": [
+                        "能;会",
+                        "不明飞行物",
+                        "(铅笔芯)硬黑"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 2",
                     "word": "quilt",
                     "phonetic": "/kwilt/",
                     "part_of_speech": "n.",
-                    "meaning": "被子;床罩"
+                    "meaning": "被子;床罩",
+                    "false_meanings": [
+                        "说;讲",
+                        "红色(的)",
+                        "英国广播公司"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 2",
                     "word": "it",
                     "phonetic": "/it/",
                     "part_of_speech": "pron.",
-                    "meaning": "它"
+                    "meaning": "它",
+                    "false_meanings": [
+                        "(用于打招呼)嗨;喂",
+                        "怎样;如何",
+                        "好的"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 2",
                     "word": "a",
                     "phonetic": "/er; ǝ/",
                     "part_of_speech": "art.",
-                    "meaning": "(用于单数可数名词前,表示未曾提到的)一(人、事、物)"
+                    "meaning": "(用于单数可数名词前,表示未曾提到的)一(人、事、物)",
+                    "false_meanings": [
+                        "(= colour)颜色",
+                        "被子;床罩",
+                        "什么"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 2",
                     "word": "that",
                     "phonetic": "/ðæt/",
                     "part_of_speech": "pron.",
-                    "meaning": "那;那个"
+                    "meaning": "那;那个",
+                    "false_meanings": [
+                        "说;讲",
+                        "你好;喂",
+                        "什么"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 2",
                     "word": "spell",
                     "phonetic": "/spel/",
                     "part_of_speech": "v.",
-                    "meaning": "用字母拼;拼写"
+                    "meaning": "用字母拼;拼写",
+                    "false_meanings": [
+                        "绿色(的)",
+                        "好的",
+                        "晚上;傍晚"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 3",
                     "word": "please",
                     "phonetic": "/pli:z/",
                     "part_of_speech": "interj.",
-                    "meaning": "(用于客气地请求或吩咐)请"
+                    "meaning": "(用于客气地请求或吩咐)请",
+                    "false_meanings": [
+                        "紫色(的)",
+                        "感谢;谢谢",
+                        "(用于单数可数名词前,表示未曾提到的)一(人、事、物)"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 3",
                     "word": "NBA",
                     "phonetic": "/,en bi: 'er/",
                     "part_of_speech": "",
-                    "meaning": "(美国)全国篮球协会"
+                    "meaning": "(美国)全国篮球协会",
+                    "false_meanings": [
+                        "(尤指服装的尺码)小号的",
+                        "(= colour)颜色",
+                        "你好;喂"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 3",
                     "word": "P",
                     "phonetic": "/pi:/",
                     "part_of_speech": "",
-                    "meaning": "停车场;停车位"
+                    "meaning": "停车场;停车位",
+                    "false_meanings": [
+                        "尺;直尺",
+                        "(尤指服装的尺码)大号的",
+                        "黑色(的)"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 3",
                     "word": "kg",
                     "phonetic": "/ker 'dzi:/",
                     "part_of_speech": "",
-                    "meaning": "千克;公斤"
+                    "meaning": "千克;公斤",
+                    "false_meanings": [
+                        "中国中央电视台",
+                        "紫色(的)",
+                        "现在;目前"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 3",
                     "word": "color",
                     "phonetic": "/'kʌlə(r)/",
                     "part_of_speech": "n.",
-                    "meaning": "(= colour)颜色"
+                    "meaning": "(= colour)颜色",
+                    "false_meanings": [
+                        "(尤指服装的尺码)小号的",
+                        "(用于单数可数名词前,表示未曾提到的)一(人、事、物)",
+                        "白色(的)"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 3",
                     "word": "red",
                     "phonetic": "/red/",
                     "part_of_speech": "adj. & n.",
-                    "meaning": "红色(的)"
+                    "meaning": "红色(的)",
+                    "false_meanings": [
+                        "棕色(的);褐色(的)",
+                        "指已提到或易领会到的人或事物",
+                        "橙子"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 3",
                     "word": "yellow",
                     "phonetic": "/'jelǝu/",
                     "part_of_speech": "adj. & n.",
-                    "meaning": "黄色(的)"
+                    "meaning": "黄色(的)",
+                    "false_meanings": [
+                        "健康的;美好的",
+                        "早晨;上午",
+                        "感谢;谢谢"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 3",
                     "word": "green",
                     "phonetic": "/gri:n/",
                     "part_of_speech": "adj. & n.",
-                    "meaning": "绿色(的)"
+                    "meaning": "绿色(的)",
+                    "false_meanings": [
+                        "它",
+                        "好;可以",
+                        "能;会"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 3",
                     "word": "blue",
                     "phonetic": "/blu:/",
                     "part_of_speech": "adj. & n.",
-                    "meaning": "蓝色(的)"
+                    "meaning": "蓝色(的)",
+                    "false_meanings": [
+                        "白色(的)",
+                        "杯子",
+                        "红色(的)"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 3",
                     "word": "black",
                     "phonetic": "/blæk/",
                     "part_of_speech": "adj. & n.",
-                    "meaning": "黑色(的)"
+                    "meaning": "黑色(的)",
+                    "false_meanings": [
+                        "地图",
+                        "好;可以",
+                        "(用于打招呼)嗨;喂"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 3",
                     "word": "white",
                     "phonetic": "/wart/",
                     "part_of_speech": "adj. & n.",
-                    "meaning": "白色(的)"
+                    "meaning": "白色(的)",
+                    "false_meanings": [
+                        "说;讲",
+                        "尺;直尺",
+                        "英语"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 3",
                     "word": "purple",
                     "phonetic": "/'p3:(r)pl/",
                     "part_of_speech": "adj. & n.",
-                    "meaning": "紫色(的)"
+                    "meaning": "紫色(的)",
+                    "false_meanings": [
+                        "(尤指服装的尺码)小号的",
+                        "(= colour)颜色",
+                        "晚上;傍晚"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 3",
                     "word": "brown",
                     "phonetic": "/braun/",
                     "part_of_speech": "adj. & n.",
-                    "meaning": "棕色(的);褐色(的)"
+                    "meaning": "棕色(的);褐色(的)",
+                    "false_meanings": [
+                        "夹克衫;短上衣",
+                        "千克;公斤",
+                        "黑色(的)"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 3",
                     "word": "the",
                     "phonetic": "/ði; də/",
                     "part_of_speech": "art.",
-                    "meaning": "指已提到或易领会到的人或事物"
+                    "meaning": "指已提到或易领会到的人或事物",
+                    "false_meanings": [
+                        "你好;喂",
+                        "尺;直尺",
+                        "被子;床罩"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 3",
                     "word": "now",
                     "phonetic": "/nau/",
                     "part_of_speech": "adv.",
-                    "meaning": "现在;目前"
+                    "meaning": "现在;目前",
+                    "false_meanings": [
+                        "黑色(的)",
+                        "那;那个",
+                        "夹克衫;短上衣"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 3",
                     "word": "see",
                     "phonetic": "/si:/",
                     "part_of_speech": "v.",
-                    "meaning": "理解;明白"
+                    "meaning": "理解;明白",
+                    "false_meanings": [
+                        "什么",
+                        "(尤指服装的尺码)小号的",
+                        "棕色(的);褐色(的)"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 3",
                     "word": "can",
                     "phonetic": "/kæn; kən/",
                     "part_of_speech": "modal v.",
-                    "meaning": "能;会"
+                    "meaning": "能;会",
+                    "false_meanings": [
+                        "我",
+                        "紫色(的)",
+                        "(= colour)颜色"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 3",
                     "word": "say",
                     "phonetic": "/sex/",
                     "part_of_speech": "v.",
-                    "meaning": "说;讲"
+                    "meaning": "说;讲",
+                    "false_meanings": [
+                        "指已提到或易领会到的人或事物",
+                        "地图",
+                        "(尤指服装的尺码)中号的"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 3",
                     "word": "my",
                     "phonetic": "/mai/",
                     "part_of_speech": "pron.",
-                    "meaning": "我的"
+                    "meaning": "我的",
+                    "false_meanings": [
+                        "橙子",
+                        "杯子",
+                        "那;那个"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 3",
                     "word": "S",
                     "phonetic": "/es/",
                     "part_of_speech": "",
-                    "meaning": "(尤指服装的尺码)小号的"
+                    "meaning": "(尤指服装的尺码)小号的",
+                    "false_meanings": [
+                        "千克;公斤",
+                        "说;讲",
+                        "你;你们"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 3",
                     "word": "M",
                     "phonetic": "/em/",
                     "part_of_speech": "",
-                    "meaning": "(尤指服装的尺码)中号的"
+                    "meaning": "(尤指服装的尺码)中号的",
+                    "false_meanings": [
+                        "晚上;傍晚",
+                        "(表示使用语言、材料等)用;以",
+                        "我的"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 3",
                     "word": "L",
                     "phonetic": "/el/",
                     "part_of_speech": "",
-                    "meaning": "(尤指服装的尺码)大号的"
+                    "meaning": "(尤指服装的尺码)大号的",
+                    "false_meanings": [
+                        "能;会",
+                        "夹克衫;短上衣",
+                        "黄色(的)"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 3",
                     "word": "UFO",
                     "phonetic": "/ju: ef'ǝu/",
                     "part_of_speech": "",
-                    "meaning": "不明飞行物"
+                    "meaning": "不明飞行物",
+                    "false_meanings": [
+                        "(尤指服装的尺码)小号的",
+                        "中国中央电视台",
+                        "现在;目前"
+                    ]
                 },
                 {
                     "unit": "Starter Unit 3",
                     "word": "CCTV",
                     "phonetic": "/si: si: ti: 'vi:/",
                     "part_of_speech": "",
-                    "meaning": "中国中央电视台"
+                    "meaning": "中国中央电视台",
+                    "false_meanings": [
+                        "橙子",
+                        "那;那个",
+                        "指已提到或易领会到的人或事物"
+                    ]
                 }
             ]
         }
