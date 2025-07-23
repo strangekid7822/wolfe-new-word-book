@@ -2,6 +2,8 @@
 import { useState, useRef, useEffect } from 'react';
 // Import the child component that displays each word card.
 import WordTestWordCard from './WordTestWordCard';
+// Import the question service for dynamic question generation.
+import questionService from '../services/questionService';
 
 // This component manages the gallery of word cards, handling scrolling, and state.
 function WordTestCardGallery() {
@@ -19,50 +21,57 @@ function WordTestCardGallery() {
   const cardElementRefs = useRef([]);
 
   // wordCards: An array of objects, where each object represents a card's state.
-  const [wordCards, setWordCards] = useState([
-    { 
-      id: 1, 
-      word: "hello", 
-      inputs: ["", "", "", "", ""], 
-      submitted: false,
-      chineseMeanings: ["你好", "再见", "谢谢", "对不起"],
-      selectedOption: ""
-    },
-    { 
-      id: 2, 
-      word: "world", 
-      inputs: ["", "", "", "", ""], 
-      submitted: false,
-      chineseMeanings: ["世界", "国家", "城市", "地球"],
-      selectedOption: ""
-    },
-    { 
-      id: 3, 
-      word: "react", 
-      inputs: ["", "", "", "", ""], 
-      submitted: false,
-      chineseMeanings: ["反应", "行动", "思考", "学习"],
-      selectedOption: ""
-    },
-    { 
-      id: 4, 
-      word: "coding", 
-      inputs: ["", "", "", "", "", ""], 
-      submitted: false,
-      chineseMeanings: ["编码", "写作", "阅读", "计算"],
-      selectedOption: ""
-    },
-    { 
-      id: 5, 
-      word: "swift", 
-      inputs: ["", "", "", "", ""], 
-      submitted: false,
-      chineseMeanings: ["迅速的", "缓慢的", "安静的", "响亮的"],
-      selectedOption: ""
-    },
-  ]);
+  // Now dynamically generated from the question service instead of hardcoded.
+  const [wordCards, setWordCards] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [loadError, setLoadError] = useState(null);
 
   // --- EFFECTS ---
+  // Initialize the question service and load the first set of questions.
+  useEffect(() => {
+    const initializeQuestions = async () => {
+      setIsLoading(true);
+      setLoadError(null);
+      
+      try {
+        // Load the vocabulary library
+        const success = await questionService.loadLibrary('七年级上.json');
+        if (!success) {
+          throw new Error('Failed to load vocabulary library');
+        }
+        
+        // Generate initial set of questions
+        const questions = questionService.generateQuestions(5);
+        if (questions.length === 0) {
+          throw new Error('No questions could be generated from the library');
+        }
+        
+        // Convert questions to the expected wordCards format
+        const initialCards = questions.map(question => ({
+          id: question.id,
+          word: question.word,
+          inputs: question.inputs,
+          submitted: question.submitted,
+          chineseMeanings: question.options, // These are already shuffled
+          selectedOption: question.selectedOption,
+          // Store additional data for future use
+          phonetic: question.phonetic,
+          correctMeaning: question.correctMeaning,
+          correctIndex: question.correctIndex
+        }));
+        
+        setWordCards(initialCards);
+        setIsLoading(false);
+      } catch (error) {
+        console.error('Error initializing questions:', error);
+        setLoadError(error.message);
+        setIsLoading(false);
+      }
+    };
+    
+    initializeQuestions();
+  }, []);
+
   // This effect ensures our refs arrays are always the correct size, matching the number of cards.
   // This is important if the list of cards were to change dynamically.
   useEffect(() => {
@@ -155,6 +164,43 @@ function WordTestCardGallery() {
   };
 
   // --- JSX RENDERING ---
+  // Show loading state
+  if (isLoading) {
+    return (
+      <div className="w-full h-96 flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500 mx-auto mb-4"></div>
+          <p className="text-gray-600">Loading vocabulary...</p>
+        </div>
+      </div>
+    );
+  }
+  
+  // Show error state
+  if (loadError) {
+    return (
+      <div className="w-full h-96 flex items-center justify-center">
+        <div className="text-center">
+          <div className="text-red-500 text-xl mb-4">⚠️</div>
+          <p className="text-red-600 mb-2">Failed to load vocabulary</p>
+          <p className="text-gray-500 text-sm">{loadError}</p>
+        </div>
+      </div>
+    );
+  }
+  
+  // Show empty state
+  if (wordCards.length === 0) {
+    return (
+      <div className="w-full h-96 flex items-center justify-center">
+        <div className="text-center">
+          <div className="text-gray-400 text-xl mb-4">📚</div>
+          <p className="text-gray-600">No vocabulary words available</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="w-full relative">
       {/* The main scrollable container for the card gallery. */}
