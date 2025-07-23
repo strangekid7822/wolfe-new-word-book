@@ -4,6 +4,8 @@ import { useState, useRef, useEffect } from 'react';
 import WordTestWordCard from './WordTestWordCard';
 // Import the question service for dynamic question generation.
 import questionService from '../services/questionService';
+// Import timer context to control card generation.
+import { useTimer } from '../contexts/TimerContext';
 
 // This component manages the gallery of word cards, handling scrolling, and state.
 function WordTestCardGallery() {
@@ -25,6 +27,10 @@ function WordTestCardGallery() {
   const [wordCards, setWordCards] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [loadError, setLoadError] = useState(null);
+  const [canGenerateCards, setCanGenerateCards] = useState(true);
+  
+  // Get timer context for controlling card generation
+  const { isTimeUp, setOnTimerEnd } = useTimer();
 
   // --- EFFECTS ---
   // Initialize the question service and load the first set of questions.
@@ -71,6 +77,43 @@ function WordTestCardGallery() {
     
     initializeQuestions();
   }, []);
+  
+  // Set up timer end callback to stop card generation
+  useEffect(() => {
+    const handleTimerEnd = () => {
+      console.log('Timer ended - stopping card generation');
+      setCanGenerateCards(false);
+      
+      // Hide last uncentered card if it exists
+      setWordCards(prevCards => {
+        // If the last card is not the active one, remove it
+        if (prevCards.length > 0 && activeIndex < prevCards.length - 1) {
+          return prevCards.slice(0, activeIndex + 1);
+        }
+        return prevCards;
+      });
+    };
+    
+    setOnTimerEnd(handleTimerEnd);
+    
+    // Cleanup callback on unmount
+    return () => {
+      setOnTimerEnd(null);
+    };
+  }, [activeIndex, setOnTimerEnd]);
+  
+  // Ensure we always have a preview card (next card) for visual hint
+  useEffect(() => {
+    if (canGenerateCards && !isTimeUp && wordCards.length > 0) {
+      // If we're on the last card or second-to-last, ensure next card exists
+      if (activeIndex >= wordCards.length - 1) {
+        const newCard = generateNewCard();
+        if (newCard) {
+          setWordCards(prevCards => [...prevCards, newCard]);
+        }
+      }
+    }
+  }, [activeIndex, wordCards.length, canGenerateCards, isTimeUp]);
 
   // This effect ensures our refs arrays are always the correct size, matching the number of cards.
   // This is important if the list of cards were to change dynamically.
@@ -146,6 +189,30 @@ function WordTestCardGallery() {
     );
   };
 
+  // Generate a new card when moving to the next position
+  const generateNewCard = () => {
+    if (!canGenerateCards || isTimeUp) {
+      return null;
+    }
+    
+    const newQuestion = questionService.generateQuestion();
+    if (!newQuestion) {
+      return null;
+    }
+    
+    return {
+      id: newQuestion.id,
+      word: newQuestion.word,
+      inputs: newQuestion.inputs,
+      submitted: newQuestion.submitted,
+      chineseMeanings: newQuestion.options,
+      selectedOption: newQuestion.selectedOption,
+      phonetic: newQuestion.phonetic,
+      correctMeaning: newQuestion.correctMeaning,
+      correctIndex: newQuestion.correctIndex
+    };
+  };
+
   // This function is called when the user clicks the "Confirm" button on a card.
   const handleConfirm = (cardId) => {
     // First, update the state of the confirmed card to `submitted: true`.
@@ -154,10 +221,23 @@ function WordTestCardGallery() {
         card.id === cardId ? { ...card, submitted: true } : card
       )
     );
-    // Then, calculate the index of the next card.
+    
+    // Calculate the index of the next card.
     const nextIndex = activeIndex + 1;
-    // If there is a next card, update the `activeIndex`.
-    // This state change will trigger the `useEffect` hook to scroll and focus the new card.
+    
+    // Always try to ensure we have a next card for preview (if timer allows)
+    setWordCards(prevCards => {
+      // If we're moving to the last card and can generate more, add a preview card
+      if (nextIndex >= prevCards.length - 1 && canGenerateCards && !isTimeUp) {
+        const newCard = generateNewCard();
+        if (newCard) {
+          return [...prevCards, newCard];
+        }
+      }
+      return prevCards;
+    });
+    
+    // Move to the next card if it exists
     if (nextIndex < wordCards.length) {
       setActiveIndex(nextIndex);
     }
@@ -218,25 +298,31 @@ function WordTestCardGallery() {
         <div className="flex-shrink-0" style={{ width: '7.5vw' }} />
         
         {/* Map over the `wordCards` array to render each card. */}
-        {wordCards.map((card, index) => (
-          <div 
-            key={card.id}
-            // Assign the ref for the card's outer DOM element.
-            ref={el => cardElementRefs.current[index] = el}
-            className="flex-shrink-0 px-2 snap-center word-card-container" 
-            style={{ width: '85vw' }}
-          >
-            <WordTestWordCard 
-              // Assign the ref for the WordTestWordCard component instance.
-              ref={el => cardComponentRefs.current[index] = el}
-              cardData={card}
-              isActive={index === activeIndex}
-              onInputChange={handleInputChange}
-              onConfirm={handleConfirm}
-              onOptionSelect={handleOptionSelect}
-            />
-          </div>
-        ))}
+        {/* Only show cards if timer hasn't ended or if it's an active/previous card */}
+        {wordCards.map((card, index) => {
+          // Hide uncentered cards when timer ends
+          const shouldShowCard = !isTimeUp || index <= activeIndex;
+          
+          return shouldShowCard ? (
+            <div 
+              key={card.id}
+              // Assign the ref for the card's outer DOM element.
+              ref={el => cardElementRefs.current[index] = el}
+              className="flex-shrink-0 px-2 snap-center word-card-container" 
+              style={{ width: '85vw' }}
+            >
+              <WordTestWordCard 
+                // Assign the ref for the WordTestWordCard component instance.
+                ref={el => cardComponentRefs.current[index] = el}
+                cardData={card}
+                isActive={index === activeIndex}
+                onInputChange={handleInputChange}
+                onConfirm={handleConfirm}
+                onOptionSelect={handleOptionSelect}
+              />
+            </div>
+          ) : null;
+        })}
         
         {/* This spacer div provides padding on the right side of the last card. */}
         <div className="flex-shrink-0" style={{ width: '7.5vw' }} />

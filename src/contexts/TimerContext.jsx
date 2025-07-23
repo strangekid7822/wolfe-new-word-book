@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, useEffect } from 'react';
+import { createContext, useContext, useState, useEffect, useRef } from 'react';
 
 // Create timer context for sharing countdown state across components
 const TimerContext = createContext();
@@ -19,6 +19,8 @@ export const TimerProvider = ({ children }) => {
   
   // Timer state: remaining time in seconds
   const [timeLeft, setTimeLeft] = useState(TOTAL_TIME);
+  // Store timer end callback with useRef to persist across renders
+  const timerEndCallbackRef = useRef(null);
   
   // Calculate percentage of time remaining (0-100)
   const percentage = (timeLeft / TOTAL_TIME) * 100;
@@ -54,6 +56,10 @@ export const TimerProvider = ({ children }) => {
       // Stop timer when time is up
       if (remaining <= 0) {
         clearInterval(timer);
+        // Call timer end callback if set
+        if (timerEndCallbackRef.current) {
+          timerEndCallbackRef.current();
+        }
       }
     };
     
@@ -89,7 +95,10 @@ export const TimerProvider = ({ children }) => {
     isTimeUp: timeLeft === 0,    // Boolean flag for time expiration
     totalTime: TOTAL_TIME,       // Total duration for reference
     formatTime,         // Time formatting utility function
-    formattedTime: formatTime(timeLeft) // Pre-formatted time string
+    formattedTime: formatTime(timeLeft), // Pre-formatted time string
+    // Callbacks for timer events (to be set by components)
+    onTimerEnd: timerEndCallbackRef.current,    // Callback when timer reaches zero
+    setOnTimerEnd: (callback) => { timerEndCallbackRef.current = callback; } // Setter for timer end callback
   };
   
   return (
