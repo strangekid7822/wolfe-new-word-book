@@ -355,4 +355,80 @@ body {
   .option-text {
     @apply flex-1;
   }
+
+  /* Answer Feedback Animation Keyframes */
+  @keyframes pulse-green-glow {
+    0% {
+      box-shadow: 0 0 5px rgba(34, 197, 94, 0.4);
+      border-color: rgba(34, 197, 94, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 25px rgba(34, 197, 94, 0.8), 0 0 35px rgba(34, 197, 94, 0.6);
+      border-color: rgba(34, 197, 94, 0.7);
+      transform: scale(1.02);
+    }
+    100% {
+      box-shadow: 0 0 5px rgba(34, 197, 94, 0.4);
+      border-color: rgba(34, 197, 94, 0.3);
+    }
+  }
+
+  @keyframes pulse-pink-glow {
+    0% {
+      box-shadow: 0 0 5px rgba(236, 72, 153, 0.4);
+      border-color: rgba(236, 72, 153, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 25px rgba(236, 72, 153, 0.8), 0 0 35px rgba(236, 72, 153, 0.6);
+      border-color: rgba(236, 72, 153, 0.7);
+      transform: scale(1.02);
+    }
+    100% {
+      box-shadow: 0 0 5px rgba(236, 72, 153, 0.4);
+      border-color: rgba(236, 72, 153, 0.3);
+    }
+  }
+
+  /* Answer Feedback Classes */
+  .option-correct-pulse {
+    animation: pulse-green-glow 2s ease-in-out;
+    /* Override existing styles during animation */
+    background: var(--color-white) !important;
+    color: rgba(34, 197, 94, 0.8) !important;
+    border-left: 2.5px solid rgba(34, 197, 94, 0.5) !important;
+    border-top: 2.5px solid rgba(34, 197, 94, 0.5) !important;
+    border-right: 2.5px solid rgba(34, 197, 94, 0.5) !important;
+    border-bottom: 2.5px solid rgba(34, 197, 94, 0.5) !important;
+  }
+
+  .option-wrong-pulse {
+    animation: pulse-pink-glow 2s ease-in-out;
+    /* Override existing styles during animation */
+    background: var(--color-white) !important;
+    color: rgba(236, 72, 153, 0.8) !important;
+    border-left: 2.5px solid rgba(236, 72, 153, 0.5) !important;
+    border-top: 2.5px solid rgba(236, 72, 153, 0.5) !important;
+    border-right: 2.5px solid rgba(236, 72, 153, 0.5) !important;
+    border-bottom: 2.5px solid rgba(236, 72, 153, 0.5) !important;
+  }
+
+  .option-correct-shadow {
+    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3) !important;
+    border-left: 2.5px solid rgba(34, 197, 94, 0.4) !important;
+    border-top: 2.5px solid rgba(34, 197, 94, 0.4) !important;
+    border-right: 2.5px solid rgba(34, 197, 94, 0.4) !important;
+    border-bottom: 2.5px solid rgba(34, 197, 94, 0.4) !important;
+    background: rgba(34, 197, 94, 0.05) !important;
+    color: rgba(34, 197, 94, 0.9) !important;
+  }
+
+  .option-wrong-shadow {
+    box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3) !important;
+    border-left: 2.5px solid rgba(236, 72, 153, 0.4) !important;
+    border-top: 2.5px solid rgba(236, 72, 153, 0.4) !important;
+    border-right: 2.5px solid rgba(236, 72, 153, 0.4) !important;
+    border-bottom: 2.5px solid rgba(236, 72, 153, 0.4) !important;
+    background: rgba(236, 72, 153, 0.05) !important;
+    color: rgba(236, 72, 153, 0.9) !important;
+  }
 }
