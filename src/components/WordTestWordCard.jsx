@@ -1,6 +1,7 @@
 import { forwardRef, useRef, useImperativeHandle, useEffect, useState } from 'react';
 import SubmitButton from './SubmitButton';
 import Option from './Option';
+import audioService from '../services/audioService';
 
 const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConfirm, onOptionSelect }, ref) => {
   const inputRefs = useRef([]);
@@ -8,6 +9,22 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
   useEffect(() => {
     inputRefs.current = inputRefs.current.slice(0, cardData.word.length);
   }, [cardData.word]);
+
+  // Auto-play pronunciation when card becomes active
+  useEffect(() => {
+    if (isActive && !cardData.submitted) {
+      // Small delay to ensure smooth transition
+      const playTimeout = setTimeout(async () => {
+        try {
+          await audioService.speakWord(cardData.word);
+        } catch (error) {
+          console.error('Error auto-playing audio:', error);
+        }
+      }, 500);
+      
+      return () => clearTimeout(playTimeout);
+    }
+  }, [isActive, cardData.word, cardData.submitted]);
 
   useImperativeHandle(ref, () => ({
     focus: (options) => {
@@ -56,15 +73,23 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
 
   const [isGlowing, setIsGlowing] = useState(false);
 
-  const handlePlayButtonClick = () => {
-    // Handle audio play functionality here
-    console.log('Play button clicked for word:', cardData.word);
-
+  const handlePlayButtonClick = async () => {
+    // Play the word pronunciation
+    console.log('Playing pronunciation for word:', cardData.word);
+    
     // Trigger the glow animation
     setIsGlowing(true);
+    
+    try {
+      await audioService.speakWord(cardData.word);
+    } catch (error) {
+      console.error('Error playing audio:', error);
+    }
+    
+    // End glow animation after audio or timeout
     setTimeout(() => {
       setIsGlowing(false);
-    }, 1500); // Match the animation duration
+    }, 1500);
   };
 
   // Logic for determining when to show options and submit button
