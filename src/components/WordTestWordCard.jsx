@@ -5,10 +5,41 @@ import audioService from '../services/audioService';
 
 const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConfirm, onOptionSelect }, ref) => {
   const inputRefs = useRef([]);
+  const [feedbackState, setFeedbackState] = useState({
+    showEffects: false,
+    correctIndex: null,
+    selectedIndex: null,
+    effectPhase: null,
+    animationKey: 0
+  });
 
   useEffect(() => {
     inputRefs.current = inputRefs.current.slice(0, cardData.word.length);
   }, [cardData.word]);
+
+  // Initialize feedback when card is submitted
+  useEffect(() => {
+    if (cardData.submitted && !feedbackState.showEffects) {
+      const correctIndex = cardData.correctIndex;
+      const selectedIndex = cardData.chineseMeanings.indexOf(cardData.selectedOption);
+      
+      setFeedbackState({
+        showEffects: true,
+        correctIndex: correctIndex,
+        selectedIndex: selectedIndex,
+        effectPhase: 'pulsing',
+        animationKey: Date.now()
+      });
+      
+      // Transition to permanent effect after 2 seconds
+      setTimeout(() => {
+        setFeedbackState(prev => ({
+          ...prev,
+          effectPhase: 'permanent'
+        }));
+      }, 2000);
+    }
+  }, [cardData.submitted, feedbackState.showEffects, cardData.correctIndex, cardData.chineseMeanings, cardData.selectedOption]);
 
   // Auto-play pronunciation when card becomes active
   useEffect(() => {
@@ -142,16 +173,31 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
         <div className="space-y-4 submit-button-enter">
           <p className="text-[var(--color-black)] [--txt-body-lg]">选择中文意思:</p>
           <div className="grid grid-cols-2 gap-3">
-            {cardData.chineseMeanings.map((meaning, index) => (
-              <Option
-                key={index}
-                text={meaning}
-                label={String.fromCharCode(65 + index)}
-                isSelected={cardData.selectedOption === meaning}
-                onClick={() => onOptionSelect(cardData.id, meaning)}
-                disabled={cardData.submitted}
-              />
-            ))}
+            {cardData.chineseMeanings.map((meaning, index) => {
+              // Determine feedback type for this option
+              let feedbackType = null;
+              if (feedbackState.showEffects) {
+                if (index === feedbackState.correctIndex) {
+                  feedbackType = 'correct';
+                } else if (index === feedbackState.selectedIndex && feedbackState.selectedIndex !== feedbackState.correctIndex) {
+                  feedbackType = 'wrong';
+                }
+              }
+              
+              return (
+                <Option
+                  key={index}
+                  text={meaning}
+                  label={String.fromCharCode(65 + index)}
+                  isSelected={cardData.selectedOption === meaning}
+                  onClick={() => onOptionSelect(cardData.id, meaning)}
+                  disabled={cardData.submitted}
+                  feedbackType={feedbackType}
+                  effectPhase={feedbackState.effectPhase}
+                  animationKey={feedbackState.animationKey}
+                />
+              );
+            })}
           </div>
         </div>
       )}

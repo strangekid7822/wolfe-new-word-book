@@ -237,10 +237,13 @@ function WordTestCardGallery() {
       return prevCards;
     });
     
-    // Move to the next card if it exists
-    if (nextIndex < wordCards.length) {
-      setActiveIndex(nextIndex);
-    }
+    // Auto-advance to next card after feedback effects (2.5 seconds)
+    setTimeout(() => {
+      // Move to the next card if it exists
+      if (nextIndex < wordCards.length) {
+        setActiveIndex(nextIndex);
+      }
+    }, 2500);
   };
 
   // --- JSX RENDERING ---
