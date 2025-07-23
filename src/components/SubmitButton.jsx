@@ -12,7 +12,7 @@ const SubmitButton = ({ onClick, isDisabled, buttonText }) => {
           {buttonText}
         </button>
       ) : (
-        <div className="btn-animated-wrapper border-visible">
+        <div className="btn-animated-wrapper">
           <button
             onClick={onClick}
             className="btn-animated"

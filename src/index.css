@@ -82,9 +82,6 @@ body {
     background: conic-gradient(from var(--border-angle), #ec4899 0%, #3b82f6 25%, #facc15 50%, #22c55e 75%, #ec4899 100%);
     transition: opacity 0.3s ease-in-out;
   }
-  .btn-animated-wrapper.border-visible {
-    opacity: 1;
-  }
   .btn-animated {
     /* Enlarged button with larger padding and text size to match .btn-disabled */
     @apply w-full px-6 py-2.5 rounded-full text-lg font-medium transition-colors bg-[var(--color-secondary)] text-white hover:bg-[var(--color-secondary-2)];
