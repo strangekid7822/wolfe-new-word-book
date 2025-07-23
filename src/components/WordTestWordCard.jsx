@@ -10,36 +10,86 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
     correctIndex: null,
     selectedIndex: null,
     effectPhase: null,
-    animationKey: 0
+    animationKey: 0,
+    // Input feedback state
+    inputFeedback: {
+      showInputEffects: false,
+      correctLetters: [],
+      wrongInputs: [],
+      correctInputs: [],
+      inputAnimationKey: 0
+    }
   });
 
   useEffect(() => {
     inputRefs.current = inputRefs.current.slice(0, cardData.word.length);
   }, [cardData.word]);
 
+  // Input validation helper function
+  const validateInputs = (userInputs, correctWord) => {
+    const correctLetters = correctWord.toLowerCase().split('');
+    const wrongIndices = [];
+    const correctIndices = [];
+    
+    userInputs.forEach((input, index) => {
+      if (input.toLowerCase() === correctLetters[index]) {
+        correctIndices.push(index);
+      } else {
+        wrongIndices.push(index);
+      }
+    });
+    
+    return { wrongIndices, correctIndices, correctLetters };
+  };
+
   // Initialize feedback when card is submitted
   useEffect(() => {
     if (cardData.submitted && !feedbackState.showEffects) {
       const correctIndex = cardData.correctIndex;
       const selectedIndex = cardData.chineseMeanings.indexOf(cardData.selectedOption);
+      const inputValidation = validateInputs(cardData.inputs, cardData.word);
       
       setFeedbackState({
         showEffects: true,
         correctIndex: correctIndex,
         selectedIndex: selectedIndex,
         effectPhase: 'pulsing',
-        animationKey: Date.now()
+        animationKey: Date.now(),
+        // Input feedback initialization
+        inputFeedback: {
+          showInputEffects: true,
+          correctLetters: inputValidation.correctLetters,
+          wrongInputs: inputValidation.wrongIndices,
+          correctInputs: inputValidation.correctIndices,
+          inputAnimationKey: Date.now()
+        }
       });
       
       // Transition to permanent effect after 2 seconds
       setTimeout(() => {
         setFeedbackState(prev => ({
           ...prev,
-          effectPhase: 'permanent'
+          effectPhase: 'permanent',
+          inputFeedback: {
+            ...prev.inputFeedback,
+            showInputEffects: false // Stop animations, keep permanent styling
+          }
         }));
+        
+        // Update input values to show correct letters
+        if (inputValidation.wrongIndices.length > 0) {
+          const correctedInputs = [...cardData.inputs];
+          inputValidation.wrongIndices.forEach(wrongIndex => {
+            correctedInputs[wrongIndex] = inputValidation.correctLetters[wrongIndex];
+          });
+          
+          // Update the card data with corrected inputs
+          // Note: This is handled through the parent component's state
+          // The visual effect is achieved through the animation system
+        }
       }, 2000);
     }
-  }, [cardData.submitted, feedbackState.showEffects, cardData.correctIndex, cardData.chineseMeanings, cardData.selectedOption]);
+  }, [cardData.submitted, feedbackState.showEffects, cardData.correctIndex, cardData.chineseMeanings, cardData.selectedOption, cardData.inputs, cardData.word]);
 
   // Auto-play pronunciation when card becomes active
   useEffect(() => {
@@ -123,6 +173,25 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
     }, 1500);
   };
 
+  // Helper function to get input feedback CSS class
+  const getInputFeedbackClass = (index) => {
+    const { inputFeedback, effectPhase } = feedbackState;
+    if (!inputFeedback.showInputEffects && effectPhase !== 'permanent') return '';
+    
+    const isCorrect = inputFeedback.correctInputs.includes(index);
+    const isWrong = inputFeedback.wrongInputs.includes(index);
+    
+    if (effectPhase === 'pulsing') {
+      if (isCorrect) return 'input-correct-pulse';
+      if (isWrong) return 'input-wrong-pulse';
+    } else if (effectPhase === 'permanent') {
+      if (isCorrect) return 'input-correct-shadow';
+      if (isWrong) return 'input-wrong-shadow';
+    }
+    
+    return '';
+  };
+
   // Logic for determining when to show options and submit button
   const areAllInputsFilled = cardData.inputs.every(input => input.trim() !== '');
   const shouldShowOptions = areAllInputsFilled; // Show options when inputs are filled, even after submission
@@ -146,26 +215,51 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
       
       {/* Input fields */}
       <div className="flex justify-center gap-1">
-        {cardData.inputs.map((value, index) => (
-          <div
-            key={index}
-            className="w-8 h-10 sm:w-7 sm:h-9 rounded-lg border-2 border-gray-300 bg-gray-100 transition-transform duration-150 flex items-center justify-center focus-within:scale-110 focus-within:bg-white focus-within:border-[var(--color-secondary)]"
-          >
-            <input
-              ref={el => inputRefs.current[index] = el}
-              type="text"
-              maxLength={1}
-              inputMode="latin"
-              value={value}
-              onChange={(e) => handleInputChange(e, index)}
-              onKeyDown={(e) => handleKeyDown(e, index)}
-              onMouseDown={(e) => handleInputClick(e, index)}
-              disabled={cardData.submitted}
-              className="w-full h-full bg-transparent outline-none text-center [--txt-body] appearance-none caret-[var(--color-secondary)]"
-              style={{ color: cardData.submitted ? 'grey' : 'black' }}
-            />
-          </div>
-        ))}
+        {cardData.inputs.map((value, index) => {
+          const { inputFeedback } = feedbackState;
+          const isWrong = inputFeedback.wrongInputs.includes(index);
+          const correctLetter = inputFeedback.correctLetters[index] || '';
+          const showAnimation = inputFeedback.showInputEffects && isWrong;
+          const inputFeedbackClass = getInputFeedbackClass(index);
+          
+          return (
+            <div
+              key={index}
+              className={`w-8 h-10 sm:w-7 sm:h-9 rounded-lg border-2 border-gray-300 bg-gray-100 transition-transform duration-150 flex items-center justify-center focus-within:scale-110 focus-within:bg-white focus-within:border-[var(--color-secondary)] input-container ${inputFeedbackClass}`}
+            >
+              <input
+                ref={el => inputRefs.current[index] = el}
+                type="text"
+                maxLength={1}
+                inputMode="latin"
+                value={showAnimation ? '' : (feedbackState.effectPhase === 'permanent' && isWrong ? correctLetter : value)}
+                onChange={(e) => handleInputChange(e, index)}
+                onKeyDown={(e) => handleKeyDown(e, index)}
+                onMouseDown={(e) => handleInputClick(e, index)}
+                disabled={cardData.submitted}
+                className={`w-full h-full bg-transparent outline-none text-center [--txt-body] appearance-none caret-[var(--color-secondary)] ${showAnimation ? 'input-animating' : ''}`}
+                style={{ color: cardData.submitted ? 'grey' : 'black' }}
+              />
+              {/* Letter animations for wrong inputs */}
+              {showAnimation && (
+                <>
+                  <span 
+                    className="letter-exiting" 
+                    key={`exit-${inputFeedback.inputAnimationKey}-${index}`}
+                  >
+                    {value}
+                  </span>
+                  <span 
+                    className="letter-entering" 
+                    key={`enter-${inputFeedback.inputAnimationKey}-${index}`}
+                  >
+                    {correctLetter}
+                  </span>
+                </>
+              )}
+            </div>
+          );
+        })}
       </div>
       
       {/* Chinese meaning options - always render when inputs are filled */}
