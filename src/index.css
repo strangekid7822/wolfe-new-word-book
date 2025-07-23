@@ -82,12 +82,6 @@ body {
     background: conic-gradient(from var(--border-angle), #ec4899 0%, #3b82f6 25%, #facc15 50%, #22c55e 75%, #ec4899 100%);
     transition: opacity 0.3s ease-in-out;
   }
-  .btn-animated-wrapper.border-transparent {
-    opacity: 1;
-    background: transparent;
-    padding: 0;
-    box-shadow: none;
-  }
   .btn-animated-wrapper.border-visible {
     opacity: 1;
   }
