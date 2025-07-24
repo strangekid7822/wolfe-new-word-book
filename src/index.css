@@ -320,13 +320,6 @@ body {
     transition: all 0.2s ease-out, border-left 0.2s ease-out, border-top 0.2s ease-out, border-right 0.2s ease-out, border-bottom 0.2s ease-out;
   }
 
-  .option-button:hover:not(:disabled) {
-    @apply scale-105;
-    border-left: 1.5px solid var(--color-secondary);
-    border-top: 1.5px solid var(--color-secondary);
-    border-right: 1.5px solid var(--color-secondary);
-    border-bottom: 1.5px solid var(--color-secondary);
-  }
 
   .option-default {
     /* Default state already handled in .option-button */
