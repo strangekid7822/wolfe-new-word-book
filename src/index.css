@@ -30,8 +30,8 @@
   --shadow-input: inset 1px 3px 4px 0 rgba(0, 0, 0, 0.25);
   --shadow-play-button: 0px 1px 2px rgba(0, 0, 0, 0.25);
   --shadow-timer: 0 0px 4px 3px rgba(0, 0, 0, 0.05);
-  --content-width: 89%;
-  --content-width-2: 86%;
+  --content-width: 90%;
+  --content-width-2: 90%;
 
   /* Pulse keyframes */
   @keyframes pulse {

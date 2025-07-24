@@ -312,7 +312,7 @@ function WordTestCardGallery() {
               // Assign the ref for the card's outer DOM element.
               ref={el => cardElementRefs.current[index] = el}
               className="flex-shrink-0 px-2 snap-center word-card-container" 
-              style={{ width: '85vw' }}
+              style={{ width: '90vw' }}
             >
               <WordTestWordCard 
                 // Assign the ref for the WordTestWordCard component instance.

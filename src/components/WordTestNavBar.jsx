@@ -27,7 +27,7 @@ function WordTestNavBar() {
   };
 
   return (
-    <div className="flex justify-around items-center h-16 w-[var(--content-width)] mx-auto nav-bar-style">
+    <div className="flex justify-around items-center h-14 w-[var(--content-width)] mx-auto nav-bar-style">
       <NavLink 
         to="/" 
         className="p-2" 
