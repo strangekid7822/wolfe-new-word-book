@@ -266,7 +266,7 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
       {shouldShowOptions && (
         <div className="space-y-1.5 submit-button-enter mb-4">
           <p className="text-[var(--color-black)] [--txt-body-lg]">选择中文意思:</p>
-          <div className="grid grid-cols-2 gap-3">
+          <div className="grid grid-cols-1 gap-1">
             {cardData.chineseMeanings.map((meaning, index) => {
               // Determine feedback type for this option
               let feedbackType = null;
