@@ -289,7 +289,7 @@ function WordTestCardGallery() {
       {/* The main scrollable container for the card gallery. */}
       <div
         ref={containerRef}
-        className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar pt-2 pb-12"
+        className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar pt-2 pb-6"
         style={{
           scrollSnapType: 'x mandatory', // Enforces snapping to cards on scroll.
           WebkitOverflowScrolling: 'touch', // Enables smooth scrolling on iOS.

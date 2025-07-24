@@ -214,7 +214,7 @@ body {
   .word-card-style {
     border-radius: 30px;
     background: var(--color-tertiary);
-    box-shadow: 15px 15px 30px var(--color-shadow);
+    box-shadow: 8px 8px 16px var(--color-shadow);
     border: 3px solid var(--color-white);
     transition: transform 0.3s ease, opacity 0.3s ease, max-height 0.4s ease-out;
     max-height: 30vh; /* Default height */
@@ -323,7 +323,7 @@ body {
   .nav-bar-style {
     border-radius: 30px;
     background: var(--color-tertiary);
-    box-shadow: 15px 15px 30px var(--color-shadow);
+    box-shadow: 8px 8px 16px var(--color-shadow);
     border: 3px solid var(--color-white);
   }
 
