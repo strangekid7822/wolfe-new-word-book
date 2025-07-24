@@ -198,9 +198,9 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
   const shouldShowSubmitButton = areAllInputsFilled && cardData.selectedOption && !cardData.submitted;
 
   return (
-    <div className={`word-card-style p-4 text-center w-full mx-auto flex flex-col gap-4 overflow-y-auto ${shouldShowOptions ? 'word-card-expanded' : ''}`}>
+    <div className={`word-card-style p-4 text-center w-full mx-auto flex flex-col overflow-y-auto ${shouldShowOptions ? 'word-card-expanded' : ''}`}>
       {/* Play button */}
-      <div className="glass-effect glass-play-button rounded-full" onClick={handlePlayButtonClick}>
+      <div className="glass-effect glass-play-button rounded-full mb-4" onClick={handlePlayButtonClick}>
         <div className="glass-content">
           <svg className="glass-play-svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M8 5v14l11-7z"/>
@@ -209,12 +209,12 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
       </div>
       
       {/* Chinese prompt */}
-      <p className="text-[var(--color-black)] [--txt-body-lg]">
+      <p className="text-[var(--color-black)] [--txt-body-lg] mb-1.5">
         <span>根据读音拼写单词:</span>
       </p>
       
       {/* Input fields */}
-      <div className="flex justify-center gap-1">
+      <div className="flex justify-center gap-1 mb-4">
         {cardData.inputs.map((value, index) => {
           const { inputFeedback } = feedbackState;
           const isWrong = inputFeedback.wrongInputs.includes(index);
@@ -264,7 +264,7 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
       
       {/* Chinese meaning options - always render when inputs are filled */}
       {shouldShowOptions && (
-        <div className="space-y-4 submit-button-enter">
+        <div className="space-y-1.5 submit-button-enter mb-4">
           <p className="text-[var(--color-black)] [--txt-body-lg]">选择中文意思:</p>
           <div className="grid grid-cols-2 gap-3">
             {cardData.chineseMeanings.map((meaning, index) => {
