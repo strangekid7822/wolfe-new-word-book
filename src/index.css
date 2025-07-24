@@ -88,6 +88,40 @@ body {
     @apply w-full px-6 py-2.5 rounded-full text-lg font-medium transition-colors bg-[var(--color-secondary)] text-white hover:bg-[var(--color-secondary-2)];
   }
 
+  /* Submit button specific styles matching play button dimensions */
+  .btn-submit-wrapper {
+    /* Gradient border wrapper matching play button size */
+    @apply rounded-full p-1 mx-auto shadow-md flex items-center [animation:border-spin_1.3s_linear_infinite];
+    background: conic-gradient(from var(--border-angle), #ec4899 0%, #3b82f6 25%, #facc15 50%, #22c55e 75%, #ec4899 100%);
+    transition: opacity 0.3s ease-in-out;
+    width: 7.5rem;
+    height: 3.75rem;
+  }
+
+  .btn-submit {
+    /* Inner submit button filling the wrapper */
+    @apply w-full h-full rounded-full text-lg font-medium transition-colors bg-[var(--color-secondary)] text-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-submit-disabled-wrapper {
+    /* Post-submission wrapper - same size, no gradient animation */
+    @apply rounded-full mx-auto shadow-md flex items-center;
+    background: var(--color-grey);
+    width: 7.5rem;
+    height: 3.75rem;
+  }
+
+  .btn-submit-disabled {
+    /* Inner disabled submit button */
+    @apply w-full h-full rounded-full text-lg font-medium cursor-not-allowed bg-gray-400 text-white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   /* Glassmorphism Effect for play button and selected options */
   .glass-effect {
     /* Flex properties to center content */
