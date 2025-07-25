@@ -431,16 +431,12 @@ body {
   }
 
   .option-correct-shadow {
-    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3) !important;
     border: 2px solid rgba(34, 197, 94, 0.4) !important;
-    background: rgba(34, 197, 94, 0.05) !important;
     color: rgba(34, 197, 94, 0.9) !important;
   }
 
   .option-wrong-shadow {
-    box-shadow: 0 4px 12px rgba(236, 72, 153, 0.3) !important;
     border: 2px solid rgba(236, 72, 153, 0.4) !important;
-    background: rgba(236, 72, 153, 0.05) !important;
     color: rgba(236, 72, 153, 0.9) !important;
   }
 
@@ -456,14 +452,14 @@ body {
 
   /* Input glow animations matching option feedback */
   .input-correct-pulse {
-    animation: pulse-green-glow 2s ease-in-out;
+    animation: pulse-green-glow .5s ease-in-out;
     border-color: rgba(34, 197, 94, 0.5) !important;
     background-color: var(--color-white) !important;
     box-shadow: 0 0 15px rgba(34, 197, 94, 0.4) !important;
   }
 
   .input-wrong-pulse {
-    animation: pulse-pink-glow 2s ease-in-out;
+    animation: pulse-pink-glow .5s ease-in-out;
     border-color: rgba(236, 72, 153, 0.5) !important;
     background-color: var(--color-white) !important;
     box-shadow: 0 0 15px rgba(236, 72, 153, 0.4) !important;
@@ -472,15 +468,13 @@ body {
   /* Permanent input styling after animations */
   .input-correct-shadow {
     border-color: rgba(34, 197, 94, 0.4) !important;
-    background-color: rgba(34, 197, 94, 0.05) !important;
-    box-shadow: 0 4px 8px rgba(34, 197, 94, 0.2) !important;
+    background-color: var(--color-white) !important;
     color: rgba(34, 197, 94, 0.9) !important;
   }
 
   .input-wrong-shadow {
     border-color: rgba(236, 72, 153, 0.4) !important;
-    background-color: rgba(236, 72, 153, 0.05) !important;
-    box-shadow: 0 4px 8px rgba(236, 72, 153, 0.2) !important;
+    background-color: var(--color-white) !important;
     color: rgba(236, 72, 153, 0.9) !important;
   }
 
