@@ -343,7 +343,7 @@ body {
 
   /* Option button styles for Chinese meaning selection */
   .option-button {
-    @apply flex items-center gap-2 p-2 rounded-2xl font-medium text-left w-full;
+    @apply flex items-center gap-2 p-1 rounded-xl font-medium text-left w-full;
     background: var(--color-white);
     /* Use consistent border structure for smooth transitions */
     border-left: 2.5px solid var(--color-grey);
