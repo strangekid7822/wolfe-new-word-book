@@ -15,6 +15,12 @@
   --color-green: #95FF87;
   --color-pink: #FF7787;
   
+  /* Feedback colors for correct/wrong answers */
+  --color-light-green: rgba(34, 197, 94, 0.4);
+  --color-dark-green: rgba(34, 197, 94, 0.9);
+  --color-light-pink: rgba(236, 72, 153, 0.4);
+  --color-dark-pink: rgba(236, 72, 153, 0.9);
+  
   /* Font family for bilingual text */
   --font-family: Inter, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
   
@@ -431,13 +437,13 @@ body {
   }
 
   .option-correct-shadow {
-    border: 2px solid rgba(34, 197, 94, 0.4) !important;
-    color: rgba(34, 197, 94, 0.9) !important;
+    border: 2px solid var(--color-light-green) !important;
+    color: var(--color-dark-green) !important;
   }
 
   .option-wrong-shadow {
-    border: 2px solid rgba(236, 72, 153, 0.4) !important;
-    color: rgba(236, 72, 153, 0.9) !important;
+    border: 2px solid var(--color-light-pink) !important;
+    color: var(--color-dark-pink) !important;
   }
 
   /* Input Feedback Animation System */
@@ -467,15 +473,15 @@ body {
 
   /* Permanent input styling after animations */
   .input-correct-shadow {
-    border-color: rgba(34, 197, 94, 0.4) !important;
+    border-color: var(--color-light-green) !important;
     background-color: var(--color-white) !important;
-    color: rgba(34, 197, 94, 0.9) !important;
+    color: var(--color-dark-green) !important;
   }
 
   .input-wrong-shadow {
-    border-color: rgba(236, 72, 153, 0.4) !important;
+    border-color: var(--color-light-pink) !important;
     background-color: var(--color-white) !important;
-    color: rgba(236, 72, 153, 0.9) !important;
+    color: var(--color-dark-pink) !important;
   }
 
   /* Letter animation keyframes */
