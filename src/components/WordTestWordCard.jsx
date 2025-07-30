@@ -195,7 +195,6 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
           const { inputFeedback } = feedbackState;
           const isWrong = inputFeedback.wrongInputs.includes(index);
           const correctLetter = inputFeedback.correctLetters[index] || '';
-          const showAnimation = inputFeedback.showInputEffects && isWrong;
           const inputFeedbackClass = getInputFeedbackClass(index);
           
           // Add flip animation for wrong inputs when feedback is shown
@@ -212,31 +211,14 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
                 type="text"
                 maxLength={1}
                 inputMode="latin"
-                value={showAnimation ? '' : (feedbackState.effectPhase === 'permanent' && isWrong ? correctLetter : value)}
+                value={feedbackState.effectPhase === 'permanent' && isWrong ? correctLetter : value}
                 onChange={(e) => handleInputChange(e, index)}
                 onKeyDown={(e) => handleKeyDown(e, index)}
                 onMouseDown={(e) => handleInputClick(e, index)}
                 disabled={cardData.submitted}
-                className={`w-full h-full bg-transparent outline-none text-center [--txt-body] appearance-none caret-[var(--color-secondary)] ${showAnimation ? 'input-animating' : ''}`}
+                className="w-full h-full bg-transparent outline-none text-center [--txt-body] appearance-none caret-[var(--color-secondary)]"
                 style={{ color: cardData.submitted ? 'grey' : 'black' }}
               />
-              {/* Letter animations for wrong inputs */}
-              {showAnimation && (
-                <>
-                  <span 
-                    className="letter-exiting" 
-                    key={`exit-${inputFeedback.inputAnimationKey}-${index}`}
-                  >
-                    {value}
-                  </span>
-                  <span 
-                    className="letter-entering" 
-                    key={`enter-${inputFeedback.inputAnimationKey}-${index}`}
-                  >
-                    {correctLetter}
-                  </span>
-                </>
-              )}
             </div>
           );
         })}

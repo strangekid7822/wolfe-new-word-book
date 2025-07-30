@@ -484,60 +484,6 @@ body {
     color: var(--color-dark-pink) !important;
   }
 
-  /* Letter animation keyframes */
-  @keyframes letter-fade-up-out {
-    0% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    100% {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-  }
-
-  @keyframes letter-slide-up-in {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  /* Letter animation classes */
-  .letter-exiting {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: inherit;
-    font-weight: inherit;
-    color: inherit;
-    pointer-events: none;
-    animation: letter-fade-up-out 2s ease-out forwards;
-    z-index: 2;
-  }
-
-  .letter-entering {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: inherit;
-    font-weight: inherit;
-    color: inherit;
-    pointer-events: none;
-    animation: letter-slide-up-in 2s ease-out forwards;
-    z-index: 3;
-  }
-
-  /* Base input styling during animations */
-  .input-animating {
-    color: transparent !important;
-  }
 
   /* Card flip animation keyframes */
   @keyframes card-flip-double {
