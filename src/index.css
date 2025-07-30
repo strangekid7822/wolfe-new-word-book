@@ -532,4 +532,29 @@ body {
   .input-animating {
     color: transparent !important;
   }
+
+  /* Card flip animation keyframes */
+  @keyframes card-flip-double {
+    0% {
+      transform: rotateX(0deg);
+    }
+    25% {
+      transform: rotateX(-90deg);
+    }
+    50% {
+      transform: rotateX(0deg);
+    }
+    75% {
+      transform: rotateX(-90deg);
+    }
+    100% {
+      transform: rotateX(0deg);
+    }
+  }
+
+  /* Reusable card flip animation class */
+  .card-flip-animation {
+    animation: card-flip-double 0.8s ease-in-out;
+    transform-style: preserve-3d;
+  }
 }
