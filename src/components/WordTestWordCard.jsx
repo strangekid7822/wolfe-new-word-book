@@ -53,41 +53,17 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
         showEffects: true,
         correctIndex: correctIndex,
         selectedIndex: selectedIndex,
-        effectPhase: 'pulsing',
+        effectPhase: 'permanent', // Skip pulsing, go straight to permanent
         animationKey: Date.now(),
         // Input feedback initialization
         inputFeedback: {
-          showInputEffects: true,
+          showInputEffects: false, // Skip input animations
           correctLetters: inputValidation.correctLetters,
           wrongInputs: inputValidation.wrongIndices,
           correctInputs: inputValidation.correctIndices,
           inputAnimationKey: Date.now()
         }
       });
-      
-      // Transition to permanent effect after 2 seconds
-      setTimeout(() => {
-        setFeedbackState(prev => ({
-          ...prev,
-          effectPhase: 'permanent',
-          inputFeedback: {
-            ...prev.inputFeedback,
-            showInputEffects: false // Stop animations, keep permanent styling
-          }
-        }));
-        
-        // Update input values to show correct letters
-        if (inputValidation.wrongIndices.length > 0) {
-          const correctedInputs = [...cardData.inputs];
-          inputValidation.wrongIndices.forEach(wrongIndex => {
-            correctedInputs[wrongIndex] = inputValidation.correctLetters[wrongIndex];
-          });
-          
-          // Update the card data with corrected inputs
-          // Note: This is handled through the parent component's state
-          // The visual effect is achieved through the animation system
-        }
-      }, 2000);
     }
   }, [cardData.submitted, feedbackState.showEffects, cardData.correctIndex, cardData.chineseMeanings, cardData.selectedOption, cardData.inputs, cardData.word]);
 

@@ -48,7 +48,8 @@ const Option = ({ text, label, isSelected, onClick, disabled, feedbackType, effe
   const feedbackClass = getFeedbackClass();
   
   // Add flip animation class when feedback starts (both correct and wrong options)
-  const shouldShowFlipAnimation = feedbackType && effectPhase === 'pulsing';
+  // Since we removed pulsing phase, trigger flip when feedback first appears
+  const shouldShowFlipAnimation = feedbackType && effectPhase === 'permanent';
   const flipAnimationClass = shouldShowFlipAnimation ? 'card-flip-animation' : '';
 
   return (
