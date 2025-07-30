@@ -25,7 +25,8 @@ const Option = ({ text, label, isSelected, onClick, disabled, feedbackType, effe
       
       // Use requestAnimationFrame to ensure the repaint happens
       requestAnimationFrame(() => {
-        element.style.transform = element.style.transform || 'translateZ(0)';
+        // Hardware acceleration is now handled by CSS class
+        void element.offsetHeight;
       });
     }
   }, [isSelected]);
@@ -59,7 +60,7 @@ const Option = ({ text, label, isSelected, onClick, disabled, feedbackType, effe
       disabled={disabled}
       key={animationKey} // Force re-render when animation restarts
       className={`
-        option-button
+        option-button transform-gpu
         ${isSelected && !feedbackClass ? 'option-selected' : 'option-default'}
         ${disabled ? 'option-disabled' : ''}
         ${feedbackClass}

@@ -289,16 +289,10 @@ function WordTestCardGallery() {
       {/* The main scrollable container for the card gallery. */}
       <div
         ref={containerRef}
-        className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar pb-6"
-        style={{
-          scrollSnapType: 'x mandatory', // Enforces snapping to cards on scroll.
-          WebkitOverflowScrolling: 'touch', // Enables smooth scrolling on iOS.
-          scrollbarWidth: 'none', // Hides the scrollbar in Firefox.
-          msOverflowStyle: 'none' // Hides the scrollbar in Internet Explorer.
-        }}
+        className="flex overflow-x-auto snap-x snap-mandatory no-scrollbar pb-6 touch-scroll scroll-smooth"
       >
         {/* This spacer div provides padding on the left side of the first card. */}
-        <div className="flex-shrink-0" style={{ width: '7.5vw' }} />
+        <div className="flex-shrink-0 w-[7.5vw]" />
         
         {/* Map over the `wordCards` array to render each card. */}
         {/* Only show cards if timer hasn't ended or if it's an active/previous card */}
@@ -311,8 +305,7 @@ function WordTestCardGallery() {
               key={card.id}
               // Assign the ref for the card's outer DOM element.
               ref={el => cardElementRefs.current[index] = el}
-              className="flex-shrink-0 px-2 snap-center word-card-container" 
-              style={{ width: '90vw' }}
+              className="flex-shrink-0 px-2 snap-center word-card-container w-[90vw]"
             >
               <WordTestWordCard 
                 // Assign the ref for the WordTestWordCard component instance.
@@ -328,7 +321,7 @@ function WordTestCardGallery() {
         })}
         
         {/* This spacer div provides padding on the right side of the last card. */}
-        <div className="flex-shrink-0" style={{ width: '7.5vw' }} />
+        <div className="flex-shrink-0 w-[7.5vw]" />
       </div>
     </div>
   );
