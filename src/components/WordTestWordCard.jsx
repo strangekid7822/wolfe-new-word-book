@@ -1,4 +1,4 @@
-import { forwardRef, useEffect } from 'react';
+import { forwardRef, useEffect, useState } from 'react';
 import SubmitButton from './SubmitButton';
 import SpellingInputs from './SpellingInputs';
 import AudioPlayButton from './AudioPlayButton';
@@ -8,6 +8,7 @@ import { useFeedbackState } from '../hooks/useFeedbackState';
 import { useAudioPlayback } from '../hooks/useAudioPlayback';
 
 const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConfirm, onOptionSelect }, ref) => {
+  const [isExiting, setIsExiting] = useState(false);
   // Custom hooks for separated concerns
   const { inputRefs, validateInputs, handleInputChange, handleKeyDown, handleInputClick } = useInputManagement(cardData, onInputChange, ref);
   const { feedbackState, getInputFeedbackClass, getOptionFeedbackType } = useFeedbackState(cardData, validateInputs);
@@ -59,10 +60,22 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
 
       {/* Submit Button */}
       {shouldShowSubmitButton && (
-        <div className="submit-button-enter">
+        <div 
+          className={`submit-button-enter ${isExiting ? 'submit-button-exit' : ''}`}
+          onAnimationEnd={(e) => {
+            if (e.animationName === 'fadeOutScale') {
+              onConfirm(cardData.id);
+              setIsExiting(false);
+            }
+          }}
+        >
           <SubmitButton
-            onClick={() => onConfirm(cardData.id)}
-            isDisabled={cardData.submitted}
+            onClick={() => {
+              if (!isExiting && !cardData.submitted) {
+                setIsExiting(true);
+              }
+            }}
+            isDisabled={cardData.submitted || isExiting}
             buttonText="确定"
           />
         </div>
