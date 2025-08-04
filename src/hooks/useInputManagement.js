@@ -44,8 +44,16 @@ export const useInputManagement = (cardData, onInputChange, ref) => {
     }
     onInputChange(cardData.id, index, value);
 
-    // Auto-navigate to next input
-    if (value && index < cardData.word.length - 1) {
+    // Create a temporary copy of inputs to check if all are filled
+    const newInputs = [...cardData.inputs];
+    newInputs[index] = value;
+    const allFilled = newInputs.every(input => input !== '');
+
+    if (allFilled) {
+      // If all inputs are filled, dismiss the keyboard by blurring the input
+      inputRefs.current[index]?.blur();
+    } else if (value && index < cardData.word.length - 1) {
+      // Otherwise, auto-navigate to the next input
       inputRefs.current[index + 1]?.focus();
     }
   };
