@@ -86,9 +86,12 @@ const Option = ({ text, label, isSelected, onClick, disabled, feedbackType, effe
       `}
     >
       <span className="option-label">{label}.</span>
-      <span className="option-text" ref={textRef}>
-        <span className={shouldMarquee ? 'marquee-text' : ''}>{text}</span>
-      </span>
+              <span className="option-text" ref={textRef}>
+                <span className={shouldMarquee ? 'marquee-container' : 'static-text'}>
+                  <span className="marquee-content">{text}</span>
+                  {shouldMarquee && <span className="marquee-content">{text}</span>}
+                </span>
+              </span>
     </button>
   );
 };

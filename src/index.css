@@ -410,19 +410,28 @@ body {
     overflow: hidden;
     white-space: nowrap;
   }
-  
-  .marquee-text {
+
+  .marquee-container {
     display: inline-block;
-    animation: marquee-scroll 8s linear infinite;
-    padding-right: 2rem; /* Add space between repetitions */
+    animation: marquee-scroll 5s linear infinite;
+    white-space: nowrap; /* Ensure content stays on one line */
   }
-  
+
+  .marquee-content {
+    display: inline-block;
+    padding-right: 2rem; /* Gap between original and duplicate text */
+  }
+
+  .static-text {
+    display: inline-block;
+  }
+
   @keyframes marquee-scroll {
     0% {
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-100%);
+      transform: translateX(-50%); /* Scroll to the start of the duplicated content */
     }
   }
 
