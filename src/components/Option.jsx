@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 
 /**
  * Option Component
@@ -15,6 +15,8 @@ import React, { useRef, useEffect } from 'react';
  */
 const Option = ({ text, label, isSelected, onClick, disabled, feedbackType, effectPhase, animationKey }) => {
   const buttonRef = useRef(null);
+  const textRef = useRef(null);
+  const [shouldMarquee, setShouldMarquee] = useState(false);
 
   // Force repaint when selection state changes (fixes iOS Safari rendering issue)
   useEffect(() => {
@@ -30,6 +32,22 @@ const Option = ({ text, label, isSelected, onClick, disabled, feedbackType, effe
       });
     }
   }, [isSelected]);
+
+  // Check if text overflows and needs marquee
+  useEffect(() => {
+    const checkOverflow = () => {
+      if (textRef.current) {
+        const element = textRef.current;
+        setShouldMarquee(element.scrollWidth > element.clientWidth);
+      }
+    };
+
+    checkOverflow();
+    
+    // Recheck on window resize
+    window.addEventListener('resize', checkOverflow);
+    return () => window.removeEventListener('resize', checkOverflow);
+  }, [text]);
 
   // Generate feedback CSS class based on feedback state
   const getFeedbackClass = () => {
@@ -68,7 +86,9 @@ const Option = ({ text, label, isSelected, onClick, disabled, feedbackType, effe
       `}
     >
       <span className="option-label">{label}.</span>
-      <span className="option-text">{text}</span>
+      <span className="option-text" ref={textRef}>
+        <span className={shouldMarquee ? 'marquee-text' : ''}>{text}</span>
+      </span>
     </button>
   );
 };

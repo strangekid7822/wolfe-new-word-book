@@ -407,6 +407,23 @@ body {
 
   .option-text {
     @apply flex-1;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  
+  .marquee-text {
+    display: inline-block;
+    animation: marquee-scroll 8s linear infinite;
+    padding-right: 2rem; /* Add space between repetitions */
+  }
+  
+  @keyframes marquee-scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
   }
 
   /* Answer Feedback Animation Keyframes */
