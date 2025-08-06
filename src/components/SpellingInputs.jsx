@@ -9,6 +9,7 @@ const SpellingInputs = ({
   onInputChange, 
   onKeyDown, 
   onInputClick,
+  onInputFocus,
   getInputFeedbackClass 
 }) => {
   return (
@@ -37,6 +38,7 @@ const SpellingInputs = ({
               onChange={(e) => onInputChange(e, index)}
               onKeyDown={(e) => onKeyDown(e, index)}
               onMouseDown={(e) => onInputClick(e, index)}
+              onFocus={(e) => onInputFocus(e, index)}
               disabled={cardData.submitted}
               className="w-full h-full bg-transparent outline-none text-center [--txt-body] appearance-none caret-[var(--color-secondary)]"
             />

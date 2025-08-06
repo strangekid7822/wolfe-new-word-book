@@ -64,18 +64,31 @@ export const useInputManagement = (cardData, onInputChange, ref) => {
     }
   };
 
-  // Prevent clicking on inputs beyond the first empty one
+  // Handle input click and text selection
   const handleInputClick = (e, index) => {
     const firstEmptyIndex = cardData.inputs.findIndex(input => input === "");
 
-    // If all inputs are filled, allow the click
+    // If all inputs are filled, allow click and select text
     if (firstEmptyIndex === -1) {
+      if (cardData.inputs[index]) {
+        setTimeout(() => e.target.select(), 0);
+      }
       return;
     }
 
-    // If the clicked input is beyond the first empty one, prevent the click
+    // If clicked input is beyond first empty, prevent click
     if (index > firstEmptyIndex) {
       e.preventDefault();
+    } else if (cardData.inputs[index]) {
+      // Select text for available filled inputs
+      setTimeout(() => e.target.select(), 0);
+    }
+  };
+
+  // Handle input focus for text selection
+  const handleInputFocus = (e, index) => {
+    if (cardData.inputs[index]) {
+      e.target.select();
     }
   };
 
@@ -84,6 +97,7 @@ export const useInputManagement = (cardData, onInputChange, ref) => {
     validateInputs,
     handleInputChange,
     handleKeyDown,
-    handleInputClick
+    handleInputClick,
+    handleInputFocus
   };
 };

@@ -10,7 +10,7 @@ import { useAudioPlayback } from '../hooks/useAudioPlayback';
 const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConfirm, onOptionSelect }, ref) => {
   const [isExiting, setIsExiting] = useState(false);
   // Custom hooks for separated concerns
-  const { inputRefs, validateInputs, handleInputChange, handleKeyDown, handleInputClick } = useInputManagement(cardData, onInputChange, ref);
+  const { inputRefs, validateInputs, handleInputChange, handleKeyDown, handleInputClick, handleInputFocus } = useInputManagement(cardData, onInputChange, ref);
   const { feedbackState, getInputFeedbackClass, getOptionFeedbackType } = useFeedbackState(cardData, validateInputs);
   const { isGlowing, handlePlayButtonClick } = useAudioPlayback(cardData.word, isActive, cardData.submitted);
 
@@ -45,6 +45,7 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
         onInputChange={handleInputChange}
         onKeyDown={handleKeyDown}
         onInputClick={handleInputClick}
+        onInputFocus={handleInputFocus}
         getInputFeedbackClass={getInputFeedbackClass}
       />
       
