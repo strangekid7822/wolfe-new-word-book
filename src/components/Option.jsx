@@ -17,6 +17,8 @@ const Option = ({ text, label, isSelected, onClick, disabled, feedbackType, effe
   const buttonRef = useRef(null);
   const textRef = useRef(null);
   const [shouldMarquee, setShouldMarquee] = useState(false);
+  // State to control the delayed start of the marquee animation
+  const [startMarqueeDelayed, setStartMarqueeDelayed] = useState(false);
 
   // Force repaint when selection state changes (fixes iOS Safari rendering issue)
   useEffect(() => {
@@ -48,6 +50,17 @@ const Option = ({ text, label, isSelected, onClick, disabled, feedbackType, effe
     window.addEventListener('resize', checkOverflow);
     return () => window.removeEventListener('resize', checkOverflow);
   }, [text]);
+
+  // Effect to delay the start of the marquee animation by 3 seconds
+  useEffect(() => {
+    // Clear any existing timeout if the text or component re-renders
+    const timer = setTimeout(() => {
+      setStartMarqueeDelayed(true);
+    }, 3000); // 3000 milliseconds = 3 seconds
+
+    // Cleanup function to clear the timeout if the component unmounts or dependencies change
+    return () => clearTimeout(timer);
+  }, [text, animationKey]); // Re-trigger if text or animationKey changes
 
   // Generate feedback CSS class based on feedback state
   const getFeedbackClass = () => {
@@ -87,9 +100,9 @@ const Option = ({ text, label, isSelected, onClick, disabled, feedbackType, effe
     >
       <span className="option-label">{label}.</span>
               <span className="option-text" ref={textRef}>
-                <span className={shouldMarquee ? 'marquee-container' : 'static-text'}>
+                <span className={shouldMarquee && startMarqueeDelayed ? 'marquee-container' : 'static-text'}>
                   <span className="marquee-content">{text}</span>
-                  {shouldMarquee && <span className="marquee-content">{text}</span>}
+                  {shouldMarquee && startMarqueeDelayed && <span className="marquee-content">{text}</span>}
                 </span>
               </span>
     </button>
