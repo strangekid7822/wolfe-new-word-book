@@ -68,7 +68,8 @@ This is a React-based word learning application built with Vite and styled with 
 - **Automatic Audio Pronunciation**: Words play automatically when cards become active, using Browser Speech Synthesis API with English voice selection
 - **Manual Audio Replay**: Glassmorphism-styled play button with visual feedback animations for replaying pronunciation
 - **Expandable Word Cards**: Cards grow vertically to show Chinese meaning options after spelling completion
-- **Smart Input Navigation**: Sequential input filling with auto-focus, backspace navigation, and click prevention beyond first empty input
+- **Smart Input Navigation**: Sequential input filling with auto-focus, backspace navigation, click prevention beyond first empty input, and automatic keyboard dismissal when last input is filled
+- **Text Selection for Input Replacement**: Automatic text selection when clicking or focusing filled inputs, enabling easy letter replacement without manual deletion
 - **Randomized Multiple Choice**: Chinese meaning options with shuffled positions to prevent pattern learning
 - **Infinite Card Flow**: Cards generate continuously while timer runs, with visual preview hints of upcoming cards
 - **Timer-Controlled Gameplay**: 3-minute countdown controls card generation, stopping new cards and hiding uncentered cards when time expires
