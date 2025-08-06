@@ -49,19 +49,11 @@ export const useInputManagement = (cardData, onInputChange, ref) => {
       inputRefs.current[index + 1]?.focus();
     }
     
-    // Auto-unfocus when all inputs are filled (hide keyboard on mobile)
+    // Auto-unfocus when last input is filled (hide keyboard on mobile)
     if (value && index === cardData.word.length - 1) {
-      // Check if all inputs will be filled after this update
-      const updatedInputs = [...cardData.inputs];
-      updatedInputs[index] = value;
-      const allFilled = updatedInputs.every(input => input.trim() !== '');
-      
-      if (allFilled) {
-        // Small delay to ensure the input value is set before blurring
-        setTimeout(() => {
-          e.target.blur();
-        }, 50);
-      }
+      setTimeout(() => {
+        e.target.blur();
+      }, 50);
     }
   };
 
