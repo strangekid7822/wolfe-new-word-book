@@ -18,17 +18,21 @@ const OptionsSection = ({
           const feedbackType = getOptionFeedbackType(index);
           
           return (
-            <Option
+            <div 
               key={index}
-              text={meaning}
-              label={String.fromCharCode(65 + index)}
-              isSelected={cardData.selectedOption === meaning}
-              onClick={() => onOptionSelect(cardData.id, meaning)}
-              disabled={cardData.submitted}
-              feedbackType={feedbackType}
-              effectPhase={feedbackState.effectPhase}
-              animationKey={feedbackState.animationKey}
-            />
+              className={`option-stagger-enter option-stagger-${index}`}
+            >
+              <Option
+                text={meaning}
+                label={String.fromCharCode(65 + index)}
+                isSelected={cardData.selectedOption === meaning}
+                onClick={() => onOptionSelect(cardData.id, meaning)}
+                disabled={cardData.submitted}
+                feedbackType={feedbackType}
+                effectPhase={feedbackState.effectPhase}
+                animationKey={feedbackState.animationKey}
+              />
+            </div>
           );
         })}
       </div>
