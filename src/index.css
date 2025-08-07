@@ -286,15 +286,15 @@ body {
   }
   
   .option-stagger-1 {
-    animation-delay: 0.1s;    /* Second option - 100ms delay */
+    animation-delay: 0.05s;   /* Second option - 50ms delay */
   }
   
   .option-stagger-2 {
-    animation-delay: 0.2s;    /* Third option - 200ms delay */
+    animation-delay: 0.1s;    /* Third option - 100ms delay */
   }
   
   .option-stagger-3 {
-    animation-delay: 0.3s;    /* Fourth option - 300ms delay */
+    animation-delay: 0.15s;   /* Fourth option - 150ms delay */
   }
 
 
