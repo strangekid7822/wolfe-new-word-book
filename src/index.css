@@ -243,13 +243,23 @@ body {
   @keyframes slideInUp {
     from {
       opacity: 0;
-      transform: translateY(20px) scale(0.95);
-      max-height: 0;
+      transform: scale(0.95);
     }
     to {
       opacity: 1;
-      transform: translateY(0) scale(1);
-      max-height: 200px; /* Large enough to accommodate content */
+      transform: scale(1);
+    }
+  }
+
+  /* Alternative slideInUp for staggered options - no layout changes */
+  @keyframes slideInUpStaggered {
+    from {
+      opacity: 0;
+      transform: scale(0.9) translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1) translateY(0);
     }
   }
 
@@ -262,10 +272,13 @@ body {
 
   /* Staggered entrance animations for option buttons */
   .option-stagger-enter {
-    animation: slideInUp 0.4s ease-out forwards;
+    animation: slideInUpStaggered 0.4s ease-out forwards;
     /* Start invisible - will animate in */
     opacity: 0;
-    transform: translateY(20px) scale(0.95);
+    /* Use only visual transforms that don't affect layout height */
+    transform: scale(0.9) translateY(10px);
+    /* Reserve full space immediately - no layout changes during animation */
+    min-height: 2.5rem;
   }
 
   .option-stagger-0 {
