@@ -663,44 +663,6 @@ body {
     background: var(--color-grey-darker);
   }
 
-  .confetti-container {
-    @apply absolute inset-0 w-full h-full pointer-events-none;
-  }
-
-  @keyframes confetti-fall {
-    0% { transform: translateY(-10vh) rotateZ(0deg); opacity: 1; }
-    100% { transform: translateY(110vh) rotateZ(360deg); opacity: 0; }
-  }
-
-  .confetti-container div {
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    opacity: 0;
-    animation: confetti-fall 5s linear infinite;
-  }
-
-  /* Random delays and positions for confetti */
-  .confetti-0 { left: 5%; animation-delay: 0s; background: var(--color-primary); }
-  .confetti-1 { left: 10%; animation-delay: 1s; background: var(--color-secondary); }
-  .confetti-2 { left: 15%; animation-delay: 2s; background: var(--color-green); }
-  .confetti-3 { left: 20%; animation-delay: 0.5s; background: var(--color-pink); }
-  .confetti-4 { left: 25%; animation-delay: 1.5s; background: var(--color-orange-yellow); }
-  .confetti-5 { left: 30%; animation-delay: 2.5s; background: var(--color-primary); }
-  .confetti-6 { left: 35%; animation-delay: 3s; background: var(--color-secondary); }
-  .confetti-7 { left: 40%; animation-delay: 4s; background: var(--color-green); }
-  .confetti-8 { left: 45%; animation-delay: 3.5s; background: var(--color-pink); }
-  .confetti-9 { left: 50%; animation-delay: 4.5s; background: var(--color-orange-yellow); }
-  .confetti-10 { left: 55%; animation-delay: 0.2s; background: var(--color-primary); }
-  .confetti-11 { left: 60%; animation-delay: 1.2s; background: var(--color-secondary); }
-  .confetti-12 { left: 65%; animation-delay: 2.2s; background: var(--color-green); }
-  .confetti-13 { left: 70%; animation-delay: 0.8s; background: var(--color-pink); }
-  .confetti-14 { left: 75%; animation-delay: 1.8s; background: var(--color-orange-yellow); }
-  .confetti-15 { left: 80%; animation-delay: 2.8s; background: var(--color-primary); }
-  .confetti-16 { left: 85%; animation-delay: 3.2s; background: var(--color-secondary); }
-  .confetti-17 { left: 90%; animation-delay: 4.2s; background: var(--color-green); }
-  .confetti-18 { left: 95%; animation-delay: 3.8s; background: var(--color-pink); }
-  .confetti-19 { left: 100%; animation-delay: 4.8s; background: var(--color-orange-yellow); }
 
   @keyframes fadeIn {
     from { opacity: 0; }
