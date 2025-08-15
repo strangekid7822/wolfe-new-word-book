@@ -6,9 +6,9 @@ const ResultCard = ({ score, onTryAgain }) => {
   const navigate = useNavigate();
 
   const getPerformance = (score) => {
-    if (score >= 80) return { level: 'Excellent!', color: 'text-green-400' };
-    if (score >= 60) return { level: 'Good Job!', color: 'text-blue-400' };
-    return { level: 'Keep Practicing!', color: 'text-orange-400' };
+    if (score >= 80) return { level: '牛波一啊！', color: 'text-green-400' };
+    if (score >= 60) return { level: '也就那么回事儿吧！', color: 'text-blue-400' };
+    return { level: '你跟我扯犊子呢？', color: 'text-orange-400' };
   };
 
   const performance = getPerformance(score);
@@ -72,16 +72,16 @@ const ResultCard = ({ score, onTryAgain }) => {
   return (
     <div className="result-card-container">
       <div className="result-card">
-        <h2 className="result-title">Time's Up!</h2>
-        <p className="result-subtitle">Here's your performance:</p>
+        <h2 className="result-title">时间到</h2>
+        <p className="result-subtitle">看看你做的好事！</p>
         <div className="score-circle">
           <span className="score-value">{score}</span>
-          <span className="score-label">Score</span>
+          <span className="score-label">得分</span>
         </div>
         <p className={`performance-level ${performance.color}`}>{performance.level}</p>
         <div className="result-actions">
-          <button onClick={onTryAgain} className="result-button try-again">Try Again</button>
-          <button onClick={handleGoHome} className="result-button go-home">Go Home</button>
+          <button onClick={onTryAgain} className="result-button try-again">重来</button>
+          <button onClick={handleGoHome} className="result-button go-home">回家</button>
         </div>
       </div>
     </div>
