@@ -30,7 +30,7 @@ function WordTestCardGallery() {
       const success = await questionService.loadLibrary('七年级上.json');
       if (!success) throw new Error('Failed to load vocabulary library');
       
-      const questions = questionService.generateQuestions(5);
+      const questions = questionService.generateQuestions(1);
       if (questions.length === 0) throw new Error('No questions could be generated');
       
       const initialCards = questions.map(q => ({ ...q, chineseMeanings: q.options }));
