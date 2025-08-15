@@ -1,36 +1,39 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import WordTestWordCard from './WordTestWordCard';
-import ResultCard from './ResultCard'; // Import the new ResultCard component
+import ResultCard from './ResultCard';
 import questionService from '../services/questionService';
 import { useTimer } from '../contexts/TimerContext';
 
 function WordTestCardGallery() {
+  // Core state
   const [activeIndex, setActiveIndex] = useState(0);
-  const containerRef = useRef(null);
-  const cardComponentRefs = useRef([]);
-  const cardElementRefs = useRef([]);
   const [wordCards, setWordCards] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [loadError, setLoadError] = useState(null);
   const [canGenerateCards, setCanGenerateCards] = useState(true);
-  const { isTimeUp, setOnTimerEnd, resetTimer } = useTimer();
-
-  // State for result card
   const [showResultCard, setShowResultCard] = useState(false);
   const [resultData, setResultData] = useState({ score: 0 });
 
+  // Refs
+  const containerRef = useRef(null);
+  const cardComponentRefs = useRef([]);
+  const cardElementRefs = useRef([]);
+  
+  // Timer context
+  const { isTimeUp, setOnTimerEnd, resetTimer } = useTimer();
+
+  // Initialize questions
   const initializeQuestions = useCallback(async () => {
     setIsLoading(true);
     setLoadError(null);
     try {
       const success = await questionService.loadLibrary('七年级上.json');
       if (!success) throw new Error('Failed to load vocabulary library');
+      
       const questions = questionService.generateQuestions(5);
       if (questions.length === 0) throw new Error('No questions could be generated');
-      const initialCards = questions.map(q => ({ 
-        ...q, 
-        chineseMeanings: q.options 
-      }));
+      
+      const initialCards = questions.map(q => ({ ...q, chineseMeanings: q.options }));
       setWordCards(initialCards);
     } catch (error) {
       console.error('Error initializing questions:', error);
@@ -40,137 +43,118 @@ function WordTestCardGallery() {
     }
   }, []);
 
-  useEffect(() => {
-    initializeQuestions();
-  }, [initializeQuestions]);
+  useEffect(() => { initializeQuestions(); }, [initializeQuestions]);
 
+  // Calculate final results
   const calculateResults = useCallback(() => {
     const submittedCards = wordCards.filter(card => card.submitted);
-    if (submittedCards.length === 0) {
-      return { score: 0 };
-    }
+    if (submittedCards.length === 0) return { score: 0 };
 
     let totalScore = 0;
     submittedCards.forEach(card => {
       const spellingCorrect = card.inputs.join('').toLowerCase() === card.word.toLowerCase();
       const meaningCorrect = card.selectedOption === card.correctMeaning;
-      let cardScore = 0;
-      if (spellingCorrect) cardScore += 50;
-      if (meaningCorrect) cardScore += 50;
-      totalScore += cardScore;
+      if (spellingCorrect) totalScore += 50;
+      if (meaningCorrect) totalScore += 50;
     });
 
-    const averageScore = Math.round(totalScore / submittedCards.length);
-    return { score: averageScore };
+    return { score: Math.round(totalScore / submittedCards.length) };
   }, [wordCards]);
 
+  // Handle timer end
   useEffect(() => {
     const handleTimerEnd = () => {
-      console.log('Timer ended - stopping card generation');
       setCanGenerateCards(false);
-
+      setWordCards(prev => prev.slice(0, activeIndex + 1)); // Keep only current card
+      
       setTimeout(() => {
-        const results = calculateResults();
-        setResultData(results);
+        setResultData(calculateResults());
         setShowResultCard(true);
-      }, 500); // Delay for final animations
-
-      setWordCards(prevCards => {
-        if (prevCards.length > 0 && activeIndex < prevCards.length - 1) {
-          return prevCards.slice(0, activeIndex + 1);
-        }
-        return prevCards;
-      });
+      }, 500);
     };
 
     setOnTimerEnd(() => handleTimerEnd);
-
-    return () => {
-      setOnTimerEnd(null);
-    };
+    return () => setOnTimerEnd(null);
   }, [activeIndex, setOnTimerEnd, calculateResults]);
 
+  // Generate new cards
   const generateNewCard = useCallback(() => {
     if (!canGenerateCards || isTimeUp) return null;
     const newQuestion = questionService.generateQuestion();
-    return newQuestion ? { 
-      ...newQuestion, 
-      chineseMeanings: newQuestion.options 
-    } : null;
+    return newQuestion ? { ...newQuestion, chineseMeanings: newQuestion.options } : null;
   }, [canGenerateCards, isTimeUp]);
 
+  // Auto-generate preview cards
   useEffect(() => {
-    if (canGenerateCards && !isTimeUp && wordCards.length > 0) {
-      if (activeIndex >= wordCards.length - 1) {
-        const newCard = generateNewCard();
-        if (newCard) {
-          setWordCards(prevCards => [...prevCards, newCard]);
-        }
-      }
+    if (canGenerateCards && !isTimeUp && wordCards.length > 0 && activeIndex >= wordCards.length - 1) {
+      const newCard = generateNewCard();
+      if (newCard) setWordCards(prev => [...prev, newCard]);
     }
   }, [activeIndex, wordCards.length, canGenerateCards, isTimeUp, generateNewCard]);
 
+  // Keep refs in sync
   useEffect(() => {
     cardComponentRefs.current = cardComponentRefs.current.slice(0, wordCards.length);
     cardElementRefs.current = cardElementRefs.current.slice(0, wordCards.length);
   }, [wordCards]);
 
+  // Scroll and focus management
   const scrollToCard = (index) => {
-    const cardElement = cardElementRefs.current[index];
-    if (cardElement) {
-      cardElement.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
-    }
+    cardElementRefs.current[index]?.scrollIntoView({ 
+      behavior: 'smooth', 
+      inline: 'center', 
+      block: 'nearest' 
+    });
   };
 
   useEffect(() => {
     if (showResultCard) return;
     scrollToCard(activeIndex);
-    const focusTimeout = setTimeout(() => {
-      if (cardComponentRefs.current[activeIndex]) {
-        cardComponentRefs.current[activeIndex].focus({ preventScroll: true });
-      }
+    const timer = setTimeout(() => {
+      cardComponentRefs.current[activeIndex]?.focus({ preventScroll: true });
     }, 350);
-    return () => clearTimeout(focusTimeout);
+    return () => clearTimeout(timer);
   }, [activeIndex, showResultCard]);
 
   useEffect(() => {
-    if (showResultCard) return;
-    setTimeout(() => scrollToCard(0), 100);
+    if (!showResultCard) setTimeout(() => scrollToCard(0), 100);
   }, [showResultCard]);
 
+  // Event handlers
   const handleInputChange = (cardId, inputIndex, value) => {
-    setWordCards(prevCards =>
-      prevCards.map(card =>
-        card.id === cardId ? { ...card, inputs: Object.assign([...card.inputs], { [inputIndex]: value }) } : card
-      )
-    );
+    setWordCards(prev => prev.map(card => 
+      card.id === cardId 
+        ? { ...card, inputs: Object.assign([...card.inputs], { [inputIndex]: value }) }
+        : card
+    ));
   };
 
   const handleOptionSelect = (cardId, selectedMeaning) => {
-    setWordCards(prevCards =>
-      prevCards.map(card => (card.id === cardId ? { ...card, selectedOption: selectedMeaning } : card))
-    );
+    setWordCards(prev => prev.map(card => 
+      card.id === cardId ? { ...card, selectedOption: selectedMeaning } : card
+    ));
   };
 
   const handleConfirm = (cardId) => {
-    setWordCards(prevCards =>
-      prevCards.map(card => (card.id === cardId ? { ...card, submitted: true } : card))
-    );
+    // Mark card as submitted
+    setWordCards(prev => prev.map(card => 
+      card.id === cardId ? { ...card, submitted: true } : card
+    ));
 
     const nextIndex = activeIndex + 1;
 
-    setWordCards(prevCards => {
-      if (nextIndex >= prevCards.length - 1 && canGenerateCards && !isTimeUp) {
+    // Generate new card if needed
+    setWordCards(prev => {
+      if (nextIndex >= prev.length - 1 && canGenerateCards && !isTimeUp) {
         const newCard = generateNewCard();
-        if (newCard) return [...prevCards, newCard];
+        if (newCard) return [...prev, newCard];
       }
-      return prevCards;
+      return prev;
     });
 
+    // Move to next card after animation
     setTimeout(() => {
-      if (nextIndex < wordCards.length) {
-        setActiveIndex(nextIndex);
-      }
+      if (nextIndex < wordCards.length) setActiveIndex(nextIndex);
     }, 2500);
   };
 
@@ -184,18 +168,28 @@ function WordTestCardGallery() {
     resetTimer();
   };
 
+  // Render states
   if (isLoading) {
-    return <div className="w-full h-96 flex items-center justify-center"><div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500"></div></div>;
+    return (
+      <div className="w-full h-96 flex items-center justify-center">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-500" />
+      </div>
+    );
   }
 
   if (loadError) {
-    return <div className="w-full h-96 flex items-center justify-center text-red-500">Error: {loadError}</div>;
+    return (
+      <div className="w-full h-96 flex items-center justify-center text-red-500">
+        Error: {loadError}
+      </div>
+    );
   }
 
   if (showResultCard) {
     return <ResultCard score={resultData.score} onTryAgain={handleTryAgain} />;
   }
 
+  // Main gallery
   return (
     <div className="w-full relative">
       <div

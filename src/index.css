@@ -595,22 +595,26 @@ body {
   }
 
   .result-card-container {
-    @apply fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50;
+    @apply fixed inset-0 flex items-center justify-center z-50;
+    background: rgba(0, 0, 0, 0.5);
     animation: fadeIn 0.3s ease-out;
   }
 
   .result-card {
-    @apply bg-tertiary rounded-3xl p-8 shadow-lg text-center relative overflow-hidden w-11/12 max-w-md;
+    @apply rounded-3xl p-8 shadow-lg text-center relative overflow-hidden w-11/12 max-w-md;
+    background: var(--color-tertiary);
     border: 3px solid var(--color-white);
     animation: slideInUp 0.5s ease-out;
   }
 
   .result-title {
-    @apply text-3xl font-bold text-primary mb-2;
+    @apply text-3xl font-bold mb-2;
+    color: var(--color-primary);
   }
 
   .result-subtitle {
-    @apply text-body text-grey-darker mb-6;
+    @apply text-base mb-6;
+    color: var(--color-grey-darker);
   }
 
   .score-circle {
@@ -621,15 +625,18 @@ body {
 
   .score-circle::before {
     content: '';
-    @apply absolute inset-1 bg-tertiary rounded-full;
+    @apply absolute inset-1 rounded-full;
+    background: var(--color-tertiary);
   }
 
   .score-value {
-    @apply text-5xl font-bold text-primary z-10;
+    @apply text-5xl font-bold z-10;
+    color: var(--color-primary);
   }
 
   .score-label {
-    @apply text-sm font-medium text-grey-darker z-10;
+    @apply text-sm font-medium z-10;
+    color: var(--color-grey-darker);
   }
 
   .performance-level {
@@ -649,11 +656,11 @@ body {
   }
 
   .try-again {
-    @apply bg-primary;
+    background: var(--color-primary);
   }
 
   .go-home {
-    @apply bg-grey-darker;
+    background: var(--color-grey-darker);
   }
 
   .confetti-container {
