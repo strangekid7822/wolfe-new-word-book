@@ -13,51 +13,45 @@ const ResultCard = ({ score, onTryAgain }) => {
 
   const performance = getPerformance(score);
 
-  const handleGoHome = () => {
-    navigate('/');
-  };
+  const handleGoHome = () => navigate('/');
 
-  // Trigger confetti when component mounts
+  // App theme colors
+  const THEME_COLORS = ['#0080BB', '#87D9FF', '#CEEAF9', '#95FF87', '#FF7787', '#FFC800'];
+  const randomInRange = (min, max) => Math.random() * (max - min) + min;
+
+  // Confetti celebration effect
   useEffect(() => {
-    const triggerConfetti = () => {
-      // App theme colors
-      const colors = ['#0080BB', '#87D9FF', '#CEEAF9', '#95FF87', '#FF7787', '#FFC800'];
-      
-      // Multiple bursts for celebration effect
+    const startConfetti = () => {
       const duration = 3000;
-      const animationEnd = Date.now() + duration;
-      
-      const randomInRange = (min, max) => Math.random() * (max - min) + min;
+      const endTime = Date.now() + duration;
       
       const interval = setInterval(() => {
-        const timeLeft = animationEnd - Date.now();
-        
-        if (timeLeft <= 0) {
+        if (Date.now() >= endTime) {
           clearInterval(interval);
           return;
         }
         
-        // Burst from center with varied spread
+        // Main center burst
         confetti({
           particleCount: randomInRange(15, 30),
           angle: randomInRange(55, 125),
           spread: randomInRange(50, 70),
           origin: { x: randomInRange(0.3, 0.7), y: randomInRange(0.5, 0.7) },
-          colors: colors,
+          colors: THEME_COLORS,
           shapes: ['square', 'circle'],
           scalar: randomInRange(0.8, 1.2),
           gravity: randomInRange(0.6, 1.0),
           drift: randomInRange(-0.5, 0.5)
         });
         
-        // Side bursts occasionally
+        // Occasional side bursts
         if (Math.random() < 0.3) {
           confetti({
             particleCount: randomInRange(10, 20),
             angle: 60,
             spread: 80,
             origin: { x: 0, y: 0.6 },
-            colors: colors
+            colors: THEME_COLORS
           });
           
           confetti({
@@ -65,14 +59,13 @@ const ResultCard = ({ score, onTryAgain }) => {
             angle: 120,
             spread: 80,
             origin: { x: 1, y: 0.6 },
-            colors: colors
+            colors: THEME_COLORS
           });
         }
       }, 150);
     };
     
-    // Start confetti after a brief delay for card animation
-    const timer = setTimeout(triggerConfetti, 300);
+    const timer = setTimeout(startConfetti, 300);
     return () => clearTimeout(timer);
   }, []);
 
