@@ -45,20 +45,40 @@ function WordTestCardGallery() {
 
   useEffect(() => { initializeQuestions(); }, [initializeQuestions]);
 
-  // Calculate final results
+  // Calculate final score: base points + speed bonuses + streak bonuses
   const calculateResults = useCallback(() => {
     const submittedCards = wordCards.filter(card => card.submitted);
     if (submittedCards.length === 0) return { score: 0 };
 
     let totalScore = 0;
+    let currentStreak = 0;
+
+    // Base scoring (50 spelling + 50 meaning per card) + streak bonuses
     submittedCards.forEach(card => {
       const spellingCorrect = card.inputs.join('').toLowerCase() === card.word.toLowerCase();
       const meaningCorrect = card.selectedOption === card.correctMeaning;
+      
       if (spellingCorrect) totalScore += 50;
       if (meaningCorrect) totalScore += 50;
+
+      // Ongoing streak bonuses: +25/50/75 per perfect card based on streak length
+      if (spellingCorrect && meaningCorrect) {
+        currentStreak++;
+        if (currentStreak >= 10) totalScore += 75;
+        else if (currentStreak >= 6) totalScore += 50;
+        else if (currentStreak >= 3) totalScore += 25;
+      } else {
+        currentStreak = 0;
+      }
     });
 
-    return { score: Math.round(totalScore / submittedCards.length) };
+    // Speed bonuses: reward completing more cards
+    const cardCount = submittedCards.length;
+    if (cardCount >= 10) totalScore += 50;
+    if (cardCount >= 15) totalScore += 100;
+    if (cardCount >= 20) totalScore += 200;
+
+    return { score: totalScore };
   }, [wordCards]);
 
   // Handle timer end

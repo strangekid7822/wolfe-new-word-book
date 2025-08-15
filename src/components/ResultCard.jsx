@@ -6,8 +6,8 @@ const ResultCard = ({ score, onTryAgain }) => {
   const navigate = useNavigate();
 
   const getPerformance = (score) => {
-    if (score >= 80) return { level: '牛波一啊！', color: 'text-green-400' };
-    if (score >= 60) return { level: '也就那么回事儿吧！', color: 'text-blue-400' };
+    if (score >= 1000) return { level: '牛波一啊！', color: 'text-green-400' };
+    if (score >= 500) return { level: '也就那么回事儿吧！', color: 'text-blue-400' };
     return { level: '你跟我扯犊子呢？', color: 'text-orange-400' };
   };
 
