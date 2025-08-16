@@ -175,7 +175,7 @@ function WordTestCardGallery() {
     // Move to next card after animation
     setTimeout(() => {
       if (nextIndex < wordCards.length) setActiveIndex(nextIndex);
-    }, 2500);
+    }, 100);
   };
 
   const handleTryAgain = () => {
