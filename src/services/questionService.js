@@ -4,7 +4,8 @@ class QuestionService {
   constructor() {
     this.vocabularyData = null;
     this.availableWords = [];
-    this.usedWords = new Set();
+    this.shuffledWords = [];
+    this.currentIndex = 0;
     this.currentLibrary = null;
   }
 
@@ -35,8 +36,8 @@ class QuestionService {
       }
       
       // Shuffle the words for random order
-      this.availableWords = shuffle(this.availableWords);
-      this.usedWords.clear();
+      this.shuffledWords = shuffle(this.availableWords);
+      this.currentIndex = 0;
       
       console.log(`Loaded ${this.availableWords.length} words from ${libraryPath}`);
       return true;
@@ -53,30 +54,16 @@ class QuestionService {
    * @returns {Object|null} - Question object or null if no more words
    */
   generateQuestion() {
-    // Check if we need to reload the word pool
-    if (this.availableWords.length === 0 || this.usedWords.size >= this.availableWords.length) {
-      console.log('All words used, reshuffling...');
-      this.usedWords.clear();
-      this.availableWords = shuffle(this.availableWords);
+    // Check if we need to reshuffle
+    if (this.currentIndex >= this.shuffledWords.length) {
+      console.log(`Reshuffling at index ${this.currentIndex} of ${this.shuffledWords.length}`);
+      this.shuffledWords = shuffle(this.availableWords);
+      this.currentIndex = 0;
     }
 
-    // Find next unused word
-    let wordData = null;
-    let attempts = 0;
-    const maxAttempts = this.availableWords.length;
-
-    while (attempts < maxAttempts) {
-      const randomIndex = Math.floor(Math.random() * this.availableWords.length);
-      const candidate = this.availableWords[randomIndex];
-      
-      if (!this.usedWords.has(candidate.word)) {
-        wordData = candidate;
-        this.usedWords.add(candidate.word);
-        break;
-      }
-      attempts++;
-    }
-
+    // Get next word sequentially from shuffled array
+    const wordData = this.shuffledWords[this.currentIndex++];
+    
     if (!wordData) {
       console.warn('No available words found');
       return null;
@@ -155,8 +142,8 @@ class QuestionService {
   getStats() {
     return {
       totalWords: this.availableWords.length,
-      usedWords: this.usedWords.size,
-      remainingWords: this.availableWords.length - this.usedWords.size,
+      usedWords: this.currentIndex,
+      remainingWords: this.shuffledWords.length - this.currentIndex,
       currentLibrary: this.currentLibrary
     };
   }
@@ -165,9 +152,9 @@ class QuestionService {
    * Reset the service (clear used words)
    */
   reset() {
-    this.usedWords.clear();
+    this.currentIndex = 0;
     if (this.availableWords.length > 0) {
-      this.availableWords = shuffle(this.availableWords);
+      this.shuffledWords = shuffle(this.availableWords);
     }
   }
 }

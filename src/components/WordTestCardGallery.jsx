@@ -88,7 +88,10 @@ function WordTestCardGallery() {
       setWordCards(prev => prev.slice(0, activeIndex + 1)); // Keep only current card
       
       setTimeout(() => {
-        setResultData(calculateResults());
+        const results = calculateResults();
+        const submittedCount = wordCards.filter(card => card.submitted).length;
+        console.log(`Game ended - Score: ${results.score}, Words answered: ${submittedCount}`);
+        setResultData(results);
         setShowResultCard(true);
       }, 500);
     };
@@ -160,6 +163,13 @@ function WordTestCardGallery() {
     setWordCards(prev => prev.map(card => 
       card.id === cardId ? { ...card, submitted: true } : card
     ));
+    
+    // Log progress
+    const submittedCount = wordCards.filter(card => card.submitted).length + 1;
+    setTimeout(() => {
+      const currentScore = calculateResults().score;
+      console.log(`Word submitted - Total answered: ${submittedCount}, Score: ${currentScore}`);
+    }, 10);
 
     const nextIndex = activeIndex + 1;
 
