@@ -37,11 +37,19 @@ export const useInputManagement = (cardData, onInputChange, ref) => {
 
   // Handle input change with validation and auto-navigation
   const handleInputChange = (e, index) => {
-    let value = e.target.value.toLowerCase().replace(/[^a-z]/g, '');
+    // Clean input (remove non-letters) but preserve original case
+    let value = e.target.value.replace(/[^a-zA-Z]/g, '');
     // Force single character
     if (value.length > 1) {
       value = value.slice(0, 1);
     }
+    
+    // Convert to match the original word's casing at this position
+    if (value && index < cardData.word.length) {
+      const originalChar = cardData.word[index];
+      value = originalChar === originalChar.toUpperCase() ? value.toUpperCase() : value.toLowerCase();
+    }
+    
     onInputChange(cardData.id, index, value);
 
     // Auto-navigate to next input
