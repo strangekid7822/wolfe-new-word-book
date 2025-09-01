@@ -81,7 +81,7 @@ const ResultCard = ({ score, onTryAgain }) => {
         <p className={`performance-level ${performance.color}`}>{performance.level}</p>
         <div className="result-actions">
           <button onClick={onTryAgain} className="result-button try-again">重来</button>
-          <button onClick={handleGoHome} className="result-button go-home">回家</button>
+          <button onClick={handleGoHome} className="result-button go-home">继续</button>
         </div>
       </div>
     </div>
