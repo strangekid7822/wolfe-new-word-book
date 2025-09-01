@@ -20,7 +20,7 @@ function WordTestCardGallery() {
   const cardElementRefs = useRef([]);
   
   // Timer context
-  const { isTimeUp, setOnTimerEnd, resetTimer } = useTimer();
+  const { isTimeUp, setOnTimerEnd, resetTimer, totalTime, formatTime, timeLeft } = useTimer();
 
   // Initialize questions
   const initializeQuestions = useCallback(async () => {
@@ -45,13 +45,20 @@ function WordTestCardGallery() {
 
   useEffect(() => { initializeQuestions(); }, [initializeQuestions]);
 
-  // Calculate final score: base points + speed bonuses + streak bonuses
+  // Calculate final score and summary metrics
+  // - Base: +50 for correct spelling, +50 for correct meaning per submitted card
+  // - Streak bonus: additional +25/50/75 for perfect cards at streaks >=3/6/10
+  // - Speed bonus: reward more submitted cards within time (+50/100/200)
+  // Also returns:
+  //   answeredCount: number of submitted cards
+  //   accuracyPct: percent of fully-correct (spelling AND meaning) cards
   const calculateResults = useCallback(() => {
     const submittedCards = wordCards.filter(card => card.submitted);
-    if (submittedCards.length === 0) return { score: 0 };
+    if (submittedCards.length === 0) return { score: 0, answeredCount: 0, accuracyPct: 0 };
 
     let totalScore = 0;
     let currentStreak = 0;
+    let perfectCount = 0;
 
     // Base scoring (50 spelling + 50 meaning per card) + streak bonuses
     submittedCards.forEach(card => {
@@ -63,6 +70,7 @@ function WordTestCardGallery() {
 
       // Ongoing streak bonuses: +25/50/75 per perfect card based on streak length
       if (spellingCorrect && meaningCorrect) {
+        perfectCount++;
         currentStreak++;
         if (currentStreak >= 10) totalScore += 75;
         else if (currentStreak >= 6) totalScore += 50;
@@ -78,7 +86,9 @@ function WordTestCardGallery() {
     if (cardCount >= 15) totalScore += 100;
     if (cardCount >= 20) totalScore += 200;
 
-    return { score: totalScore };
+    const answeredCount = submittedCards.length;
+    const accuracyPct = answeredCount > 0 ? Math.round((perfectCount / answeredCount) * 100) : 0;
+    return { score: totalScore, answeredCount, accuracyPct };
   }, [wordCards]);
 
   // Handle timer end
@@ -90,8 +100,11 @@ function WordTestCardGallery() {
       setTimeout(() => {
         const results = calculateResults();
         const submittedCount = wordCards.filter(card => card.submitted).length;
+        // Time used is derived from TimerContext at end: totalTime - remaining
+        const timeUsed = formatTime ? formatTime(Math.max(0, totalTime - timeLeft)) : `${totalTime}s`;
         console.log(`Game ended - Score: ${results.score}, Words answered: ${submittedCount}`);
-        setResultData(results);
+        // Persist summary metrics for ResultCard
+        setResultData({ ...results, timeUsed });
         setShowResultCard(true);
       }, 500);
     };
@@ -173,7 +186,7 @@ function WordTestCardGallery() {
 
     const nextIndex = activeIndex + 1;
 
-    // Generate new card if needed
+    // Generate new card if needed (preview into next)
     setWordCards(prev => {
       if (nextIndex >= prev.length - 1 && canGenerateCards && !isTimeUp) {
         const newCard = generateNewCard();
@@ -216,7 +229,15 @@ function WordTestCardGallery() {
   }
 
   if (showResultCard) {
-    return <ResultCard score={resultData.score} onTryAgain={handleTryAgain} />;
+    return (
+      <ResultCard 
+        score={resultData.score} 
+        onTryAgain={handleTryAgain}
+        timeUsed={resultData.timeUsed}
+        answeredCount={resultData.answeredCount}
+        accuracyPct={resultData.accuracyPct}
+      />
+    );
   }
 
   // Main gallery
