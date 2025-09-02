@@ -20,7 +20,7 @@ function WordTestCardGallery() {
   const cardElementRefs = useRef([]);
   
   // Timer context
-  const { isTimeUp, setOnTimerEnd, resetTimer, totalTime, formatTime, timeLeft } = useTimer();
+  const { isTimeUp, setOnTimerEnd, resetTimer } = useTimer();
 
   // Initialize questions
   const initializeQuestions = useCallback(async () => {
@@ -100,11 +100,10 @@ function WordTestCardGallery() {
       setTimeout(() => {
         const results = calculateResults();
         const submittedCount = wordCards.filter(card => card.submitted).length;
-        // Time used is derived from TimerContext at end: totalTime - remaining
-        const timeUsed = formatTime ? formatTime(Math.max(0, totalTime - timeLeft)) : `${totalTime}s`;
+        const { totalWords } = questionService.getStats();
         console.log(`Game ended - Score: ${results.score}, Words answered: ${submittedCount}`);
-        // Persist summary metrics for ResultCard
-        setResultData({ ...results, timeUsed });
+        // Persist summary metrics for ResultCard (no time used)
+        setResultData({ ...results, totalCount: totalWords });
         setShowResultCard(true);
       }, 500);
     };
@@ -233,8 +232,8 @@ function WordTestCardGallery() {
       <ResultCard 
         score={resultData.score} 
         onTryAgain={handleTryAgain}
-        timeUsed={resultData.timeUsed}
-        answeredCount={resultData.answeredCount}
+        totalCount={resultData.totalCount}
+        finishedCount={resultData.answeredCount}
         accuracyPct={resultData.accuracyPct}
       />
     );

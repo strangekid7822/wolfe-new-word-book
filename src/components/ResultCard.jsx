@@ -9,12 +9,11 @@ import confetti from 'canvas-confetti';
  * @param {Object} props
  * @param {number} props.score - Final score for the round (computed in gallery)
  * @param {() => void} props.onTryAgain - Resets state and starts a new round
- * @param {string} props.timeUsed - Formatted time used (e.g. 02:15:34)
- * @param {number} props.answeredCount - Number of submitted/finished cards
+ * @param {number} props.totalCount - Total number of questions/words in this course
+ * @param {number} props.finishedCount - Number of finished questions/words in this course
  * @param {number} props.accuracyPct - Percent of fully-correct cards (0-100)
- * @param {string|number=} props.rank - Optional rank to display (if available)
  */
-const ResultCard = ({ score, onTryAgain, timeUsed, answeredCount, accuracyPct, rank }) => {
+const ResultCard = ({ score, onTryAgain, totalCount, finishedCount, accuracyPct }) => {
   const navigate = useNavigate();
 
   // Title text by performance tiers; also returns a CSS variable color
@@ -95,23 +94,17 @@ const ResultCard = ({ score, onTryAgain, timeUsed, answeredCount, accuracyPct, r
         {/* Compact, single-line metric rows */}
         <div className="result-metrics-list">
           <div className="metric-row">
-            <span className="metric-label">完成数量</span>
-            <span className="metric-value">{answeredCount}</span>
+            <span className="metric-label">题目总数</span>
+            <span className="metric-value">{totalCount}</span>
           </div>
           <div className="metric-row">
-            <span className="metric-label">用时</span>
-            <span className="metric-value">{timeUsed}</span>
+            <span className="metric-label">完成数量</span>
+            <span className="metric-value">{finishedCount}</span>
           </div>
           <div className="metric-row">
             <span className="metric-label">正确率</span>
             <span className="metric-value">{accuracyPct}%</span>
           </div>
-          {rank != null && (
-            <div className="metric-row">
-              <span className="metric-label">排名</span>
-              <span className="metric-value">{rank}</span>
-            </div>
-          )}
         </div>
         <div className="result-actions">
           <button onClick={onTryAgain} className="result-button try-again">重来</button>
