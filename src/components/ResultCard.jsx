@@ -1,9 +1,10 @@
 // Result card shown at the end of a round.
 // Displays a dynamic title based on score, a score circle,
 // and a compact vertical list of key metrics.
-import { useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import confetti from 'canvas-confetti';
+import leaderboardService from '../services/leaderboardService';
 
 /**
  * @param {Object} props
@@ -12,9 +13,21 @@ import confetti from 'canvas-confetti';
  * @param {number} props.totalCount - Total number of questions/words in this course
  * @param {number} props.finishedCount - Number of finished questions/words in this course
  * @param {number} props.accuracyPct - Percent of fully-correct cards (0-100)
+ * @param {string=} props.libraryId - Current library scope for leaderboard, used to segment ranks by course
+ * @param {string=} props.nextPath - Optional path to navigate on second Continue click
+ * @param {() => void=} props.onContinue - Optional handler for Continue when flipped (overrides nextPath)
  */
-const ResultCard = ({ score, onTryAgain, totalCount, finishedCount, accuracyPct }) => {
+const ResultCard = ({ score, onTryAgain, totalCount, finishedCount, accuracyPct, libraryId, nextPath, onContinue }) => {
   const navigate = useNavigate();
+  // Flip state: false = show score (front), true = show leaderboard (back)
+  const [isFlipped, setIsFlipped] = useState(false);
+  // Leaderboard async state
+  const [loadingLb, setLoadingLb] = useState(false);
+  const [top3, setTop3] = useState([]);
+  const [userRank, setUserRank] = useState(null);
+  const [participants, setParticipants] = useState(0);
+  // Prevent duplicate submission/fetch on re-renders
+  const hasSubmittedRef = useRef(false);
 
   // Title text by performance tiers; also returns a CSS variable color
   // Using CSS variables ensures it overrides the fixed title color cleanly.
@@ -32,7 +45,7 @@ const ResultCard = ({ score, onTryAgain, totalCount, finishedCount, accuracyPct 
   const THEME_COLORS = ['#0080BB', '#87D9FF', '#CEEAF9', '#95FF87', '#FF7787', '#FFC800'];
   const randomInRange = (min, max) => Math.random() * (max - min) + min;
 
-  // Confetti celebration effect on mount
+  // Confetti celebration effect on mount (front side)
   useEffect(() => {
     const startConfetti = () => {
       const duration = 3000;
@@ -82,33 +95,112 @@ const ResultCard = ({ score, onTryAgain, totalCount, finishedCount, accuracyPct 
     return () => clearTimeout(timer);
   }, []);
 
+  // Submit the result once and load leaderboard snapshot.
+  // This runs regardless of which side is visible so the back has data ready when flipped.
+  useEffect(() => {
+    if (hasSubmittedRef.current) return;
+    hasSubmittedRef.current = true;
+    try {
+      setLoadingLb(true);
+      leaderboardService.submitScore({ libraryId, score, finishedCount, accuracyPct });
+      const t3 = leaderboardService.getTopN(libraryId, 3);
+      const ur = leaderboardService.getUserRank(libraryId);
+      setTop3(t3);
+      setUserRank(ur.rank);
+      setParticipants(ur.total);
+    } finally {
+      setLoadingLb(false);
+    }
+  }, [libraryId, score, finishedCount, accuracyPct]);
+
+  // Continue behavior:
+  // - First click: flip to leaderboard
+  // - Second click: navigate via onContinue/nextPath (default '/').
+  const handleContinue = () => {
+    if (!isFlipped) {
+      setIsFlipped(true);
+      return;
+    }
+    if (typeof onContinue === 'function') {
+      onContinue();
+      return;
+    }
+    if (nextPath) {
+      navigate(nextPath);
+    } else {
+      navigate('/');
+    }
+  };
+
   return (
     <div className="result-card-container">
-      <div className="result-card">
-        <h2 className="result-title" style={{ color: performance.colorVar }}>{performance.level}</h2>
-        <p className="result-subtitle">看看你做的好事！</p>
-        <div className="score-circle">
-          <span className="score-value">{score}</span>
-          <span className="score-label">得分</span>
-        </div>
-        {/* Compact, single-line metric rows */}
-        <div className="result-metrics-list">
-          <div className="metric-row">
-            <span className="metric-label">题目总数</span>
-            <span className="metric-value">{totalCount}</span>
-          </div>
-          <div className="metric-row">
-            <span className="metric-label">完成数量</span>
-            <span className="metric-value">{finishedCount}</span>
-          </div>
-          <div className="metric-row">
-            <span className="metric-label">正确率</span>
-            <span className="metric-value">{accuracyPct}%</span>
-          </div>
-        </div>
-        <div className="result-actions">
+      <div className={`result-card flip-container ${isFlipped ? 'flipped' : ''}`}>
+        <div className="flipper">
+          {/* Front */}
+          <div className="front">
+            <h2 className="result-title" style={{ color: performance.colorVar }}>{performance.level}</h2>
+            <p className="result-subtitle">看看你做的好事！</p>
+            <div className="score-circle">
+              <span className="score-value">{score}</span>
+              <span className="score-label">得分</span>
+            </div>
+            {/* Compact, single-line metric rows */}
+            <div className="result-metrics-list">
+              <div className="metric-row">
+                <span className="metric-label">题目总数</span>
+                <span className="metric-value">{totalCount}</span>
+              </div>
+              <div className="metric-row">
+                <span className="metric-label">完成数量</span>
+                <span className="metric-value">{finishedCount}</span>
+              </div>
+              <div className="metric-row">
+                <span className="metric-label">正确率</span>
+                <span className="metric-value">{accuracyPct}%</span>
+              </div>
+            </div>
+            <div className="result-actions">
           <button onClick={onTryAgain} className="result-button try-again">重来</button>
-          <button onClick={handleGoHome} className="result-button go-home">继续</button>
+          <button onClick={handleContinue} className="result-button go-home">继续</button>
+            </div>
+          </div>
+
+          {/* Back: Leaderboard */}
+          <div className="back">
+            <h2 className="result-title">排行榜</h2>
+            <p className="result-subtitle">
+              {loadingLb ? '加载中…' : leaderboardService.getIntlRankText(userRank, participants)}
+            </p>
+
+            <div className="leaderboard-list">
+              {(top3 && top3.length > 0) ? top3.map((entry, idx) => (
+                <div key={entry.userId || idx} className="leaderboard-row">
+                  <span className="rank-badge">{idx + 1}</span>
+                  <div 
+                    className="avatar"
+                    style={{ backgroundColor: leaderboardService.hashToColor(entry.userId || String(idx)) }}
+                    aria-label={entry.name}
+                  >
+                    {leaderboardService.initialsFromName(entry.name)}
+                  </div>
+                  <div className="leaderboard-name">{entry.name}</div>
+                  <div className="leaderboard-score">{entry.score}</div>
+                </div>
+              )) : (
+                <div className="metric-row">暂无数据</div>
+              )}
+            </div>
+
+            <div className="leaderboard-user">
+              <span className="metric-label">你的名次</span>
+              <span className="metric-value">{userRank || '-'}/{participants}</span>
+            </div>
+
+            <div className="result-actions">
+              <button onClick={onTryAgain} className="result-button try-again">重来</button>
+              <button onClick={handleContinue} className="result-button go-home">继续</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -649,4 +649,86 @@ body {
     from { opacity: 0; }
     to { opacity: 1; }
   }
+
+  /* 3D Flip container for ResultCard
+     Notes:
+     - Firefox requires the faces themselves to be transformed (rotateY(0/180))
+       for backface-visibility to take effect. We apply transforms on .front/.back.
+     - We add vendor-prefixed backface-visibility to support Safari/Firefox.
+     - translateZ(0) and will-change are used to hint GPU compositing and avoid
+       flattening during the flip. */
+  .flip-container {
+    perspective: 1000px;
+  }
+  .flipper {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.45s ease;
+    min-height: 420px; /* ensure enough height for back */
+    transform: translateZ(0);
+    will-change: transform;
+  }
+  .flipped .flipper {
+    transform: rotateY(180deg);
+  }
+  .front, .back {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    will-change: transform;
+  }
+  .front {
+    z-index: 2;
+    transform: rotateY(0deg) translateZ(0);
+  }
+  .back {
+    transform: rotateY(180deg) translateZ(0);
+  }
+
+  /* Ensure children also do not paint their backface (mitigates some Firefox bleed-through) */
+  .front *, .back * {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+  }
+
+  /* Avoid click-through on the hidden side after flip */
+  .flipped .front { pointer-events: none; }
+
+  /* Leaderboard styles */
+  .leaderboard-list {
+    @apply flex flex-col gap-2 mb-4;
+  }
+  .leaderboard-row {
+    @apply flex items-center justify-between px-2 py-2 rounded-xl;
+    background: var(--color-white);
+    border: 1px solid rgba(0,0,0,0.06);
+  }
+  .rank-badge {
+    @apply text-sm font-bold mr-2;
+    color: var(--color-primary);
+    min-width: 1.5rem;
+    text-align: center;
+  }
+  .avatar {
+    @apply rounded-full text-white font-bold mr-2 flex items-center justify-center;
+    width: 28px; height: 28px;
+  }
+  .leaderboard-name {
+    @apply flex-1 text-sm;
+    color: var(--color-black);
+  }
+  .leaderboard-score {
+    @apply text-sm font-semibold;
+    color: var(--color-primary);
+  }
+  .leaderboard-user {
+    @apply flex items-center justify-between px-1 py-1 mb-4;
+    border-top: 1px solid rgba(0,0,0,0.06);
+  }
 }

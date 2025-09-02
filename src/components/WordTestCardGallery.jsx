@@ -235,6 +235,8 @@ function WordTestCardGallery() {
         totalCount={resultData.totalCount}
         finishedCount={resultData.answeredCount}
         accuracyPct={resultData.accuracyPct}
+        // Pass libraryId so leaderboard ranks are scoped by course/library
+        libraryId={questionService.getStats().currentLibrary}
       />
     );
   }
