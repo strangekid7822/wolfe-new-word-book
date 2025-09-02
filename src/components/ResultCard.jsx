@@ -14,20 +14,16 @@ import leaderboardService from '../services/leaderboardService';
  * @param {number} props.finishedCount - Number of finished questions/words in this course
  * @param {number} props.accuracyPct - Percent of fully-correct cards (0-100)
  * @param {string=} props.libraryId - Current library scope for leaderboard, used to segment ranks by course
- * @param {string=} props.nextPath - Optional path to navigate on second Continue click
- * @param {() => void=} props.onContinue - Optional handler for Continue when flipped (overrides nextPath)
  */
-const ResultCard = ({ score, onTryAgain, totalCount, finishedCount, accuracyPct, libraryId, nextPath, onContinue }) => {
+const ResultCard = ({ score, onTryAgain, totalCount, finishedCount, accuracyPct, libraryId }) => {
   const navigate = useNavigate();
   // Flip state: false = show score (front), true = show leaderboard (back)
   const [isFlipped, setIsFlipped] = useState(false);
-  // Leaderboard async state
-  const [loadingLb, setLoadingLb] = useState(false);
   const [top3, setTop3] = useState([]);
   const [userRank, setUserRank] = useState(null);
   const [participants, setParticipants] = useState(0);
-  // Prevent duplicate submission/fetch on re-renders
-  const hasSubmittedRef = useRef(false);
+  // Submit-once guard not needed since this component mounts per result display
+  const submittedOnce = useRef(false);
 
   // Title text by performance tiers; also returns a CSS variable color
   // Using CSS variables ensures it overrides the fixed title color cleanly.
@@ -38,8 +34,6 @@ const ResultCard = ({ score, onTryAgain, totalCount, finishedCount, accuracyPct,
   };
 
   const performance = getPerformance(score);
-
-  const handleGoHome = () => navigate('/');
 
   // Confetti theme colors to match app palette
   const THEME_COLORS = ['#0080BB', '#87D9FF', '#CEEAF9', '#95FF87', '#FF7787', '#FFC800'];
@@ -95,41 +89,32 @@ const ResultCard = ({ score, onTryAgain, totalCount, finishedCount, accuracyPct,
     return () => clearTimeout(timer);
   }, []);
 
-  // Submit the result once and load leaderboard snapshot.
-  // This runs regardless of which side is visible so the back has data ready when flipped.
+  // Submit the result once on mount (localStorage is synchronous and fast).
   useEffect(() => {
-    if (hasSubmittedRef.current) return;
-    hasSubmittedRef.current = true;
-    try {
-      setLoadingLb(true);
-      leaderboardService.submitScore({ libraryId, score, finishedCount, accuracyPct });
-      const t3 = leaderboardService.getTopN(libraryId, 3);
-      const ur = leaderboardService.getUserRank(libraryId);
-      setTop3(t3);
-      setUserRank(ur.rank);
-      setParticipants(ur.total);
-    } finally {
-      setLoadingLb(false);
-    }
+    if (submittedOnce.current) return;
+    submittedOnce.current = true;
+    leaderboardService.submitScore({ libraryId, score, finishedCount, accuracyPct });
   }, [libraryId, score, finishedCount, accuracyPct]);
+
+  // Load leaderboard only when flipped, to keep initial render light.
+  useEffect(() => {
+    if (!isFlipped) return;
+    const t3 = leaderboardService.getTopN(libraryId, 3);
+    const ur = leaderboardService.getUserRank(libraryId);
+    setTop3(t3);
+    setUserRank(ur.rank);
+    setParticipants(ur.total);
+  }, [isFlipped, libraryId]);
 
   // Continue behavior:
   // - First click: flip to leaderboard
-  // - Second click: navigate via onContinue/nextPath (default '/').
+  // - Second click: navigate home ('/')
   const handleContinue = () => {
     if (!isFlipped) {
       setIsFlipped(true);
       return;
     }
-    if (typeof onContinue === 'function') {
-      onContinue();
-      return;
-    }
-    if (nextPath) {
-      navigate(nextPath);
-    } else {
-      navigate('/');
-    }
+    navigate('/');
   };
 
   return (
@@ -168,9 +153,7 @@ const ResultCard = ({ score, onTryAgain, totalCount, finishedCount, accuracyPct,
           {/* Back: Leaderboard */}
           <div className="back">
             <h2 className="result-title">排行榜</h2>
-            <p className="result-subtitle">
-              {loadingLb ? '加载中…' : leaderboardService.getIntlRankText(userRank, participants)}
-            </p>
+            <p className="result-subtitle">{leaderboardService.getIntlRankText(userRank, participants)}</p>
 
             <div className="leaderboard-list">
               {(top3 && top3.length > 0) ? top3.map((entry, idx) => (
