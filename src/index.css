@@ -564,6 +564,8 @@ body {
     background: var(--color-tertiary);
     border: 3px solid var(--color-white);
     animation: slideInUp 0.5s ease-out;
+    /* Add breathing room at the bottom; include safe-area inset for iOS notch devices */
+    padding-bottom: calc(3.75rem + env(safe-area-inset-bottom, 0px));
   }
 
   .result-title {
@@ -630,6 +632,7 @@ body {
 
   .result-actions {
     @apply flex gap-4;
+    margin-top: auto; /* Keep buttons anchored to the bottom of the card */
   }
 
   .result-button {
