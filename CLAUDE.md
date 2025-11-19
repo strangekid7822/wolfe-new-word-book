@@ -2,6 +2,11 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## Communication Style
+- Be concise and direct in all responses
+- Use short explanations unless detailed context is needed
+- Prioritize brevity over verbose explanations
+
 ## Commands
 
 ### Development
