@@ -2,15 +2,15 @@
  * Component for rendering spelling input fields with validation feedback
  * Handles individual letter inputs with animations and feedback states
  */
-const SpellingInputs = ({ 
-  cardData, 
-  feedbackState, 
-  inputRefs, 
-  onInputChange, 
-  onKeyDown, 
+const SpellingInputs = ({
+  cardData,
+  feedbackState,
+  inputRefs,
+  onInputChange,
+  onKeyDown,
   onInputClick,
   onInputFocus,
-  getInputFeedbackClass 
+  getInputFeedbackClass
 }) => {
   return (
     <div className="flex justify-center gap-1 mb-4">
@@ -19,15 +19,15 @@ const SpellingInputs = ({
         const isWrong = inputFeedback.wrongInputs.includes(index);
         const correctLetter = inputFeedback.correctLetters[index] || '';
         const inputFeedbackClass = getInputFeedbackClass(index);
-        
+
         // Add flip animation for wrong inputs when feedback is shown
         const shouldShowInputFlip = feedbackState.showEffects && isWrong && feedbackState.effectPhase === 'permanent';
         const inputFlipClass = shouldShowInputFlip ? 'card-flip-animation' : '';
-        
+
         return (
           <div
             key={index}
-            className={`w-8 h-10 sm:w-7 sm:h-9 rounded-lg border-2 border-gray-300 bg-gray-100 transition-transform duration-150 flex items-center justify-center focus-within:scale-110 focus-within:bg-white focus-within:border-[var(--color-secondary)] input-container ${inputFeedbackClass} ${inputFlipClass}`}
+            className={`w-10 h-12 sm:w-9 sm:h-11 rounded-xl transition-transform duration-150 flex items-center justify-center focus-within:scale-110 focus-within:bg-[var(--color-tertiary)] neumorphic-inner input-container ${inputFeedbackClass} ${inputFlipClass}`}
           >
             <input
               ref={el => inputRefs.current[index] = el}

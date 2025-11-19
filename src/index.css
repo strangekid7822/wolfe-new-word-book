@@ -14,16 +14,16 @@
   --color-orange-yellow: #FFC800;
   --color-green: #95FF87;
   --color-pink: #FF7787;
-  
+
   /* Feedback colors for correct/wrong answers */
   --color-light-green: rgba(34, 197, 94, 0.4);
   --color-dark-green: rgba(34, 197, 94, 0.9);
   --color-light-pink: rgba(236, 72, 153, 0.4);
   --color-dark-pink: rgba(236, 72, 153, 0.9);
-  
+
   /* Font family for bilingual text */
   --font-family: Inter, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", sans-serif;
-  
+
   /* Typography tokens for consistent hierarchy */
   --txt-display: text-xl lg:text-2xl font-semibold;
   --txt-body-lg: text-lg font-medium;
@@ -41,9 +41,20 @@
 
   /* Pulse keyframes */
   @keyframes pulse {
-    0%   { transform: translate(-50%, -50%) scale(1);   opacity: 1;   }
-    50%  { transform: translate(-50%, -50%) scale(1.4); opacity: 0.7; }
-    100% { transform: translate(-50%, -50%) scale(1);   opacity: 0;   }
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+
+    50% {
+      transform: translate(-50%, -50%) scale(1.4);
+      opacity: 0.7;
+    }
+
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0;
+    }
   }
 }
 
@@ -54,12 +65,15 @@ body {
 
 /* Hide scrollbars for all browsers */
 * {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 *::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
+  display: none;
+  /* Chrome, Safari, Opera */
 }
 
 /* iOS smooth scrolling utility */
@@ -78,6 +92,7 @@ body {
   from {
     --border-angle: 0deg;
   }
+
   to {
     --border-angle: 360deg;
   }
@@ -88,12 +103,14 @@ body {
     /* Updated padding to px-6 py-2.5 for larger button size - matches .btn-animated for consistency */
     @apply w-full px-6 py-2.5 rounded-full text-lg font-medium transition-colors shadow-md bg-gray-400 text-white cursor-not-allowed;
   }
+
   .btn-animated-wrapper {
     /* Gradient border wrapper with thinner border (p-1) and fixed min-height to prevent layout shift */
     @apply rounded-full p-1 mx-auto shadow-md min-h-[3.5rem] flex items-center [animation:border-spin_1.3s_linear_infinite];
     background: conic-gradient(from var(--border-angle), #ec4899 0%, #3b82f6 25%, #facc15 50%, #22c55e 75%, #ec4899 100%);
     transition: opacity 0.3s ease-in-out;
   }
+
   .btn-animated {
     /* Enlarged button with larger padding and text size to match .btn-disabled */
     @apply w-full px-6 py-2.5 rounded-full text-lg font-medium transition-colors bg-[var(--color-secondary)] text-white hover:bg-[var(--color-secondary-2)];
@@ -143,16 +160,16 @@ body {
     /* Height is 1/3 of parent's height, assuming parent has defined height */
     height: calc(100% / 3);
     cursor: pointer;
-    
+
     /* Glassmorphism styling using tertiary color with transparency */
     background: var(--color-secondary);
-    
+
     /* Subtle border to catch light and define edges */
     border-left: 2px solid rgba(255, 255, 255, 0.5);
     border-top: 2px solid rgba(255, 255, 255, 0.5);
     border-right: 2px solid #0080bb20;
     border-bottom: 2px solid #0080bb20;
-    
+
     /* Smooth transition for interactions */
     transition: transform 1s ease-in-out;
   }
@@ -187,7 +204,7 @@ body {
     fill: var(--color-white);
     transition: transform 1s ease;
   }
-  
+
   .glass-effect:active .glass-play-svg {
     transform: scale(1.1);
   }
@@ -196,14 +213,16 @@ body {
   .animated-glow-wrapper {
     position: relative;
     overflow: hidden;
-    display: inline-block; /* Ensures the pseudo-element is contained within the text width */
+    display: inline-block;
+    /* Ensures the pseudo-element is contained within the text width */
   }
 
   .animated-glow-wrapper::before {
     content: '';
     position: absolute;
     top: 0;
-    left: -100%; /* Start off-screen to the left */
+    left: -100%;
+    /* Start off-screen to the left */
     width: 100%;
     height: 100%;
     /* Create the glowing line effect using a linear gradient */
@@ -215,24 +234,32 @@ body {
   /* Keyframes for the glowing line animation */
   @keyframes glow-line {
     0% {
-      left: -100%; /* Start completely off-screen to the left */
+      left: -100%;
+      /* Start completely off-screen to the left */
     }
+
     100% {
-      left: 100%; /* Move completely off-screen to the right */
+      left: 100%;
+      /* Move completely off-screen to the right */
     }
   }
 
   .word-card-style {
     border-radius: 30px;
     background: var(--color-tertiary);
-    box-shadow: 8px 8px 16px var(--color-shadow);
-    border: 3px solid var(--color-white);
+    /* Soft, double-layer shadow for depth */
+    box-shadow:
+      10px 10px 20px rgba(163, 177, 198, 0.3),
+      -10px -10px 20px rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.6);
     transition: transform 0.3s ease, opacity 0.3s ease, max-height 0.4s ease-out;
-    max-height: 30vh; /* Default height */
+    max-height: 30vh;
+    /* Default height */
   }
 
   .word-card-expanded {
-    max-height: 75vh; /* Expanded height */
+    max-height: 75vh;
+    /* Expanded height */
   }
 
   /* Smooth growing animations for card sections */
@@ -245,6 +272,7 @@ body {
       opacity: 0;
       transform: scale(0.95);
     }
+
     to {
       opacity: 1;
       transform: scale(1);
@@ -257,13 +285,14 @@ body {
       opacity: 0;
       transform: scale(0.9) translateY(10px);
     }
+
     to {
       opacity: 1;
       transform: scale(1) translateY(0);
     }
   }
 
-  
+
 
   /* Submit button grow animation */
   .submit-button-enter {
@@ -282,19 +311,23 @@ body {
   }
 
   .option-stagger-0 {
-    animation-delay: 0s;      /* First option - immediate */
+    animation-delay: 0s;
+    /* First option - immediate */
   }
-  
+
   .option-stagger-1 {
-    animation-delay: 0.05s;   /* Second option - 50ms delay */
+    animation-delay: 0.05s;
+    /* Second option - 50ms delay */
   }
-  
+
   .option-stagger-2 {
-    animation-delay: 0.1s;    /* Third option - 100ms delay */
+    animation-delay: 0.1s;
+    /* Third option - 100ms delay */
   }
-  
+
   .option-stagger-3 {
-    animation-delay: 0.15s;   /* Fourth option - 150ms delay */
+    animation-delay: 0.15s;
+    /* Fourth option - 150ms delay */
   }
 
 
@@ -303,10 +336,12 @@ body {
       opacity: 0;
       transform: translateY(20px) scale(0.8);
     }
+
     60% {
       opacity: 1;
       transform: translateY(-5px) scale(1.05);
     }
+
     to {
       opacity: 1;
       transform: translateY(0) scale(1);
@@ -318,6 +353,7 @@ body {
       opacity: 1;
       transform: scale(1);
     }
+
     to {
       opacity: 0;
       transform: scale(0.8);
@@ -366,14 +402,30 @@ body {
 
   /* Option button styles for Chinese meaning selection */
   .option-button {
-    @apply flex items-center gap-2 p-1 rounded-xl font-medium text-left w-full;
-    background: var(--color-white);
-    /* Use consistent border structure for smooth transitions */
-    border: 2px solid var(--color-grey);
-    color: var(--color-grey);
-    /* Force hardware acceleration and smooth transitions */
+    @apply flex items-center gap-2 p-3 rounded-xl font-medium text-left w-full;
+    background: var(--color-tertiary);
+    /* Neumorphic shadow */
+    box-shadow:
+      5px 5px 10px rgba(163, 177, 198, 0.3),
+      -5px -5px 10px rgba(255, 255, 255, 0.8);
+    color: var(--color-grey-darker);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     transform: translateZ(0);
-    transition: all 0.2s ease-out, border-left 0.2s ease-out, border-top 0.2s ease-out, border-right 0.2s ease-out, border-bottom 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+
+  .option-button:active {
+    box-shadow:
+      inset 3px 3px 6px rgba(163, 177, 198, 0.3),
+      inset -3px -3px 6px rgba(255, 255, 255, 0.8);
+  }
+
+  .neumorphic-inner {
+    background: var(--color-tertiary);
+    box-shadow:
+      inset 3px 3px 6px rgba(163, 177, 198, 0.3),
+      inset -3px -3px 6px rgba(255, 255, 255, 0.8);
+    border: none;
   }
 
 
@@ -382,16 +434,14 @@ body {
   }
 
   .option-selected {
-    background: var(--color-secondary) !important;
-    border-left: 2px solid rgba(255, 255, 255, 0.5) !important;
-    border-top: 2px solid rgba(255, 255, 255, 0.5) !important;
-    border-right: 2px solid #0080bb20 !important;
-    border-bottom: 2px solid #0080bb20 !important;
-    color: var(--color-white) !important;
-    box-shadow: 0 0 15px rgba(135, 217, 255, 0.4);
-    /* Force repaint on iOS Safari */
-    will-change: border-color, background-color;
+    background: var(--color-tertiary) !important;
+    box-shadow:
+      inset 3px 3px 6px rgba(163, 177, 198, 0.3),
+      inset -3px -3px 6px rgba(255, 255, 255, 0.8) !important;
+    color: var(--color-primary) !important;
+    border: 1px solid rgba(255, 255, 255, 0.0) !important;
   }
+
   .option-disabled {
     @apply cursor-not-allowed opacity-60;
   }
@@ -410,12 +460,14 @@ body {
   .marquee-container {
     display: inline-block;
     animation: marquee-scroll 5s linear infinite;
-    white-space: nowrap; /* Ensure content stays on one line */
+    white-space: nowrap;
+    /* Ensure content stays on one line */
   }
 
   .marquee-content {
     display: inline-block;
-    padding-right: 2rem; /* Gap between original and duplicate text */
+    padding-right: 2rem;
+    /* Gap between original and duplicate text */
   }
 
   .static-text {
@@ -426,8 +478,10 @@ body {
     0% {
       transform: translateX(0);
     }
+
     100% {
-      transform: translateX(-50%); /* Scroll to the start of the duplicated content */
+      transform: translateX(-50%);
+      /* Scroll to the start of the duplicated content */
     }
   }
 
@@ -437,10 +491,12 @@ body {
       box-shadow: 0 0 5px rgba(34, 197, 94, 0.4);
       border-color: rgba(34, 197, 94, 0.3);
     }
+
     50% {
       box-shadow: 0 0 4px rgba(34, 197, 94, 0.8), 0 0 4px rgba(34, 197, 94, 0.6);
       border-color: rgba(34, 197, 94, 0.7);
     }
+
     100% {
       box-shadow: 0 0 5px rgba(34, 197, 94, 0.4);
       border-color: rgba(34, 197, 94, 0.3);
@@ -452,10 +508,12 @@ body {
       box-shadow: 0 0 5px rgba(236, 72, 153, 0.4);
       border-color: rgba(236, 72, 153, 0.3);
     }
+
     50% {
       box-shadow: 0 0 4px rgba(236, 72, 153, 0.8), 0 0 4px rgba(236, 72, 153, 0.6);
       border-color: rgba(236, 72, 153, 0.7);
     }
+
     100% {
       box-shadow: 0 0 5px rgba(236, 72, 153, 0.4);
       border-color: rgba(236, 72, 153, 0.3);
@@ -490,7 +548,7 @@ body {
   }
 
   /* Input Feedback Animation System */
-  
+
   /* Input container for letter animations */
   .input-container {
     position: relative;
@@ -533,15 +591,19 @@ body {
     0% {
       transform: rotateX(0deg);
     }
+
     25% {
       transform: rotateX(-90deg);
     }
+
     50% {
       transform: rotateX(0deg);
     }
+
     75% {
       transform: rotateX(-90deg);
     }
+
     100% {
       transform: rotateX(0deg);
     }
@@ -585,7 +647,7 @@ body {
 
   .metric-row {
     @apply flex items-center justify-between px-1 py-1;
-    border-bottom: 1px solid rgba(0,0,0,0.06);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   }
 
   .metric-row:last-child {
@@ -607,7 +669,8 @@ body {
     @apply rounded-full mx-auto flex flex-col items-center justify-center mb-6 relative;
     width: 10rem;
     height: 10rem;
-    aspect-ratio: 1 / 1; /* Ensures circle stays round across browsers */
+    aspect-ratio: 1 / 1;
+    /* Ensures circle stays round across browsers */
     background: conic-gradient(from 0deg, var(--color-green), var(--color-orange-yellow), var(--color-pink), var(--color-secondary), var(--color-green));
     animation: border-spin 4s linear infinite;
   }
@@ -632,7 +695,8 @@ body {
 
   .result-actions {
     @apply flex gap-4;
-    margin-top: auto; /* Keep buttons anchored to the bottom of the card */
+    margin-top: auto;
+    /* Keep buttons anchored to the bottom of the card */
   }
 
   .result-button {
@@ -653,8 +717,13 @@ body {
 
 
   @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
   }
 
   /* 3D Flip container for ResultCard
@@ -667,18 +736,23 @@ body {
   .flip-container {
     perspective: 1000px;
   }
+
   .flipper {
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.45s ease;
-    min-height: 420px; /* ensure enough height for back */
+    min-height: 420px;
+    /* ensure enough height for back */
     transform: translateZ(0);
     will-change: transform;
   }
+
   .flipped .flipper {
     transform: rotateY(180deg);
   }
-  .front, .back {
+
+  .front,
+  .back {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
@@ -689,53 +763,65 @@ body {
     justify-content: flex-start;
     will-change: transform;
   }
+
   .front {
     z-index: 2;
     transform: rotateY(0deg) translateZ(0);
   }
+
   .back {
     transform: rotateY(180deg) translateZ(0);
   }
 
   /* Ensure children also do not paint their backface (mitigates some Firefox bleed-through) */
-  .front *, .back * {
+  .front *,
+  .back * {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
   }
 
   /* Avoid click-through on the hidden side after flip */
-  .flipped .front { pointer-events: none; }
+  .flipped .front {
+    pointer-events: none;
+  }
 
   /* Leaderboard styles */
   .leaderboard-list {
     @apply flex flex-col gap-2 mb-4;
   }
+
   .leaderboard-row {
     @apply flex items-center justify-between px-2 py-2 rounded-xl;
     background: var(--color-white);
-    border: 1px solid rgba(0,0,0,0.06);
+    border: 1px solid rgba(0, 0, 0, 0.06);
   }
+
   .rank-badge {
     @apply text-sm font-bold mr-2;
     color: var(--color-primary);
     min-width: 1.5rem;
     text-align: center;
   }
+
   .avatar {
     @apply rounded-full text-white font-bold mr-2 flex items-center justify-center;
-    width: 28px; height: 28px;
+    width: 28px;
+    height: 28px;
   }
+
   .leaderboard-name {
     @apply flex-1 text-sm;
     color: var(--color-black);
   }
+
   .leaderboard-score {
     @apply text-sm font-semibold;
     color: var(--color-primary);
   }
+
   .leaderboard-user {
     @apply flex items-center justify-between px-1 py-1 mb-4;
-    border-top: 1px solid rgba(0,0,0,0.06);
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
   }
 }

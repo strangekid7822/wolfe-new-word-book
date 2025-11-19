@@ -27,16 +27,22 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
   return (
     <div className={`word-card-style px-6 py-4 text-center w-full mx-auto flex flex-col overflow-y-auto ${shouldShowOptions ? 'word-card-expanded' : ''}`}>
       {/* Audio Play Button */}
-      <AudioPlayButton 
-        onPlayClick={handlePlayButtonClick} 
-        isGlowing={isGlowing} 
+      <AudioPlayButton
+        onPlayClick={handlePlayButtonClick}
+        isGlowing={isGlowing}
       />
-      
+
       {/* Chinese prompt */}
-      <p className="text-[var(--color-black)] [--txt-body-lg] mb-1.5">
-        <span>根据读音拼写单词:</span>
-      </p>
-      
+      {/* Chinese prompt */}
+      <div className="mb-6">
+        <p className="text-[var(--color-grey-darker)] text-xs font-bold tracking-wider uppercase mb-1 opacity-70">
+          Challenge
+        </p>
+        <h3 className="text-[var(--color-primary)] text-xl font-bold tracking-tight">
+          根据读音拼写单词
+        </h3>
+      </div>
+
       {/* Spelling Input Fields */}
       <SpellingInputs
         cardData={cardData}
@@ -48,7 +54,7 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
         onInputFocus={handleInputFocus}
         getInputFeedbackClass={getInputFeedbackClass}
       />
-      
+
       {/* Chinese meaning options */}
       {shouldShowOptions && (
         <OptionsSection
@@ -61,7 +67,7 @@ const WordTestWordCard = forwardRef(({ cardData, isActive, onInputChange, onConf
 
       {/* Submit Button */}
       {shouldShowSubmitButton && (
-        <div 
+        <div
           className={`submit-button-enter ${isExiting ? 'submit-button-exit' : ''}`}
           onAnimationEnd={(e) => {
             if (e.animationName === 'fadeOutScale') {
