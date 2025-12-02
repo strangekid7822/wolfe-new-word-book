@@ -61,8 +61,8 @@ function WordTestNavBar() {
       >
         {({ isActive }) => (
           <img
-            src={getIconSrc('UserProfileButton', isActive)}
-            alt="Profile"
+            src={isActive ? '/WordTestNavBar_Compass_active.svg' : '/WordTestNavBar_Compass_inactive.svg'}
+            alt="Discover"
             className="w-8 h-8"
           />
         )}
