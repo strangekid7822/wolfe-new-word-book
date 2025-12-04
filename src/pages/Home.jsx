@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import MessageBubble from '../components/home/MessageBubble';
 import Avatar from '../components/home/Avatar';
 import TypingIndicator from '../components/home/TypingIndicator';
+import ChatInput from '../components/home/ChatInput';
+import OptionChips from '../components/home/OptionChips';
 import { conversationFlow } from '../config/conversationFlow';
 import InputAreaWrapper from '../components/home/InputAreaWrapper';
 
@@ -151,37 +153,20 @@ function Home() {
     // Text input for askName step
     if (step.type === 'input') {
       return (
-        <div className="flex w-full gap-2">
-          <input
-            type="text"
-            placeholder={step.placeholder || "Type a message..."}
-            className="flex-grow rounded-full bg-white px-4 py-3 text-sm text-[var(--color-black)] shadow-[inset_2px_2px_5px_rgba(0,0,0,0.05)] outline-none focus:ring-2 focus:ring-[var(--color-primary)] border border-[var(--color-white)]"
-            onKeyDown={(e) => {
-              if (e.key === 'Enter' && e.target.value.trim()) {
-                handleUserInput(e.target.value);
-                e.target.value = '';
-              }
-            }}
-            autoFocus
-          />
-        </div>
+        <ChatInput
+          placeholder={step.placeholder}
+          onSend={handleUserInput}
+        />
       );
     }
 
     // Option buttons for menu steps
     if (step.type === 'options' && step.options) {
       return (
-        <div className="flex flex-wrap gap-2 justify-end">
-          {step.options.map((option, index) => (
-            <button
-              key={index}
-              onClick={() => handleUserInput(option.label)}
-              className="rounded-full bg-white px-4 py-2 text-sm font-semibold text-[var(--color-primary)] shadow-[2px_2px_5px_var(--color-shadow)] transition-all active:scale-95 border border-[var(--color-white)] hover:bg-[var(--color-tertiary)]"
-            >
-              {option.label}
-            </button>
-          ))}
-        </div>
+        <OptionChips
+          options={step.options}
+          onSelect={handleUserInput}
+        />
       );
     }
 
