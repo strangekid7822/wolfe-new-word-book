@@ -163,7 +163,7 @@ body {
     cursor: pointer;
 
     /* Glassmorphism styling using tertiary color with transparency */
-    background: var(--color-secondary);
+    background: var(--color-primary);
 
     /* Subtle border to catch light and define edges */
     border-left: 2px solid rgba(255, 255, 255, 0.5);
