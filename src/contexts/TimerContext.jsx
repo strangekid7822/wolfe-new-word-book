@@ -17,7 +17,7 @@ export const TimerProvider = ({ children }) => {
   const percentage = (timeLeft / TOTAL_TIME) * 100;
 
   const getTimerColor = () => {
-    if (percentage > 50) return 'var(--color-secondary)';
+    if (percentage > 50) return 'var(--color-primary)';
     if (percentage > 30) return 'var(--color-orange-yellow)';
     return 'var(--color-orange)';
   };
@@ -39,12 +39,12 @@ export const TimerProvider = ({ children }) => {
   const startTimer = useCallback(() => {
     stopTimer();
     const startTime = Date.now();
-    
+
     const updateTimer = () => {
       const elapsed = (Date.now() - startTime) / 1000;
       const remaining = Math.max(0, TOTAL_TIME - elapsed);
       setTimeLeft(remaining);
-      
+
       if (remaining <= 0) {
         stopTimer();
         if (timerEndCallbackRef.current) {
@@ -53,7 +53,7 @@ export const TimerProvider = ({ children }) => {
         }
       }
     };
-    
+
     timerRef.current = setInterval(updateTimer, 50);
     updateTimer();
   }, [stopTimer]);

@@ -129,7 +129,7 @@ body {
 
   .btn-submit {
     /* Inner submit button filling the wrapper */
-    @apply w-full h-full rounded-full text-lg font-medium transition-colors bg-[var(--color-secondary)] text-white;
+    @apply w-full h-full rounded-full text-lg font-medium transition-colors bg-[var(--color-primary)] text-white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -417,7 +417,7 @@ body {
   }
 
   .option-selected {
-    background: var(--color-secondary) !important;
+    background: var(--color-primary) !important;
     border-left: 2px solid rgba(255, 255, 255, 0.5) !important;
     border-top: 2px solid rgba(255, 255, 255, 0.5) !important;
     border-right: 2px solid #0080bb20 !important;
