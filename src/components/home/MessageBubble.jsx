@@ -28,7 +28,7 @@ const MessageBubble = ({ text, isUser, showAvatar = true }) => {
 
                 {/* Bubble Content */}
                 <div
-                    className={`rounded-[6px] p-3 shadow-sm ${isUser
+                    className={`rounded-[12px] p-3 shadow-sm ${isUser
                         ? 'bg-[var(--color-secondary)] text-[var(--color-black)]'
                         : 'bg-white text-[var(--color-black)] border border-transparent' // Removed neumorphic border
                         }`}
