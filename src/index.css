@@ -2,7 +2,8 @@
 
 /* Wolfe Word Book Theme Colors and Fonts */
 @theme {
-  --color-primary: #0080BB;
+  --color-primary: #00AAf9;
+  --color-primary-old: #0080BB;
   --color-secondary: #87D9FF;
   --color-secondary-2: #CEEAF9;
   --color-tertiary: #F3FBFF;
