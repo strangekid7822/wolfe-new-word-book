@@ -32,7 +32,7 @@
   --txt-caption: text-sm font-medium;
   --txt-label: text-sm font-semibold;
   /* A consistent, theme-aligned shadow color. Using a semi-transparent version of the primary color ensures cross-browser consistency. */
-  --color-shadow: rgba(0, 128, 187, 0.3);
+  --color-shadow: rgba(0, 170, 249, 0.3);
   /* The shadow input was for inputs in wordcard initially, but now it seems that we don't need it anymore. */
   --shadow-input: inset 1px 3px 4px 0 rgba(0, 0, 0, 0.25);
   --shadow-play-button: 0px 1px 2px rgba(0, 0, 0, 0.25);
@@ -423,7 +423,7 @@ body {
     border-right: 2px solid #0080bb20 !important;
     border-bottom: 2px solid #0080bb20 !important;
     color: var(--color-white) !important;
-    box-shadow: 0 0 15px rgba(135, 217, 255, 0.4);
+    box-shadow: 0 0 15px rgba(0, 170, 249, 0.4);
     /* Force repaint on iOS Safari */
     will-change: border-color, background-color;
   }
