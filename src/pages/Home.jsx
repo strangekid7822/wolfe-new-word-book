@@ -47,13 +47,6 @@ function Home() {
     setMessages(prev => [...prev, { text, isUser }]);
   };
 
-  // TEMPORARY: Add a user message for visual testing
-  useEffect(() => {
-    setTimeout(() => {
-      addMessage("This is a test message from the user to check the bubble style.", true);
-    }, 2000);
-  }, []);
-
   /**
    * Process a conversation step from the flow configuration
    * @param {string} stepKey - The key of the step in conversationFlow
