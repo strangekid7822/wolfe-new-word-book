@@ -7,24 +7,45 @@ import { useState } from 'react';
 const ChatInput = ({ placeholder, onSend }) => {
     const [value, setValue] = useState('');
 
-    const handleKeyDown = (e) => {
-        if (e.key === 'Enter' && value.trim()) {
+    const handleSend = () => {
+        if (value.trim()) {
             onSend(value.trim());
             setValue('');
         }
     };
 
+    const handleKeyDown = (e) => {
+        if (e.key === 'Enter') {
+            handleSend();
+        }
+    };
+
     return (
         <div className="flex w-full items-center justify-center h-full">
-            <input
-                type="text"
-                value={value}
-                onChange={(e) => setValue(e.target.value)}
-                placeholder={placeholder || "Type a message..."}
-                className="w-full max-w-md rounded-full bg-white px-4 py-3 text-sm text-[var(--color-black)] shadow-[inset_2px_2px_5px_rgba(0,0,0,0.05)] outline-none focus:ring-2 focus:ring-[var(--color-primary)] border border-[var(--color-white)] text-center"
-                onKeyDown={handleKeyDown}
-                autoFocus
-            />
+            <div className="relative w-full max-w-md">
+                <input
+                    type="text"
+                    value={value}
+                    onChange={(e) => setValue(e.target.value)}
+                    placeholder={placeholder || "Type a message..."}
+                    className="w-full rounded-full bg-white pl-4 pr-16 py-3 text-sm text-[var(--color-black)] shadow-[inset_2px_2px_5px_rgba(0,0,0,0.05)] outline-none focus:ring-2 focus:ring-[var(--color-primary)] border border-[var(--color-white)] text-center transition-all"
+                    onKeyDown={handleKeyDown}
+                    autoFocus
+                />
+
+                {/* Send Button */}
+                <div
+                    className={`absolute right-1 top-1 bottom-1 flex items-center justify-center transition-all duration-300 ease-out transform origin-center ${value.trim() ? 'opacity-100 scale-100' : 'opacity-0 scale-0 pointer-events-none'
+                        }`}
+                >
+                    <button
+                        onClick={handleSend}
+                        className="bg-[var(--color-primary)] text-white text-xs font-bold px-4 py-1.5 rounded-full shadow-md hover:bg-[#006da0] active:scale-95 transition-colors h-full flex items-center"
+                    >
+                        发送
+                    </button>
+                </div>
+            </div>
         </div>
     );
 };
