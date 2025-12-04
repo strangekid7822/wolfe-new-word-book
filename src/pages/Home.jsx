@@ -13,6 +13,7 @@ import InputAreaWrapper from '../components/home/InputAreaWrapper';
 function Home() {
   const navigate = useNavigate();
   const messagesEndRef = useRef(null);
+  const hasInitialized = useRef(false);
 
   // Chat state
   const [messages, setMessages] = useState([]);
@@ -35,7 +36,8 @@ function Home() {
    * Initialize conversation on component mount
    */
   useEffect(() => {
-    if (messages.length === 0) {
+    if (!hasInitialized.current && messages.length === 0) {
+      hasInitialized.current = true;
       processStep('greeting');
     }
   }, []);
