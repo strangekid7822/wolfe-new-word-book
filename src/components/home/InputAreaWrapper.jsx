@@ -30,7 +30,7 @@ const InputAreaWrapper = ({ children, visible = false }) => {
 
     return (
         <div
-            className={`fixed bottom-0 left-0 right-0 bg-white border-t border-[var(--color-tertiary)] shadow-[0_-4px_12px_rgba(0,0,0,0.05)] p-4 transition-transform duration-500 ease-out z-50 ${animateIn ? 'translate-y-0' : 'translate-y-full'
+            className={`fixed bottom-0 left-0 right-0 nav-bar-style mx-4 p-4 transition-transform duration-500 ease-out z-50 ${animateIn ? 'translate-y-0' : 'translate-y-full'
                 }`}
         >
             <div className="max-w-screen-xl mx-auto">
