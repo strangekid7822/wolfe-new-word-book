@@ -195,10 +195,10 @@ function Home() {
   const isInputVisible = !!inputContent;
 
   return (
-    <div className="flex flex-col h-full bg-[var(--color-tertiary)]">
+    <div className="flex flex-col h-full">
       {/* Messages Area - Scrollable */}
       <div className="flex-grow overflow-y-auto pb-24">
-        <div className="flex flex-col justify-end min-h-full px-4">
+        <div className="flex flex-col justify-end min-h-full">
           {messages.map((msg, idx) => (
             <MessageBubble key={idx} text={msg.text} isUser={msg.isUser} />
           ))}
