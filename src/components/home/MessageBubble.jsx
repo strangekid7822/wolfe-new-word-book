@@ -21,7 +21,7 @@ const MessageBubble = ({ text, isUser, showAvatar = true }) => {
                 <div
                     className={`absolute top-3 w-0 h-0 border-y-[6px] border-y-transparent 
             ${isUser
-                            ? '-right-[6px] border-l-[6px] border-l-[var(--color-secondary)]'
+                            ? '-right-[6px] border-l-[6px] border-l-[var(--color-primary)]'
                             : '-left-[6px] border-r-[6px] border-r-white'
                         }`}
                 ></div>
@@ -29,7 +29,7 @@ const MessageBubble = ({ text, isUser, showAvatar = true }) => {
                 {/* Bubble Content */}
                 <div
                     className={`rounded-[12px] p-3 shadow-sm ${isUser
-                        ? 'bg-[var(--color-secondary)] text-[var(--color-black)]'
+                        ? 'bg-[var(--color-primary)] text-white'
                         : 'bg-white text-[var(--color-black)] border border-transparent' // Removed neumorphic border
                         }`}
                 >
