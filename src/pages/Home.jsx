@@ -179,7 +179,10 @@ function Home() {
   return (
     <div className="flex flex-col h-full">
       {/* Messages Area - Scrollable */}
-      <div className="flex-grow overflow-y-auto pb-24">
+      {/* pb-48 (12rem/192px) is a brute-force buffer to prevent the bottom InputAreaWrapper 
+          (which is fixed or sticky) from overlapping the last few messages. 
+          This large padding ensures the user can always scroll the last message into view. */}
+      <div className="flex-grow overflow-y-auto pb-48">
         <div className="flex flex-col justify-end min-h-full">
           {messages.map((msg, idx) => (
             <MessageBubble key={idx} text={msg.text} isUser={msg.isUser} />
