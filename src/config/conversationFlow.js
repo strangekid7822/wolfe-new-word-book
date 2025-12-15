@@ -43,9 +43,31 @@ export const conversationFlow = {
         onSelect: (value) => {
             localStorage.setItem('userGender', value);
             return {
-                // Pause here for now
+                next: 'askAvatar'
             };
         }
+    },
+
+    // Step 4: Ask Avatar
+    askAvatar: {
+        message: "看不清楚，上传个头像我看看！",
+        type: 'upload',
+        delay: 800,
+        buttonText: "📷 上传头像",
+        formatUserMessage: () => "老贼！看好了！",
+        onUpload: () => {
+            return {
+                next: 'complimentAvatar'
+            };
+        }
+    },
+
+    // Step 5: Compliment Avatar
+    complimentAvatar: {
+        message: "真是盛世美颜啊！",
+        type: 'message',
+        delay: 800
+        // Pause here for now
     },
 
     // Handle existing users

@@ -5,6 +5,7 @@ import Avatar from '../components/home/Avatar';
 import TypingIndicator from '../components/home/TypingIndicator';
 import ChatInput from '../components/home/ChatInput';
 import OptionChips from '../components/home/OptionChips';
+import AvatarUploader from '../components/home/AvatarUploader';
 import { conversationFlow } from '../config/conversationFlow';
 import InputAreaWrapper from '../components/home/InputAreaWrapper';
 
@@ -84,7 +85,7 @@ function Home() {
     setCurrentStep(stepKey);
 
     // Set waitingForInput based on step type
-    setWaitingForInput(step.type === 'input' || step.type === 'options');
+    setWaitingForInput(step.type === 'input' || step.type === 'options' || step.type === 'upload');
 
     // Execute any additional actions
     if (step.action) {
@@ -159,6 +160,15 @@ function Home() {
         processStep(selectedOption.next);
       }
     }
+
+    // Handle upload
+    if (step.type === 'upload' && step.onUpload) {
+      const result = step.onUpload(input);
+      if (result && result.next) {
+        await new Promise(r => setTimeout(r, 400));
+        processStep(result.next);
+      }
+    }
   };
 
   /**
@@ -186,6 +196,16 @@ function Home() {
         <OptionChips
           options={step.options}
           onSelect={handleUserInput}
+        />
+      );
+    }
+
+    // Avatar upload
+    if (step.type === 'upload') {
+      return (
+        <AvatarUploader
+          buttonText={step.buttonText}
+          onUpload={(base64) => handleUserInput(base64)}
         />
       );
     }
