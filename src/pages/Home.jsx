@@ -22,6 +22,7 @@ function Home() {
   const [currentStep, setCurrentStep] = useState('greeting');
   const [isTyping, setIsTyping] = useState(false);
   const [userName, setUserName] = useState(localStorage.getItem('userName') || '');
+  const [waitingForInput, setWaitingForInput] = useState(false);
 
   /**
    * Auto-scroll to bottom when new messages arrive
@@ -82,6 +83,9 @@ function Home() {
     // Update current step
     setCurrentStep(stepKey);
 
+    // Set waitingForInput based on step type
+    setWaitingForInput(step.type === 'input' || step.type === 'options');
+
     // Execute any additional actions
     if (step.action) {
       step.action(navigate, addMessage, userName);
@@ -113,6 +117,9 @@ function Home() {
     const displayMessage = step.formatUserMessage ? step.formatUserMessage(input) : input;
     addMessage(displayMessage, true);
 
+    // Hide input wrapper after user responds
+    setWaitingForInput(false);
+
     // Handle input type
     if (step.type === 'input' && step.onResponse) {
       const result = step.onResponse(input);
@@ -139,7 +146,15 @@ function Home() {
     // Handle option selection
     if (step.type === 'options') {
       const selectedOption = step.options.find(opt => opt.label === input);
-      if (selectedOption && selectedOption.next) {
+
+      // Execute onSelect callback if defined
+      if (selectedOption && step.onSelect) {
+        const result = step.onSelect(selectedOption.value);
+        if (result && result.next) {
+          await new Promise(r => setTimeout(r, 400));
+          processStep(result.next);
+        }
+      } else if (selectedOption && selectedOption.next) {
         await new Promise(r => setTimeout(r, 400));
         processStep(selectedOption.next);
       }
@@ -179,7 +194,7 @@ function Home() {
   };
 
   const inputContent = renderInputArea();
-  const isInputVisible = !!inputContent;
+  const isInputVisible = waitingForInput && !!inputContent;
 
   return (
     <div className="flex flex-col h-full">
