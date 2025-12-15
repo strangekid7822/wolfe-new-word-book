@@ -196,6 +196,7 @@ function Home() {
         <OptionChips
           options={step.options}
           onSelect={handleUserInput}
+          layout={step.layout}
         />
       );
     }

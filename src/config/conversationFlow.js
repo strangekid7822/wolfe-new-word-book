@@ -66,8 +66,56 @@ export const conversationFlow = {
     complimentAvatar: {
         message: "真是盛世美颜啊！",
         type: 'message',
-        delay: 800
-        // Pause here for now
+        delay: 800,
+        next: 'askGrade'
+    },
+
+    // Step 6: Ask Grade
+    askGrade: {
+        message: () => {
+            const gender = localStorage.getItem('userGender');
+            return gender === 'female' ? '美女，你现在几年级？' : '帅哥，你现在几年级？';
+        },
+        type: 'options',
+        layout: 'grid',
+        delay: 800,
+        options: [
+            { label: '一年级', value: '1' },
+            { label: '二年级', value: '2' },
+            { label: '三年级', value: '3' },
+            { label: '四年级', value: '4' },
+            { label: '五年级', value: '5' },
+            { label: '六年级', value: '6' },
+            { label: '七年级', value: '7' },
+            { label: '八年级', value: '8' },
+            { label: '九年级', value: '9' },
+            { label: '高一', value: '10' },
+            { label: '高二', value: '11' },
+            { label: '高三', value: '12' }
+        ],
+        onSelect: (value) => {
+            localStorage.setItem('userGrade', value);
+            return {
+                next: 'askPhone'
+            };
+        }
+    },
+
+    // Step 7: Ask Phone
+    askPhone: {
+        message: () => {
+            const gender = localStorage.getItem('userGender');
+            return gender === 'female' ? '美女，你的电话号码告诉我一下。' : '帅哥，你的电话号码告诉我一下。';
+        },
+        type: 'input',
+        placeholder: "输入手机号码",
+        delay: 800,
+        onResponse: (text) => {
+            localStorage.setItem('userPhone', text);
+            return {
+                // Pause here for now
+            };
+        }
     },
 
     // Handle existing users
