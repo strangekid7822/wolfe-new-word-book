@@ -28,7 +28,7 @@ const ChatInput = ({ placeholder, onSend }) => {
                     value={value}
                     onChange={(e) => setValue(e.target.value)}
                     placeholder={placeholder || "Type a message..."}
-                    className="w-full rounded-full bg-white pl-4 pr-16 py-3 text-sm text-[var(--color-black)] shadow-[inset_2px_2px_5px_rgba(0,0,0,0.05)] outline-none focus:ring-2 focus:ring-[var(--color-primary)] border border-[var(--color-white)] text-center transition-all"
+                    className="w-full rounded-full bg-white pl-4 pr-16 py-3 text-base text-[var(--color-black)] shadow-[inset_2px_2px_5px_rgba(0,0,0,0.05)] outline-none focus:ring-2 focus:ring-[var(--color-primary)] border border-[var(--color-white)] text-center transition-all"
                     onKeyDown={handleKeyDown}
                     autoFocus
                 />
