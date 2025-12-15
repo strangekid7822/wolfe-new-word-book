@@ -186,6 +186,7 @@ function Home() {
         <ChatInput
           placeholder={step.placeholder}
           onSend={handleUserInput}
+          inputType={step.inputType}
         />
       );
     }

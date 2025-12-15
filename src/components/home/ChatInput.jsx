@@ -3,8 +3,9 @@ import { useState } from 'react';
 /**
  * ChatInput component
  * A simple text input field centered within its container.
+ * @param {string} inputType - Input type ('text', 'tel', etc.) for keyboard control
  */
-const ChatInput = ({ placeholder, onSend }) => {
+const ChatInput = ({ placeholder, onSend, inputType = 'text' }) => {
     const [value, setValue] = useState('');
 
     const handleSend = () => {
@@ -24,7 +25,7 @@ const ChatInput = ({ placeholder, onSend }) => {
         <div className="flex w-full items-center justify-center h-full">
             <div className="relative w-full max-w-md">
                 <input
-                    type="text"
+                    type={inputType}
                     value={value}
                     onChange={(e) => setValue(e.target.value)}
                     placeholder={placeholder || "Type a message..."}

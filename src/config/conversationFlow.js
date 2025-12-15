@@ -109,6 +109,7 @@ export const conversationFlow = {
         },
         type: 'input',
         placeholder: "输入手机号码",
+        inputType: 'tel', // Shows phone keyboard on mobile
         delay: 800,
         onResponse: (text) => {
             localStorage.setItem('userPhone', text);
