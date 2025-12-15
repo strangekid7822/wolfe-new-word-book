@@ -63,24 +63,28 @@ function Home() {
       return;
     }
 
-    // Show typing indicator
-    setIsTyping(true);
-    await new Promise(r => setTimeout(r, step.delay || 600));
-    setIsTyping(false);
-
     // Get message text (could be string or function)
     const messageText = typeof step.message === 'function'
       ? step.message(userName)
       : step.message;
 
-    addMessage(messageText, false);
+    // Show typing indicator only if there is a message from the app
+    if (messageText) {
+      setIsTyping(true);
+      await new Promise(r => setTimeout(r, step.delay || 600));
+      setIsTyping(false);
+    }
+
+    if (messageText) {
+      addMessage(messageText, false);
+    }
 
     // Update current step
     setCurrentStep(stepKey);
 
     // Execute any additional actions
     if (step.action) {
-      step.action(navigate);
+      step.action(navigate, addMessage, userName);
     }
 
     // Auto-proceed to next step if it's a simple message
@@ -105,8 +109,9 @@ function Home() {
   const handleUserInput = async (input) => {
     const step = conversationFlow[currentStep];
 
-    // Add user message
-    addMessage(input, true);
+    // Add user message (formatted if config specifies)
+    const displayMessage = step.formatUserMessage ? step.formatUserMessage(input) : input;
+    addMessage(displayMessage, true);
 
     // Handle input type
     if (step.type === 'input' && step.onResponse) {
