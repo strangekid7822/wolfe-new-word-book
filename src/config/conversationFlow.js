@@ -109,14 +109,65 @@ export const conversationFlow = {
         },
         type: 'input',
         placeholder: "输入手机号码",
-        inputType: 'tel', // Shows phone keyboard on mobile
+        inputType: 'tel',
         delay: 800,
         onResponse: (text) => {
             localStorage.setItem('userPhone', text);
             return {
-                // Pause here for now
+                next: 'confirmPhone'
             };
         }
+    },
+
+    // Step 8: Confirm Phone
+    confirmPhone: {
+        message: "你敢不敢再输入一次，让我看看你有没有说错？",
+        type: 'input',
+        placeholder: "没办法再输入一次吧！",
+        inputType: 'tel',
+        delay: 800,
+        formatUserMessage: (input) => `老贼，你看好了！这是我的电话号码 ${input}！`,
+        onResponse: (text) => {
+            localStorage.setItem('userPhoneConfirm', text);
+            return {
+                next: 'askPassword'
+            };
+        }
+    },
+
+    // Step 9: Ask Password
+    askPassword: {
+        message: () => {
+            const gender = localStorage.getItem('userGender');
+            return gender === 'female' ? '好吧，美女，告诉我一个密码。' : '好吧，帅哥，告诉我一个密码。';
+        },
+        type: 'message',
+        delay: 800,
+        next: 'passwordNotice'
+    },
+
+    // Step 10: Password Notice
+    passwordNotice: {
+        message: "注意！密码只要六位数字，不然我可记不住！",
+        type: 'input',
+        placeholder: "真麻烦，这老贼！",
+        inputType: 'tel', // 6-digit numeric keyboard
+        delay: 800,
+        formatUserMessage: (input) => `老贼，这是我的密码，你可记住了！${input}`,
+        onResponse: (text) => {
+            localStorage.setItem('userPassword', text);
+            return {
+                next: 'passwordConfirm'
+            };
+        }
+    },
+
+    // Step 11: Password Confirmed
+    passwordConfirm: {
+        message: "记住了，以后你要是忘了，可别找我。只能联系你们那个帅气英俊的Wolfe老师，他知道所有人的密码。",
+        type: 'message',
+        delay: 800
+        // Pause here for now
     },
 
     // Handle existing users
