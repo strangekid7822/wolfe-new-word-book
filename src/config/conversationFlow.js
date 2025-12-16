@@ -108,6 +108,8 @@ export const conversationFlow = {
         placeholder: "输入手机号码",
         inputType: 'tel',
         delay: 800,
+        validate: (input) => input.length === 11 && /^\d+$/.test(input),
+        validationError: "你有手机吗？手机号码是11位！看清楚！",
         onResponse: () => {
             return {
                 next: 'confirmPhone'
@@ -122,6 +124,8 @@ export const conversationFlow = {
         placeholder: "没办法再输入一次吧！",
         inputType: 'tel',
         delay: 800,
+        validate: (input) => input.length === 11 && /^\d+$/.test(input),
+        validationError: "你有手机吗？手机号码是11位！看清楚！",
         formatUserMessage: (input) => `老贼，你看好了！这是我的电话号码 ${input}！`,
         onResponse: () => {
             return {

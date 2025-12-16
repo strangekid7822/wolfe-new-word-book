@@ -144,6 +144,17 @@ function Home() {
   const handleUserInput = async (input) => {
     const step = conversationFlow[currentStep];
 
+    // Run validation if defined in step config
+    if (step.validate && !step.validate(input)) {
+      addMessage(input, true); // Show user's invalid input
+      setIsTyping(true);
+      await new Promise(r => setTimeout(r, 600));
+      setIsTyping(false);
+      addMessage(step.validationError || "输入无效", false);
+      setWaitingForInput(true); // Show input again
+      return; // Don't proceed
+    }
+
     // Add user message (formatted if config specifies)
     const displayMessage = step.formatUserMessage ? step.formatUserMessage(input) : input;
     addMessage(displayMessage, true);
