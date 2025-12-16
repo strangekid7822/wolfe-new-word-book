@@ -55,7 +55,7 @@ const PinInput = ({ onSubmit, length = 6 }) => {
         <div className="flex items-center justify-center w-full max-w-xs mx-auto">
             <div className={`flex items-center w-full transition-all duration-300 ease-out ${isComplete ? 'justify-start' : 'justify-center'
                 }`}>
-                {/* PIN Input Boxes - gap shrinks when complete */}
+                {/* PIN Input Boxes - width and gap shrink when complete */}
                 <div
                     className={`flex transition-all duration-300 ease-out ${isComplete ? 'gap-1' : 'gap-2'
                         }`}
@@ -70,7 +70,8 @@ const PinInput = ({ onSubmit, length = 6 }) => {
                             onChange={(e) => handleChange(index, e.target.value)}
                             onKeyDown={(e) => handleKeyDown(index, e)}
                             maxLength={1}
-                            className="w-8 h-12 text-center text-base font-bold rounded-xl bg-white text-[var(--color-black)] border-2 border-[var(--color-grey)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-[var(--color-primary)] outline-none transition-all"
+                            className={`h-12 text-center text-base font-bold rounded-xl bg-white text-[var(--color-black)] border-2 border-[var(--color-grey)] focus:border-[var(--color-primary)] focus:ring-2 focus:ring-[var(--color-primary)] outline-none transition-all ${isComplete ? 'w-8' : 'w-10'
+                                }`}
                         />
                     ))}
                 </div>
