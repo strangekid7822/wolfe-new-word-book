@@ -25,6 +25,17 @@ function Home() {
   const [userName, setUserName] = useState(localStorage.getItem('userName') || '');
   const [waitingForInput, setWaitingForInput] = useState(false);
 
+  // Temporary registration data (saved only after password is set)
+  const [pendingUser, setPendingUser] = useState({
+    name: '',
+    gender: '',
+    avatar: '',
+    grade: '',
+    phone: '',
+    phoneConfirm: '',
+    password: ''
+  });
+
   /**
    * Auto-scroll to bottom when new messages arrive
    */
@@ -51,6 +62,20 @@ function Home() {
    */
   const addMessage = (text, isUser = false) => {
     setMessages(prev => [...prev, { text, isUser }]);
+  };
+
+  /**
+   * Save all pending registration data to localStorage
+   * Called only after password is successfully set
+   */
+  const saveUserData = (userData) => {
+    localStorage.setItem('userName', userData.name);
+    localStorage.setItem('userGender', userData.gender);
+    localStorage.setItem('userAvatar', userData.avatar);
+    localStorage.setItem('userGrade', userData.grade);
+    localStorage.setItem('userPhone', userData.phone);
+    localStorage.setItem('userPassword', userData.password);
+    console.log('User registration saved:', userData);
   };
 
   /**
@@ -92,6 +117,11 @@ function Home() {
       step.action(navigate, addMessage, userName);
     }
 
+    // Save user data when registration is complete
+    if (stepKey === 'passwordConfirm') {
+      saveUserData(pendingUser);
+    }
+
     // Auto-proceed to next step if it's a simple message
     if (step.type === 'message' && step.next) {
       await new Promise(r => setTimeout(r, 800));
@@ -121,14 +151,37 @@ function Home() {
     // Hide input wrapper after user responds
     setWaitingForInput(false);
 
+    // Collect registration data based on current step (store temporarily)
+    if (currentStep === 'askName') {
+      setPendingUser(prev => ({ ...prev, name: input }));
+      setUserName(input); // Keep for display purposes
+    }
+    if (currentStep === 'askGender') {
+      const value = input === '♂ 男' ? 'male' : 'female';
+      setPendingUser(prev => ({ ...prev, gender: value }));
+      // Store temporarily for dynamic messages during registration
+      localStorage.setItem('userGender', value);
+    }
+    if (currentStep === 'askAvatar') {
+      setPendingUser(prev => ({ ...prev, avatar: input }));
+    }
+    if (currentStep === 'askGrade') {
+      const selectedOption = conversationFlow[currentStep].options.find(opt => opt.label === input);
+      setPendingUser(prev => ({ ...prev, grade: selectedOption?.value || input }));
+    }
+    if (currentStep === 'askPhone') {
+      setPendingUser(prev => ({ ...prev, phone: input }));
+    }
+    if (currentStep === 'confirmPhone') {
+      setPendingUser(prev => ({ ...prev, phoneConfirm: input }));
+    }
+    if (currentStep === 'passwordNotice') {
+      setPendingUser(prev => ({ ...prev, password: input }));
+    }
+
     // Handle input type
     if (step.type === 'input' && step.onResponse) {
       const result = step.onResponse(input);
-
-      // Update userName if it was just set
-      if (currentStep === 'askName') {
-        setUserName(input);
-      }
 
       // Show response and move to next
       if (result.reply) {

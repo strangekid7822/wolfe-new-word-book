@@ -18,8 +18,7 @@ export const conversationFlow = {
         placeholder: "输入我的名字",
         delay: 1000,
         formatUserMessage: (input) => `我是${input}！你可认得？`,
-        onResponse: (text) => {
-            localStorage.setItem('userName', text);
+        onResponse: () => {
             return {
                 next: 'askGender'
             };
@@ -40,8 +39,7 @@ export const conversationFlow = {
             if (input === '♀ 女') return '姑奶奶我是女的！';
             return input;
         },
-        onSelect: (value) => {
-            localStorage.setItem('userGender', value);
+        onSelect: () => {
             return {
                 next: 'askAvatar'
             };
@@ -93,8 +91,7 @@ export const conversationFlow = {
             { label: '高二', value: '11' },
             { label: '高三', value: '12' }
         ],
-        onSelect: (value) => {
-            localStorage.setItem('userGrade', value);
+        onSelect: () => {
             return {
                 next: 'askPhone'
             };
@@ -111,8 +108,7 @@ export const conversationFlow = {
         placeholder: "输入手机号码",
         inputType: 'tel',
         delay: 800,
-        onResponse: (text) => {
-            localStorage.setItem('userPhone', text);
+        onResponse: () => {
             return {
                 next: 'confirmPhone'
             };
@@ -127,8 +123,7 @@ export const conversationFlow = {
         inputType: 'tel',
         delay: 800,
         formatUserMessage: (input) => `老贼，你看好了！这是我的电话号码 ${input}！`,
-        onResponse: (text) => {
-            localStorage.setItem('userPhoneConfirm', text);
+        onResponse: () => {
             return {
                 next: 'askPassword'
             };
@@ -154,8 +149,7 @@ export const conversationFlow = {
         inputType: 'tel', // 6-digit numeric keyboard
         delay: 800,
         formatUserMessage: (input) => `老贼，这是我的密码，你可记住了！${input}`,
-        onResponse: (text) => {
-            localStorage.setItem('userPassword', text);
+        onResponse: () => {
             return {
                 next: 'passwordConfirm'
             };
