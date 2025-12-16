@@ -148,9 +148,8 @@ export const conversationFlow = {
     // Step 10: Password Notice
     passwordNotice: {
         message: "注意！密码只要六位数字，不然我可记不住！",
-        type: 'input',
-        placeholder: "真麻烦，这老贼！",
-        inputType: 'tel', // 6-digit numeric keyboard
+        type: 'pin',
+        pinLength: 6,
         delay: 800,
         formatUserMessage: (input) => `老贼，这是我的密码，你可记住了！${input}`,
         onResponse: () => {

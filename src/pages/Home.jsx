@@ -6,6 +6,7 @@ import TypingIndicator from '../components/home/TypingIndicator';
 import ChatInput from '../components/home/ChatInput';
 import OptionChips from '../components/home/OptionChips';
 import AvatarUploader from '../components/home/AvatarUploader';
+import PinInput from '../components/home/PinInput';
 import { conversationFlow } from '../config/conversationFlow';
 import InputAreaWrapper from '../components/home/InputAreaWrapper';
 
@@ -110,7 +111,7 @@ function Home() {
     setCurrentStep(stepKey);
 
     // Set waitingForInput based on step type
-    setWaitingForInput(step.type === 'input' || step.type === 'options' || step.type === 'upload');
+    setWaitingForInput(step.type === 'input' || step.type === 'options' || step.type === 'upload' || step.type === 'pin');
 
     // Execute any additional actions
     if (step.action) {
@@ -233,6 +234,15 @@ function Home() {
         processStep(result.next);
       }
     }
+
+    // Handle PIN input
+    if (step.type === 'pin' && step.onResponse) {
+      const result = step.onResponse(input);
+      if (result && result.next) {
+        await new Promise(r => setTimeout(r, 400));
+        processStep(result.next);
+      }
+    }
   };
 
   /**
@@ -272,6 +282,16 @@ function Home() {
         <AvatarUploader
           buttonText={step.buttonText}
           onUpload={(base64) => handleUserInput(base64)}
+        />
+      );
+    }
+
+    // PIN input for password
+    if (step.type === 'pin') {
+      return (
+        <PinInput
+          length={step.pinLength || 6}
+          onSubmit={handleUserInput}
         />
       );
     }
