@@ -41,11 +41,19 @@ export const conversationFlow = {
         },
         onSelect: () => {
             return {
-                next: 'askAvatar'
+                next: 'askGrade'
             };
         }
     },
 
+    /*
+     * COMMENTED OUT: Avatar upload step (to be used in a later conversation)
+     * Related files:
+     *   - src/components/home/AvatarUploader.jsx (upload component)
+     *   - src/components/home/Avatar.jsx (display component)
+     *   - src/pages/Home.jsx: search "askAvatar" for handling logic
+     *   - src/pages/Home.jsx: search "step.type === 'upload'" for UI rendering
+     *
     // Step 4: Ask Avatar
     askAvatar: {
         message: "看不清楚，上传个头像我看看！",
@@ -67,8 +75,9 @@ export const conversationFlow = {
         delay: 800,
         next: 'askGrade'
     },
+    */
 
-    // Step 6: Ask Grade
+    // Step 4: Ask Grade
     askGrade: {
         message: () => {
             const gender = localStorage.getItem('userGender');
@@ -98,7 +107,7 @@ export const conversationFlow = {
         }
     },
 
-    // Step 7: Ask Phone
+    // Step 5: Ask Phone
     askPhone: {
         message: () => {
             const gender = localStorage.getItem('userGender');
@@ -117,7 +126,7 @@ export const conversationFlow = {
         }
     },
 
-    // Step 8: Confirm Phone
+    // Step 6: Confirm Phone
     confirmPhone: {
         message: "你敢不敢再输入一次，让我看看你有没有说错？",
         type: 'input',
@@ -134,7 +143,7 @@ export const conversationFlow = {
         }
     },
 
-    // Step 9: Ask Password
+    // Step 7: Ask Password
     askPassword: {
         message: () => {
             const gender = localStorage.getItem('userGender');
@@ -145,7 +154,7 @@ export const conversationFlow = {
         next: 'passwordNotice'
     },
 
-    // Step 10: Password Notice
+    // Step 8: Password Notice
     passwordNotice: {
         message: "注意！密码只要六位数字，不然我可记不住！",
         type: 'pin',
@@ -159,7 +168,7 @@ export const conversationFlow = {
         }
     },
 
-    // Step 11: Password Confirmed
+    // Step 9: Password Confirmed
     passwordConfirm: {
         message: "记住了，以后你要是忘了，可别找我。只能联系你们那个帅气英俊的Wolfe老师，他知道所有人的密码。",
         type: 'message',
