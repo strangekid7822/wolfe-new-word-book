@@ -29,9 +29,9 @@ function WordTestNavBar() {
   return (
     <div className="flex justify-around items-center h-14 w-full nav-bar-style">
       <NavLink
-        to="/"
+        to="/home"
         className="p-2"
-        onClick={(e) => handleNavClick(e, '/')}
+        onClick={(e) => handleNavClick(e, '/home')}
       >
         {({ isActive }) => (
           <img
