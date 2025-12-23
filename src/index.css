@@ -812,65 +812,15 @@ body {
   }
 
   /* ========================================
-   * Welcome Page - 王者荣耀 Style
+   * Welcome Page - Simple Theme
    * ======================================== */
 
-  /* Main welcome page container */
+  /* Main welcome page container - matches app background */
   .welcome-page {
     @apply fixed inset-0 flex flex-col items-center justify-center overflow-hidden;
-    /* Dark gradient background inspired by 王者荣耀 */
-    background: linear-gradient(135deg, #0a0a1a 0%, #1a1a3a 40%, #2a1a2a 70%, #1a0a1a 100%);
+    background: var(--color-tertiary);
     min-height: 100vh;
     min-height: 100dvh;
-  }
-
-  /* Background glow effects */
-  .welcome-bg-effects {
-    @apply absolute inset-0 pointer-events-none overflow-hidden;
-  }
-
-  .welcome-glow {
-    @apply absolute rounded-full;
-    filter: blur(80px);
-    opacity: 0.4;
-  }
-
-  .welcome-glow-1 {
-    width: 300px;
-    height: 300px;
-    background: radial-gradient(circle, #ff6b00 0%, transparent 70%);
-    top: -100px;
-    right: -50px;
-    animation: float-glow 8s ease-in-out infinite;
-  }
-
-  .welcome-glow-2 {
-    width: 250px;
-    height: 250px;
-    background: radial-gradient(circle, #ffd700 0%, transparent 70%);
-    bottom: 20%;
-    left: -80px;
-    animation: float-glow 10s ease-in-out infinite reverse;
-  }
-
-  .welcome-glow-3 {
-    width: 200px;
-    height: 200px;
-    background: radial-gradient(circle, #ff4500 0%, transparent 70%);
-    top: 40%;
-    right: -60px;
-    animation: float-glow 12s ease-in-out infinite;
-  }
-
-  @keyframes float-glow {
-    0%, 100% {
-      transform: translate(0, 0) scale(1);
-      opacity: 0.3;
-    }
-    50% {
-      transform: translate(20px, -20px) scale(1.1);
-      opacity: 0.5;
-    }
   }
 
   /* Main content container */
@@ -879,9 +829,9 @@ body {
     max-width: 400px;
   }
 
-  /* Logo container with glow effect */
+  /* Logo container */
   .welcome-logo-container {
-    @apply relative mb-4;
+    @apply relative mb-6;
   }
 
   .welcome-logo {
@@ -889,153 +839,25 @@ body {
     width: 120px;
     height: 120px;
     object-fit: cover;
-    border: 3px solid rgba(255, 215, 0, 0.6);
+    border: 3px solid var(--color-white);
     box-shadow: 
-      0 0 20px rgba(255, 215, 0, 0.4),
-      0 0 40px rgba(255, 107, 0, 0.3),
-      inset 0 0 20px rgba(255, 215, 0, 0.1);
-    animation: logo-pulse 3s ease-in-out infinite;
+      0 0 20px var(--color-shadow),
+      0 0 40px rgba(0, 170, 249, 0.2);
   }
 
-  @keyframes logo-pulse {
-    0%, 100% {
-      box-shadow: 
-        0 0 20px rgba(255, 215, 0, 0.4),
-        0 0 40px rgba(255, 107, 0, 0.3);
-    }
-    50% {
-      box-shadow: 
-        0 0 30px rgba(255, 215, 0, 0.6),
-        0 0 60px rgba(255, 107, 0, 0.5);
-    }
-  }
-
-  /* App title with golden gradient */
+  /* App title with primary color */
   .welcome-title {
     @apply text-4xl font-bold mb-2 tracking-wider;
-    background: linear-gradient(135deg, #ffd700 0%, #ff8c00 50%, #ffd700 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+    color: var(--color-primary);
   }
 
   .welcome-subtitle {
     @apply text-base mb-8;
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--color-grey-darker);
   }
 
-  /* Input section */
+  /* Input section wrapper */
   .welcome-input-section {
-    @apply w-full mb-8;
-  }
-
-  .welcome-input-wrapper {
-    @apply relative w-full;
-  }
-
-  .welcome-input {
-    @apply w-full rounded-full px-6 py-4 text-base text-center transition-all;
-    background: rgba(255, 255, 255, 0.1);
-    border: 2px solid rgba(255, 215, 0, 0.3);
-    color: white;
-    backdrop-filter: blur(10px);
-    outline: none;
-  }
-
-  .welcome-input::placeholder {
-    color: rgba(255, 255, 255, 0.5);
-    transition: color 0.3s ease;
-  }
-
-  .welcome-input:focus {
-    border-color: rgba(255, 215, 0, 0.6);
-    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
-  }
-
-  .welcome-input-error {
-    border-color: rgba(255, 80, 80, 0.6) !important;
-    box-shadow: 0 0 15px rgba(255, 80, 80, 0.3) !important;
-  }
-
-  .welcome-input-error::placeholder {
-    color: rgba(255, 80, 80, 0.8) !important;
-  }
-
-  /* Send button */
-  .welcome-send-btn-container {
-    @apply absolute right-2 top-1/2 -translate-y-1/2 transition-all duration-300;
-    opacity: 0;
-    transform: translateY(-50%) scale(0.8);
-    pointer-events: none;
-  }
-
-  .welcome-send-btn-container.visible {
-    opacity: 1;
-    transform: translateY(-50%) scale(1);
-    pointer-events: auto;
-  }
-
-  .welcome-send-btn {
-    @apply px-5 py-2 rounded-full text-sm font-bold transition-all;
-    background: linear-gradient(135deg, #ff8c00 0%, #ffd700 100%);
-    color: #1a1a3a;
-    border: none;
-    cursor: pointer;
-    box-shadow: 0 2px 10px rgba(255, 140, 0, 0.4);
-  }
-
-  .welcome-send-btn:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 20px rgba(255, 140, 0, 0.6);
-  }
-
-  .welcome-send-btn:active {
-    transform: scale(0.98);
-  }
-
-  /* Rolling comments section */
-  .welcome-comments-section {
     @apply w-full;
-    height: 150px;
-    overflow: hidden;
-    mask-image: linear-gradient(to top, transparent 0%, black 20%, black 80%, transparent 100%);
-    -webkit-mask-image: linear-gradient(to top, transparent 0%, black 20%, black 80%, transparent 100%);
-  }
-
-  .rolling-comments-container {
-    @apply w-full h-full overflow-hidden;
-  }
-
-  .rolling-comments-track {
-    @apply flex flex-col items-center;
-    animation: roll-up 20s linear infinite;
-  }
-
-  @keyframes roll-up {
-    0% {
-      transform: translateY(0);
-    }
-    100% {
-      transform: translateY(-50%);
-    }
-  }
-
-  .rolling-comment-item {
-    @apply flex items-center gap-2 py-2 px-4 rounded-full mb-2;
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(5px);
-    white-space: nowrap;
-  }
-
-  .comment-phone {
-    @apply text-xs font-medium;
-    color: rgba(255, 215, 0, 0.8);
-  }
-
-  .comment-message {
-    @apply text-sm;
-    color: rgba(255, 255, 255, 0.9);
   }
 }
