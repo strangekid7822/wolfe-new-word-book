@@ -4,8 +4,9 @@ import { useState } from 'react';
  * ChatInput component
  * A simple text input field centered within its container.
  * @param {string} inputType - Input type ('text', 'tel', etc.) for keyboard control
+ * @param {string} inputClassName - Additional CSS classes for the input element
  */
-const ChatInput = ({ placeholder, onSend, inputType = 'text' }) => {
+const ChatInput = ({ placeholder, onSend, inputType = 'text', inputClassName = '' }) => {
     const [value, setValue] = useState('');
 
     const handleSend = () => {
@@ -29,7 +30,7 @@ const ChatInput = ({ placeholder, onSend, inputType = 'text' }) => {
                     value={value}
                     onChange={(e) => setValue(e.target.value)}
                     placeholder={placeholder || "Type a message..."}
-                    className="w-full rounded-full bg-white pl-4 pr-16 py-3 text-base text-[var(--color-black)] shadow-[inset_2px_2px_5px_rgba(0,0,0,0.05)] outline-none focus:ring-2 focus:ring-[var(--color-primary)] border border-[var(--color-white)] text-center transition-all"
+                    className={`w-full rounded-full bg-white px-6 py-3 text-base text-[var(--color-black)] shadow-[inset_2px_2px_5px_rgba(0,0,0,0.05)] outline-none focus:ring-2 focus:ring-[var(--color-primary)] border border-[var(--color-white)] text-center transition-all ${inputClassName}`}
                     onKeyDown={handleKeyDown}
                     autoFocus
                 />

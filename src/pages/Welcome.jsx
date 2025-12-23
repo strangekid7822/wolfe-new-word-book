@@ -43,7 +43,6 @@ function Welcome() {
 
                 {/* App Title */}
                 <h1 className="welcome-title">单词王者</h1>
-                <p className="welcome-subtitle">背单词，就是这么简单</p>
 
                 {/* Error message */}
                 {errorMessage && (
@@ -53,9 +52,10 @@ function Welcome() {
                 {/* Phone Input - reusing ChatInput from home page */}
                 <div className="welcome-input-section">
                     <ChatInput
-                        placeholder="输入电话，开始学习"
+                        placeholder="输入电话开始学习"
                         onSend={handlePhoneSubmit}
                         inputType="tel"
+                        inputClassName="welcome-input-shimmer"
                     />
                 </div>
             </div>

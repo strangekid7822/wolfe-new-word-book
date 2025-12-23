@@ -819,6 +819,9 @@ body {
   .welcome-page {
     @apply fixed inset-0 flex flex-col items-center justify-center overflow-hidden;
     background: var(--color-tertiary);
+    box-shadow: inset 0px 15px 30px var(--color-shadow);
+    /* Optical center: shift content ~10% higher than true center */
+    padding-bottom: 15vh;
     min-height: 100vh;
     min-height: 100dvh;
   }
@@ -840,7 +843,7 @@ body {
     height: 120px;
     object-fit: cover;
     border: 3px solid var(--color-white);
-    box-shadow: 
+    box-shadow:
       0 0 20px var(--color-shadow),
       0 0 40px rgba(0, 170, 249, 0.2);
   }
@@ -859,5 +862,35 @@ body {
   /* Input section wrapper */
   .welcome-input-section {
     @apply w-full;
+  }
+
+  /* Shimmer effect for welcome input placeholder - larger text */
+  .welcome-input-shimmer {
+    font-size: 1.25rem !important;
+    /* text-xl equivalent, !important to override Tailwind */
+  }
+
+  .welcome-input-shimmer::placeholder {
+    background: linear-gradient(120deg,
+        var(--color-grey-darker) 0%,
+        var(--color-grey-darker) 46%,
+        var(--color-white) 50%,
+        var(--color-grey-darker) 54%,
+        var(--color-grey-darker) 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer-placeholder 7s ease-in-out infinite;
+  }
+
+  @keyframes shimmer-placeholder {
+    0% {
+      background-position: 100% 0;
+    }
+
+    100% {
+      background-position: -100% 0;
+    }
   }
 }
