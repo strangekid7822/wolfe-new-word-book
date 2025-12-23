@@ -53,8 +53,7 @@ const PinInput = ({ onSubmit, length = 6 }) => {
     return (
         // Fixed width container to keep total width constant
         <div className="flex items-center justify-center w-full max-w-xs mx-auto">
-            <div className={`flex items-center w-full transition-all duration-300 ease-out ${isComplete ? 'justify-start' : 'justify-center'
-                }`}>
+            <div className="flex items-center justify-center transition-all duration-300 ease-out">
                 {/* PIN Input Boxes - width and gap shrink when complete */}
                 <div
                     className={`flex transition-all duration-300 ease-out ${isComplete ? 'gap-1' : 'gap-2'
