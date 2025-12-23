@@ -303,28 +303,30 @@ function Home() {
   const isInputVisible = waitingForInput && !!inputContent;
 
   return (
-    <div className="flex flex-col h-full">
-      {/* Messages Area - Scrollable */}
-      {/* pb-48 (12rem/192px) is a brute-force buffer to prevent the bottom InputAreaWrapper 
+    <div className="flex flex-col min-h-[100dvh] bg-[var(--color-tertiary)] px-4 pt-4 gap-2 overflow-y-auto main-container-style">
+      <div className="flex flex-col h-full flex-grow">
+        {/* Messages Area - Scrollable */}
+        {/* pb-48 (12rem/192px) is a brute-force buffer to prevent the bottom InputAreaWrapper 
           (which is fixed or sticky) from overlapping the last few messages. 
           This large padding ensures the user can always scroll the last message into view. */}
-      <div className="flex-grow overflow-y-auto pb-48">
-        <div className="flex flex-col justify-end min-h-full">
-          {messages.map((msg, idx) => (
-            <MessageBubble key={idx} text={msg.text} isUser={msg.isUser} />
-          ))}
+        <div className="flex-grow overflow-y-auto pb-48">
+          <div className="flex flex-col justify-end min-h-full">
+            {messages.map((msg, idx) => (
+              <MessageBubble key={idx} text={msg.text} isUser={msg.isUser} />
+            ))}
 
-          {/* Typing indicator */}
-          {isTyping && <TypingIndicator />}
+            {/* Typing indicator */}
+            {isTyping && <TypingIndicator />}
 
-          <div ref={messagesEndRef} />
+            <div ref={messagesEndRef} />
+          </div>
         </div>
-      </div>
 
-      {/* Input / Options Area - Fixed at bottom */}
-      <InputAreaWrapper visible={isInputVisible}>
-        {inputContent}
-      </InputAreaWrapper>
+        {/* Input / Options Area - Fixed at bottom */}
+        <InputAreaWrapper visible={isInputVisible}>
+          {inputContent}
+        </InputAreaWrapper>
+      </div>
     </div>
   );
 }

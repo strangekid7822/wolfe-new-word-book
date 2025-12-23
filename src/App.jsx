@@ -24,9 +24,11 @@ function App() {
         {/* Welcome page for new users */}
         <Route path="/welcome" element={<Welcome />} />
 
-        {/* Main app routes with layout */}
+        {/* Home page - no navbar */}
+        <Route path="/home" element={<Home />} />
+
+        {/* Routes with layout (navbar) */}
         <Route path="/" element={<Layout />}>
-          <Route path="home" element={<Home />} />
           <Route path="write" element={<WordTest />} />
           <Route path="profile" element={<Profile />} />
         </Route>
