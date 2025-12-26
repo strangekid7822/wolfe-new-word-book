@@ -881,7 +881,7 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: shimmer-placeholder 7s ease-in-out infinite;
+    animation: shimmer-placeholder 3s ease-in-out infinite;
   }
 
   @keyframes shimmer-placeholder {
