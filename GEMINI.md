@@ -26,7 +26,7 @@ This is a React-based word learning application built with Vite and styled with 
 
 **Pages** (`src/pages/`):
 - `WordTest.jsx` - Main testing interface with timer and card gallery, includes navigation protection and beforeunload handling
-- `Home.jsx` - Simple landing page (placeholder)
+- `Home.jsx` - WeChat-style conversational onboarding interface with config-driven conversation flow, user registration, and chat interactions
 - `Profile.jsx` - User profile page (placeholder)
 
 **Core Components** (`src/components/`):
@@ -37,6 +37,19 @@ This is a React-based word learning application built with Vite and styled with 
 - `WordTestNavBar.jsx` - Bottom navigation bar with active state icons and navigation protection
 - `SubmitButton.jsx` - Animated submit button with colorful rotating border animation
 - `Option.jsx` - Multiple choice option buttons for Chinese meaning selection with glassmorphism effects
+
+**Home Components** (`src/components/home/`):
+- `MessageBubble.jsx` - WeChat-style chat bubbles with arrow tails and user/app avatar positioning
+- `Avatar.jsx` - App/user avatar display with SVG icons and custom image support
+- `ChatInput.jsx` - Centered text input field with animated send button reveal
+- `OptionChips.jsx` - Option buttons supporting both list (vertical) and grid layouts
+- `PinInput.jsx` - 6-digit PIN input with auto-focus, backspace navigation, and animated submit button
+- `AvatarUploader.jsx` - Image upload button with base64 conversion for localStorage storage
+- `TypingIndicator.jsx` - Animated bouncing dots in chat bubble style
+- `InputAreaWrapper.jsx` - Fixed bottom container with slide-up/down animation for input components
+
+**Configuration** (`src/config/`):
+- `conversationFlow.js` - Config-driven conversation flow system defining all dialog steps, messages, input types, validation rules, and navigation logic
 
 **Context Providers** (`src/contexts/`):
 - `TimerContext.jsx` - Centralized 3-minute countdown timer with accurate time tracking, color-coded states, formatted display, and callback system for timer expiration events
@@ -67,6 +80,18 @@ This is a React-based word learning application built with Vite and styled with 
   ```
 - **Vocabulary Library Structure**: JSON files with textbook vocabularies including word, phonetic, meaning, false_meanings, unit, and part_of_speech
 - **Gallery State**: Active card index, scroll position, and component references for focus management
+- **Registration Data Structure** (stored in localStorage after completion):
+  ```javascript
+  {
+    userName: string,
+    userGender: 'male' | 'female',
+    userAvatar: base64 string,
+    userGrade: '1'-'12',
+    userPhone: string (11 digits),
+    userPassword: string (6 digits)
+  }
+  ```
+- **Conversation Flow Step Types**: `message` (auto-advance), `input` (text field), `options` (button selection), `upload` (file picker), `pin` (numeric input)
 
 ### Key Features
 - **Dynamic Question Generation**: Random word selection from JSON vocabulary libraries with no repetition until all words are used
@@ -79,6 +104,10 @@ This is a React-based word learning application built with Vite and styled with 
 - **Timer-Controlled Gameplay**: 3-minute countdown controls card generation, stopping new cards and hiding uncentered cards when time expires
 - **Navigation Protection**: Warns users before leaving the word test if they have entered answers
 - **Mobile-Optimized Scrolling**: Horizontal card gallery with snap-to-center behavior and touch-friendly interactions
+- **Config-Driven Conversation Flow**: Declarative conversation steps with validation, formatting, and branching logic
+- **WeChat-Style Chat UI**: Message bubbles, typing indicators, and avatar display mimicking WeChat aesthetics
+- **Multi-Step User Registration**: Name, gender, grade, phone number, and PIN collection with validation
+- **Wuxia-Themed Dialogue**: Playful martial arts style messaging (武侠风格) for engaging user experience
 - **Cross-Browser Audio Support**: Works in Chrome, Firefox, and Safari with graceful degradation for unsupported browsers
 
 ### Styling System
