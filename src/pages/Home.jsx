@@ -170,7 +170,7 @@ function Home() {
       setUserName(input); // Keep for display purposes
     }
     if (currentStep === 'askGender') {
-      const value = input === '♂ 男' ? 'male' : 'female';
+      const value = input === '♂ 男神' ? 'male' : 'female';
       setPendingUser(prev => ({ ...prev, gender: value }));
       // Store temporarily for dynamic messages during registration
       localStorage.setItem('userGender', value);

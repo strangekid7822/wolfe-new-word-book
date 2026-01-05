@@ -28,15 +28,16 @@ export const conversationFlow = {
     // Step 3: Ask Gender
     askGender: {
         message: "不认识！你是男是女？",
-        type: 'options',
+        type: 'scroll_picker',
+        defaultValue: 'female',
         delay: 800,
         options: [
-            { label: '♂ 男', value: 'male' },
-            { label: '♀ 女', value: 'female' }
+            { label: '♂ 男神', value: 'male' },
+            { label: '♀ 女神', value: 'female' }
         ],
         formatUserMessage: (input) => {
-            if (input === '♂ 男') return '老子我是男的！';
-            if (input === '♀ 女') return '姑奶奶我是女的！';
+            if (input === '♂ 男神') return '老子我是男的！';
+            if (input === '♀ 女神') return '姑奶奶我是女的！';
             return input;
         },
         onSelect: () => {
