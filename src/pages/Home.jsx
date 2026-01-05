@@ -5,6 +5,7 @@ import Avatar from '../components/home/Avatar';
 import TypingIndicator from '../components/home/TypingIndicator';
 import ChatInput from '../components/home/ChatInput';
 import OptionChips from '../components/home/OptionChips';
+import ScrollPicker from '../components/home/ScrollPicker';
 import AvatarUploader from '../components/home/AvatarUploader';
 import PinInput from '../components/home/PinInput';
 import { conversationFlow } from '../config/conversationFlow';
@@ -111,7 +112,7 @@ function Home() {
     setCurrentStep(stepKey);
 
     // Set waitingForInput based on step type
-    setWaitingForInput(step.type === 'input' || step.type === 'options' || step.type === 'upload' || step.type === 'pin');
+    setWaitingForInput(step.type === 'input' || step.type === 'options' || step.type === 'upload' || step.type === 'pin' || step.type === 'scroll_picker');
 
     // Execute any additional actions
     if (step.action) {
@@ -243,6 +244,15 @@ function Home() {
         processStep(result.next);
       }
     }
+
+    // Handle Scroll Picker
+    if (step.type === 'scroll_picker' && step.onSelect) {
+      const result = step.onSelect(input);
+      if (result && result.next) {
+        await new Promise(r => setTimeout(r, 400));
+        processStep(result.next);
+      }
+    }
   };
 
   /**
@@ -292,6 +302,17 @@ function Home() {
         <PinInput
           length={step.pinLength || 6}
           onSubmit={handleUserInput}
+        />
+      );
+    }
+
+    // Scroll Picker
+    if (step.type === 'scroll_picker') {
+      return (
+        <ScrollPicker
+          options={step.options}
+          onSelect={handleUserInput}
+          defaultValue={step.defaultValue}
         />
       );
     }

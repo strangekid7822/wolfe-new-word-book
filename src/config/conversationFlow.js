@@ -83,8 +83,8 @@ export const conversationFlow = {
             const gender = localStorage.getItem('userGender');
             return gender === 'female' ? '美女，你现在几年级？' : '帅哥，你现在几年级？';
         },
-        type: 'options',
-        layout: 'grid',
+        type: 'scroll_picker',
+        defaultValue: '6', // Default to Grade 6
         delay: 800,
         options: [
             { label: '一年级', value: '1' },
