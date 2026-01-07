@@ -110,6 +110,7 @@ This is a React-based word learning application built with Vite and styled with 
 - **Multi-Step User Registration**: Name, gender, grade, phone number, and PIN collection with validation
 - **Wuxia-Themed Dialogue**: Playful martial arts style messaging (武侠风格) for engaging user experience
 - **Cross-Browser Audio Support**: Works in Chrome, Firefox, and Safari with graceful degradation for unsupported browsers
+- **Login Flow for Returning Users**: Welcome page passes phone via sessionStorage to Home page; if phone matches registered user (phone + password in localStorage), shows login conversation instead of registration; password verification with 3 retry attempts and escalating wuxia-style error messages
 
 ### Styling System
 - **Tailwind CSS 4.1.11** with modern `@theme` syntax in `index.css`

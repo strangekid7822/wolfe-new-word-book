@@ -20,9 +20,8 @@ function Welcome() {
         // Clear error
         setErrorMessage('');
 
-        // Mark user as not first-time visitor
-        localStorage.setItem('hasVisitedBefore', 'true');
-        localStorage.setItem('userPhone', phoneNumber);
+        // Store phone temporarily in sessionStorage for Home.jsx to read
+        sessionStorage.setItem('enteredPhone', phoneNumber);
 
         // Navigate to conversation flow
         navigate('/home');

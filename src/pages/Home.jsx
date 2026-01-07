@@ -26,6 +26,7 @@ function Home() {
   const [isTyping, setIsTyping] = useState(false);
   const [userName, setUserName] = useState(localStorage.getItem('userName') || '');
   const [waitingForInput, setWaitingForInput] = useState(false);
+  const [loginAttempts, setLoginAttempts] = useState(0);
 
   // Temporary registration data (saved only after password is set)
   const [pendingUser, setPendingUser] = useState({
@@ -51,11 +52,31 @@ function Home() {
 
   /**
    * Initialize conversation on component mount
+   * Check if user is registered (phone matches + password exists)
    */
   useEffect(() => {
     if (!hasInitialized.current && messages.length === 0) {
       hasInitialized.current = true;
-      processStep('greeting');
+
+      // Get phone from sessionStorage (set by Welcome page)
+      const enteredPhone = sessionStorage.getItem('enteredPhone');
+      const storedPhone = localStorage.getItem('userPhone');
+      const storedPassword = localStorage.getItem('userPassword');
+      const storedName = localStorage.getItem('userName');
+
+      // Check if this is a registered user (phone matches + password exists)
+      const isRegisteredUser = enteredPhone && storedPhone &&
+        enteredPhone === storedPhone && storedPassword;
+
+      if (isRegisteredUser) {
+        setUserName(storedName || '');
+        processStep('loginAskPassword');
+      } else {
+        processStep('greeting');
+      }
+
+      // Clear sessionStorage after reading
+      sessionStorage.removeItem('enteredPhone');
     }
   }, []);
 
@@ -119,10 +140,8 @@ function Home() {
       step.action(navigate, addMessage, userName);
     }
 
-    // Save user data when registration is complete
-    if (stepKey === 'passwordConfirm') {
-      saveUserData(pendingUser);
-    }
+    // Note: User data is now saved in handleUserInput when passwordNotice step completes
+    // (moved there to fix async state timing issue with password)
 
     // Auto-proceed to next step if it's a simple message
     if (step.type === 'message' && step.next) {
@@ -238,6 +257,37 @@ function Home() {
 
     // Handle PIN input
     if (step.type === 'pin' && step.onResponse) {
+      // Special handling for login password validation
+      if (currentStep === 'loginInputPassword') {
+        const storedPassword = localStorage.getItem('userPassword');
+        if (input === storedPassword) {
+          // Password correct - reset attempts and go to success
+          setLoginAttempts(0);
+          await new Promise(r => setTimeout(r, 400));
+          processStep('loginSuccess');
+        } else {
+          // Password incorrect - increment attempts and show appropriate error
+          const newAttempts = loginAttempts + 1;
+          setLoginAttempts(newAttempts);
+          await new Promise(r => setTimeout(r, 400));
+
+          if (newAttempts === 1) {
+            processStep('loginWrongPassword1');
+          } else if (newAttempts === 2) {
+            processStep('loginWrongPassword2');
+          } else {
+            processStep('loginWrongPasswordFinal');
+          }
+        }
+        return;
+      }
+
+      // Registration: save user data when password is entered
+      // Note: We use input directly here because React state updates are async
+      if (currentStep === 'passwordNotice') {
+        saveUserData({ ...pendingUser, password: input });
+      }
+
       const result = step.onResponse(input);
       if (result && result.next) {
         await new Promise(r => setTimeout(r, 400));

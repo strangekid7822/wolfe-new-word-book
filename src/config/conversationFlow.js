@@ -183,5 +183,62 @@ export const conversationFlow = {
         type: 'message',
         delay: 800
         // TODO: Define next step for returning users
+    },
+
+    // ========== LOGIN FLOW FOR REGISTERED USERS ==========
+
+    // Login Step 1: Ask for password
+    loginAskPassword: {
+        message: "密码是什么？我要验明正身！",
+        type: 'message',
+        delay: 800,
+        next: 'loginInputPassword'
+    },
+
+    // Login Step 2: Password input
+    loginInputPassword: {
+        type: 'pin',
+        pinLength: 6,
+        delay: 400,
+        formatUserMessage: (input) => `密码是 ${input}`,
+        // Password validation handled in Home.jsx
+        onResponse: () => {
+            return { next: null }; // Navigation handled by Home.jsx based on validation
+        }
+    },
+
+    // Login Step 3a: Success
+    loginSuccess: {
+        message: () => {
+            const userName = localStorage.getItem('userName');
+            return `真的是你啊！你可终于回来了，你都想死我了，我亲爱的${userName}！`;
+        },
+        type: 'message',
+        delay: 800
+        // TODO: next -> Main Conversation
+    },
+
+    // Login Step 3b: Wrong password (1st attempt)
+    loginWrongPassword1: {
+        message: "不对！再输入一次！",
+        type: 'message',
+        delay: 600,
+        next: 'loginInputPassword'
+    },
+
+    // Login Step 3c: Wrong password (2nd attempt)
+    loginWrongPassword2: {
+        message: "不对！自己的密码都记不住！再试一次！",
+        type: 'message',
+        delay: 600,
+        next: 'loginInputPassword'
+    },
+
+    // Login Step 3d: Wrong password (3+ attempts - locked)
+    loginWrongPasswordFinal: {
+        message: "快来人啊！有个傻子记不住自己的密码！忘了密码你找Wolfe啊！",
+        type: 'message',
+        delay: 800
+        // No next - user is locked out
     }
 };
