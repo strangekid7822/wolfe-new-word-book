@@ -75,8 +75,8 @@ function Home() {
         processStep('greeting');
       }
 
-      // Clear sessionStorage after reading
-      sessionStorage.removeItem('enteredPhone');
+      // Note: Don't clear enteredPhone here - it's needed for confirmPhoneFromWelcome step
+      // It will be cleared after phone is confirmed and saved to localStorage
     }
   }, []);
 
@@ -231,7 +231,9 @@ function Home() {
 
     // Handle option selection
     if (step.type === 'options') {
-      const selectedOption = step.options.find(opt => opt.label === input);
+      // Get options (could be array or function)
+      const options = typeof step.options === 'function' ? step.options() : step.options;
+      const selectedOption = options.find(opt => opt.label === input);
 
       // Execute onSelect callback if defined
       if (selectedOption && step.onSelect) {
@@ -297,7 +299,11 @@ function Home() {
 
     // Handle Scroll Picker
     if (step.type === 'scroll_picker' && step.onSelect) {
-      const result = step.onSelect(input);
+      // Get options (could be array or function)
+      const options = typeof step.options === 'function' ? step.options() : step.options;
+      // Find selected option to get its value
+      const selectedOption = options.find(opt => opt.label === input);
+      const result = step.onSelect(selectedOption?.value || input);
       if (result && result.next) {
         await new Promise(r => setTimeout(r, 400));
         processStep(result.next);
@@ -327,9 +333,11 @@ function Home() {
 
     // Option buttons for menu steps
     if (step.type === 'options' && step.options) {
+      // Get options (could be array or function)
+      const options = typeof step.options === 'function' ? step.options() : step.options;
       return (
         <OptionChips
-          options={step.options}
+          options={options}
           onSelect={handleUserInput}
           layout={step.layout}
         />
@@ -358,9 +366,11 @@ function Home() {
 
     // Scroll Picker
     if (step.type === 'scroll_picker') {
+      // Get options (could be array or function)
+      const options = typeof step.options === 'function' ? step.options() : step.options;
       return (
         <ScrollPicker
-          options={step.options}
+          options={options}
           onSelect={handleUserInput}
           defaultValue={step.defaultValue}
         />

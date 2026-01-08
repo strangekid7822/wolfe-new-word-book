@@ -92,7 +92,7 @@ This is a React-based word learning application built with Vite and styled with 
     userPassword: string (6 digits)
   }
   ```
-- **Conversation Flow Step Types**: `message` (auto-advance), `input` (text field), `options` (button selection), `upload` (file picker), `pin` (numeric input)
+- **Conversation Flow Step Types**: `message` (auto-advance), `input` (text field), `options` (button selection, supports dynamic options via function), `scroll_picker` (horizontal picker for long lists), `upload` (file picker), `pin` (numeric input)
 
 ### Key Features
 - **Dynamic Question Generation**: Random word selection from JSON vocabulary libraries with no repetition until all words are used
@@ -105,10 +105,10 @@ This is a React-based word learning application built with Vite and styled with 
 - **Timer-Controlled Gameplay**: 3-minute countdown controls card generation, stopping new cards and hiding uncentered cards when time expires
 - **Navigation Protection**: Warns users before leaving the word test if they have entered answers
 - **Mobile-Optimized Scrolling**: Horizontal card gallery with snap-to-center behavior and touch-friendly interactions
-- **Config-Driven Conversation Flow**: Declarative conversation steps with validation, formatting, and branching logic
+- **Config-Driven Conversation Flow**: Declarative conversation steps with validation, formatting, and branching logic; supports dynamic options as functions for gender-aware choices
 - **WeChat-Style Chat UI**: Message bubbles, typing indicators, and avatar display mimicking WeChat aesthetics
-- **Multi-Step User Registration**: Name, gender, grade, phone number, and PIN collection with validation
-- **Wuxia-Themed Dialogue**: Playful martial arts style messaging (武侠风格) for engaging user experience
+- **Multi-Step User Registration**: Name → gender → phone confirmation → (optional re-entry) → password; phone pre-filled from Welcome page via sessionStorage
+- **Wuxia-Themed Dialogue**: Playful martial arts style messaging (武侠风格) with gender-aware responses (美女/帅哥)
 - **Cross-Browser Audio Support**: Works in Chrome, Firefox, and Safari with graceful degradation for unsupported browsers
 - **Login Flow for Returning Users**: Welcome page passes phone via sessionStorage to Home page; if phone matches registered user (phone + password in localStorage), shows login conversation instead of registration; password verification with 3 retry attempts and escalating wuxia-style error messages
 

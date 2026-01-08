@@ -1,6 +1,14 @@
 /**
  * Conversation Flow Configuration
- * Wuxia Style Implementation
+ * Wuxia Style (武侠风格) Implementation
+ * 
+ * Step types: 'message' | 'input' | 'options' | 'scroll_picker' | 'upload' | 'pin'
+ * - message: Auto-advancing app message
+ * - input: Text input field
+ * - options: Button selection (supports dynamic options via function)
+ * - scroll_picker: Horizontal scroll picker (for long option lists)
+ * - upload: File upload (e.g., avatar)
+ * - pin: Numeric PIN input
  */
 
 export const conversationFlow = {
@@ -28,7 +36,7 @@ export const conversationFlow = {
     // Step 3: Ask Gender
     askGender: {
         message: "不认识！你是男是女？",
-        type: 'scroll_picker',
+        type: 'options',
         defaultValue: 'female',
         delay: 800,
         options: [
@@ -42,7 +50,7 @@ export const conversationFlow = {
         },
         onSelect: () => {
             return {
-                next: 'askGrade'
+                next: 'confirmPhoneFromWelcome'
             };
         }
     },
@@ -78,6 +86,12 @@ export const conversationFlow = {
     },
     */
 
+    /*
+     * COMMENTED OUT: Grade selection step (to be used later)
+     * Related files:
+     *   - src/components/home/ScrollPicker.jsx (picker component)
+     *   - src/pages/Home.jsx: search "askGrade" for handling logic
+     *
     // Step 4: Ask Grade
     askGrade: {
         message: () => {
@@ -107,13 +121,49 @@ export const conversationFlow = {
             };
         }
     },
+    */
+    // ========== REGISTRATION FLOW ==========
 
-    // Step 5: Ask Phone
-    askPhone: {
+    // Step 4: Confirm phone from Welcome page
+    confirmPhoneFromWelcome: {
         message: () => {
             const gender = localStorage.getItem('userGender');
-            return gender === 'female' ? '美女，你的电话号码告诉我一下。' : '帅哥，你的电话号码告诉我一下。';
+            const phone = sessionStorage.getItem('enteredPhone') || '未知号码';
+            return gender === 'female'
+                ? `美女，这个电话号码 ${phone} 是你的吗？`
+                : `帅哥，这个电话号码 ${phone} 是你的吗？`;
         },
+        type: 'options',
+        delay: 800,
+        options: () => {
+            const gender = localStorage.getItem('userGender');
+            return gender === 'female'
+                ? [
+                    { label: '没错，老登！', value: 'correct' },
+                    { label: '不对，刚才姑奶奶我输错了！', value: 'wrong' }
+                ]
+                : [
+                    { label: '没错，老登！', value: 'correct' },
+                    { label: '不对，刚才你爷爷我输错了！', value: 'wrong' }
+                ];
+        },
+        onSelect: (value) => {
+            if (value === 'correct') {
+                // Save the phone from sessionStorage to localStorage
+                const phone = sessionStorage.getItem('enteredPhone');
+                if (phone) {
+                    localStorage.setItem('userPhone', phone);
+                    sessionStorage.removeItem('enteredPhone');
+                }
+                return { next: 'askPassword' };
+            } else {
+                return { next: 'askPhone' };
+            }
+        }
+    },
+    // Step 4b: Re-enter phone (only if Welcome page phone was wrong)
+    askPhone: {
+        message: "那麻烦少侠重新填写一下你的手机号码吧。",
         type: 'input',
         placeholder: "输入手机号码",
         inputType: 'tel',
@@ -126,8 +176,7 @@ export const conversationFlow = {
             };
         }
     },
-
-    // Step 6: Confirm Phone
+    // Step 5: Confirm re-entered phone
     confirmPhone: {
         message: "你敢不敢再输入一次，让我看看你有没有说错？",
         type: 'input',
@@ -143,8 +192,7 @@ export const conversationFlow = {
             };
         }
     },
-
-    // Step 7: Ask Password
+    // Step 6: Introduce password requirement
     askPassword: {
         message: () => {
             const gender = localStorage.getItem('userGender');
@@ -154,8 +202,7 @@ export const conversationFlow = {
         delay: 800,
         next: 'passwordNotice'
     },
-
-    // Step 8: Password Notice
+    // Step 7: Enter 6-digit password
     passwordNotice: {
         message: "注意！密码只要六位数字，不然我可记不住！",
         type: 'pin',
@@ -168,16 +215,14 @@ export const conversationFlow = {
             };
         }
     },
-
-    // Step 9: Password Confirmed
+    // Step 8: Registration complete
     passwordConfirm: {
         message: "记住了，以后你要是忘了，可别找我。只能联系你们那个帅气英俊的Wolfe老师，他知道所有人的密码。",
         type: 'message',
         delay: 800
         // Pause here for now
     },
-
-    // Handle existing users
+    // Returning user (name found in localStorage) - currently unused
     welcomeBack: {
         message: (userName) => `久仰大名，${userName}！`,
         type: 'message',
