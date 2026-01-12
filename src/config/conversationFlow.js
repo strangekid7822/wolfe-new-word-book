@@ -92,14 +92,14 @@ export const conversationFlow = {
      *   - src/components/home/ScrollPicker.jsx (picker component)
      *   - src/pages/Home.jsx: search "askGrade" for handling logic
      *
-    // Step 4: Ask Grade
-    askGrade: {
+    // Step 4: Ask Grade (UNUSED - grade is now asked in homeConversation)
+    askGradeOld: {
         message: () => {
             const gender = localStorage.getItem('userGender');
             return gender === 'female' ? '美女，你现在几年级？' : '帅哥，你现在几年级？';
         },
         type: 'scroll_picker',
-        defaultValue: '6', // Default to Grade 6
+        defaultValue: '6',
         delay: 800,
         options: [
             { label: '一年级', value: '1' },
@@ -219,15 +219,80 @@ export const conversationFlow = {
     passwordConfirm: {
         message: "记住了，以后你要是忘了，可别找我。只能联系你们那个帅气英俊的Wolfe老师，他知道所有人的密码。",
         type: 'message',
-        delay: 800
-        // Pause here for now
+        delay: 800,
+        next: 'homeConversation'
     },
     // Returning user (name found in localStorage) - currently unused
     welcomeBack: {
         message: (userName) => `久仰大名，${userName}！`,
         type: 'message',
-        delay: 800
-        // TODO: Define next step for returning users
+        delay: 800,
+        next: 'homeConversation'
+    },
+
+    // ========== HOME CONVERSATION (after login/registration) ==========
+
+    // Entry point - checks if grade is set, routes accordingly
+    homeConversation: {
+        type: 'message',
+        delay: 100, // Quick check, no visible delay
+        next: () => {
+            const grade = localStorage.getItem('userGrade');
+            return grade ? 'homeMenu' : 'askGrade';
+        }
+    },
+
+    // Ask grade if not set (first time after registration)
+    askGrade: {
+        message: () => {
+            const gender = localStorage.getItem('userGender');
+            return gender === 'female' ? '美女，你现在几年级？' : '帅哥，你现在几年级？';
+        },
+        type: 'scroll_picker',
+        defaultValue: '7',
+        delay: 800,
+        options: [
+            { label: '一年级', value: '1' },
+            { label: '二年级', value: '2' },
+            { label: '三年级', value: '3' },
+            { label: '四年级', value: '4' },
+            { label: '五年级', value: '5' },
+            { label: '六年级', value: '6' },
+            { label: '七年级', value: '7' },
+            { label: '八年级', value: '8' },
+            { label: '九年级', value: '9' },
+            { label: '高一', value: '10' },
+            { label: '高二', value: '11' },
+            { label: '高三', value: '12' }
+        ],
+        onSelect: (value) => {
+            localStorage.setItem('userGrade', value);
+            return { next: 'homeMenu' };
+        }
+    },
+
+    // Main menu - what do you want to do today?
+    homeMenu: {
+        message: () => {
+            const gender = localStorage.getItem('userGender');
+            const title = gender === 'female' ? '美女' : '帅哥';
+            return `${title}，今天想做什么？`;
+        },
+        type: 'options',
+        delay: 800,
+        options: [
+            { label: '📝 开始练功', value: 'practice' },
+            { label: '📊 查看记录', value: 'progress' },
+            { label: '⚙️ 门派设置', value: 'settings' }
+        ],
+        onSelect: (value) => {
+            // TODO: Handle navigation based on selection
+            if (value === 'practice') {
+                // Navigate to word test
+                return { next: 'startPractice' };
+            }
+            return { next: null };
+        }
     },
 
     // ========== LOGIN FLOW FOR REGISTERED USERS ==========
@@ -259,8 +324,8 @@ export const conversationFlow = {
             return `真的是你啊！你可终于回来了，你都想死我了，我亲爱的${userName}！`;
         },
         type: 'message',
-        delay: 800
-        // TODO: next -> Main Conversation
+        delay: 800,
+        next: 'homeConversation'
     },
 
     // Login Step 3b: Wrong password (1st attempt)
