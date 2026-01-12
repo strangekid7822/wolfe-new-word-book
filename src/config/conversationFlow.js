@@ -86,42 +86,6 @@ export const conversationFlow = {
     },
     */
 
-    /*
-     * COMMENTED OUT: Grade selection step (to be used later)
-     * Related files:
-     *   - src/components/home/ScrollPicker.jsx (picker component)
-     *   - src/pages/Home.jsx: search "askGrade" for handling logic
-     *
-    // Step 4: Ask Grade (UNUSED - grade is now asked in homeConversation)
-    askGradeOld: {
-        message: () => {
-            const gender = localStorage.getItem('userGender');
-            return gender === 'female' ? '美女，你现在几年级？' : '帅哥，你现在几年级？';
-        },
-        type: 'scroll_picker',
-        defaultValue: '6',
-        delay: 800,
-        options: [
-            { label: '一年级', value: '1' },
-            { label: '二年级', value: '2' },
-            { label: '三年级', value: '3' },
-            { label: '四年级', value: '4' },
-            { label: '五年级', value: '5' },
-            { label: '六年级', value: '6' },
-            { label: '七年级', value: '7' },
-            { label: '八年级', value: '8' },
-            { label: '九年级', value: '9' },
-            { label: '高一', value: '10' },
-            { label: '高二', value: '11' },
-            { label: '高三', value: '12' }
-        ],
-        onSelect: () => {
-            return {
-                next: 'askPhone'
-            };
-        }
-    },
-    */
     // ========== REGISTRATION FLOW ==========
 
     // Step 4: Confirm phone from Welcome page
