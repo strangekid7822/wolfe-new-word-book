@@ -42,8 +42,8 @@ const ChatInput = ({ placeholder, onSend, inputType = 'text', inputClassName = '
                 >
                     <button
                         onClick={handleSend}
-                        className="glass-effect text-white text-sm font-bold px-4 py-1.5 rounded-full shadow-md h-full flex items-center"
-                        style={{ width: 'auto', height: '100%' }} // Override glass-effect fixed height/width
+                        className="btn-primary text-white text-sm font-bold px-4 py-1.5 rounded-full shadow-md h-full flex items-center"
+                        style={{ width: 'auto', height: '100%' }} // Override btn-primary fixed height/width
                     >
                         发送
                     </button>

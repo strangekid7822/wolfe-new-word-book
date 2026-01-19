@@ -5,7 +5,7 @@
 const AudioPlayButton = ({ onPlayClick, isGlowing }) => {
   return (
     <div 
-      className={`glass-effect glass-play-button rounded-full mb-4 ${isGlowing ? 'glowing' : ''}`} 
+      className={`btn-primary glass-play-button rounded-full mb-4 ${isGlowing ? 'glowing' : ''}`} 
       onClick={onPlayClick}
     >
       <div className="glass-content">

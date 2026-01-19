@@ -38,7 +38,7 @@ const AvatarUploader = ({ onUpload, buttonText = "📷 上传头像" }) => {
             {/* Styled button matching OptionChips */}
             <button
                 onClick={handleClick}
-                className="glass-effect !h-10 !w-full text-[var(--color-white)] text-sm font-semibold active:scale-95 rounded-full flex items-center justify-center gap-2"
+                className="btn-primary !h-10 !w-full text-[var(--color-white)] text-sm font-semibold active:scale-95 rounded-full flex items-center justify-center gap-2"
                 style={{ height: '3rem' }}
             >
                 <img src="/HomePageInputWrapper_CameraIcon.svg" alt="camera" className="w-5 h-5" />

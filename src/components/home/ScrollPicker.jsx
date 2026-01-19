@@ -101,7 +101,7 @@ const ScrollPicker = ({ options, onSelect, defaultValue }) => {
                 <div className="absolute right-1 top-1 bottom-1 flex items-center justify-center z-10">
                     <button
                         onClick={handleSend}
-                        className="glass-effect text-white text-sm font-bold px-4 py-1.5 rounded-full shadow-md h-full flex items-center active:scale-95 transition-transform"
+                        className="btn-primary text-white text-sm font-bold px-4 py-1.5 rounded-full shadow-md h-full flex items-center active:scale-95 transition-transform"
                         style={{ width: 'auto', height: '100%' }}
                     >
                         发送

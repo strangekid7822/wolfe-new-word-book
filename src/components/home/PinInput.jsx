@@ -82,7 +82,7 @@ const PinInput = ({ onSubmit, length = 6 }) => {
                 >
                     <button
                         onClick={handleSubmit}
-                        className="glass-effect !w-full h-12 text-white text-sm font-bold rounded-full shadow-md whitespace-nowrap"
+                        className="btn-primary !w-full h-12 text-white text-sm font-bold rounded-full shadow-md whitespace-nowrap"
                     >
                         发送
                     </button>
