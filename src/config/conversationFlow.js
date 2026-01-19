@@ -12,11 +12,11 @@
  */
 
 export const conversationFlow = {
-    // Step 1: Greeting
+    // Step 1: Greeting (new users only - registered users go directly to loginAskPassword)
     greeting: {
         message: "前方何人，报上名来！",
         type: 'message',
-        next: (userName) => userName ? 'welcomeBack' : 'askName',
+        next: 'askName',
         delay: 800
     },
 
@@ -186,13 +186,7 @@ export const conversationFlow = {
         delay: 800,
         next: 'homeConversation'
     },
-    // Returning user (name found in localStorage) - currently unused
-    welcomeBack: {
-        message: (userName) => `久仰大名，${userName}！`,
-        type: 'message',
-        delay: 800,
-        next: 'homeConversation'
-    },
+
 
     // ========== HOME CONVERSATION (after login/registration) ==========
 

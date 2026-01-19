@@ -58,15 +58,18 @@ function Home() {
     if (!hasInitialized.current && messages.length === 0) {
       hasInitialized.current = true;
 
-      // Get phone from sessionStorage (set by Welcome page)
-      const enteredPhone = sessionStorage.getItem('enteredPhone');
+      // Check stored registration data
+      const enteredPhone = sessionStorage.getItem('enteredPhone'); // From Welcome page
       const storedPhone = localStorage.getItem('userPhone');
       const storedPassword = localStorage.getItem('userPassword');
       const storedName = localStorage.getItem('userName');
 
-      // Check if this is a registered user (phone matches + password exists)
-      const isRegisteredUser = enteredPhone && storedPhone &&
-        enteredPhone === storedPhone && storedPassword;
+      // Determine if user is registered:
+      // 1. Direct access (refresh) with existing registration, OR
+      // 2. Coming from Welcome with matching registered phone
+      const hasRegistration = storedPhone && storedPassword;
+      const phoneMatches = !enteredPhone || enteredPhone === storedPhone;
+      const isRegisteredUser = hasRegistration && phoneMatches;
 
       if (isRegisteredUser) {
         setUserName(storedName || '');
@@ -75,8 +78,7 @@ function Home() {
         processStep('greeting');
       }
 
-      // Note: Don't clear enteredPhone here - it's needed for confirmPhoneFromWelcome step
-      // It will be cleared after phone is confirmed and saved to localStorage
+      // Note: enteredPhone is kept in sessionStorage for confirmPhoneFromWelcome step
     }
   }, []);
 
@@ -95,8 +97,9 @@ function Home() {
     localStorage.setItem('userName', userData.name);
     localStorage.setItem('userGender', userData.gender);
     localStorage.setItem('userAvatar', userData.avatar);
-    localStorage.setItem('userGrade', userData.grade);
-    localStorage.setItem('userPhone', userData.phone);
+    // Only set phone/grade if provided (they may already be set by conversation step handlers)
+    if (userData.phone) localStorage.setItem('userPhone', userData.phone);
+    if (userData.grade) localStorage.setItem('userGrade', userData.grade);
     localStorage.setItem('userPassword', userData.password);
     console.log('User registration saved:', userData);
   };
