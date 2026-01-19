@@ -20,7 +20,8 @@ const OptionChips = ({ options, onSelect, layout = 'list' }) => {
                         isGrid
                             // !w-auto overrides glass-effect's width:100% to allow flex-wrap
                             ? "glass-effect !w-auto text-[var(--color-white)] text-sm font-semibold active:scale-95 rounded-full px-4 py-2"
-                            : "glass-effect !h-10 !w-full text-[var(--color-white)] text-sm font-semibold active:scale-95 rounded-full"
+                            // Neumorphic raised button for list layout
+                            : "neumorphic-button !h-10 text-sm"
                     }
                     style={isGrid ? {} : { height: '3rem' }}
                 >
