@@ -229,7 +229,7 @@ export const conversationFlow = {
         }
     },
 
-    // Main menu - what do you want to do today?
+    // Main menu - gender-aware options for practice and progress
     homeMenu: {
         message: () => {
             const gender = localStorage.getItem('userGender');
@@ -238,15 +238,15 @@ export const conversationFlow = {
         },
         type: 'options',
         delay: 800,
-        options: [
-            { label: '📝 开始练功', value: 'practice' },
-            { label: '📊 查看记录', value: 'progress' },
-            { label: '⚙️ 门派设置', value: 'settings' }
-        ],
+        options: () => {
+            const gender = localStorage.getItem('userGender');
+            return [
+                { label: gender === 'female' ? '姑奶奶我要背背单词' : '爷爷我要背背单词', value: 'practice' },
+                { label: '看看我的成绩汇总', value: 'progress' }
+            ];
+        },
         onSelect: (value) => {
-            // TODO: Handle navigation based on selection
             if (value === 'practice') {
-                // Navigate to word test
                 return { next: 'startPractice' };
             }
             return { next: null };
