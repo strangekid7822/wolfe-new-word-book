@@ -77,7 +77,7 @@ const PinInput = ({ onSubmit, length = 6 }) => {
 
                 {/* Send Button - slides in from right when complete */}
                 <div
-                    className={`transition-all duration-300 ease-out overflow-hidden ${isComplete ? 'w-20 ml-2 opacity-100' : 'w-0 ml-0 opacity-0'
+                    className={`transition-all duration-300 ease-out ${isComplete ? 'w-20 ml-2 opacity-100' : 'w-0 ml-0 opacity-0'
                         }`}
                 >
                     <button
