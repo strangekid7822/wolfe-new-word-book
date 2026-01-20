@@ -22,12 +22,12 @@ const BookGallery = ({ books, onSelect }) => {
             {/* Book covers scroll area */}
             <div
                 ref={scrollContainerRef}
-                className="flex overflow-x-auto snap-x snap-mandatory hide-scrollbar gap-4 px-8 py-2 w-full"
+                className="flex overflow-x-auto snap-x snap-mandatory hide-scrollbar gap-4 py-2 w-full"
                 style={{ scrollBehavior: 'smooth' }}
                 onScroll={(e) => {
                     const container = e.target;
                     const center = container.scrollLeft + container.clientWidth / 2;
-                    const items = container.children;
+                    const items = Array.from(container.children).filter(el => !el.dataset.spacer);
 
                     let closestDist = Infinity;
                     let closestIndex = 0;
@@ -44,12 +44,15 @@ const BookGallery = ({ books, onSelect }) => {
                     setSelectedIndex(closestIndex);
                 }}
             >
+                {/* Left spacer - allows first item to center */}
+                <div data-spacer="true" className="flex-shrink-0" style={{ width: 'calc(50% - 48px)' }} />
+
                 {books.map((book, index) => (
                     <div
                         key={index}
                         className={`snap-center flex-shrink-0 flex flex-col items-center gap-2 transition-all duration-300 cursor-pointer ${selectedIndex === index
-                                ? 'scale-105 opacity-100'
-                                : 'scale-95 opacity-60'
+                            ? 'scale-105 opacity-100'
+                            : 'scale-95 opacity-60'
                             }`}
                         onClick={(e) => {
                             e.currentTarget.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
@@ -65,13 +68,16 @@ const BookGallery = ({ books, onSelect }) => {
                         </div>
                         {/* Book title */}
                         <span className={`text-sm text-center max-w-24 leading-tight ${selectedIndex === index
-                                ? 'text-[var(--color-black)] font-medium'
-                                : 'text-gray-400'
+                            ? 'text-[var(--color-black)] font-medium'
+                            : 'text-gray-400'
                             }`}>
                             {book.title}
                         </span>
                     </div>
                 ))}
+
+                {/* Right spacer - allows last item to center */}
+                <div data-spacer="true" className="flex-shrink-0" style={{ width: 'calc(50% - 48px)' }} />
             </div>
 
             {/* Select button */}
