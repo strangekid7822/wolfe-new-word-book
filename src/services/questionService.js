@@ -26,11 +26,15 @@ class QuestionService {
       this.currentLibrary = libraryPath;
       
       // Extract all vocabulary words from all textbooks
+      // Filter: only words with >= 3 letters, exclude phrases
       this.availableWords = [];
       if (data.textbooks && Array.isArray(data.textbooks)) {
         data.textbooks.forEach(textbook => {
           if (textbook.vocabulary && Array.isArray(textbook.vocabulary)) {
-            this.availableWords.push(...textbook.vocabulary);
+            const filteredWords = textbook.vocabulary.filter(word => 
+              word.word.length >= 3 && !word.is_phrase
+            );
+            this.availableWords.push(...filteredWords);
           }
         });
       }

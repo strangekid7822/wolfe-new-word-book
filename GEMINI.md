@@ -81,7 +81,7 @@ This is a React-based word learning application built with Vite and styled with 
     selectedOption: string
   }
   ```
-- **Vocabulary Library Structure**: JSON files with textbook vocabularies including word, phonetic, meaning, false_meanings, unit, and part_of_speech
+- **Vocabulary Library Structure**: JSON files with textbook vocabularies including word, phonetic, meaning, false_meanings, unit, part_of_speech, and optional is_phrase boolean. Words with < 3 letters or is_phrase=true are filtered out during question generation.
 - **Gallery State**: Active card index, scroll position, and component references for focus management
 - **Registration Data Structure** (stored in localStorage after completion):
   ```javascript
