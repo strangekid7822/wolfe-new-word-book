@@ -371,11 +371,13 @@ function Home() {
     if (step.type === 'scroll_picker') {
       // Get options (could be array or function)
       const options = typeof step.options === 'function' ? step.options() : step.options;
+      // Get defaultValue (could be string or function)
+      const defaultValue = typeof step.defaultValue === 'function' ? step.defaultValue() : step.defaultValue;
       return (
         <ScrollPicker
           options={options}
           onSelect={handleUserInput}
-          defaultValue={step.defaultValue}
+          defaultValue={defaultValue}
         />
       );
     }

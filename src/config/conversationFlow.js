@@ -253,6 +253,41 @@ export const conversationFlow = {
         }
     },
 
+    // Practice vocabulary selection - options based on grade level
+    startPractice: {
+        message: '你想背哪个词库？',
+        type: 'scroll_picker',
+        delay: 800,
+        defaultValue: () => {
+            const grade = localStorage.getItem('userGrade');
+            const gradeNum = parseInt(grade, 10);
+            if (gradeNum <= 3) return 'grade3';
+            if (gradeNum === 4) return 'grade4';
+            if (gradeNum === 5) return 'grade5';
+            if (gradeNum === 6) return 'grade6';
+            if (gradeNum === 7) return 'grade7';
+            if (gradeNum === 8) return 'grade8';
+            if (gradeNum === 9) return 'grade9';
+            return 'gaokao3500'; // Grades 10-12
+        },
+        options: [
+            { label: '三年级', value: 'grade3' },
+            { label: '四年级', value: 'grade4' },
+            { label: '五年级', value: 'grade5' },
+            { label: '六年级', value: 'grade6' },
+            { label: '小学1500词', value: 'primary1500' },
+            { label: '七年级', value: 'grade7' },
+            { label: '八年级', value: 'grade8' },
+            { label: '九年级', value: 'grade9' },
+            { label: '中考2500词', value: 'zhongkao2500' },
+            { label: '高考3500词', value: 'gaokao3500' }
+        ],
+        onSelect: (value) => {
+            localStorage.setItem('selectedVocabulary', value);
+            return { next: null }; // TODO: navigate to word test
+        }
+    },
+
     // ========== LOGIN FLOW FOR REGISTERED USERS ==========
 
     // Login Step 1: Ask for password
