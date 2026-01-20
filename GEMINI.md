@@ -48,9 +48,11 @@ This is a React-based word learning application built with Vite and styled with 
 - `AvatarUploader.jsx` - Image upload button with base64 conversion for localStorage storage
 - `TypingIndicator.jsx` - Animated bouncing dots in chat bubble style
 - `InputAreaWrapper.jsx` - Fixed bottom container with slide-up/down animation for input components
+- `BookGallery.jsx` - Horizontal scrollable gallery for textbook version selection with cover images and titles
 
 **Configuration** (`src/config/`):
 - `conversationFlow.js` - Config-driven conversation flow system defining all dialog steps, messages, input types, validation rules, and navigation logic
+- `bookConfig.js` - Maps grades to available textbook versions with cover image paths and display titles
 
 **Context Providers** (`src/contexts/`):
 - `TimerContext.jsx` - Centralized 3-minute countdown timer with accurate time tracking, color-coded states, formatted display, and callback system for timer expiration events
@@ -92,7 +94,7 @@ This is a React-based word learning application built with Vite and styled with 
     userPassword: string (6 digits)
   }
   ```
-- **Conversation Flow Step Types**: `message` (auto-advance), `input` (text field), `options` (button selection, supports dynamic options via function), `scroll_picker` (horizontal picker for long lists), `upload` (file picker), `pin` (numeric input)
+- **Conversation Flow Step Types**: `message` (auto-advance), `input` (text field), `options` (button selection, supports dynamic options via function), `scroll_picker` (horizontal picker for long lists), `upload` (file picker), `pin` (numeric input), `book_gallery` (cover image gallery for textbook selection)
 
 ### Key Features
 - **Dynamic Question Generation**: Random word selection from JSON vocabulary libraries with no repetition until all words are used
