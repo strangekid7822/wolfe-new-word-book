@@ -25,13 +25,23 @@ git status
 - Remove obvious/redundant comments
 - Keep comments concise and meaningful
 
-### 4. Stage All Changes
+### 4. Update GEMINI.md (if important changes)
+**Skip for small fixes.** Update GEMINI.md when:
+- New components or features are added
+- Architecture or data structures change
+- New CSS classes or styling patterns are introduced
+- Configuration or routing changes
+- New dependencies or build changes
+
+Use your judgment to determine what is "important" enough to document.
+
+### 5. Stage All Changes
 // turbo
 ```bash
 git add -A
 ```
 
-### 5. Commit with Concise Message
+### 6. Commit with Concise Message
 Format: `<type>: <short description>`
 
 Types:
@@ -47,7 +57,7 @@ Example:
 git commit -m "style: update button styling for consistency"
 ```
 
-### 6. Push to Remote
+### 7. Push to Remote
 // turbo
 ```bash
 git push
