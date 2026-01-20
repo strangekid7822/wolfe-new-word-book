@@ -284,6 +284,17 @@ export const conversationFlow = {
         ],
         onSelect: (value) => {
             localStorage.setItem('selectedVocabulary', value);
+            return { next: 'selectBook' };
+        }
+    },
+
+    // Book selection - shows available textbook versions for selected grade
+    selectBook: {
+        message: '选一本你正在学的课本：',
+        type: 'book_gallery',
+        delay: 800,
+        onSelect: (value) => {
+            localStorage.setItem('selectedBook', value);
             return { next: null }; // TODO: navigate to word test
         }
     },

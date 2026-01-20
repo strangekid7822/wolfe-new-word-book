@@ -8,7 +8,9 @@ import OptionChips from '../components/home/OptionChips';
 import ScrollPicker from '../components/home/ScrollPicker';
 import AvatarUploader from '../components/home/AvatarUploader';
 import PinInput from '../components/home/PinInput';
+import BookGallery from '../components/home/BookGallery';
 import { conversationFlow } from '../config/conversationFlow';
+import { getBooksForVocabulary } from '../config/bookConfig';
 import InputAreaWrapper from '../components/home/InputAreaWrapper';
 
 /**
@@ -136,7 +138,7 @@ function Home() {
     setCurrentStep(stepKey);
 
     // Set waitingForInput based on step type
-    setWaitingForInput(step.type === 'input' || step.type === 'options' || step.type === 'upload' || step.type === 'pin' || step.type === 'scroll_picker');
+    setWaitingForInput(step.type === 'input' || step.type === 'options' || step.type === 'upload' || step.type === 'pin' || step.type === 'scroll_picker' || step.type === 'book_gallery');
 
     // Execute any additional actions
     if (step.action) {
@@ -312,6 +314,15 @@ function Home() {
         processStep(result.next);
       }
     }
+
+    // Handle Book Gallery
+    if (step.type === 'book_gallery' && step.onSelect) {
+      const result = step.onSelect(input);
+      if (result && result.next) {
+        await new Promise(r => setTimeout(r, 400));
+        processStep(result.next);
+      }
+    }
   };
 
   /**
@@ -378,6 +389,18 @@ function Home() {
           options={options}
           onSelect={handleUserInput}
           defaultValue={defaultValue}
+        />
+      );
+    }
+
+    // Book Gallery
+    if (step.type === 'book_gallery') {
+      const selectedVocabulary = localStorage.getItem('selectedVocabulary');
+      const books = getBooksForVocabulary(selectedVocabulary);
+      return (
+        <BookGallery
+          books={books}
+          onSelect={handleUserInput}
         />
       );
     }
