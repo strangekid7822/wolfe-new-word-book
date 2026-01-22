@@ -5,19 +5,20 @@
 
 export const bookConfig = {
     grade7: [
-        { cover: '/covers/grade7_up_2024.png', title: '2024新版 上册', value: 'grade7_up_2024' },
-        { cover: '/covers/grade7_down_2025.png', title: '2025新版 下册', value: 'grade7_down_2025' },
-        { cover: '/covers/grade7_up_2011.png', title: '2011版 上册', value: 'grade7_up_2011' },
-        { cover: '/covers/grade7_down_2011.png', title: '2011版 下册', value: 'grade7_down_2011' }
+        { cover: '/covers/PEP_2022_grade7_up.png', title: '2022版 上册', value: 'PEP_2022_grade7_up' },
+        { cover: '/covers/PEP_2022_grade7_down.png', title: '2022版 下册', value: 'PEP_2022_grade7_down' },
+        { cover: '/covers/PEP_2011_grade7_up.png', title: '2011版 上册', value: 'PEP_2011_grade7_up' },
+        { cover: '/covers/PEP_2011_grade7_down.png', title: '2011版 下册', value: 'PEP_2011_grade7_down' }
     ],
     grade8: [
-        { cover: '/covers/grade8_up_2025.png', title: '2025新版 上册', value: 'grade8_up_2025' },
-        { cover: '/covers/grade8_down_2026.png', title: '2026新版 下册', value: 'grade8_down_2026' },
-        { cover: '/covers/grade8_up_2011.png', title: '2011版 上册', value: 'grade8_up_2011' },
-        { cover: '/covers/grade8_down_2011.png', title: '2011版 下册', value: 'grade8_down_2011' }
+        { cover: '/covers/PEP_2022_grade8_up.png', title: '2022版 上册', value: 'PEP_2022_grade8_up' },
+        { cover: '/covers/PEP_2022_grade8_down.png', title: '2022版 下册', value: 'PEP_2022_grade8_down' },
+        { cover: '/covers/PEP_2011_grade8_up.png', title: '2011版 上册', value: 'PEP_2011_grade8_up' },
+        { cover: '/covers/PEP_2011_grade8_down.png', title: '2011版 下册', value: 'PEP_2011_grade8_down' }
     ],
     grade9: [
-        { cover: '/covers/grade9_full_2011.png', title: '2011版 全一册', value: 'grade9_full_2011' }
+        { cover: '/covers/PEP_2022_grade9.png', title: '2022版 全一册', value: 'PEP_2022_grade9' },
+        { cover: '/covers/PEP_2011_grade9.png', title: '2011版 全一册', value: 'PEP_2011_grade9' }
     ]
 };
 

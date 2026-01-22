@@ -144,7 +144,7 @@ This is a React-based word learning application built with Vite and styled with 
 - **Mobile Development**: `host: true` setting enables network access for mobile device testing
 
 ### Data Integration
-- **Vocabulary Libraries**: JSON files in `public/Library/` (e.g., `七年级上.json`) containing structured textbook vocabularies
+- **Vocabulary Libraries**: JSON files in `public/Library/` using naming convention `PEP_{edition}_{grade}_{semester}.json` (e.g., `PEP_2022_grade7_up.json`, `PEP_2011_grade8_down.json`). Two editions: 2011 (旧版) and 2022 (新版).
 - **Word Structure**: Each word entry includes word, phonetic notation, Chinese meaning, array of false meanings, unit classification, and part of speech
 - **Dynamic Loading**: Asynchronous loading of vocabulary data with error handling and loading states
 - **Question Generation**: Real-time conversion of vocabulary data into interactive question objects with shuffled multiple choice options
