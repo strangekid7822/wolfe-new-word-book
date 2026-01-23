@@ -45,7 +45,7 @@ const BookGallery = ({ books, onSelect }) => {
                 }}
             >
                 {/* Left spacer - allows first item to center */}
-                <div data-spacer="true" className="flex-shrink-0" style={{ width: 'calc(50% - 48px)' }} />
+                <div data-spacer="true" className="flex-shrink-0" style={{ width: 'calc(50% - 80px)' }} />
 
                 {books.map((book, index) => (
                     <div
@@ -59,7 +59,7 @@ const BookGallery = ({ books, onSelect }) => {
                         }}
                     >
                         {/* Book cover image */}
-                        <div className="w-24 h-32 rounded-lg overflow-hidden shadow-md bg-white">
+                        <div className="w-20 h-24 rounded-lg overflow-hidden shadow-md bg-white">
                             <img
                                 src={book.cover}
                                 alt={book.title}
@@ -77,7 +77,7 @@ const BookGallery = ({ books, onSelect }) => {
                 ))}
 
                 {/* Right spacer - allows last item to center */}
-                <div data-spacer="true" className="flex-shrink-0" style={{ width: 'calc(50% - 48px)' }} />
+                <div data-spacer="true" className="flex-shrink-0" style={{ width: 'calc(50% - 80px)' }} />
             </div>
 
             {/* Select button */}
