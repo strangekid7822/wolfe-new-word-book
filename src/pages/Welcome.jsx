@@ -34,7 +34,7 @@ function Welcome() {
                 {/* Logo */}
                 <div className="welcome-logo-container">
                     <img
-                        src="/assets/wolfe_logo.png"
+                        src="/wolfe_avatar.png"
                         alt="单词王者"
                         className="welcome-logo"
                     />
