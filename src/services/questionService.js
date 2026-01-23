@@ -11,38 +11,38 @@ class QuestionService {
 
   /**
    * Load vocabulary data from JSON file
-   * @param {string} libraryPath - Path to JSON library file (e.g., '七年级上.json')
+   * @param {string} libraryPath - Path to JSON library file (e.g., 'PEP_2022_grade7_up.json')
    * @returns {Promise<boolean>} - Success status
    */
-  async loadLibrary(libraryPath = '七年级上.json') {
+  async loadLibrary(libraryPath = 'PEP_2022_grade7_up.json') {
     try {
       const response = await fetch(`/Library/${libraryPath}`);
       if (!response.ok) {
         throw new Error(`Failed to load library: ${response.status}`);
       }
-      
+
       const data = await response.json();
       this.vocabularyData = data;
       this.currentLibrary = libraryPath;
-      
+
       // Extract all vocabulary words from all textbooks
       // Filter: only words with >= 3 letters, exclude phrases
       this.availableWords = [];
       if (data.textbooks && Array.isArray(data.textbooks)) {
         data.textbooks.forEach(textbook => {
           if (textbook.vocabulary && Array.isArray(textbook.vocabulary)) {
-            const filteredWords = textbook.vocabulary.filter(word => 
+            const filteredWords = textbook.vocabulary.filter(word =>
               word.word.length >= 3 && !word.is_phrase
             );
             this.availableWords.push(...filteredWords);
           }
         });
       }
-      
+
       // Shuffle the words for random order
       this.shuffledWords = shuffle(this.availableWords);
       this.currentIndex = 0;
-      
+
       console.log(`Loaded ${this.availableWords.length} words from ${libraryPath}`);
       return true;
     } catch (error) {
@@ -51,6 +51,83 @@ class QuestionService {
       this.availableWords = [];
       return false;
     }
+  }
+
+  /**
+   * Load vocabulary filtered by specific unit
+   * @param {string} libraryPath - Path to JSON library file
+   * @param {string} unitName - Unit name to filter by
+   * @returns {Promise<boolean>} - Success status
+   */
+  async loadLibraryWithUnit(libraryPath, unitName) {
+    try {
+      const response = await fetch(`/Library/${libraryPath}`);
+      if (!response.ok) {
+        throw new Error(`Failed to load library: ${response.status}`);
+      }
+
+      const data = await response.json();
+      this.vocabularyData = data;
+      this.currentLibrary = libraryPath;
+
+      // Extract vocabulary filtered by unit
+      // Filter: only words with >= 3 letters, exclude phrases, match unit
+      this.availableWords = [];
+      if (data.textbooks && Array.isArray(data.textbooks)) {
+        data.textbooks.forEach(textbook => {
+          if (textbook.vocabulary && Array.isArray(textbook.vocabulary)) {
+            const filteredWords = textbook.vocabulary.filter(word =>
+              word.word.length >= 3 &&
+              !word.is_phrase &&
+              word.unit === unitName
+            );
+            this.availableWords.push(...filteredWords);
+          }
+        });
+      }
+
+      // Shuffle the words for random order
+      this.shuffledWords = shuffle(this.availableWords);
+      this.currentIndex = 0;
+
+      console.log(`Loaded ${this.availableWords.length} words from ${libraryPath} (${unitName})`);
+      return true;
+    } catch (error) {
+      console.error('Error loading vocabulary library:', error);
+      this.vocabularyData = null;
+      this.availableWords = [];
+      return false;
+    }
+  }
+
+  /**
+   * Get unique unit names from loaded vocabulary data
+   * @returns {Array<string>} - Array of unit names
+   */
+  getUnits() {
+    if (!this.vocabularyData) return [];
+
+    const units = new Set();
+    if (this.vocabularyData.textbooks && Array.isArray(this.vocabularyData.textbooks)) {
+      this.vocabularyData.textbooks.forEach(textbook => {
+        if (textbook.vocabulary && Array.isArray(textbook.vocabulary)) {
+          textbook.vocabulary.forEach(word => {
+            if (word.unit) units.add(word.unit);
+          });
+        }
+      });
+    }
+    return Array.from(units);
+  }
+
+  /**
+   * Load library and return units (helper for unit selection step)
+   * @param {string} libraryPath - Path to JSON library file
+   * @returns {Promise<Array<string>>} - Array of unit names
+   */
+  async getUnitsFromLibrary(libraryPath) {
+    await this.loadLibrary(libraryPath);
+    return this.getUnits();
   }
 
   /**
@@ -67,7 +144,7 @@ class QuestionService {
 
     // Get next word sequentially from shuffled array
     const wordData = this.shuffledWords[this.currentIndex++];
-    
+
     if (!wordData) {
       console.warn('No available words found');
       return null;
@@ -124,7 +201,7 @@ class QuestionService {
     if (!word || !inputs || inputs.length !== word.length) {
       return false;
     }
-    
+
     const userWord = inputs.join('').toLowerCase();
     return userWord === word.toLowerCase();
   }

@@ -12,6 +12,7 @@ import BookGallery from '../components/home/BookGallery';
 import { conversationFlow } from '../config/conversationFlow';
 import { getBooksForVocabulary } from '../config/bookConfig';
 import InputAreaWrapper from '../components/home/InputAreaWrapper';
+import questionService from '../services/questionService';
 
 /**
  * Home Page - Conversational Interface
@@ -29,6 +30,7 @@ function Home() {
   const [userName, setUserName] = useState(localStorage.getItem('userName') || '');
   const [waitingForInput, setWaitingForInput] = useState(false);
   const [loginAttempts, setLoginAttempts] = useState(0);
+  const [unitOptions, setUnitOptions] = useState([]); // Dynamic unit options
 
   // Temporary registration data (saved only after password is set)
   const [pendingUser, setPendingUser] = useState({
@@ -139,6 +141,18 @@ function Home() {
 
     // Set waitingForInput based on step type
     setWaitingForInput(step.type === 'input' || step.type === 'options' || step.type === 'upload' || step.type === 'pin' || step.type === 'scroll_picker' || step.type === 'book_gallery');
+
+    // Load units dynamically for selectUnit step
+    if (stepKey === 'selectUnit') {
+      const selectedBook = localStorage.getItem('selectedBook');
+      if (selectedBook) {
+        const libraryPath = `${selectedBook}.json`;
+        questionService.getUnitsFromLibrary(libraryPath).then(units => {
+          const options = units.map(unit => ({ label: unit, value: unit }));
+          setUnitOptions(options);
+        });
+      }
+    }
 
     // Execute any additional actions
     if (step.action) {
@@ -380,6 +394,20 @@ function Home() {
 
     // Scroll Picker
     if (step.type === 'scroll_picker') {
+      // Special handling for selectUnit - use dynamic options
+      if (currentStep === 'selectUnit') {
+        if (unitOptions.length === 0) {
+          return <div className="text-center text-gray-400">加载单元中...</div>;
+        }
+        return (
+          <ScrollPicker
+            options={unitOptions}
+            onSelect={handleUserInput}
+            defaultValue={unitOptions[0]?.value}
+          />
+        );
+      }
+
       // Get options (could be array or function)
       const options = typeof step.options === 'function' ? step.options() : step.options;
       // Get defaultValue (could be string or function)

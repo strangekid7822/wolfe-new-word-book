@@ -58,7 +58,7 @@ This is a React-based word learning application built with Vite and styled with 
 - `TimerContext.jsx` - Centralized 3-minute countdown timer with accurate time tracking, color-coded states, formatted display, and callback system for timer expiration events
 
 **Services** (`src/services/`):
-- `questionService.js` - Dynamic question generation from JSON vocabulary libraries with randomization, no-repetition logic, and multiple choice option shuffling
+- `questionService.js` - Dynamic question generation from JSON vocabulary libraries with unit filtering, randomization, no-repetition logic, and multiple choice option shuffling. Supports `loadLibraryWithUnit()` for unit-specific practice.
 - `audioService.js` - Browser Speech Synthesis API wrapper for English pronunciation with voice selection and error handling
 
 **Utilities** (`src/utils/`):
@@ -94,7 +94,8 @@ This is a React-based word learning application built with Vite and styled with 
     userPassword: string (6 digits)
   }
   ```
-- **Conversation Flow Step Types**: `message` (auto-advance), `input` (text field), `options` (button selection, supports dynamic options via function), `scroll_picker` (horizontal picker for long lists), `upload` (file picker), `pin` (numeric input), `book_gallery` (cover image gallery for textbook selection)
+- **Conversation Flow Step Types**: `message` (auto-advance), `input` (text field), `options` (button selection, supports dynamic options via function), `scroll_picker` (vertical picker with snap-to-center), `upload` (file picker), `pin` (numeric input), `book_gallery` (cover image gallery for textbook selection)
+- **Practice Flow**: Select vocabulary → Select book → Select unit → Word test (filtered by unit)
 
 ### Key Features
 - **Dynamic Question Generation**: Random word selection from JSON vocabulary libraries with no repetition until all words are used

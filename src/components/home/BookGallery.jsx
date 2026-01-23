@@ -13,7 +13,7 @@ const BookGallery = ({ books, onSelect }) => {
     const handleSelect = () => {
         const selectedBook = books[selectedIndex];
         if (selectedBook) {
-            onSelect(selectedBook.title);
+            onSelect(selectedBook.value); // Send value (e.g., 'PEP_2022_grade7_up') not title
         }
     };
 

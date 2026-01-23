@@ -295,7 +295,32 @@ export const conversationFlow = {
         delay: 800,
         onSelect: (value) => {
             localStorage.setItem('selectedBook', value);
-            return { next: null }; // TODO: navigate to word test
+            return { next: 'selectUnit' };
+        }
+    },
+
+    // Unit selection - shows units from the selected book's JSON file
+    selectUnit: {
+        message: '选择你要练习的单元：',
+        type: 'scroll_picker',
+        delay: 800,
+        // Options are loaded dynamically in Home.jsx since we need async fetch
+        options: [], // Will be populated dynamically
+        onSelect: (value) => {
+            localStorage.setItem('selectedUnit', value);
+            return { next: 'goToWordTest' };
+        }
+    },
+
+    // Navigate to word test - this step triggers navigation
+    goToWordTest: {
+        message: '开始练习吧！加油！💪',
+        type: 'message',
+        delay: 800,
+        next: null,
+        action: (navigate) => {
+            // Navigate to word test page after short delay
+            setTimeout(() => navigate('/write'), 500);
         }
     },
 

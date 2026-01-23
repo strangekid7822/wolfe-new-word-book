@@ -18,21 +18,34 @@ function WordTestCardGallery() {
   const containerRef = useRef(null);
   const cardComponentRefs = useRef([]);
   const cardElementRefs = useRef([]);
-  
+
   // Timer context
   const { isTimeUp, setOnTimerEnd, resetTimer } = useTimer();
 
-  // Initialize questions
+  // Initialize questions from selected book and unit
   const initializeQuestions = useCallback(async () => {
     setIsLoading(true);
     setLoadError(null);
     try {
-      const success = await questionService.loadLibrary('七年级上.json');
+      // Get selected book and unit from localStorage
+      const selectedBook = localStorage.getItem('selectedBook') || 'PEP_2022_grade7_up';
+      const selectedUnit = localStorage.getItem('selectedUnit');
+      const libraryPath = `${selectedBook}.json`;
+
+      let success;
+      if (selectedUnit) {
+        // Load with unit filter
+        success = await questionService.loadLibraryWithUnit(libraryPath, selectedUnit);
+      } else {
+        // Load all words (fallback)
+        success = await questionService.loadLibrary(libraryPath);
+      }
+
       if (!success) throw new Error('Failed to load vocabulary library');
-      
+
       const questions = questionService.generateQuestions(1);
       if (questions.length === 0) throw new Error('No questions could be generated');
-      
+
       const initialCards = questions.map(q => ({ ...q, chineseMeanings: q.options }));
       setWordCards(initialCards);
     } catch (error) {
@@ -64,7 +77,7 @@ function WordTestCardGallery() {
     submittedCards.forEach(card => {
       const spellingCorrect = card.inputs.join('').toLowerCase() === card.word.toLowerCase();
       const meaningCorrect = card.selectedOption === card.correctMeaning;
-      
+
       if (spellingCorrect) totalScore += 50;
       if (meaningCorrect) totalScore += 50;
 
@@ -96,7 +109,7 @@ function WordTestCardGallery() {
     const handleTimerEnd = () => {
       setCanGenerateCards(false);
       setWordCards(prev => prev.slice(0, activeIndex + 1)); // Keep only current card
-      
+
       setTimeout(() => {
         const results = calculateResults();
         const submittedCount = wordCards.filter(card => card.submitted).length;
@@ -135,10 +148,10 @@ function WordTestCardGallery() {
 
   // Scroll and focus management
   const scrollToCard = (index) => {
-    cardElementRefs.current[index]?.scrollIntoView({ 
-      behavior: 'smooth', 
-      inline: 'center', 
-      block: 'nearest' 
+    cardElementRefs.current[index]?.scrollIntoView({
+      behavior: 'smooth',
+      inline: 'center',
+      block: 'nearest'
     });
   };
 
@@ -157,25 +170,25 @@ function WordTestCardGallery() {
 
   // Event handlers
   const handleInputChange = (cardId, inputIndex, value) => {
-    setWordCards(prev => prev.map(card => 
-      card.id === cardId 
+    setWordCards(prev => prev.map(card =>
+      card.id === cardId
         ? { ...card, inputs: Object.assign([...card.inputs], { [inputIndex]: value }) }
         : card
     ));
   };
 
   const handleOptionSelect = (cardId, selectedMeaning) => {
-    setWordCards(prev => prev.map(card => 
+    setWordCards(prev => prev.map(card =>
       card.id === cardId ? { ...card, selectedOption: selectedMeaning } : card
     ));
   };
 
   const handleConfirm = (cardId) => {
     // Mark card as submitted
-    setWordCards(prev => prev.map(card => 
+    setWordCards(prev => prev.map(card =>
       card.id === cardId ? { ...card, submitted: true } : card
     ));
-    
+
     // Log progress
     const submittedCount = wordCards.filter(card => card.submitted).length + 1;
     setTimeout(() => {
@@ -229,8 +242,8 @@ function WordTestCardGallery() {
 
   if (showResultCard) {
     return (
-      <ResultCard 
-        score={resultData.score} 
+      <ResultCard
+        score={resultData.score}
         onTryAgain={handleTryAgain}
         totalCount={resultData.totalCount}
         finishedCount={resultData.answeredCount}
@@ -252,12 +265,12 @@ function WordTestCardGallery() {
         {wordCards.map((card, index) => {
           const shouldShowCard = !isTimeUp || index <= activeIndex;
           return shouldShowCard ? (
-            <div 
+            <div
               key={card.id}
               ref={el => cardElementRefs.current[index] = el}
               className="flex-shrink-0 px-2 snap-center word-card-container w-[90vw]"
             >
-              <WordTestWordCard 
+              <WordTestWordCard
                 ref={el => cardComponentRefs.current[index] = el}
                 cardData={card}
                 isActive={index === activeIndex}
