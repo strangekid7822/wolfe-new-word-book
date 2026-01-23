@@ -293,6 +293,22 @@ export const conversationFlow = {
         message: '选一本你正在学的课本：',
         type: 'book_gallery',
         delay: 800,
+        formatUserMessage: (value) => {
+            // Map internal value to human-readable title
+            const titleMap = {
+                'PEP_2022_grade7_up': '2022版 七年级上册',
+                'PEP_2022_grade7_down': '2022版 七年级下册',
+                'PEP_2011_grade7_up': '2011版 七年级上册',
+                'PEP_2011_grade7_down': '2011版 七年级下册',
+                'PEP_2022_grade8_up': '2022版 八年级上册',
+                'PEP_2022_grade8_down': '2022版 八年级下册',
+                'PEP_2011_grade8_up': '2011版 八年级上册',
+                'PEP_2011_grade8_down': '2011版 八年级下册',
+                'PEP_2022_grade9': '2022版 九年级全一册',
+                'PEP_2011_grade9': '2011版 九年级全一册'
+            };
+            return titleMap[value] || value;
+        },
         onSelect: (value) => {
             localStorage.setItem('selectedBook', value);
             return { next: 'selectUnit' };
