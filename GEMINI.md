@@ -42,7 +42,7 @@ This is a React-based word learning application built with Vite and styled with 
 - `MessageBubble.jsx` - WeChat-style chat bubbles with arrow tails and user/app avatar positioning
 - `Avatar.jsx` - App/user avatar display with SVG icons and custom image support
 - `ChatInput.jsx` - Centered text input field with animated send button reveal
-- `ScrollPicker.jsx` - Horizontal scrollable text picker with snap-to-center selection, persistent send button, and ChatInput-like styling (used for choices like Grade)
+- `ScrollPicker.jsx` - Vertical scroll picker with snap-to-center selection, shows partial adjacent items as scroll hints, persistent send button (used for choices like Grade)
 - `OptionChips.jsx` - Option buttons supporting both list (vertical) and grid layouts
 - `PinInput.jsx` - 6-digit PIN input with auto-focus, backspace navigation, and animated submit button
 - `AvatarUploader.jsx` - Image upload button with base64 conversion for localStorage storage
