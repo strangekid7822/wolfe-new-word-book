@@ -551,7 +551,8 @@
                         "北极",
                         "欧洲",
                         "非洲"
-                    ]
+                    ],
+                    "is_proper_noun": true
                 },
                 {
                     "unit": "Unit 1",
@@ -563,7 +564,8 @@
                         "亚洲",
                         "美洲",
                         "欧洲"
-                    ]
+                    ],
+                    "is_proper_noun": true
                 },
                 {
                     "unit": "Unit 1",
@@ -575,7 +577,8 @@
                         "玛丽",
                         "玛格",
                         "玛莎"
-                    ]
+                    ],
+                    "is_proper_noun": true
                 },
                 {
                     "unit": "Unit 1",
@@ -587,7 +590,8 @@
                         "日本",
                         "韩国",
                         "越南"
-                    ]
+                    ],
+                    "is_proper_noun": true
                 },
                 {
                     "unit": "Unit 2",
@@ -1247,7 +1251,8 @@
                         "玛莎",
                         "玛格",
                         "玛琳"
-                    ]
+                    ],
+                    "is_proper_noun": true
                 },
                 {
                     "unit": "Unit 2",
@@ -1259,7 +1264,8 @@
                         "汤姆",
                         "杰克",
                         "迈克"
-                    ]
+                    ],
+                    "is_proper_noun": true
                 },
                 {
                     "unit": "Unit 2",
@@ -1271,7 +1277,8 @@
                         "艾米",
                         "艾玛",
                         "艾丽"
-                    ]
+                    ],
+                    "is_proper_noun": true
                 },
                 {
                     "unit": "Unit 2",
@@ -1283,7 +1290,8 @@
                         "艾伦",
                         "埃文",
                         "埃德"
-                    ]
+                    ],
+                    "is_proper_noun": true
                 },
                 {
                     "unit": "Unit 3",
@@ -1952,7 +1960,8 @@
                         "史密斯",
                         "斯坦",
                         "斯科特"
-                    ]
+                    ],
+                    "is_proper_noun": true
                 },
                 {
                     "unit": "Unit 4",
@@ -2646,7 +2655,8 @@
                         "英国",
                         "法国",
                         "德国"
-                    ]
+                    ],
+                    "is_proper_noun": true
                 },
                 {
                     "unit": "Unit 4",
@@ -3273,7 +3283,8 @@
                         "艾伦",
                         "艾迪",
                         "艾米"
-                    ]
+                    ],
+                    "is_proper_noun": true
                 },
                 {
                     "unit": "Unit 5",
@@ -3298,7 +3309,8 @@
                         "贝蒂",
                         "贝拉",
                         "贝尔"
-                    ]
+                    ],
+                    "is_proper_noun": true
                 },
                 {
                     "unit": "Unit 5",
@@ -3310,7 +3322,8 @@
                         "开罗",
                         "开普敦",
                         "拉各斯"
-                    ]
+                    ],
+                    "is_proper_noun": true
                 },
                 {
                     "unit": "Unit 5",
@@ -3322,7 +3335,8 @@
                         "芝加哥",
                         "洛杉矶",
                         "华盛顿"
-                    ]
+                    ],
+                    "is_proper_noun": true
                 },
                 {
                     "unit": "Unit 5",
@@ -3334,7 +3348,8 @@
                         "埃及",
                         "南非",
                         "摩洛哥"
-                    ]
+                    ],
+                    "is_proper_noun": true
                 },
                 {
                     "unit": "Unit 5",
@@ -3346,7 +3361,8 @@
                         "英国",
                         "法国",
                         "德国"
-                    ]
+                    ],
+                    "is_proper_noun": true
                 },
                 {
                     "unit": "Unit 5",
@@ -3359,7 +3375,8 @@
                         "迪士尼",
                         "时代广场"
                     ],
-                    "is_phrase": true
+                    "is_phrase": true,
+                    "is_proper_noun": true
                 },
                 {
                     "unit": "Unit 6",
@@ -4069,7 +4086,8 @@
                         "艾米",
                         "艾玛",
                         "艾丽"
-                    ]
+                    ],
+                    "is_proper_noun": true
                 },
                 {
                     "unit": "Unit 6",
@@ -4081,7 +4099,8 @@
                         "杰克",
                         "杰森",
                         "杰瑞"
-                    ]
+                    ],
+                    "is_proper_noun": true
                 },
                 {
                     "unit": "Unit 6",
@@ -4093,7 +4112,8 @@
                         "赫尔辛基",
                         "奥斯陆",
                         "哥本哈根"
-                    ]
+                    ],
+                    "is_proper_noun": true
                 },
                 {
                     "unit": "Unit 6",
@@ -4106,7 +4126,8 @@
                         "华山",
                         "衡山"
                     ],
-                    "is_phrase": true
+                    "is_phrase": true,
+                    "is_proper_noun": true
                 },
                 {
                     "unit": "Unit 6",
@@ -4119,7 +4140,8 @@
                         "莲花峰",
                         "始信峰"
                     ],
-                    "is_phrase": true
+                    "is_phrase": true,
+                    "is_proper_noun": true
                 },
                 {
                     "unit": "Unit 7",
@@ -5451,7 +5473,8 @@
                         "汉克",
                         "汉密尔顿",
                         "汉娜"
-                    ]
+                    ],
+                    "is_proper_noun": true
                 },
                 {
                     "unit": "Unit 8",
@@ -5463,7 +5486,8 @@
                         "克里斯",
                         "克莱尔",
                         "克拉克"
-                    ]
+                    ],
+                    "is_proper_noun": true
                 },
                 {
                     "unit": "Unit 8",
@@ -5475,7 +5499,8 @@
                         "安德森",
                         "安德烈",
                         "安迪"
-                    ]
+                    ],
+                    "is_proper_noun": true
                 },
                 {
                     "unit": "Unit 8",
