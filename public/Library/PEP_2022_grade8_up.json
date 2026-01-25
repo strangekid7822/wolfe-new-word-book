@@ -10,9 +10,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "古代的；古老的",
                     "false_meanings": [
-                        "现代的",
-                        "年轻的",
-                        "新鲜的"
+                        "现代的；当代",
+                        "年轻的；年轻的样子"
                     ]
                 },
                 {
@@ -22,9 +21,8 @@
                     "part_of_speech": "n.",
                     "meaning": "度假营；营地",
                     "false_meanings": [
-                        "酒店",
-                        "公寓",
-                        "学校"
+                        "酒店；旅馆",
+                        "公寓；住所"
                     ]
                 },
                 {
@@ -34,9 +32,8 @@
                     "part_of_speech": "n.",
                     "meaning": "风景；景色",
                     "false_meanings": [
-                        "建筑",
-                        "道路",
-                        "天气"
+                        "建筑；建筑物",
+                        "道路；马路"
                     ]
                 },
                 {
@@ -46,9 +43,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "奇怪的；陌生的",
                     "false_meanings": [
-                        "普通的",
-                        "熟悉的",
-                        "常见的"
+                        "普通的；一般的",
+                        "熟悉的；熟悉的样子"
                     ]
                 },
                 {
@@ -58,9 +54,8 @@
                     "part_of_speech": "n.",
                     "meaning": "假期；度假",
                     "false_meanings": [
-                        "工作日",
-                        "上班",
-                        "考试"
+                        "工作日；劳动",
+                        "上班；工作"
                     ]
                 },
                 {
@@ -70,9 +65,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "极好的；吸引人的",
                     "false_meanings": [
-                        "糟糕的",
-                        "普通的",
-                        "无聊的"
+                        "糟糕的；不好的",
+                        "普通的；一般的"
                     ]
                 },
                 {
@@ -82,9 +76,8 @@
                     "part_of_speech": "n.",
                     "meaning": "呼吸的空气；一口气",
                     "false_meanings": [
-                        "食物",
-                        "水分",
-                        "声音"
+                        "食物；食品",
+                        "水分；水份"
                     ]
                 },
                 {
@@ -94,9 +87,8 @@
                     "part_of_speech": "v.",
                     "meaning": "令人惊叹；让人吃惊",
                     "false_meanings": [
-                        "让人生气",
-                        "让人困倦",
-                        "让人饥饿"
+                        "让人生气；令人恼火",
+                        "让人困倦；令人疲倦"
                     ],
                     "is_phrase": true
                 },
@@ -107,9 +99,8 @@
                     "part_of_speech": "adv.",
                     "meaning": "尤其；特别",
                     "false_meanings": [
-                        "普遍地",
-                        "偶尔地",
-                        "随意地"
+                        "普遍地；广泛地",
+                        "偶尔地；有时"
                     ]
                 },
                 {
@@ -120,8 +111,7 @@
                     "meaning": "蒸的",
                     "false_meanings": [
                         "煮的",
-                        "烤的",
-                        "炸的"
+                        "烤的"
                     ]
                 },
                 {
@@ -132,8 +122,7 @@
                     "meaning": "鸡汤",
                     "false_meanings": [
                         "牛肉汤",
-                        "蔬菜汤",
-                        "鱼汤"
+                        "蔬菜汤"
                     ],
                     "is_phrase": true
                 },
@@ -144,9 +133,8 @@
                     "part_of_speech": "adv. & pron.",
                     "meaning": "在任何地方；随便哪个地方",
                     "false_meanings": [
-                        "在某处",
-                        "在这里",
-                        "在那里"
+                        "在某处；在某地",
+                        "在这里；在此处"
                     ]
                 },
                 {
@@ -156,9 +144,8 @@
                     "part_of_speech": "pron.",
                     "meaning": "没有；没有任何东西",
                     "false_meanings": [
-                        "所有",
-                        "很多",
-                        "一些"
+                        "所有；全部",
+                        "很多；许多"
                     ]
                 },
                 {
@@ -168,9 +155,8 @@
                     "part_of_speech": "n.",
                     "meaning": "导游；指南；手册",
                     "false_meanings": [
-                        "游客",
-                        "司机",
-                        "厨师"
+                        "游客；旅客",
+                        "司机；驾驶员"
                     ]
                 },
                 {
@@ -180,9 +166,8 @@
                     "part_of_speech": "n.",
                     "meaning": "风景；景色",
                     "false_meanings": [
-                        "建筑",
-                        "人群",
-                        "车辆"
+                        "建筑；建筑物",
+                        "人群；群众"
                     ]
                 },
                 {
@@ -192,9 +177,8 @@
                     "part_of_speech": "n.",
                     "meaning": "丝绸；（蚕）丝",
                     "false_meanings": [
-                        "棉花",
-                        "羊毛",
-                        "皮革"
+                        "棉花；棉布",
+                        "羊毛；羊绒"
                     ]
                 },
                 {
@@ -204,9 +188,8 @@
                     "part_of_speech": "n.",
                     "meaning": "围巾；披巾",
                     "false_meanings": [
-                        "帽子",
-                        "手套",
-                        "袜子"
+                        "帽子；帽",
+                        "手套；手笼"
                     ]
                 },
                 {
@@ -216,9 +199,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "准备好的；现成的",
                     "false_meanings": [
-                        "忙碌的",
-                        "疲惫的",
-                        "迷惑的"
+                        "忙碌的；忙碌的样子",
+                        "疲惫的；疲惫的样子"
                     ]
                 },
                 {
@@ -228,9 +210,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "马上要（做某事）；愿意做（某事）",
                     "false_meanings": [
-                        "拒绝做",
-                        "忘记做",
-                        "害怕做"
+                        "拒绝做；否定",
+                        "忘记做；遗忘"
                     ],
                     "is_phrase": true
                 },
@@ -241,9 +222,8 @@
                     "part_of_speech": "adv.",
                     "meaning": "在某处；到某处",
                     "false_meanings": [
-                        "到处",
-                        "无处",
-                        "这里"
+                        "到处；处处",
+                        "无处；没处"
                     ]
                 },
                 {
@@ -254,8 +234,7 @@
                     "meaning": "我自己",
                     "false_meanings": [
                         "他自己",
-                        "她自己",
-                        "你自己"
+                        "她自己"
                     ]
                 },
                 {
@@ -265,9 +244,8 @@
                     "part_of_speech": "adv.",
                     "meaning": "只有；只是",
                     "false_meanings": [
-                        "除了",
-                        "包括",
-                        "以及"
+                        "除了；除去",
+                        "包括；包含"
                     ],
                     "is_phrase": true
                 },
@@ -278,9 +256,8 @@
                     "part_of_speech": "n.",
                     "meaning": "旅馆；旅社",
                     "false_meanings": [
-                        "学校",
-                        "医院",
-                        "商店"
+                        "学校；学院",
+                        "医院；诊所"
                     ]
                 },
                 {
@@ -290,9 +267,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "使人舒服的；舒适的",
                     "false_meanings": [
-                        "不舒服的",
-                        "拥挤的",
-                        "寒冷的"
+                        "不舒服的；不舒服的样子",
+                        "拥挤的；拥挤的样子"
                     ]
                 },
                 {
@@ -302,9 +278,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "厌倦的；倾向的",
                     "false_meanings": [
-                        "兴奋的",
-                        "快乐的",
-                        "满意的"
+                        "兴奋的；兴奋的样子",
+                        "快乐的；开心的"
                     ]
                 },
                 {
@@ -314,9 +289,8 @@
                     "part_of_speech": "n.",
                     "meaning": "天；天空",
                     "false_meanings": [
-                        "地面",
-                        "海洋",
-                        "山脉"
+                        "地面；大地",
+                        "海洋；大海"
                     ]
                 },
                 {
@@ -326,9 +300,8 @@
                     "part_of_speech": "prep.",
                     "meaning": "朝；向",
                     "false_meanings": [
-                        "离开",
-                        "通过",
-                        "围绕"
+                        "离开；走开",
+                        "通过；及格"
                     ]
                 },
                 {
@@ -338,9 +311,8 @@
                     "part_of_speech": "n.",
                     "meaning": "虹；彩虹",
                     "false_meanings": [
-                        "云朵",
-                        "闪电",
-                        "太阳"
+                        "云朵；白云",
+                        "闪电；雷电"
                     ]
                 },
                 {
@@ -350,9 +322,8 @@
                     "part_of_speech": "n.",
                     "meaning": "广场；正方形",
                     "false_meanings": [
-                        "圆形",
-                        "三角形",
-                        "长方形"
+                        "圆形；圆圈",
+                        "三角形；三角"
                     ]
                 },
                 {
@@ -363,8 +334,7 @@
                     "meaning": "在……期间",
                     "false_meanings": [
                         "之前",
-                        "之后",
-                        "关于"
+                        "之后"
                     ]
                 },
                 {
@@ -374,9 +344,8 @@
                     "part_of_speech": "n.",
                     "meaning": "胜利；成功",
                     "false_meanings": [
-                        "失败",
-                        "平局",
-                        "开始"
+                        "失败；败绩",
+                        "平局；打平"
                     ]
                 },
                 {
@@ -386,9 +355,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "俄罗斯的；俄罗斯人的",
                     "false_meanings": [
-                        "中国的",
-                        "日本的",
-                        "美国的"
+                        "中国的；中国的样子",
+                        "日本的；日本的样子"
                     ]
                 },
                 {
@@ -398,9 +366,8 @@
                     "part_of_speech": "n.",
                     "meaning": "战斗；搏斗；斗争",
                     "false_meanings": [
-                        "和平",
-                        "休息",
-                        "睡眠"
+                        "和平；安宁",
+                        "休息；歇息"
                     ]
                 },
                 {
@@ -410,9 +377,8 @@
                     "part_of_speech": "prep.",
                     "meaning": "反对；与……相反；紧靠",
                     "false_meanings": [
-                        "支持",
-                        "赞同",
-                        "帮助"
+                        "支持；赞助",
+                        "赞同；同意"
                     ]
                 },
                 {
@@ -423,8 +389,7 @@
                     "meaning": "与……作斗争",
                     "false_meanings": [
                         "与……合作",
-                        "与……玩耍",
-                        "与……交流"
+                        "与……玩耍"
                     ],
                     "is_phrase": true
                 },
@@ -435,9 +400,8 @@
                     "part_of_speech": "n.",
                     "meaning": "艺术作品；插图",
                     "false_meanings": [
-                        "家具",
-                        "食品",
-                        "服装"
+                        "家具；家私",
+                        "食品；食品"
                     ]
                 },
                 {
@@ -447,9 +411,8 @@
                     "part_of_speech": "n.",
                     "meaning": "数以千计的；成千上万的",
                     "false_meanings": [
-                        "几个",
-                        "一些",
-                        "很少"
+                        "几个；几个",
+                        "一些；一些"
                     ],
                     "is_phrase": true
                 },
@@ -460,9 +423,8 @@
                     "part_of_speech": "n.",
                     "meaning": "眼泪；泪水",
                     "false_meanings": [
-                        "汗水",
-                        "血液",
-                        "口水"
+                        "汗水；汗水",
+                        "血液；血液"
                     ]
                 },
                 {
@@ -472,9 +434,8 @@
                     "part_of_speech": "v.",
                     "meaning": "提醒；使想起",
                     "false_meanings": [
-                        "忘记",
-                        "忽视",
-                        "隐藏"
+                        "忘记；遗忘",
+                        "忽视；无视"
                     ]
                 },
                 {
@@ -484,9 +445,8 @@
                     "part_of_speech": "n.",
                     "meaning": "和平；太平",
                     "false_meanings": [
-                        "战争",
-                        "冲突",
-                        "争吵"
+                        "战争；战争",
+                        "冲突；冲突"
                     ]
                 },
                 {
@@ -496,9 +456,8 @@
                     "part_of_speech": "adv.",
                     "meaning": "容易地；轻易地",
                     "false_meanings": [
-                        "困难地",
-                        "缓慢地",
-                        "艰难地"
+                        "困难地；艰难的",
+                        "缓慢地；缓慢地"
                     ]
                 },
                 {
@@ -508,9 +467,8 @@
                     "part_of_speech": "v.",
                     "meaning": "忘记；遗忘",
                     "false_meanings": [
-                        "记住",
-                        "回忆",
-                        "想起"
+                        "记住；牢记",
+                        "回忆；记忆"
                     ]
                 },
                 {
@@ -520,9 +478,8 @@
                     "part_of_speech": "n.",
                     "meaning": "正午；中午",
                     "false_meanings": [
-                        "早晨",
-                        "傍晚",
-                        "午夜"
+                        "早晨；清早",
+                        "傍晚；黄昏"
                     ]
                 },
                 {
@@ -532,9 +489,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "恶心的；生病的",
                     "false_meanings": [
-                        "健康的",
-                        "快乐的",
-                        "强壮的"
+                        "健康的；健康的样子",
+                        "快乐的；开心的"
                     ]
                 },
                 {
@@ -545,8 +501,7 @@
                     "meaning": "地下铁道系统",
                     "false_meanings": [
                         "公共汽车",
-                        "火车",
-                        "飞机"
+                        "火车"
                     ]
                 },
                 {
@@ -556,9 +511,8 @@
                     "part_of_speech": "n.",
                     "meaning": "车站；所；局",
                     "false_meanings": [
-                        "商店",
-                        "学校",
-                        "医院"
+                        "商店；店铺",
+                        "学校；学院"
                     ]
                 },
                 {
@@ -568,9 +522,8 @@
                     "part_of_speech": "n.",
                     "meaning": "王宫；宫殿",
                     "false_meanings": [
-                        "公寓",
-                        "别墅",
-                        "小屋"
+                        "公寓；住所",
+                        "别墅；别墅"
                     ]
                 },
                 {
@@ -581,8 +534,7 @@
                     "meaning": "手风琴",
                     "false_meanings": [
                         "吉他",
-                        "钢琴",
-                        "小提琴"
+                        "钢琴"
                     ]
                 },
                 {
@@ -592,9 +544,8 @@
                     "part_of_speech": "v.",
                     "meaning": "聚会；相聚",
                     "false_meanings": [
-                        "分开",
-                        "离开",
-                        "争吵"
+                        "分开；分离",
+                        "离开；走开"
                     ],
                     "is_phrase": true
                 },
@@ -606,8 +557,7 @@
                     "meaning": "在阳光下",
                     "false_meanings": [
                         "在室内",
-                        "在水中",
-                        "在夜晚"
+                        "在水中"
                     ],
                     "is_phrase": true
                 },
@@ -618,9 +568,8 @@
                     "part_of_speech": "n.",
                     "meaning": "塔；塔楼",
                     "false_meanings": [
-                        "桥梁",
-                        "隧道",
-                        "广场"
+                        "桥梁；桥梁",
+                        "隧道；隧道"
                     ]
                 },
                 {
@@ -630,9 +579,8 @@
                     "part_of_speech": "modal v.",
                     "meaning": "可能；可以",
                     "false_meanings": [
-                        "必须",
-                        "应该",
-                        "不能"
+                        "必须；必须",
+                        "应该；应该"
                     ]
                 },
                 {
@@ -643,8 +591,7 @@
                     "meaning": "预算",
                     "false_meanings": [
                         "账单",
-                        "收据",
-                        "发票"
+                        "收据"
                     ]
                 },
                 {
@@ -655,8 +602,7 @@
                     "meaning": "护照",
                     "false_meanings": [
                         "身份证",
-                        "驾照",
-                        "学生证"
+                        "驾照"
                     ]
                 },
                 {
@@ -666,9 +612,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "健忘的；好忘事的",
                     "false_meanings": [
-                        "记性好的",
-                        "聪明的",
-                        "细心的"
+                        "记性好的；记性好的样子",
+                        "聪明的；机智的"
                     ]
                 },
                 {
@@ -678,9 +623,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "遥远的；遥远的",
                     "false_meanings": [
-                        "附近的",
-                        "临近的",
-                        "眼前的"
+                        "附近的；附近的样子",
+                        "临近的；临近的样子"
                     ]
                 },
                 {
@@ -690,9 +634,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "平常的；有规律的",
                     "false_meanings": [
-                        "特殊的",
-                        "异常的",
-                        "罕见的"
+                        "特殊的；特殊的样子",
+                        "异常的；异常的样子"
                     ]
                 },
                 {
@@ -702,9 +645,8 @@
                     "part_of_speech": "n.",
                     "meaning": "乡村；农村",
                     "false_meanings": [
-                        "城市",
-                        "市中心",
-                        "工厂"
+                        "城市；都市",
+                        "市中心；市中心"
                     ]
                 },
                 {
@@ -714,9 +656,8 @@
                     "part_of_speech": "v.",
                     "meaning": "转身；翻转",
                     "false_meanings": [
-                        "前进",
-                        "后退",
-                        "跳跃"
+                        "前进；前进",
+                        "后退；后退"
                     ],
                     "is_phrase": true
                 },
@@ -727,9 +668,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "惊奇的；惊讶的",
                     "false_meanings": [
-                        "平静的",
-                        "无聊的",
-                        "困倦的"
+                        "平静的；平静的样子",
+                        "无聊的；枯燥"
                     ]
                 },
                 {
@@ -740,8 +680,7 @@
                     "meaning": "(pl. deer) 鹿",
                     "false_meanings": [
                         "马",
-                        "牛",
-                        "羊"
+                        "牛"
                     ]
                 },
                 {
@@ -751,9 +690,8 @@
                     "part_of_speech": "adv.",
                     "meaning": "很可能；大概",
                     "false_meanings": [
-                        "绝对",
-                        "肯定",
-                        "一定"
+                        "绝对；必然",
+                        "肯定；确信"
                     ]
                 },
                 {
@@ -764,8 +702,7 @@
                     "meaning": "寻找",
                     "false_meanings": [
                         "找到",
-                        "放弃",
-                        "忽略"
+                        "放弃"
                     ],
                     "is_phrase": true
                 },
@@ -777,8 +714,7 @@
                     "meaning": "迎客松",
                     "false_meanings": [
                         "松树",
-                        "柏树",
-                        "柳树"
+                        "柏树"
                     ],
                     "is_phrase": true,
                     "is_proper_noun": true
@@ -791,8 +727,7 @@
                     "meaning": "云海",
                     "false_meanings": [
                         "大海",
-                        "湖泊",
-                        "河流"
+                        "湖泊"
                     ],
                     "is_phrase": true,
                     "is_proper_noun": true
@@ -805,8 +740,7 @@
                     "meaning": "西雅图（美国城市）",
                     "false_meanings": [
                         "纽约",
-                        "洛杉矶",
-                        "芝加哥"
+                        "洛杉矶"
                     ],
                     "is_proper_noun": true
                 },
@@ -818,8 +752,7 @@
                     "meaning": "红场",
                     "false_meanings": [
                         "广场",
-                        "公园",
-                        "街道"
+                        "公园"
                     ],
                     "is_phrase": true,
                     "is_proper_noun": true
@@ -832,8 +765,7 @@
                     "meaning": "亚历山大花园",
                     "false_meanings": [
                         "中央公园",
-                        "植物园",
-                        "动物园"
+                        "植物园"
                     ],
                     "is_phrase": true,
                     "is_proper_noun": true
@@ -846,8 +778,7 @@
                     "meaning": "文森特",
                     "false_meanings": [
                         "迈克尔",
-                        "大卫",
-                        "约翰"
+                        "大卫"
                     ],
                     "is_proper_noun": true
                 },
@@ -859,8 +790,7 @@
                     "meaning": "莫斯科（俄罗斯首都）",
                     "false_meanings": [
                         "北京",
-                        "东京",
-                        "巴黎"
+                        "东京"
                     ],
                     "is_proper_noun": true
                 },
@@ -872,8 +802,7 @@
                     "meaning": "俄罗斯",
                     "false_meanings": [
                         "中国",
-                        "日本",
-                        "美国"
+                        "日本"
                     ],
                     "is_proper_noun": true
                 },
@@ -885,8 +814,7 @@
                     "meaning": "胜利博物馆",
                     "false_meanings": [
                         "历史博物馆",
-                        "科技馆",
-                        "图书馆"
+                        "科技馆"
                     ],
                     "is_phrase": true
                 },
@@ -897,9 +825,8 @@
                     "part_of_speech": "n.",
                     "meaning": "纳粹党人；纳粹分子",
                     "false_meanings": [
-                        "士兵",
-                        "将军",
-                        "平民"
+                        "士兵；士兵",
+                        "将军；将军"
                     ],
                     "is_proper_noun": true
                 },
@@ -911,8 +838,7 @@
                     "meaning": "第二次世界大战",
                     "false_meanings": [
                         "第一次世界大战",
-                        "冷战",
-                        "内战"
+                        "冷战"
                     ],
                     "is_phrase": true,
                     "is_proper_noun": true
@@ -925,8 +851,7 @@
                     "meaning": "莫斯科地铁",
                     "false_meanings": [
                         "北京地铁",
-                        "东京地铁",
-                        "巴黎地铁"
+                        "东京地铁"
                     ],
                     "is_phrase": true,
                     "is_proper_noun": true
@@ -939,8 +864,7 @@
                     "meaning": "苏格兰",
                     "false_meanings": [
                         "英格兰",
-                        "爱尔兰",
-                        "威尔士"
+                        "爱尔兰"
                     ],
                     "is_proper_noun": true
                 },
@@ -951,9 +875,8 @@
                     "part_of_speech": "v.",
                     "meaning": "打包；收拾",
                     "false_meanings": [
-                        "拆开",
-                        "丢弃",
-                        "购买"
+                        "拆开；拆开",
+                        "丢弃；扔掉"
                     ]
                 },
                 {
@@ -964,8 +887,7 @@
                     "meaning": "打包行包",
                     "false_meanings": [
                         "拆开",
-                        "整理",
-                        "清洗"
+                        "整理"
                     ],
                     "is_phrase": true
                 },
@@ -976,9 +898,8 @@
                     "part_of_speech": "n.",
                     "meaning": "浴室；洗手间",
                     "false_meanings": [
-                        "卧室",
-                        "厨房",
-                        "客厅"
+                        "卧室；寝室",
+                        "厨房；烹饪间"
                     ]
                 },
                 {
@@ -988,9 +909,8 @@
                     "part_of_speech": "v.",
                     "meaning": "把……分类；整理",
                     "false_meanings": [
-                        "混合",
-                        "打乱",
-                        "丢弃"
+                        "混合；混合",
+                        "打乱；打乱"
                     ]
                 },
                 {
@@ -1001,8 +921,7 @@
                     "meaning": "卧室",
                     "false_meanings": [
                         "浴室",
-                        "厨房",
-                        "阳台"
+                        "厨房"
                     ]
                 },
                 {
@@ -1013,8 +932,7 @@
                     "meaning": "阳台",
                     "false_meanings": [
                         "地下室",
-                        "阁楼",
-                        "车库"
+                        "阁楼"
                     ]
                 },
                 {
@@ -1024,9 +942,8 @@
                     "part_of_speech": "v.",
                     "meaning": "挂起；挂断电话",
                     "false_meanings": [
-                        "放下",
-                        "拿起",
-                        "接听"
+                        "放下；搁置",
+                        "拿起；提起"
                     ],
                     "is_phrase": true
                 },
@@ -1038,8 +955,7 @@
                     "meaning": "邀请",
                     "false_meanings": [
                         "拒绝",
-                        "驱赶",
-                        "批评"
+                        "驱赶"
                     ]
                 },
                 {
@@ -1050,8 +966,7 @@
                     "meaning": "客厅",
                     "false_meanings": [
                         "卧室",
-                        "厨房",
-                        "浴室"
+                        "厨房"
                     ],
                     "is_phrase": true
                 },
@@ -1063,8 +978,7 @@
                     "meaning": "到达",
                     "false_meanings": [
                         "离开",
-                        "出发",
-                        "返回"
+                        "出发"
                     ]
                 },
                 {
@@ -1075,8 +989,7 @@
                     "meaning": "（用于否定句和疑问句）还",
                     "false_meanings": [
                         "已经",
-                        "总是",
-                        "从不"
+                        "总是"
                     ]
                 },
                 {
@@ -1086,9 +999,8 @@
                     "part_of_speech": "v.",
                     "meaning": "添加；加",
                     "false_meanings": [
-                        "减少",
-                        "删除",
-                        "移除"
+                        "减少；减小",
+                        "删除；清除"
                     ]
                 },
                 {
@@ -1099,8 +1011,7 @@
                     "meaning": "把……加入……",
                     "false_meanings": [
                         "从……移除",
-                        "与……分离",
-                        "和……比较"
+                        "与……分离"
                     ],
                     "is_phrase": true
                 },
@@ -1112,8 +1023,7 @@
                     "meaning": "去购物",
                     "false_meanings": [
                         "去上班",
-                        "去上学",
-                        "去运动"
+                        "去上学"
                     ],
                     "is_phrase": true
                 },
@@ -1125,8 +1035,7 @@
                     "meaning": "饼干",
                     "false_meanings": [
                         "面包",
-                        "蛋糕",
-                        "糖果"
+                        "蛋糕"
                     ]
                 },
                 {
@@ -1137,8 +1046,7 @@
                     "meaning": "借",
                     "false_meanings": [
                         "借出",
-                        "归还",
-                        "购买"
+                        "归还"
                     ]
                 },
                 {
@@ -1148,9 +1056,8 @@
                     "part_of_speech": "v.",
                     "meaning": "策划；打算",
                     "false_meanings": [
-                        "放弃",
-                        "忘记",
-                        "忽视"
+                        "放弃；舍弃",
+                        "忘记；遗忘"
                     ]
                 },
                 {
@@ -1160,9 +1067,8 @@
                     "part_of_speech": "n.",
                     "meaning": "宝物；财富",
                     "false_meanings": [
-                        "垃圾",
-                        "废品",
-                        "杂物"
+                        "垃圾；垃圾",
+                        "废品；废品"
                     ]
                 },
                 {
@@ -1172,9 +1078,8 @@
                     "part_of_speech": "n.",
                     "meaning": "搜寻；狩猎",
                     "false_meanings": [
-                        "休息",
-                        "睡眠",
-                        "等待"
+                        "休息；歇息",
+                        "睡眠；睡眠"
                     ]
                 },
                 {
@@ -1185,8 +1090,7 @@
                     "meaning": "寻宝游戏",
                     "false_meanings": [
                         "捉迷藏",
-                        "老鹰捉小鸡",
-                        "跳房子"
+                        "老鹰捉小鸡"
                     ],
                     "is_phrase": true
                 },
@@ -1197,9 +1101,8 @@
                     "part_of_speech": "n.",
                     "meaning": "搭便车；电梯",
                     "false_meanings": [
-                        "楼梯",
-                        "走廊",
-                        "大厅"
+                        "楼梯；梯子",
+                        "走廊；过道"
                     ]
                 },
                 {
@@ -1210,8 +1113,7 @@
                     "meaning": "开车顺便送某人",
                     "false_meanings": [
                         "开车送货",
-                        "开车旅行",
-                        "开车上班"
+                        "开车旅行"
                     ],
                     "is_phrase": true
                 },
@@ -1222,9 +1124,8 @@
                     "part_of_speech": "prep.",
                     "meaning": "到……时；直到……为止",
                     "false_meanings": [
-                        "从……开始",
-                        "在……之前",
-                        "在……期间"
+                        "从……开始；从……开始",
+                        "在……之前；以前"
                     ]
                 },
                 {
@@ -1234,9 +1135,8 @@
                     "part_of_speech": "v.",
                     "meaning": "注意；当心",
                     "false_meanings": [
-                        "忽视",
-                        "放弃",
-                        "忘记"
+                        "忽视；无视",
+                        "放弃；舍弃"
                     ],
                     "is_phrase": true
                 },
@@ -1248,8 +1148,7 @@
                     "meaning": "电影",
                     "false_meanings": [
                         "音乐",
-                        "舞蹈",
-                        "戏剧"
+                        "舞蹈"
                     ]
                 },
                 {
@@ -1259,9 +1158,8 @@
                     "part_of_speech": "n.",
                     "meaning": "电影院；电影产业",
                     "false_meanings": [
-                        "剧院",
-                        "音乐厅",
-                        "体育馆"
+                        "剧院；剧院",
+                        "音乐厅；乐曲"
                     ],
                     "is_phrase": true
                 },
@@ -1272,9 +1170,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "不运行的；死的",
                     "false_meanings": [
-                        "活着的",
-                        "健康的",
-                        "年轻的"
+                        "活着的；活着的样子",
+                        "健康的；健康的样子"
                     ]
                 },
                 {
@@ -1284,9 +1181,8 @@
                     "part_of_speech": "n.",
                     "meaning": "笔记；记录；便条",
                     "false_meanings": [
-                        "书籍",
-                        "报纸",
-                        "杂志"
+                        "书籍；读物",
+                        "报纸；报刊"
                     ]
                 },
                 {
@@ -1297,8 +1193,7 @@
                     "meaning": "做笔记",
                     "false_meanings": [
                         "写作业",
-                        "读课文",
-                        "背单词"
+                        "读课文"
                     ],
                     "is_phrase": true
                 },
@@ -1310,8 +1205,7 @@
                     "meaning": "清扫",
                     "false_meanings": [
                         "弄脏",
-                        "打翻",
-                        "破坏"
+                        "打翻"
                     ],
                     "is_phrase": true
                 },
@@ -1322,9 +1216,8 @@
                     "part_of_speech": "n.",
                     "meaning": "社区；社团",
                     "false_meanings": [
-                        "公司",
-                        "学校",
-                        "医院"
+                        "公司；企业",
+                        "学校；学院"
                     ]
                 },
                 {
@@ -1335,8 +1228,7 @@
                     "meaning": "垃圾",
                     "false_meanings": [
                         "宝贝",
-                        "食物",
-                        "衣服"
+                        "食物"
                     ]
                 },
                 {
@@ -1346,9 +1238,8 @@
                     "part_of_speech": "adv.",
                     "meaning": "差不多；几乎",
                     "false_meanings": [
-                        "完全",
-                        "绝对",
-                        "肯定"
+                        "完全；全部",
+                        "绝对；必然"
                     ]
                 },
                 {
@@ -1358,9 +1249,8 @@
                     "part_of_speech": "n.",
                     "meaning": "旅行；历程",
                     "false_meanings": [
-                        "休息",
-                        "睡眠",
-                        "等待"
+                        "休息；歇息",
+                        "睡眠；睡眠"
                     ]
                 },
                 {
@@ -1370,9 +1260,8 @@
                     "part_of_speech": "v. & n.",
                     "meaning": "拉；拖",
                     "false_meanings": [
-                        "推",
-                        "举",
-                        "抬"
+                        "推；推",
+                        "举；举"
                     ]
                 },
                 {
@@ -1383,8 +1272,7 @@
                     "meaning": "行李",
                     "false_meanings": [
                         "背包",
-                        "钱包",
-                        "手提包"
+                        "钱包"
                     ]
                 },
                 {
@@ -1395,8 +1283,7 @@
                     "meaning": "把……与……分享",
                     "false_meanings": [
                         "独占",
-                        "隐藏",
-                        "忽视"
+                        "隐藏"
                     ],
                     "is_phrase": true
                 },
@@ -1408,8 +1295,7 @@
                     "meaning": "嗯（表示喜欢、同意等）",
                     "false_meanings": [
                         "不",
-                        "哎",
-                        "啊"
+                        "哎"
                     ]
                 },
                 {
@@ -1420,8 +1306,7 @@
                     "meaning": "熟悉的",
                     "false_meanings": [
                         "陌生的",
-                        "奇怪的",
-                        "特殊的"
+                        "奇怪的"
                     ]
                 },
                 {
@@ -1432,8 +1317,7 @@
                     "meaning": "笑话",
                     "false_meanings": [
                         "故事",
-                        "新闻",
-                        "谜语"
+                        "新闻"
                     ]
                 },
                 {
@@ -1443,9 +1327,8 @@
                     "part_of_speech": "pron.",
                     "meaning": "几个；一些",
                     "false_meanings": [
-                        "全部",
-                        "没有",
-                        "大量"
+                        "全部；所有",
+                        "没有；缺少"
                     ]
                 },
                 {
@@ -1456,8 +1339,7 @@
                     "meaning": "点头",
                     "false_meanings": [
                         "摇头",
-                        "转头",
-                        "低头"
+                        "转头"
                     ]
                 },
                 {
@@ -1468,8 +1350,7 @@
                     "meaning": "作者",
                     "false_meanings": [
                         "读者",
-                        "观众",
-                        "听众"
+                        "观众"
                     ]
                 },
                 {
@@ -1479,9 +1360,8 @@
                     "part_of_speech": "n.",
                     "meaning": "正文；文本",
                     "false_meanings": [
-                        "标题",
-                        "图片",
-                        "视频"
+                        "标题；标题",
+                        "图片；图片"
                     ]
                 },
                 {
@@ -1491,9 +1371,8 @@
                     "part_of_speech": "v.",
                     "meaning": "描述；形容",
                     "false_meanings": [
-                        "隐藏",
-                        "忽视",
-                        "忘记"
+                        "隐藏；隐藏",
+                        "忽视；无视"
                     ]
                 },
                 {
@@ -1503,9 +1382,8 @@
                     "part_of_speech": "adv. & conj.",
                     "meaning": "无论去哪里；在任何地方",
                     "false_meanings": [
-                        "在某处",
-                        "在这里",
-                        "在那里"
+                        "在某处；在某地",
+                        "在这里；在此处"
                     ]
                 },
                 {
@@ -1516,8 +1394,7 @@
                     "meaning": "要紧",
                     "false_meanings": [
                         "无关",
-                        "忽视",
-                        "放弃"
+                        "忽视"
                     ]
                 },
                 {
@@ -1527,9 +1404,8 @@
                     "part_of_speech": "adv.",
                     "meaning": "不论；不要紧",
                     "false_meanings": [
-                        "非常",
-                        "绝对",
-                        "一定"
+                        "非常；十分",
+                        "绝对；必然"
                     ],
                     "is_phrase": true
                 },
@@ -1540,9 +1416,8 @@
                     "part_of_speech": "adv.",
                     "meaning": "也许；可能",
                     "false_meanings": [
-                        "肯定",
-                        "绝对",
-                        "一定"
+                        "肯定；确信",
+                        "绝对；必然"
                     ]
                 },
                 {
@@ -1552,9 +1427,8 @@
                     "part_of_speech": "n.",
                     "meaning": "盘子；碟子",
                     "false_meanings": [
-                        "杯子",
-                        "碗",
-                        "勺子"
+                        "杯子；杯",
+                        "碗；饭碗"
                     ]
                 },
                 {
@@ -1564,9 +1438,8 @@
                     "part_of_speech": "adv.",
                     "meaning": "刚刚；刚刚",
                     "false_meanings": [
-                        "很久",
-                        "总是",
-                        "从不"
+                        "很久；许久",
+                        "总是；一直"
                     ]
                 },
                 {
@@ -1576,9 +1449,8 @@
                     "part_of_speech": "v.",
                     "meaning": "发臭；闻到",
                     "false_meanings": [
-                        "品尝",
-                        "触摸",
-                        "看见"
+                        "品尝；尝试",
+                        "触摸；触摸"
                     ]
                 },
                 {
@@ -1588,9 +1460,8 @@
                     "part_of_speech": "n.",
                     "meaning": "高兴；乐趣",
                     "false_meanings": [
-                        "悲伤",
-                        "愤怒",
-                        "恐惧"
+                        "悲伤；难过的",
+                        "愤怒；生气"
                     ]
                 },
                 {
@@ -1600,9 +1471,8 @@
                     "part_of_speech": "n.",
                     "meaning": "房间；公寓套房",
                     "false_meanings": [
-                        "别墅",
-                        "宫殿",
-                        "城堡"
+                        "别墅；别墅",
+                        "宫殿；宫殿"
                     ]
                 },
                 {
@@ -1612,9 +1482,8 @@
                     "part_of_speech": "n.",
                     "meaning": "大楼；街区；大块",
                     "false_meanings": [
-                        "小路",
-                        "公园",
-                        "广场"
+                        "小路；小路",
+                        "公园；花园"
                     ]
                 },
                 {
@@ -1624,9 +1493,8 @@
                     "part_of_speech": "v.",
                     "meaning": "装饰；装满",
                     "false_meanings": [
-                        "拆除",
-                        "破坏",
-                        "清空"
+                        "拆除；拆掉",
+                        "破坏；毁坏"
                     ]
                 },
                 {
@@ -1636,9 +1504,8 @@
                     "part_of_speech": "v.",
                     "meaning": "遮盖；包括",
                     "false_meanings": [
-                        "暴露",
-                        "打开",
-                        "移除"
+                        "暴露；暴露",
+                        "打开；开启"
                     ]
                 },
                 {
@@ -1649,8 +1516,7 @@
                     "meaning": "海报",
                     "false_meanings": [
                         "照片",
-                        "画作",
-                        "书籍"
+                        "画作"
                     ]
                 },
                 {
@@ -1661,8 +1527,7 @@
                     "meaning": "剪刀",
                     "false_meanings": [
                         "铅笔",
-                        "橡皮",
-                        "尺子"
+                        "橡皮"
                     ]
                 },
                 {
@@ -1673,8 +1538,7 @@
                     "meaning": "胶水",
                     "false_meanings": [
                         "墨水",
-                        "颜料",
-                        "蜡笔"
+                        "颜料"
                     ]
                 },
                 {
@@ -1685,8 +1549,7 @@
                     "meaning": "剪纸",
                     "false_meanings": [
                         "折纸",
-                        "画画",
-                        "雕刻"
+                        "画画"
                     ],
                     "is_phrase": true
                 },
@@ -1697,9 +1560,8 @@
                     "part_of_speech": "v.",
                     "meaning": "比较；对比",
                     "false_meanings": [
-                        "合并",
-                        "分离",
-                        "复制"
+                        "合并；联合",
+                        "分离；分离"
                     ]
                 },
                 {
@@ -1710,8 +1572,7 @@
                     "meaning": "害羞的",
                     "false_meanings": [
                         "大胆的",
-                        "勇敢的",
-                        "自信的"
+                        "勇敢的"
                     ]
                 },
                 {
@@ -1721,9 +1582,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "懒惰的；懒洋洋的",
                     "false_meanings": [
-                        "勤劳的",
-                        "忙碌的",
-                        "积极的"
+                        "勤劳的；勤劳的样子",
+                        "忙碌的；忙碌的样子"
                     ]
                 },
                 {
@@ -1733,9 +1593,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "喧闹的；大声的",
                     "false_meanings": [
-                        "安静的",
-                        "轻柔的",
-                        "沉默的"
+                        "安静的；安静的样子",
+                        "轻柔的；轻柔的样子"
                     ]
                 },
                 {
@@ -1745,9 +1604,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "外向的；开朗的",
                     "false_meanings": [
-                        "内向的",
-                        "害羞的",
-                        "安静的"
+                        "内向的；内向的样子",
+                        "害羞的；害羞的样子"
                     ]
                 },
                 {
@@ -1758,8 +1616,7 @@
                     "meaning": "勤勉的",
                     "false_meanings": [
                         "懒惰的",
-                        "散漫的",
-                        "拖延的"
+                        "散漫的"
                     ],
                     "is_phrase": true
                 },
@@ -1770,9 +1627,8 @@
                     "part_of_speech": "v.",
                     "meaning": "表演；执行",
                     "false_meanings": [
-                        "观看",
-                        "休息",
-                        "睡觉"
+                        "观看；观看",
+                        "休息；歇息"
                     ]
                 },
                 {
@@ -1782,9 +1638,8 @@
                     "part_of_speech": "adj. & adv.",
                     "meaning": "独自；单独",
                     "false_meanings": [
-                        "一起",
-                        "共同",
-                        "陪伴"
+                        "一起；一起",
+                        "共同；共同"
                     ]
                 },
                 {
@@ -1794,9 +1649,8 @@
                     "part_of_speech": "v.",
                     "meaning": "解决；解答",
                     "false_meanings": [
-                        "制造",
-                        "增加",
-                        "忽略"
+                        "制造；制造",
+                        "增加；增多"
                     ]
                 },
                 {
@@ -1807,8 +1661,7 @@
                     "meaning": "长笛",
                     "false_meanings": [
                         "吉他",
-                        "钢琴",
-                        "小提琴"
+                        "钢琴"
                     ]
                 },
                 {
@@ -1818,9 +1671,8 @@
                     "part_of_speech": "n.",
                     "meaning": "祝贺；恭喜",
                     "false_meanings": [
-                        "批评",
-                        "责备",
-                        "抱怨"
+                        "批评；责备",
+                        "责备；批评"
                     ]
                 },
                 {
@@ -1830,9 +1682,8 @@
                     "part_of_speech": "n.",
                     "meaning": "奖；奖励",
                     "false_meanings": [
-                        "惩罚",
-                        "罚款",
-                        "批评"
+                        "惩罚；处罚",
+                        "罚款；罚款"
                     ]
                 },
                 {
@@ -1842,9 +1693,8 @@
                     "part_of_speech": "v.",
                     "meaning": "参加；出席",
                     "false_meanings": [
-                        "缺席",
-                        "离开",
-                        "放弃"
+                        "缺席；缺席",
+                        "离开；走开"
                     ]
                 },
                 {
@@ -1855,8 +1705,7 @@
                     "meaning": "除……之外（还）",
                     "false_meanings": [
                         "只有",
-                        "仅仅",
-                        "唯一"
+                        "仅仅"
                     ]
                 },
                 {
@@ -1866,9 +1715,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "空闲的；备用的",
                     "false_meanings": [
-                        "忙碌的",
-                        "正式的",
-                        "主要的"
+                        "忙碌的；忙碌的样子",
+                        "正式的；正式的样子"
                     ]
                 },
                 {
@@ -1879,8 +1727,7 @@
                     "meaning": "空闲时间",
                     "false_meanings": [
                         "工作时间",
-                        "上课时间",
-                        "睡觉时间"
+                        "上课时间"
                     ],
                     "is_phrase": true
                 },
@@ -1891,9 +1738,8 @@
                     "part_of_speech": "n.",
                     "meaning": "乐事；愉快；荣幸",
                     "false_meanings": [
-                        "痛苦",
-                        "烦恼",
-                        "困难"
+                        "痛苦；苦楚",
+                        "烦恼；烦恼"
                     ]
                 },
                 {
@@ -1904,8 +1750,7 @@
                     "meaning": "有共同之处",
                     "false_meanings": [
                         "完全不同",
-                        "相互对立",
-                        "没有联系"
+                        "相互对立"
                     ],
                     "is_phrase": true
                 },
@@ -1916,9 +1761,8 @@
                     "part_of_speech": "n.",
                     "meaning": "外表；露面",
                     "false_meanings": [
-                        "内心",
-                        "性格",
-                        "思想"
+                        "内心；内心",
+                        "性格；个性"
                     ]
                 },
                 {
@@ -1928,9 +1772,8 @@
                     "part_of_speech": "n.",
                     "meaning": "性格；品质",
                     "false_meanings": [
-                        "外表",
-                        "身高",
-                        "体重"
+                        "外表；外表",
+                        "身高；个子"
                     ]
                 },
                 {
@@ -1940,9 +1783,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "严肃的；严重的",
                     "false_meanings": [
-                        "轻松的",
-                        "有趣的",
-                        "搞笑的"
+                        "轻松的；轻松的样子",
+                        "有趣的；有益的"
                     ]
                 },
                 {
@@ -1952,9 +1794,8 @@
                     "part_of_speech": "n.",
                     "meaning": "优势；力量",
                     "false_meanings": [
-                        "弱点",
-                        "缺点",
-                        "不足"
+                        "弱点；短处",
+                        "缺点；不足"
                     ]
                 },
                 {
@@ -1964,9 +1805,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "苗条的；薄的",
                     "false_meanings": [
-                        "肥胖的",
-                        "粗壮的",
-                        "笨重的"
+                        "肥胖的；肥胖的样子",
+                        "粗壮的；粗壮的样子"
                     ]
                 },
                 {
@@ -1976,9 +1816,8 @@
                     "part_of_speech": "n.",
                     "meaning": "事实；现实",
                     "false_meanings": [
-                        "谎言",
-                        "幻想",
-                        "猜测"
+                        "谎言；假话",
+                        "幻想；幻想"
                     ]
                 },
                 {
@@ -1989,8 +1828,7 @@
                     "meaning": "人口",
                     "false_meanings": [
                         "面积",
-                        "距离",
-                        "高度"
+                        "距离"
                     ]
                 },
                 {
@@ -2000,9 +1838,8 @@
                     "part_of_speech": "n.",
                     "meaning": "千米；公里",
                     "false_meanings": [
-                        "米",
-                        "厘米",
-                        "毫米"
+                        "米；米",
+                        "厘米；厘米"
                     ]
                 },
                 {
@@ -2012,9 +1849,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "平均的；普通的",
                     "false_meanings": [
-                        "特殊的",
-                        "最高的",
-                        "最低的"
+                        "特殊的；特殊的样子",
+                        "最高的；最高的样子"
                     ]
                 },
                 {
@@ -2025,8 +1861,7 @@
                     "meaning": "降雨量",
                     "false_meanings": [
                         "降雪量",
-                        "温度",
-                        "湿度"
+                        "温度"
                     ]
                 },
                 {
@@ -2037,8 +1872,7 @@
                     "meaning": "每",
                     "false_meanings": [
                         "所有",
-                        "全部",
-                        "整个"
+                        "全部"
                     ]
                 },
                 {
@@ -2049,8 +1883,7 @@
                     "meaning": "毫米",
                     "false_meanings": [
                         "厘米",
-                        "米",
-                        "千米"
+                        "米"
                     ]
                 },
                 {
@@ -2060,9 +1893,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "宜人的；友好的",
                     "false_meanings": [
-                        "恶劣的",
-                        "不愉快的",
-                        "粗鲁的"
+                        "恶劣的；恶劣的样子",
+                        "不愉快的；不愉快的样子"
                     ]
                 },
                 {
@@ -2073,8 +1905,7 @@
                     "meaning": "差异",
                     "false_meanings": [
                         "相同",
-                        "一致",
-                        "统一"
+                        "一致"
                     ]
                 },
                 {
@@ -2084,9 +1915,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "相像的；相似地",
                     "false_meanings": [
-                        "不同的",
-                        "对立的",
-                        "相反的"
+                        "不同的；不同的样子",
+                        "对立的；对立的样子"
                     ]
                 },
                 {
@@ -2097,8 +1927,7 @@
                     "meaning": "镜子",
                     "false_meanings": [
                         "窗户",
-                        "门",
-                        "墙壁"
+                        "门"
                     ]
                 },
                 {
@@ -2108,9 +1937,8 @@
                     "part_of_speech": "n.",
                     "meaning": "业余爱好；兴趣",
                     "false_meanings": [
-                        "工作",
-                        "任务",
-                        "责任"
+                        "工作；劳动",
+                        "任务；使命"
                     ]
                 },
                 {
@@ -2121,8 +1949,7 @@
                     "meaning": "小说",
                     "false_meanings": [
                         "课本",
-                        "词典",
-                        "杂志"
+                        "词典"
                     ]
                 },
                 {
@@ -2132,9 +1959,8 @@
                     "part_of_speech": "n.",
                     "meaning": "幽默；幽默感",
                     "false_meanings": [
-                        "严肃",
-                        "认真",
-                        "紧张"
+                        "严肃；严格",
+                        "认真；认真"
                     ]
                 },
                 {
@@ -2144,9 +1970,8 @@
                     "part_of_speech": "prep.",
                     "meaning": "归功于；由于；因为",
                     "false_meanings": [
-                        "尽管",
-                        "虽然",
-                        "但是"
+                        "尽管；尽管",
+                        "虽然；虽然"
                     ],
                     "is_phrase": true
                 },
@@ -2158,8 +1983,7 @@
                     "meaning": "犯错误",
                     "false_meanings": [
                         "做对",
-                        "成功",
-                        "完成"
+                        "成功"
                     ],
                     "is_phrase": true
                 },
@@ -2170,9 +1994,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "较少的；更少的",
                     "false_meanings": [
-                        "更多的",
-                        "全部的",
-                        "所有的"
+                        "更多的；更多的样子",
+                        "全部的；所有"
                     ]
                 },
                 {
@@ -2182,9 +2005,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "坦率的；简单的",
                     "false_meanings": [
-                        "复杂的",
-                        "困难的",
-                        "含糊的"
+                        "复杂的；复杂的样子",
+                        "困难的；艰难的"
                     ]
                 },
                 {
@@ -2194,9 +2016,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "诚实的；诚实的",
                     "false_meanings": [
-                        "虚伪的",
-                        "欺骗的",
-                        "狡猾的"
+                        "虚伪的；虚伪的样子",
+                        "欺骗的；欺骗的样子"
                     ]
                 },
                 {
@@ -2207,8 +2028,7 @@
                     "meaning": "直率的",
                     "false_meanings": [
                         "含蓄的",
-                        "迂回的",
-                        "间接的"
+                        "迂回的"
                     ]
                 },
                 {
@@ -2219,8 +2039,7 @@
                     "meaning": "相似之处",
                     "false_meanings": [
                         "差异",
-                        "区别",
-                        "不同"
+                        "区别"
                     ]
                 },
                 {
@@ -2230,9 +2049,8 @@
                     "part_of_speech": "n.",
                     "meaning": "友谊；友情",
                     "false_meanings": [
-                        "敌意",
-                        "冲突",
-                        "争吵"
+                        "敌意；敌意",
+                        "冲突；冲突"
                     ]
                 },
                 {
@@ -2243,8 +2061,7 @@
                     "meaning": "米",
                     "false_meanings": [
                         "厘米",
-                        "毫米",
-                        "千米"
+                        "毫米"
                     ]
                 },
                 {
@@ -2255,8 +2072,7 @@
                     "meaning": "王子",
                     "false_meanings": [
                         "公主",
-                        "国王",
-                        "王后"
+                        "国王"
                     ]
                 },
                 {
@@ -2266,9 +2082,8 @@
                     "part_of_speech": "n.",
                     "meaning": "人物；个性",
                     "false_meanings": [
-                        "背景",
-                        "场景",
-                        "道具"
+                        "背景；背景",
+                        "场景；场景"
                     ]
                 },
                 {
@@ -2278,9 +2093,8 @@
                     "part_of_speech": "n.",
                     "meaning": "贫民；乞丐",
                     "false_meanings": [
-                        "富人",
-                        "贵族",
-                        "商人"
+                        "富人；有钱人",
+                        "贵族；上层人"
                     ]
                 },
                 {
@@ -2291,8 +2105,7 @@
                     "meaning": "交换",
                     "false_meanings": [
                         "保留",
-                        "收藏",
-                        "隐藏"
+                        "收藏"
                     ]
                 },
                 {
@@ -2302,9 +2115,8 @@
                     "part_of_speech": "n.",
                     "meaning": "意外；（交通）事故",
                     "false_meanings": [
-                        "计划",
-                        "安排",
-                        "预约"
+                        "计划；策划",
+                        "安排；布置"
                     ]
                 },
                 {
@@ -2314,9 +2126,8 @@
                     "part_of_speech": "adv.",
                     "meaning": "偶然；意外地",
                     "false_meanings": [
-                        "故意地",
-                        "特意地",
-                        "有意地"
+                        "故意地；故意地",
+                        "特意地；特意地"
                     ],
                     "is_phrase": true
                 },
@@ -2327,9 +2138,8 @@
                     "part_of_speech": "v.",
                     "meaning": "预料；期待",
                     "false_meanings": [
-                        "放弃",
-                        "忽视",
-                        "忘记"
+                        "放弃；舍弃",
+                        "忽视；无视"
                     ]
                 },
                 {
@@ -2340,8 +2150,7 @@
                     "meaning": "银色的",
                     "false_meanings": [
                         "金色的",
-                        "黑色的",
-                        "白色的"
+                        "黑色的"
                     ]
                 },
                 {
@@ -2352,8 +2161,7 @@
                     "meaning": "内衬",
                     "false_meanings": [
                         "外套",
-                        "表面",
-                        "边缘"
+                        "表面"
                     ]
                 },
                 {
@@ -2364,8 +2172,7 @@
                     "meaning": "一线光明",
                     "false_meanings": [
                         "绝望",
-                        "失败",
-                        "困境"
+                        "失败"
                     ],
                     "is_phrase": true
                 },
@@ -2376,9 +2183,8 @@
                     "part_of_speech": "n.",
                     "meaning": "情况；状况",
                     "false_meanings": [
-                        "计划",
-                        "目标",
-                        "结果"
+                        "计划；策划",
+                        "目标；目的"
                     ]
                 },
                 {
@@ -2388,9 +2194,8 @@
                     "part_of_speech": "v.",
                     "meaning": "关心；担心",
                     "false_meanings": [
-                        "忽视",
-                        "不管",
-                        "放弃"
+                        "忽视；无视",
+                        "不管；不管"
                     ],
                     "is_phrase": true
                 },
@@ -2401,9 +2206,8 @@
                     "part_of_speech": "v.",
                     "meaning": "伸手；到达",
                     "false_meanings": [
-                        "离开",
-                        "返回",
-                        "出发"
+                        "离开；走开",
+                        "返回；回来"
                     ]
                 },
                 {
@@ -2414,8 +2218,7 @@
                     "meaning": "伸手触碰",
                     "false_meanings": [
                         "躲避",
-                        "远离",
-                        "放下"
+                        "远离"
                     ],
                     "is_phrase": true
                 },
@@ -2426,9 +2229,8 @@
                     "part_of_speech": "v.",
                     "meaning": "触动；触碰",
                     "false_meanings": [
-                        "远离",
-                        "躲避",
-                        "忽略"
+                        "远离；远离",
+                        "躲避；躲避"
                     ]
                 },
                 {
@@ -2439,8 +2241,7 @@
                     "meaning": "帮助（某人）",
                     "false_meanings": [
                         "拒绝帮助",
-                        "阻止",
-                        "妨碍"
+                        "阻止"
                     ],
                     "is_phrase": true
                 },
@@ -2452,8 +2253,7 @@
                     "meaning": "朱丽",
                     "false_meanings": [
                         "玛丽",
-                        "露西",
-                        "艾米"
+                        "露西"
                     ],
                     "is_proper_noun": true
                 },
@@ -2465,8 +2265,7 @@
                     "meaning": "温哥华（加拿大城市）",
                     "false_meanings": [
                         "多伦多",
-                        "蒙特利尔",
-                        "渥太华"
+                        "蒙特利尔"
                     ],
                     "is_proper_noun": true
                 },
@@ -2478,8 +2277,7 @@
                     "meaning": "马特",
                     "false_meanings": [
                         "杰克",
-                        "汤姆",
-                        "迈克"
+                        "汤姆"
                     ],
                     "is_proper_noun": true
                 },
@@ -2491,8 +2289,7 @@
                     "meaning": "斯蒂芬",
                     "false_meanings": [
                         "约翰",
-                        "大卫",
-                        "彼得"
+                        "大卫"
                     ],
                     "is_proper_noun": true
                 },
@@ -2504,8 +2301,7 @@
                     "meaning": "戴安娜",
                     "false_meanings": [
                         "凯特",
-                        "琳达",
-                        "苏珊"
+                        "琳达"
                     ],
                     "is_proper_noun": true
                 },
@@ -2517,8 +2313,7 @@
                     "meaning": "爱德华",
                     "false_meanings": [
                         "罗伯特",
-                        "威廉",
-                        "亨利"
+                        "威廉"
                     ],
                     "is_proper_noun": true
                 },
@@ -2530,8 +2325,7 @@
                     "meaning": "马克·吐温",
                     "false_meanings": [
                         "莎士比亚",
-                        "狄更斯",
-                        "海明威"
+                        "狄更斯"
                     ],
                     "is_phrase": true,
                     "is_proper_noun": true
@@ -2544,8 +2338,7 @@
                     "meaning": "罗丝",
                     "false_meanings": [
                         "莉莉",
-                        "黛西",
-                        "茉莉"
+                        "黛西"
                     ],
                     "is_proper_noun": true
                 },
@@ -2557,8 +2350,7 @@
                     "meaning": "苔藓",
                     "false_meanings": [
                         "树叶",
-                        "花朵",
-                        "草地"
+                        "花朵"
                     ]
                 },
                 {
@@ -2568,9 +2360,8 @@
                     "part_of_speech": "n.",
                     "meaning": "红杉；红木",
                     "false_meanings": [
-                        "松树",
-                        "柏树",
-                        "柳树"
+                        "松树；松树",
+                        "柏树；柏树"
                     ]
                 },
                 {
@@ -2581,8 +2372,7 @@
                     "meaning": "猎豹",
                     "false_meanings": [
                         "老虎",
-                        "狮子",
-                        "豹子"
+                        "狮子"
                     ]
                 },
                 {
@@ -2592,9 +2382,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "折叠式的；可折叠的",
                     "false_meanings": [
-                        "固定的",
-                        "永久的",
-                        "不变的"
+                        "固定的；固定的样子",
+                        "永久的；永久的样子"
                     ]
                 },
                 {
@@ -2605,8 +2394,7 @@
                     "meaning": "折扇",
                     "false_meanings": [
                         "电风扇",
-                        "空调",
-                        "暖气"
+                        "空调"
                     ],
                     "is_phrase": true
                 },
@@ -2617,9 +2405,8 @@
                     "part_of_speech": "n.",
                     "meaning": "竹；竹子",
                     "false_meanings": [
-                        "木头",
-                        "石头",
-                        "铁"
+                        "木头；木头",
+                        "石头；石头"
                     ]
                 },
                 {
@@ -2629,9 +2416,8 @@
                     "part_of_speech": "interj.",
                     "meaning": "是的；对",
                     "false_meanings": [
-                        "不是",
-                        "不对",
-                        "错了"
+                        "不是；不是",
+                        "不对；不对"
                     ]
                 },
                 {
@@ -2641,9 +2427,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "广受欢迎的；流行的",
                     "false_meanings": [
-                        "不受欢迎的",
-                        "过时的",
-                        "冷门的"
+                        "不受欢迎的；不受欢迎的样子",
+                        "过时的；过时的样子"
                     ]
                 },
                 {
@@ -2653,9 +2438,8 @@
                     "part_of_speech": "n.",
                     "meaning": "美德；善养",
                     "false_meanings": [
-                        "邪恶",
-                        "罪恶",
-                        "恶行"
+                        "邪恶；邪恶",
+                        "罪恶；罪恶"
                     ]
                 },
                 {
@@ -2665,9 +2449,8 @@
                     "part_of_speech": "n.",
                     "meaning": "工具；手段",
                     "false_meanings": [
-                        "玩具",
-                        "装饰",
-                        "礼物"
+                        "玩具；玩物",
+                        "装饰；装饰"
                     ]
                 },
                 {
@@ -2677,9 +2460,8 @@
                     "part_of_speech": "adv.",
                     "meaning": "实际上；居然",
                     "false_meanings": [
-                        "理论上",
-                        "表面上",
-                        "可能"
+                        "理论上；理论上",
+                        "表面上；表面上"
                     ]
                 },
                 {
@@ -2689,9 +2471,8 @@
                     "part_of_speech": "v.",
                     "meaning": "幼苗；（枪）射击",
                     "false_meanings": [
-                        "收割",
-                        "播种",
-                        "灌溉"
+                        "收割；收割",
+                        "播种；播种"
                     ]
                 },
                 {
@@ -2701,9 +2482,8 @@
                     "part_of_speech": "v.",
                     "meaning": "出现；看来好像",
                     "false_meanings": [
-                        "消失",
-                        "隐藏",
-                        "躲避"
+                        "消失；消失",
+                        "隐藏；隐藏"
                     ]
                 },
                 {
@@ -2714,8 +2494,7 @@
                     "meaning": "可以随便做某事",
                     "false_meanings": [
                         "不许做",
-                        "禁止做",
-                        "避免做"
+                        "禁止做"
                     ],
                     "is_phrase": true
                 },
@@ -2726,9 +2505,8 @@
                     "part_of_speech": "n.",
                     "meaning": "陆地；土地",
                     "false_meanings": [
-                        "海洋",
-                        "天空",
-                        "河流"
+                        "海洋；大海",
+                        "天空；苍穹"
                     ]
                 },
                 {
@@ -2738,9 +2516,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "非洲的；非洲人的",
                     "false_meanings": [
-                        "亚洲的",
-                        "欧洲的",
-                        "美洲的"
+                        "亚洲的；亚洲的样子",
+                        "欧洲的；欧洲的样子"
                     ]
                 },
                 {
@@ -2750,9 +2527,8 @@
                     "part_of_speech": "n.",
                     "meaning": "玫瑰；蔷薇",
                     "false_meanings": [
-                        "百合",
-                        "菊花",
-                        "牡丹"
+                        "百合；百合",
+                        "菊花；菊花"
                     ]
                 },
                 {
@@ -2762,9 +2538,8 @@
                     "part_of_speech": "n.",
                     "meaning": "牡丹；芍药",
                     "false_meanings": [
-                        "玫瑰",
-                        "百合",
-                        "菊花"
+                        "玫瑰；玫瑰",
+                        "百合；百合"
                     ]
                 },
                 {
@@ -2775,8 +2550,7 @@
                     "meaning": "莲花",
                     "false_meanings": [
                         "荷花",
-                        "睡莲",
-                        "水仙"
+                        "睡莲"
                     ]
                 },
                 {
@@ -2787,8 +2561,7 @@
                     "meaning": "蝴蝶",
                     "false_meanings": [
                         "蜻蜓",
-                        "蜜蜂",
-                        "蚂蚁"
+                        "蜜蜂"
                     ]
                 },
                 {
@@ -2798,9 +2571,8 @@
                     "part_of_speech": "n.",
                     "meaning": "翅膀；翼",
                     "false_meanings": [
-                        "尾巴",
-                        "爪子",
-                        "耳朵"
+                        "尾巴；尾巴",
+                        "爪子；爪子"
                     ]
                 },
                 {
@@ -2810,9 +2582,8 @@
                     "part_of_speech": "n.",
                     "meaning": "蛙；青蛙",
                     "false_meanings": [
-                        "蟾蜍",
-                        "蜥蜴",
-                        "蛇"
+                        "蟾蜍；蟾蜍",
+                        "蜥蜴；蜥蜴"
                     ]
                 },
                 {
@@ -2822,9 +2593,8 @@
                     "part_of_speech": "prep.",
                     "meaning": "到达；直到",
                     "false_meanings": [
-                        "低于",
-                        "少于",
-                        "不到"
+                        "低于；低于",
+                        "少于；少于"
                     ],
                     "is_phrase": true
                 },
@@ -2835,9 +2605,8 @@
                     "part_of_speech": "v.",
                     "meaning": "有……重；称重量",
                     "false_meanings": [
-                        "测量",
-                        "计算",
-                        "比较"
+                        "测量；测量",
+                        "计算；计算"
                     ]
                 },
                 {
@@ -2848,8 +2617,7 @@
                     "meaning": "千克",
                     "false_meanings": [
                         "克",
-                        "毫克",
-                        "吨"
+                        "毫克"
                     ]
                 },
                 {
@@ -2860,8 +2628,7 @@
                     "meaning": "银杏",
                     "false_meanings": [
                         "松树",
-                        "柏树",
-                        "杨树"
+                        "柏树"
                     ]
                 },
                 {
@@ -2871,9 +2638,8 @@
                     "part_of_speech": "v.",
                     "meaning": "相信；认为有可能",
                     "false_meanings": [
-                        "怀疑",
-                        "否认",
-                        "拒绝"
+                        "怀疑；质疑",
+                        "否认；否认"
                     ]
                 },
                 {
@@ -2884,8 +2650,7 @@
                     "meaning": "省份",
                     "false_meanings": [
                         "城市",
-                        "县城",
-                        "村庄"
+                        "县城"
                     ]
                 },
                 {
@@ -2896,8 +2661,7 @@
                     "meaning": "散步",
                     "false_meanings": [
                         "跑步",
-                        "跳舞",
-                        "游泳"
+                        "跳舞"
                     ],
                     "is_phrase": true
                 },
@@ -2908,9 +2672,8 @@
                     "part_of_speech": "v.",
                     "meaning": "关联；连接",
                     "false_meanings": [
-                        "分开",
-                        "断开",
-                        "切断"
+                        "分开；分离",
+                        "断开；断开"
                     ]
                 },
                 {
@@ -2920,9 +2683,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "连接的；关联的",
                     "false_meanings": [
-                        "分离的",
-                        "独立的",
-                        "孤立的"
+                        "分离的；分离的样子",
+                        "独立的；独立的样子"
                     ]
                 },
                 {
@@ -2932,9 +2694,8 @@
                     "part_of_speech": "v.",
                     "meaning": "与……相联；相连",
                     "false_meanings": [
-                        "与……分离",
-                        "与……无关",
-                        "与……对立"
+                        "与……分离；与……分离",
+                        "与……无关；与……无关"
                     ],
                     "is_phrase": true
                 },
@@ -2945,9 +2706,8 @@
                     "part_of_speech": "prep.",
                     "meaning": "没有；缺乏",
                     "false_meanings": [
-                        "拥有",
-                        "包含",
-                        "具备"
+                        "拥有；拥有",
+                        "包含；包含"
                     ]
                 },
                 {
@@ -2957,9 +2717,8 @@
                     "part_of_speech": "v.",
                     "meaning": "想象；猜想",
                     "false_meanings": [
-                        "忘记",
-                        "忽视",
-                        "放弃"
+                        "忘记；遗忘",
+                        "忽视；无视"
                     ]
                 },
                 {
@@ -2969,9 +2728,8 @@
                     "part_of_speech": "n.",
                     "meaning": "蜂蜜；（爱称）亲爱的",
                     "false_meanings": [
-                        "糖",
-                        "盐",
-                        "醋"
+                        "糖；砂糖",
+                        "盐；食盐"
                     ]
                 },
                 {
@@ -2981,9 +2739,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "失望的；沮丧的",
                     "false_meanings": [
-                        "满意的",
-                        "高兴的",
-                        "激动的"
+                        "满意的；满意的样子",
+                        "高兴的；高兴的样子"
                     ]
                 },
                 {
@@ -2993,9 +2750,8 @@
                     "part_of_speech": "n.",
                     "meaning": "联系；连接",
                     "false_meanings": [
-                        "分离",
-                        "断开",
-                        "隔离"
+                        "分离；分离",
+                        "断开；断开"
                     ]
                 },
                 {
@@ -3006,8 +2762,7 @@
                     "meaning": "花粉",
                     "false_meanings": [
                         "花瓣",
-                        "花蕊",
-                        "花茎"
+                        "花蕊"
                     ]
                 },
                 {
@@ -3018,8 +2773,7 @@
                     "meaning": "授粉",
                     "false_meanings": [
                         "发芽",
-                        "开花",
-                        "结果"
+                        "开花"
                     ]
                 },
                 {
@@ -3029,9 +2783,8 @@
                     "part_of_speech": "n.",
                     "meaning": "行动；行为",
                     "false_meanings": [
-                        "想法",
-                        "计划",
-                        "言语"
+                        "想法；想法",
+                        "计划；策划"
                     ]
                 },
                 {
@@ -3041,9 +2794,8 @@
                     "part_of_speech": "adv.",
                     "meaning": "确切地说；实际上",
                     "false_meanings": [
-                        "理论上",
-                        "表面上",
-                        "假设"
+                        "理论上；理论上",
+                        "表面上；表面上"
                     ],
                     "is_phrase": true
                 },
@@ -3055,8 +2807,7 @@
                     "meaning": "百分之……",
                     "false_meanings": [
                         "千分之",
-                        "万分之",
-                        "十分之"
+                        "万分之"
                     ],
                     "is_phrase": true
                 },
@@ -3068,8 +2819,7 @@
                     "meaning": "出于这个原因",
                     "false_meanings": [
                         "因此",
-                        "所以",
-                        "结果"
+                        "所以"
                     ],
                     "is_phrase": true
                 },
@@ -3081,8 +2831,7 @@
                     "meaning": "行星",
                     "false_meanings": [
                         "恒星",
-                        "卫星",
-                        "彗星"
+                        "卫星"
                     ]
                 },
                 {
@@ -3092,9 +2841,8 @@
                     "part_of_speech": "conj.",
                     "meaning": "为了；以便",
                     "false_meanings": [
-                        "尽管",
-                        "虽然",
-                        "但是"
+                        "尽管；尽管",
+                        "虽然；虽然"
                     ],
                     "is_phrase": true
                 },
@@ -3105,9 +2853,8 @@
                     "part_of_speech": "v.",
                     "meaning": "贮存；存储",
                     "false_meanings": [
-                        "丢弃",
-                        "浪费",
-                        "消耗"
+                        "丢弃；扔掉",
+                        "浪费；挥霍"
                     ]
                 },
                 {
@@ -3118,8 +2865,7 @@
                     "meaning": "蜂巢",
                     "false_meanings": [
                         "蜂蜜",
-                        "蜜蜂",
-                        "蜂王"
+                        "蜜蜂"
                     ]
                 },
                 {
@@ -3129,9 +2875,8 @@
                     "part_of_speech": "v.",
                     "meaning": "交流；沟通",
                     "false_meanings": [
-                        "争吵",
-                        "吵架",
-                        "冲突"
+                        "争吵；争吵",
+                        "吵架；争吵"
                     ]
                 },
                 {
@@ -3141,9 +2886,8 @@
                     "part_of_speech": "v.",
                     "meaning": "参与某事；在……中发挥作用",
                     "false_meanings": [
-                        "退出",
-                        "放弃",
-                        "忽视"
+                        "退出；离开",
+                        "放弃；舍弃"
                     ],
                     "is_phrase": true
                 },
@@ -3155,8 +2899,7 @@
                     "meaning": "生态系统",
                     "false_meanings": [
                         "社会系统",
-                        "经济系统",
-                        "政治系统"
+                        "经济系统"
                     ]
                 },
                 {
@@ -3166,9 +2909,8 @@
                     "part_of_speech": "v.",
                     "meaning": "保护；防护",
                     "false_meanings": [
-                        "破坏",
-                        "伤害",
-                        "攻击"
+                        "破坏；毁坏",
+                        "伤害；损害"
                     ]
                 },
                 {
@@ -3179,8 +2921,7 @@
                     "meaning": "重要性",
                     "false_meanings": [
                         "普通",
-                        "平凡",
-                        "一般"
+                        "平凡"
                     ]
                 },
                 {
@@ -3190,9 +2931,8 @@
                     "part_of_speech": "n.",
                     "meaning": "标题；题目；名称",
                     "false_meanings": [
-                        "内容",
-                        "正文",
-                        "结尾"
+                        "内容；项目",
+                        "正文；正文"
                     ]
                 },
                 {
@@ -3203,8 +2943,7 @@
                     "meaning": "人",
                     "false_meanings": [
                         "动物",
-                        "植物",
-                        "机器"
+                        "植物"
                     ]
                 },
                 {
@@ -3215,8 +2954,7 @@
                     "meaning": "蚂蚁",
                     "false_meanings": [
                         "蜜蜂",
-                        "蝴蝶",
-                        "蜻蜓"
+                        "蝴蝶"
                     ]
                 },
                 {
@@ -3227,8 +2965,7 @@
                     "meaning": "有……的家乡",
                     "false_meanings": [
                         "离开家乡",
-                        "返回家乡",
-                        "寻找家乡"
+                        "返回家乡"
                     ],
                     "is_phrase": true
                 },
@@ -3239,9 +2976,8 @@
                     "part_of_speech": "n.",
                     "meaning": "幸福；快乐",
                     "false_meanings": [
-                        "悲伤",
-                        "痛苦",
-                        "忧郁"
+                        "悲伤；难过的",
+                        "痛苦；苦楚"
                     ]
                 },
                 {
@@ -3251,9 +2987,8 @@
                     "part_of_speech": "v.",
                     "meaning": "使失望；使破灭",
                     "false_meanings": [
-                        "使满意",
-                        "使高兴",
-                        "使激动"
+                        "使满意；使满意",
+                        "使高兴；使高兴"
                     ]
                 },
                 {
@@ -3263,9 +2998,8 @@
                     "part_of_speech": "n.",
                     "meaning": "蘑菇；香菌",
                     "false_meanings": [
-                        "白菜",
-                        "土豆",
-                        "番茄"
+                        "白菜；菜心",
+                        "土豆；马铃薯"
                     ]
                 },
                 {
@@ -3276,8 +3010,7 @@
                     "meaning": "吨",
                     "false_meanings": [
                         "千克",
-                        "克",
-                        "毫克"
+                        "克"
                     ]
                 },
                 {
@@ -3287,9 +3020,8 @@
                     "part_of_speech": "n.",
                     "meaning": "作用；职能；角色",
                     "false_meanings": [
-                        "背景",
-                        "场景",
-                        "道具"
+                        "背景；背景",
+                        "场景；场景"
                     ]
                 },
                 {
@@ -3300,8 +3032,7 @@
                     "meaning": "在……中发挥作用",
                     "false_meanings": [
                         "退出",
-                        "放弃",
-                        "忽视"
+                        "放弃"
                     ],
                     "is_phrase": true
                 },
@@ -3313,8 +3044,7 @@
                     "meaning": "豌豆",
                     "false_meanings": [
                         "土豆",
-                        "番茄",
-                        "白菜"
+                        "番茄"
                     ]
                 },
                 {
@@ -3325,8 +3055,7 @@
                     "meaning": "气候",
                     "false_meanings": [
                         "天气",
-                        "温度",
-                        "湿度"
+                        "温度"
                     ]
                 },
                 {
@@ -3336,9 +3065,8 @@
                     "part_of_speech": "n.",
                     "meaning": "大海；海洋",
                     "false_meanings": [
-                        "河流",
-                        "湖泊",
-                        "池塘"
+                        "河流；江河",
+                        "湖泊；湖水"
                     ]
                 },
                 {
@@ -3348,9 +3076,8 @@
                     "part_of_speech": "prep.",
                     "meaning": "除……之外；除了",
                     "false_meanings": [
-                        "包括",
-                        "加上",
-                        "以及"
+                        "包括；包含",
+                        "加上；加上"
                     ]
                 },
                 {
@@ -3360,9 +3087,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "极小的；微小的",
                     "false_meanings": [
-                        "巨大的",
-                        "庞大的",
-                        "宽广的"
+                        "巨大的；巨大的样子",
+                        "庞大的；庞大的样子"
                     ]
                 },
                 {
@@ -3372,9 +3098,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "精力充沛的；生机勃勃的",
                     "false_meanings": [
-                        "疲惫的",
-                        "无聊的",
-                        "安静的"
+                        "疲惫的；疲惫的样子",
+                        "无聊的；枯燥"
                     ]
                 },
                 {
@@ -3384,9 +3109,8 @@
                     "part_of_speech": "n.",
                     "meaning": "胡椒粉；菜椒",
                     "false_meanings": [
-                        "糖",
-                        "盐",
-                        "醋"
+                        "糖；砂糖",
+                        "盐；食盐"
                     ]
                 },
                 {
@@ -3396,9 +3120,8 @@
                     "part_of_speech": "v.",
                     "meaning": "切碎；剁碎",
                     "false_meanings": [
-                        "合并",
-                        "粘贴",
-                        "组装"
+                        "合并；联合",
+                        "粘贴；粘贴"
                     ],
                     "is_phrase": true
                 },
@@ -3409,9 +3132,8 @@
                     "part_of_speech": "v.",
                     "meaning": "（使）混合；融合；调配",
                     "false_meanings": [
-                        "分离",
-                        "分开",
-                        "隔离"
+                        "分离；分离",
+                        "分开；分离"
                     ]
                 },
                 {
@@ -3422,8 +3144,7 @@
                     "meaning": "烘培",
                     "false_meanings": [
                         "蒸煮",
-                        "油炸",
-                        "烧烤"
+                        "油炸"
                     ]
                 },
                 {
@@ -3433,9 +3154,8 @@
                     "part_of_speech": "n.",
                     "meaning": "烤箱；烤炉",
                     "false_meanings": [
-                        "冰箱",
-                        "微波炉",
-                        "洗碗机"
+                        "冰箱；冰柜",
+                        "微波炉；加热炉"
                     ]
                 },
                 {
@@ -3446,8 +3166,7 @@
                     "meaning": "将……倒入……",
                     "false_meanings": [
                         "从……倒出",
-                        "与……混合",
-                        "把……分开"
+                        "与……混合"
                     ],
                     "is_phrase": true
                 },
@@ -3459,8 +3178,7 @@
                     "meaning": "面粉",
                     "false_meanings": [
                         "糖粉",
-                        "盐",
-                        "味精"
+                        "盐"
                     ]
                 },
                 {
@@ -3470,9 +3188,8 @@
                     "part_of_speech": "v.",
                     "meaning": "煮沸；烧开",
                     "false_meanings": [
-                        "冷冻",
-                        "冷却",
-                        "降温"
+                        "冷冻；冷冻",
+                        "冷却；冷却"
                     ]
                 },
                 {
@@ -3483,8 +3200,7 @@
                     "meaning": "黄油",
                     "false_meanings": [
                         "牛奶",
-                        "奶酪",
-                        "酸奶"
+                        "奶酪"
                     ]
                 },
                 {
@@ -3494,9 +3210,8 @@
                     "part_of_speech": "n.",
                     "meaning": "奶酪；干酪",
                     "false_meanings": [
-                        "黄油",
-                        "牛奶",
-                        "酸奶"
+                        "黄油；黄油",
+                        "牛奶；奶"
                     ]
                 },
                 {
@@ -3507,8 +3222,7 @@
                     "meaning": "将……切成……",
                     "false_meanings": [
                         "将……组合成",
-                        "将……合并成",
-                        "将……变成"
+                        "将……合并成"
                     ],
                     "is_phrase": true
                 },
@@ -3519,9 +3233,8 @@
                     "part_of_speech": "n.",
                     "meaning": "一汤匙（的量）；餐匙；汤匙",
                     "false_meanings": [
-                        "茶匙",
-                        "叉子",
-                        "刀"
+                        "茶匙；茶匙",
+                        "叉子；餐叉"
                     ]
                 },
                 {
@@ -3531,9 +3244,8 @@
                     "part_of_speech": "v.",
                     "meaning": "捣烂；捣碎",
                     "false_meanings": [
-                        "切片",
-                        "切块",
-                        "切丝"
+                        "切片；切片",
+                        "切块；切块"
                     ]
                 },
                 {
@@ -3544,8 +3256,7 @@
                     "meaning": "土豆泥",
                     "false_meanings": [
                         "薯条",
-                        "薯片",
-                        "烤土豆"
+                        "薯片"
                     ],
                     "is_phrase": true
                 },
@@ -3556,9 +3267,8 @@
                     "part_of_speech": "v.",
                     "meaning": "翻炒；炒",
                     "false_meanings": [
-                        "蒸煮",
-                        "烘烤",
-                        "油炸"
+                        "蒸煮；蒸煮",
+                        "烘烤；烘烤"
                     ]
                 },
                 {
@@ -3569,8 +3279,7 @@
                     "meaning": "处理",
                     "false_meanings": [
                         "忽略",
-                        "放弃",
-                        "丢弃"
+                        "放弃"
                     ],
                     "is_phrase": true
                 },
@@ -3581,9 +3290,8 @@
                     "part_of_speech": "n.",
                     "meaning": "碗；钵；盆",
                     "false_meanings": [
-                        "盘子",
-                        "杯子",
-                        "勺子"
+                        "盘子；碟子",
+                        "杯子；杯"
                     ]
                 },
                 {
@@ -3593,9 +3301,8 @@
                     "part_of_speech": "v.",
                     "meaning": "加热；变热",
                     "false_meanings": [
-                        "冷却",
-                        "降温",
-                        "冷冻"
+                        "冷却；冷却",
+                        "降温；降温"
                     ]
                 },
                 {
@@ -3605,9 +3312,8 @@
                     "part_of_speech": "n.",
                     "meaning": "食用油；石油；燃油",
                     "false_meanings": [
-                        "水",
-                        "醋",
-                        "酒"
+                        "水；水流",
+                        "醋；米醋"
                     ]
                 },
                 {
@@ -3617,9 +3323,8 @@
                     "part_of_speech": "n.",
                     "meaning": "平底锅；烤盘",
                     "false_meanings": [
-                        "碗",
-                        "盘子",
-                        "杯子"
+                        "碗；饭碗",
+                        "盘子；碟子"
                     ]
                 },
                 {
@@ -3630,8 +3335,7 @@
                     "meaning": "将……放回",
                     "false_meanings": [
                         "将……拿走",
-                        "将……丢弃",
-                        "将……隐藏"
+                        "将……丢弃"
                     ],
                     "is_phrase": true
                 },
@@ -3643,8 +3347,7 @@
                     "meaning": "（使）……混合",
                     "false_meanings": [
                         "（使）……分离",
-                        "（使）……对立",
-                        "（使）……冲突"
+                        "（使）……对立"
                     ],
                     "is_phrase": true
                 },
@@ -3655,9 +3358,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "简单的；朴素的",
                     "false_meanings": [
-                        "复杂的",
-                        "困难的",
-                        "精致的"
+                        "复杂的；复杂的样子",
+                        "困难的；艰难的"
                     ]
                 },
                 {
@@ -3667,9 +3369,8 @@
                     "part_of_speech": "n.",
                     "meaning": "原料；成分",
                     "false_meanings": [
-                        "成品",
-                        "产品",
-                        "结果"
+                        "成品；成品",
+                        "产品；产品"
                     ]
                 },
                 {
@@ -3679,9 +3380,8 @@
                     "part_of_speech": "n. (pl.)",
                     "meaning": "用法说明；操作指南",
                     "false_meanings": [
-                        "结果",
-                        "答案",
-                        "解释"
+                        "结果；后果",
+                        "答案；解答"
                     ]
                 },
                 {
@@ -3692,8 +3392,7 @@
                     "meaning": "清蒸鱼",
                     "false_meanings": [
                         "烤鱼",
-                        "炸鱼",
-                        "煮鱼"
+                        "炸鱼"
                     ],
                     "is_phrase": true
                 },
@@ -3704,9 +3403,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "酸的；有酸味的",
                     "false_meanings": [
-                        "甜的",
-                        "咸的",
-                        "辣的"
+                        "甜的；甜的样子",
+                        "咸的；咸的样子"
                     ]
                 },
                 {
@@ -3717,8 +3415,7 @@
                     "meaning": "酸辣汤",
                     "false_meanings": [
                         "玉米汤",
-                        "番茄汤",
-                        "鸡蛋汤"
+                        "番茄汤"
                     ],
                     "is_phrase": true
                 },
@@ -3729,9 +3426,8 @@
                     "part_of_speech": "n.",
                     "meaning": "脏乱；凌乱",
                     "false_meanings": [
-                        "整洁",
-                        "干净",
-                        "整齐"
+                        "整洁；整洁",
+                        "干净；整洁"
                     ]
                 },
                 {
@@ -3741,9 +3437,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "漂亮的；美丽",
                     "false_meanings": [
-                        "丑陋的",
-                        "难看的",
-                        "普通的"
+                        "丑陋的；难看的",
+                        "难看的；难看的样子"
                     ]
                 },
                 {
@@ -3754,8 +3449,7 @@
                     "meaning": "圣诞节",
                     "false_meanings": [
                         "新年",
-                        "复活节",
-                        "感恩节"
+                        "复活节"
                     ],
                     "is_proper_noun": true
                 },
@@ -3766,9 +3460,8 @@
                     "part_of_speech": "n.",
                     "meaning": "烙饼；薄饼",
                     "false_meanings": [
-                        "面包",
-                        "蛋糕",
-                        "饼干"
+                        "面包；馒头",
+                        "蛋糕；甜点"
                     ]
                 },
                 {
@@ -3778,9 +3471,8 @@
                     "part_of_speech": "n.",
                     "meaning": "梦想；梦",
                     "false_meanings": [
-                        "现实",
-                        "事实",
-                        "真相"
+                        "现实；实际",
+                        "事实；事实"
                     ]
                 },
                 {
@@ -3790,9 +3482,8 @@
                     "part_of_speech": "n.",
                     "meaning": "（综合性）大学；高等学府",
                     "false_meanings": [
-                        "中学",
-                        "小学",
-                        "幼儿园"
+                        "中学；中学",
+                        "小学；小学"
                     ]
                 },
                 {
@@ -3803,8 +3494,7 @@
                     "meaning": "去划船",
                     "false_meanings": [
                         "去游泳",
-                        "去钓鱼",
-                        "去爬山"
+                        "去钓鱼"
                     ],
                     "is_phrase": true
                 },
@@ -3815,9 +3505,8 @@
                     "part_of_speech": "n.",
                     "meaning": "回忆；记忆",
                     "false_meanings": [
-                        "遗忘",
-                        "失忆",
-                        "忽略"
+                        "遗忘；遗忘",
+                        "失忆；失忆"
                     ]
                 },
                 {
@@ -3827,9 +3516,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "看得见的；可见的",
                     "false_meanings": [
-                        "看不见的",
-                        "隐藏的",
-                        "消失的"
+                        "看不见的；看不见的样子",
+                        "隐藏的；隐藏的样子"
                     ]
                 },
                 {
@@ -3839,9 +3527,8 @@
                     "part_of_speech": "prep.",
                     "meaning": "除……以外（还）；与……一起",
                     "false_meanings": [
-                        "没有",
-                        "除了",
-                        "不包括"
+                        "没有；缺少",
+                        "除了；除去"
                     ],
                     "is_phrase": true
                 },
@@ -3853,8 +3540,7 @@
                     "meaning": "南瓜",
                     "false_meanings": [
                         "西瓜",
-                        "冬瓜",
-                        "黄瓜"
+                        "冬瓜"
                     ]
                 },
                 {
@@ -3864,9 +3550,8 @@
                     "part_of_speech": "v.",
                     "meaning": "（使）活跃起来；热身；预热",
                     "false_meanings": [
-                        "冷却",
-                        "降温",
-                        "停止"
+                        "冷却；冷却",
+                        "降温；降温"
                     ],
                     "is_phrase": true
                 },
@@ -3877,9 +3562,8 @@
                     "part_of_speech": "n.",
                     "meaning": "肉桂皮；桂皮香料",
                     "false_meanings": [
-                        "胡椒",
-                        "花椒",
-                        "八角"
+                        "胡椒；胡椒",
+                        "花椒；花椒"
                     ]
                 },
                 {
@@ -3889,9 +3573,8 @@
                     "part_of_speech": "n.",
                     "meaning": "甜；芳芳；愉悦",
                     "false_meanings": [
-                        "酸",
-                        "苦",
-                        "辣"
+                        "酸；酸",
+                        "苦；苦"
                     ]
                 },
                 {
@@ -3901,9 +3584,8 @@
                     "part_of_speech": "n.",
                     "meaning": "学院；大学",
                     "false_meanings": [
-                        "中学",
-                        "小学",
-                        "幼儿园"
+                        "中学；中学",
+                        "小学；小学"
                     ]
                 },
                 {
@@ -3913,9 +3595,8 @@
                     "part_of_speech": "n.",
                     "meaning": "主人；东道主",
                     "false_meanings": [
-                        "客人",
-                        "访客",
-                        "观众"
+                        "客人；客",
+                        "访客；访客"
                     ]
                 },
                 {
@@ -3925,9 +3606,8 @@
                     "part_of_speech": "n.",
                     "meaning": "女主人；女房东",
                     "false_meanings": [
-                        "女客人",
-                        "女访客",
-                        "女观众"
+                        "女客人；女客人",
+                        "女访客；女访客"
                     ]
                 },
                 {
@@ -3937,9 +3617,8 @@
                     "part_of_speech": "n.",
                     "meaning": "食谱；烹饪法",
                     "false_meanings": [
-                        "菜单",
-                        "账单",
-                        "收据"
+                        "菜单；菜单",
+                        "账单；账单"
                     ]
                 },
                 {
@@ -3949,9 +3628,8 @@
                     "part_of_speech": "n.",
                     "meaning": "奶油；护肤霜",
                     "false_meanings": [
-                        "牛奶",
-                        "酸奶",
-                        "黄油"
+                        "牛奶；奶",
+                        "酸奶；酸奶"
                     ]
                 },
                 {
@@ -3961,9 +3639,8 @@
                     "part_of_speech": "n.",
                     "meaning": "糕饼酥皮；面包皮",
                     "false_meanings": [
-                        "馅料",
-                        "奶油",
-                        "糖霜"
+                        "馅料；馅料",
+                        "奶油；奶油"
                     ]
                 },
                 {
@@ -3973,9 +3650,8 @@
                     "part_of_speech": "n.",
                     "meaning": "混合物；结合体",
                     "false_meanings": [
-                        "单一物",
-                        "纯净物",
-                        "独立体"
+                        "单一物；单一物",
+                        "纯净物；纯净物"
                     ]
                 },
                 {
@@ -3985,9 +3661,8 @@
                     "part_of_speech": "adj. & pron.",
                     "meaning": "最小；最少",
                     "false_meanings": [
-                        "最大",
-                        "最多",
-                        "最高"
+                        "最大；最大",
+                        "最多；最多"
                     ]
                 },
                 {
@@ -3998,8 +3673,7 @@
                     "meaning": "至少",
                     "false_meanings": [
                         "最多",
-                        "大约",
-                        "几乎"
+                        "大约"
                     ],
                     "is_phrase": true
                 },
@@ -4010,9 +3684,8 @@
                     "part_of_speech": "n.",
                     "meaning": "诀窍；秘密",
                     "false_meanings": [
-                        "公开",
-                        "公布",
-                        "透露"
+                        "公开；公开",
+                        "公布；公布"
                     ]
                 },
                 {
@@ -4022,9 +3695,8 @@
                     "part_of_speech": "prep.",
                     "meaning": "按照；依照",
                     "false_meanings": [
-                        "违反",
-                        "反对",
-                        "忽视"
+                        "违反；违背",
+                        "反对；不同意"
                     ]
                 },
                 {
@@ -4034,9 +3706,8 @@
                     "part_of_speech": "adv. & conj.",
                     "meaning": "每当；在任何……的时候",
                     "false_meanings": [
-                        "从不",
-                        "很少",
-                        "偶尔"
+                        "从不；从来不",
+                        "很少；偶尔"
                     ]
                 },
                 {
@@ -4046,9 +3717,8 @@
                     "part_of_speech": "n.",
                     "meaning": "项目；条款",
                     "false_meanings": [
-                        "总体",
-                        "整体",
-                        "全部"
+                        "总体；总体",
+                        "整体；全体"
                     ]
                 },
                 {
@@ -4059,8 +3729,7 @@
                     "meaning": "意大利面条",
                     "false_meanings": [
                         "米饭",
-                        "面包",
-                        "饺子"
+                        "面包"
                     ]
                 },
                 {
@@ -4071,8 +3740,7 @@
                     "meaning": "勺子",
                     "false_meanings": [
                         "叉子",
-                        "刀",
-                        "筷子"
+                        "刀"
                     ]
                 },
                 {
@@ -4082,9 +3750,8 @@
                     "part_of_speech": "n.",
                     "meaning": "薄片；片",
                     "false_meanings": [
-                        "块",
-                        "团",
-                        "堆"
+                        "块；块",
+                        "团；团"
                     ]
                 },
                 {
@@ -4094,9 +3761,8 @@
                     "part_of_speech": "n.",
                     "meaning": "夫妻；情侣；两人",
                     "false_meanings": [
-                        "个人",
-                        "单身",
-                        "独居"
+                        "个人；个体",
+                        "单身；单身"
                     ]
                 },
                 {
@@ -4107,8 +3773,7 @@
                     "meaning": "岛",
                     "false_meanings": [
                         "大陆",
-                        "半岛",
-                        "海峡"
+                        "半岛"
                     ]
                 },
                 {
@@ -4119,8 +3784,7 @@
                     "meaning": "妻子",
                     "false_meanings": [
                         "丈夫",
-                        "儿子",
-                        "女儿"
+                        "儿子"
                     ]
                 },
                 {
@@ -4130,9 +3794,8 @@
                     "part_of_speech": "n.",
                     "meaning": "钱包；皮夹",
                     "false_meanings": [
-                        "背包",
-                        "手提包",
-                        "公文包"
+                        "背包；书包",
+                        "手提包；手提包"
                     ]
                 },
                 {
@@ -4142,9 +3805,8 @@
                     "part_of_speech": "n.",
                     "meaning": "客人；宾客",
                     "false_meanings": [
-                        "主人",
-                        "房东",
-                        "服务员"
+                        "主人；主人家",
+                        "房东；房东"
                     ]
                 },
                 {
@@ -4154,9 +3816,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "首要的；最重要的",
                     "false_meanings": [
-                        "次要的",
-                        "普通的",
-                        "一般的"
+                        "次要的；次要的样子",
+                        "普通的；一般的"
                     ]
                 },
                 {
@@ -4166,9 +3827,8 @@
                     "part_of_speech": "n.",
                     "meaning": "洗澡；浴缸",
                     "false_meanings": [
-                        "厨房",
-                        "卧室",
-                        "客厅"
+                        "厨房；烹饪间",
+                        "卧室；寝室"
                     ]
                 },
                 {
@@ -4178,9 +3838,8 @@
                     "part_of_speech": "v.",
                     "meaning": "想念；错过",
                     "false_meanings": [
-                        "遇见",
-                        "找到",
-                        "发现"
+                        "遇见；遇见",
+                        "找到；找到"
                     ]
                 },
                 {
@@ -4191,8 +3850,7 @@
                     "meaning": "对……感到厌倦",
                     "false_meanings": [
                         "对……感兴趣",
-                        "对……热爱",
-                        "对……着迷"
+                        "对……热爱"
                     ],
                     "is_phrase": true
                 },
@@ -4203,9 +3861,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "能够；有才能的",
                     "false_meanings": [
-                        "不能的",
-                        "无能的",
-                        "笨拙的"
+                        "不能的；不能的样子",
+                        "无能的；无能的样子"
                     ]
                 },
                 {
@@ -4215,9 +3872,8 @@
                     "part_of_speech": "v.",
                     "meaning": "粘贴；棍",
                     "false_meanings": [
-                        "分离",
-                        "拆开",
-                        "移除"
+                        "分离；分离",
+                        "拆开；拆开"
                     ]
                 },
                 {
@@ -4227,9 +3883,8 @@
                     "part_of_speech": "v.",
                     "meaning": "坚持；维持",
                     "false_meanings": [
-                        "放弃",
-                        "改变",
-                        "忽视"
+                        "放弃；舍弃",
+                        "改变；变化"
                     ],
                     "is_phrase": true
                 },
@@ -4240,9 +3895,8 @@
                     "part_of_speech": "n.",
                     "meaning": "决定；决议",
                     "false_meanings": [
-                        "犹豫",
-                        "迟疑",
-                        "放弃"
+                        "犹豫；迟疑",
+                        "迟疑；迟疑"
                     ]
                 },
                 {
@@ -4253,8 +3907,7 @@
                     "meaning": "与……有关系",
                     "false_meanings": [
                         "与……无关",
-                        "与……对立",
-                        "与……冲突"
+                        "与……对立"
                     ],
                     "is_phrase": true
                 },
@@ -4265,9 +3918,8 @@
                     "part_of_speech": "adv.",
                     "meaning": "也许；可能",
                     "false_meanings": [
-                        "肯定",
-                        "绝对",
-                        "一定"
+                        "肯定；确信",
+                        "绝对；必然"
                     ]
                 },
                 {
@@ -4278,8 +3930,7 @@
                     "meaning": "小目标",
                     "false_meanings": [
                         "大目标",
-                        "长期目标",
-                        "终极目标"
+                        "长期目标"
                     ],
                     "is_phrase": true
                 },
@@ -4290,9 +3941,8 @@
                     "part_of_speech": "v.",
                     "meaning": "达成；完成",
                     "false_meanings": [
-                        "失败",
-                        "放弃",
-                        "忽视"
+                        "失败；败绩",
+                        "放弃；舍弃"
                     ]
                 },
                 {
@@ -4302,9 +3952,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "身体的；物质的",
                     "false_meanings": [
-                        "精神的",
-                        "思想的",
-                        "心理的"
+                        "精神的；精神的样子",
+                        "思想的；想法"
                     ]
                 },
                 {
@@ -4315,8 +3964,7 @@
                     "meaning": "健康",
                     "false_meanings": [
                         "疾病",
-                        "病痛",
-                        "伤害"
+                        "病痛"
                     ]
                 },
                 {
@@ -4327,8 +3975,7 @@
                     "meaning": "健康地",
                     "false_meanings": [
                         "不健康地",
-                        "病态地",
-                        "虚弱地"
+                        "病态地"
                     ]
                 },
                 {
@@ -4338,9 +3985,8 @@
                     "part_of_speech": "v.",
                     "meaning": "开始学；开始从事",
                     "false_meanings": [
-                        "放弃",
-                        "停止",
-                        "结束"
+                        "放弃；舍弃",
+                        "停止；暂停"
                     ],
                     "is_phrase": true
                 },
@@ -4351,9 +3997,8 @@
                     "part_of_speech": "n.",
                     "meaning": "照相术；摄影",
                     "false_meanings": [
-                        "绘画",
-                        "雕塑",
-                        "书法"
+                        "绘画；绘画",
+                        "雕塑；雕塑"
                     ]
                 },
                 {
@@ -4363,9 +4008,8 @@
                     "part_of_speech": "n.",
                     "meaning": "自我改进；自我提高",
                     "false_meanings": [
-                        "自我放弃",
-                        "自我否定",
-                        "自我批评"
+                        "自我放弃；舍弃",
+                        "自我否定；自我否定"
                     ],
                     "is_phrase": true
                 },
@@ -4376,9 +4020,8 @@
                     "part_of_speech": "v.",
                     "meaning": "继续做；反复做",
                     "false_meanings": [
-                        "停止做",
-                        "放弃做",
-                        "忘记做"
+                        "停止做；暂停",
+                        "放弃做；舍弃"
                     ],
                     "is_phrase": true
                 },
@@ -4389,9 +4032,8 @@
                     "part_of_speech": "v.",
                     "meaning": "确保；保证",
                     "false_meanings": [
-                        "忽视",
-                        "忘记",
-                        "放弃"
+                        "忽视；无视",
+                        "忘记；遗忘"
                     ],
                     "is_phrase": true
                 },
@@ -4403,8 +4045,7 @@
                     "meaning": "尽最大努力",
                     "false_meanings": [
                         "放弃努力",
-                        "不在乎",
-                        "随便"
+                        "不在乎"
                     ],
                     "is_phrase": true
                 },
@@ -4415,9 +4056,8 @@
                     "part_of_speech": "n.",
                     "meaning": "文学；文学",
                     "false_meanings": [
-                        "数学",
-                        "物理",
-                        "化学"
+                        "数学；数学学科",
+                        "物理；物理学"
                     ]
                 },
                 {
@@ -4428,8 +4068,7 @@
                     "meaning": "运动员",
                     "false_meanings": [
                         "观众",
-                        "裁判",
-                        "教练"
+                        "裁判"
                     ]
                 },
                 {
@@ -4439,9 +4078,8 @@
                     "part_of_speech": "n.",
                     "meaning": "摄影师；拍照者",
                     "false_meanings": [
-                        "画家",
-                        "雕塑家",
-                        "作家"
+                        "画家；画师",
+                        "雕塑家；雕刻师"
                     ]
                 },
                 {
@@ -4451,9 +4089,8 @@
                     "part_of_speech": "n.",
                     "meaning": "画家；油漆匠",
                     "false_meanings": [
-                        "摄影师",
-                        "雕塑家",
-                        "作家"
+                        "摄影师；摄影师",
+                        "雕塑家；雕刻师"
                     ]
                 },
                 {
@@ -4464,8 +4101,7 @@
                     "meaning": "商人",
                     "false_meanings": [
                         "教师",
-                        "医生",
-                        "律师"
+                        "医生"
                     ]
                 },
                 {
@@ -4476,8 +4112,7 @@
                     "meaning": "女演员",
                     "false_meanings": [
                         "男演员",
-                        "导演",
-                        "编剧"
+                        "导演"
                     ]
                 },
                 {
@@ -4488,8 +4123,7 @@
                     "meaning": "律师",
                     "false_meanings": [
                         "医生",
-                        "教师",
-                        "会计"
+                        "教师"
                     ]
                 },
                 {
@@ -4499,9 +4133,8 @@
                     "part_of_speech": "n.",
                     "meaning": "法律；法规",
                     "false_meanings": [
-                        "道德",
-                        "习惯",
-                        "传统"
+                        "道德；道德",
+                        "习惯；惯例"
                     ]
                 },
                 {
@@ -4512,8 +4145,7 @@
                     "meaning": "感恩节",
                     "false_meanings": [
                         "圣诞节",
-                        "复活节",
-                        "新年"
+                        "复活节"
                     ],
                     "is_proper_noun": true
                 },
@@ -4525,8 +4157,7 @@
                     "meaning": "过桥米线",
                     "false_meanings": [
                         "兰州拉面",
-                        "刀削面",
-                        "炸酱面"
+                        "刀削面"
                     ],
                     "is_phrase": true
                 },
@@ -4537,9 +4168,8 @@
                     "part_of_speech": "pron.",
                     "meaning": "你自己；您自己",
                     "false_meanings": [
-                        "我自己",
-                        "他自己",
-                        "她自己"
+                        "我自己；我自己",
+                        "他自己；他自己"
                     ]
                 },
                 {
@@ -4549,9 +4179,8 @@
                     "part_of_speech": "n.",
                     "meaning": "工程师；技师",
                     "false_meanings": [
-                        "医生",
-                        "律师",
-                        "教师"
+                        "医生；大夫",
+                        "律师；律师"
                     ]
                 },
                 {
@@ -4561,9 +4190,8 @@
                     "part_of_speech": "n.",
                     "meaning": "时装业；时尚",
                     "false_meanings": [
-                        "音乐",
-                        "电影",
-                        "艺术"
+                        "音乐；乐曲",
+                        "电影；影片"
                     ]
                 },
                 {
@@ -4574,8 +4202,7 @@
                     "meaning": "设计师",
                     "false_meanings": [
                         "工程师",
-                        "建筑师",
-                        "画家"
+                        "建筑师"
                     ]
                 },
                 {
@@ -4585,9 +4212,8 @@
                     "part_of_speech": "n.",
                     "meaning": "导演；主任",
                     "false_meanings": [
-                        "演员",
-                        "编剧",
-                        "制片人"
+                        "演员；表演者",
+                        "编剧；编剧"
                     ]
                 },
                 {
@@ -4597,9 +4223,8 @@
                     "part_of_speech": "n.",
                     "meaning": "音乐家；乐师",
                     "false_meanings": [
-                        "画家",
-                        "作家",
-                        "演员"
+                        "画家；画师",
+                        "作家；作家"
                     ]
                 },
                 {
@@ -4610,8 +4235,7 @@
                     "meaning": "消防员",
                     "false_meanings": [
                         "警察",
-                        "医生",
-                        "教师"
+                        "医生"
                     ]
                 },
                 {
@@ -4622,8 +4246,7 @@
                     "meaning": "人工智能",
                     "false_meanings": [
                         "网络",
-                        "软件",
-                        "硬件"
+                        "软件"
                     ],
                     "is_proper_noun": true
                 },
@@ -4634,9 +4257,8 @@
                     "part_of_speech": "n.",
                     "meaning": "小品文；文章",
                     "false_meanings": [
-                        "小说",
-                        "诗歌",
-                        "戏剧"
+                        "小说；故事书",
+                        "诗歌；诗词"
                     ]
                 },
                 {
@@ -4646,9 +4268,8 @@
                     "part_of_speech": "n.",
                     "meaning": "经典作品；名著",
                     "false_meanings": [
-                        "普通作品",
-                        "流行作品",
-                        "现代作品"
+                        "普通作品；一般的",
+                        "流行作品；流行作品"
                     ]
                 },
                 {
@@ -4659,8 +4280,7 @@
                     "meaning": "自信的",
                     "false_meanings": [
                         "胆怯的",
-                        "害羞的",
-                        "紧张的"
+                        "害羞的"
                     ]
                 },
                 {
@@ -4671,8 +4291,7 @@
                     "meaning": "有组织的",
                     "false_meanings": [
                         "混乱的",
-                        "杂乱的",
-                        "无序的"
+                        "杂乱的"
                     ]
                 },
                 {
@@ -4682,9 +4301,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "可能的；合理的",
                     "false_meanings": [
-                        "不可能的",
-                        "绝对的",
-                        "确定的"
+                        "不可能的；不可能的样子",
+                        "绝对的；绝对的样子"
                     ]
                 },
                 {
@@ -4694,9 +4312,8 @@
                     "part_of_speech": "n.",
                     "meaning": "段；段落",
                     "false_meanings": [
-                        "句子",
-                        "词语",
-                        "字母"
+                        "句子；句子",
+                        "词语；词语"
                     ]
                 },
                 {
@@ -4706,9 +4323,8 @@
                     "part_of_speech": "v.",
                     "meaning": "介绍；引见",
                     "false_meanings": [
-                        "隐藏",
-                        "忽视",
-                        "忘记"
+                        "隐藏；隐藏",
+                        "忽视；无视"
                     ]
                 },
                 {
@@ -4718,9 +4334,8 @@
                     "part_of_speech": "n.",
                     "meaning": "意义；含义",
                     "false_meanings": [
-                        "外表",
-                        "形式",
-                        "结构"
+                        "外表；外表",
+                        "形式；形态"
                     ]
                 },
                 {
@@ -4730,9 +4345,8 @@
                     "part_of_speech": "v.",
                     "meaning": "未能（做到）；失败",
                     "false_meanings": [
-                        "成功",
-                        "达成",
-                        "完成"
+                        "成功；成就",
+                        "达成；达成"
                     ]
                 },
                 {
@@ -4742,9 +4356,8 @@
                     "part_of_speech": "adv.",
                     "meaning": "乐观的；积极的",
                     "false_meanings": [
-                        "落后",
-                        "退缩",
-                        "停滞"
+                        "落后；落后",
+                        "退缩；退缩"
                     ]
                 },
                 {
@@ -4755,8 +4368,7 @@
                     "meaning": "把……扑灭",
                     "false_meanings": [
                         "点燃",
-                        "引发",
-                        "开始"
+                        "引发"
                     ],
                     "is_phrase": true
                 },
@@ -4767,9 +4379,8 @@
                     "part_of_speech": "v.",
                     "meaning": "设计；花纹",
                     "false_meanings": [
-                        "破坏",
-                        "拆除",
-                        "毁坏"
+                        "破坏；毁坏",
+                        "拆除；拆掉"
                     ]
                 },
                 {
@@ -4780,8 +4391,7 @@
                     "meaning": "桥",
                     "false_meanings": [
                         "隧道",
-                        "公路",
-                        "铁路"
+                        "公路"
                     ]
                 },
                 {
@@ -4791,9 +4401,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "最后的；最终的",
                     "false_meanings": [
-                        "最初的",
-                        "中间的",
-                        "开始的"
+                        "最初的；最初的样子",
+                        "中间的；中央"
                     ]
                 },
                 {
@@ -4803,9 +4412,8 @@
                     "part_of_speech": "n.",
                     "meaning": "信心；信任",
                     "false_meanings": [
-                        "怀疑",
-                        "担忧",
-                        "恐惧"
+                        "怀疑；质疑",
+                        "担忧；担忧"
                     ]
                 },
                 {
@@ -4815,9 +4423,8 @@
                     "part_of_speech": "v.",
                     "meaning": "即将结束；即将完成",
                     "false_meanings": [
-                        "刚刚开始",
-                        "正在进行",
-                        "持续发展"
+                        "刚刚开始；刚刚开始",
+                        "正在进行；正在进行"
                     ],
                     "is_phrase": true
                 },
@@ -4828,9 +4435,8 @@
                     "part_of_speech": "v.",
                     "meaning": "（使）形成；组成",
                     "false_meanings": [
-                        "（使）分离",
-                        "（使）消失",
-                        "（使）破坏"
+                        "（使）分离；（使）分离",
+                        "（使）消失；（使）消失"
                     ]
                 },
                 {
@@ -4841,8 +4447,7 @@
                     "meaning": "俯卧撑",
                     "false_meanings": [
                         "仰卧起坐",
-                        "跳绳",
-                        "跑步"
+                        "跳绳"
                     ],
                     "is_phrase": true
                 },
@@ -4853,9 +4458,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "精力充沛的；充满活力的",
                     "false_meanings": [
-                        "疲惫的",
-                        "无力的",
-                        "懒散的"
+                        "疲惫的；疲惫的样子",
+                        "无力的；无力的样子"
                     ]
                 },
                 {
@@ -4866,8 +4470,7 @@
                     "meaning": "最后但同等重要的",
                     "false_meanings": [
                         "首先",
-                        "其次",
-                        "然后"
+                        "其次"
                     ],
                     "is_phrase": true
                 },
@@ -4879,8 +4482,7 @@
                     "meaning": "贾森",
                     "false_meanings": [
                         "迈克",
-                        "汤姆",
-                        "彼得"
+                        "汤姆"
                     ],
                     "is_proper_noun": true
                 },
@@ -4892,8 +4494,7 @@
                     "meaning": "蒂娜",
                     "false_meanings": [
                         "玛丽",
-                        "露西",
-                        "安娜"
+                        "露西"
                     ],
                     "is_proper_noun": true
                 },
@@ -4904,9 +4505,8 @@
                     "part_of_speech": "n.",
                     "meaning": "预测；预言",
                     "false_meanings": [
-                        "回忆",
-                        "记录",
-                        "历史"
+                        "回忆；记忆",
+                        "记录；记录"
                     ]
                 },
                 {
@@ -4916,9 +4516,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "外围的；外表的",
                     "false_meanings": [
-                        "内部的",
-                        "中心的",
-                        "核心的"
+                        "内部的；内部的样子",
+                        "中心的；中心的样子"
                     ]
                 },
                 {
@@ -4928,9 +4527,8 @@
                     "part_of_speech": "n.",
                     "meaning": "太空；外层空间",
                     "false_meanings": [
-                        "地球",
-                        "海洋",
-                        "陆地"
+                        "地球；球类",
+                        "海洋；大海"
                     ],
                     "is_phrase": true
                 },
@@ -4941,9 +4539,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "更差的；更坏的",
                     "false_meanings": [
-                        "更好的",
-                        "最好的",
-                        "优秀的"
+                        "更好的；更好的样子",
+                        "最好的；最好的样子"
                     ]
                 },
                 {
@@ -4953,9 +4550,8 @@
                     "part_of_speech": "v.",
                     "meaning": "接替；接管；接收",
                     "false_meanings": [
-                        "放弃",
-                        "转让",
-                        "退出"
+                        "放弃；舍弃",
+                        "转让；转让"
                     ],
                     "is_phrase": true
                 },
@@ -4967,8 +4563,7 @@
                     "meaning": "科幻小说（或影片等）",
                     "false_meanings": [
                         "纪录片",
-                        "爱情片",
-                        "动作片"
+                        "爱情片"
                     ],
                     "is_phrase": true
                 },
@@ -4979,9 +4574,8 @@
                     "part_of_speech": "n.",
                     "meaning": "票；券",
                     "false_meanings": [
-                        "卡片",
-                        "证件",
-                        "文件"
+                        "卡片；卡片",
+                        "证件；证件"
                     ]
                 },
                 {
@@ -4991,9 +4585,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "乐观的；积极的",
                     "false_meanings": [
-                        "悲观的",
-                        "消极的",
-                        "负面的"
+                        "悲观的；悲观的样子",
+                        "消极的；消极的样子"
                     ]
                 },
                 {
@@ -5003,9 +4596,8 @@
                     "part_of_speech": "adv. & conj.",
                     "meaning": "到处；所有地方",
                     "false_meanings": [
-                        "某处",
-                        "这里",
-                        "那里"
+                        "某处；某处",
+                        "这里；这里"
                     ]
                 },
                 {
@@ -5016,8 +4608,7 @@
                     "meaning": "机器人学",
                     "false_meanings": [
                         "物理学",
-                        "化学",
-                        "生物学"
+                        "化学"
                     ]
                 },
                 {
@@ -5027,9 +4618,8 @@
                     "part_of_speech": "n.",
                     "meaning": "行业；工业",
                     "false_meanings": [
-                        "农业",
-                        "渔业",
-                        "林业"
+                        "农业；农业",
+                        "渔业；渔业"
                     ]
                 },
                 {
@@ -5039,9 +4629,8 @@
                     "part_of_speech": "n.",
                     "meaning": "服务；公共服务",
                     "false_meanings": [
-                        "产品",
-                        "商品",
-                        "货物"
+                        "产品；产品",
+                        "商品；商品"
                     ]
                 },
                 {
@@ -5051,9 +4640,8 @@
                     "part_of_speech": "n.",
                     "meaning": "灾难；不幸",
                     "false_meanings": [
-                        "幸运",
-                        "成功",
-                        "胜利"
+                        "幸运；幸运",
+                        "成功；成就"
                     ]
                 },
                 {
@@ -5063,9 +4651,8 @@
                     "part_of_speech": "n.",
                     "meaning": "突发事件；紧急情况",
                     "false_meanings": [
-                        "日常事务",
-                        "普通事件",
-                        "常规情况"
+                        "日常事务；日常事务",
+                        "普通事件；一般的"
                     ]
                 },
                 {
@@ -5075,9 +4662,8 @@
                     "part_of_speech": "v.",
                     "meaning": "消失；不见",
                     "false_meanings": [
-                        "出现",
-                        "显现",
-                        "存在"
+                        "出现；出现",
+                        "显现；显现"
                     ]
                 },
                 {
@@ -5088,8 +4674,7 @@
                     "meaning": "挑战性的",
                     "false_meanings": [
                         "简单的",
-                        "容易的",
-                        "轻松的"
+                        "容易的"
                     ]
                 },
                 {
@@ -5099,9 +4684,8 @@
                     "part_of_speech": "n.",
                     "meaning": "飞行员；领航员",
                     "false_meanings": [
-                        "乘客",
-                        "空姐",
-                        "机械师"
+                        "乘客；乘客",
+                        "空姐；空姐"
                     ]
                 },
                 {
@@ -5111,9 +4695,8 @@
                     "part_of_speech": "n.",
                     "meaning": "专家；行家",
                     "false_meanings": [
-                        "新手",
-                        "初学者",
-                        "业余爱好者"
+                        "新手；初学者",
+                        "初学者；初学者"
                     ]
                 },
                 {
@@ -5123,9 +4706,8 @@
                     "part_of_speech": "v.",
                     "meaning": "代替；取代",
                     "false_meanings": [
-                        "保留",
-                        "维持",
-                        "保持"
+                        "保留；保留",
+                        "维持；保持"
                     ]
                 },
                 {
@@ -5136,8 +4718,7 @@
                     "meaning": "创造力",
                     "false_meanings": [
                         "模仿力",
-                        "复制力",
-                        "记忆力"
+                        "复制力"
                     ]
                 },
                 {
@@ -5147,9 +4728,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "情感的；情绪的",
                     "false_meanings": [
-                        "理性的",
-                        "逻辑的",
-                        "冷静的"
+                        "理性的；理性的样子",
+                        "逻辑的；逻辑的样子"
                     ]
                 },
                 {
@@ -5159,9 +4739,8 @@
                     "part_of_speech": "n.",
                     "meaning": "智力；智慧",
                     "false_meanings": [
-                        "愚蠢",
-                        "无知",
-                        "笨拙"
+                        "愚蠢；笨拙的",
+                        "无知；无知"
                     ]
                 },
                 {
@@ -5172,8 +4751,7 @@
                     "meaning": "情绪智力",
                     "false_meanings": [
                         "智商",
-                        "学历",
-                        "经验"
+                        "学历"
                     ],
                     "is_phrase": true
                 },
@@ -5184,9 +4762,8 @@
                     "part_of_speech": "v.",
                     "meaning": "提到；写到",
                     "false_meanings": [
-                        "忽略",
-                        "忘记",
-                        "隐藏"
+                        "忽略；疏忽",
+                        "忘记；遗忘"
                     ]
                 },
                 {
@@ -5197,8 +4774,7 @@
                     "meaning": "冰箱",
                     "false_meanings": [
                         "洗衣机",
-                        "微波炉",
-                        "烤箱"
+                        "微波炉"
                     ]
                 },
                 {
@@ -5208,9 +4784,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "低的；矮的；底部",
                     "false_meanings": [
-                        "高的",
-                        "顶部",
-                        "上面的"
+                        "高的；高的样子",
+                        "顶部；顶部"
                     ]
                 },
                 {
@@ -5220,9 +4795,8 @@
                     "part_of_speech": "v.",
                     "meaning": "即将用尽；快用完",
                     "false_meanings": [
-                        "充足",
-                        "富余",
-                        "剩余"
+                        "充足；充足",
+                        "富余；富余"
                     ],
                     "is_phrase": true
                 },
@@ -5233,9 +4807,8 @@
                     "part_of_speech": "v.",
                     "meaning": "接受；相信",
                     "false_meanings": [
-                        "拒绝",
-                        "否认",
-                        "反对"
+                        "拒绝；否定",
+                        "否认；否认"
                     ]
                 },
                 {
@@ -5245,9 +4818,8 @@
                     "part_of_speech": "v.",
                     "meaning": "影响；对……起作用",
                     "false_meanings": [
-                        "忽略",
-                        "忽视",
-                        "无视"
+                        "忽略；疏忽",
+                        "忽视；无视"
                     ]
                 },
                 {
@@ -5257,9 +4829,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "创造性的；创作的",
                     "false_meanings": [
-                        "模仿的",
-                        "复制的",
-                        "抄袭的"
+                        "模仿的；模仿的样子",
+                        "复制的；复制的样子"
                     ]
                 },
                 {
@@ -5270,8 +4841,7 @@
                     "meaning": "不可能的",
                     "false_meanings": [
                         "可能的",
-                        "容易的",
-                        "简单的"
+                        "容易的"
                     ]
                 },
                 {
@@ -5281,9 +4851,8 @@
                     "part_of_speech": "n.",
                     "meaning": "素质；质量；品质",
                     "false_meanings": [
-                        "数量",
-                        "重量",
-                        "体积"
+                        "数量；数目",
+                        "重量；分量"
                     ]
                 },
                 {
@@ -5293,9 +4862,8 @@
                     "part_of_speech": "v.",
                     "meaning": "增强；发展；开发",
                     "false_meanings": [
-                        "削弱",
-                        "衰退",
-                        "减少"
+                        "削弱；削弱",
+                        "衰退；衰退"
                     ]
                 },
                 {
@@ -5305,9 +4873,8 @@
                     "part_of_speech": "n.",
                     "meaning": "德语；德国人",
                     "false_meanings": [
-                        "法语",
-                        "英语",
-                        "日语"
+                        "法语；法语",
+                        "英语；英语"
                     ]
                 },
                 {
@@ -5317,9 +4884,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "很有用的；宝贵的",
                     "false_meanings": [
-                        "无用的",
-                        "廉价的",
-                        "普通的"
+                        "无用的；无益的",
+                        "廉价的；廉价的样子"
                     ]
                 },
                 {
@@ -5329,9 +4895,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "公共的；公众的",
                     "false_meanings": [
-                        "私人的",
-                        "个人的",
-                        "秘密的"
+                        "私人的；私有",
+                        "个人的；个体"
                     ]
                 },
                 {
@@ -5341,9 +4906,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "医学的；医疗的",
                     "false_meanings": [
-                        "法律的",
-                        "教育的",
-                        "商业的"
+                        "法律的；法律的样子",
+                        "教育的；教育的样子"
                     ]
                 },
                 {
@@ -5353,9 +4917,8 @@
                     "part_of_speech": "n.",
                     "meaning": "挑战；质疑",
                     "false_meanings": [
-                        "放弃",
-                        "退缩",
-                        "逃避"
+                        "放弃；舍弃",
+                        "退缩；退缩"
                     ]
                 },
                 {
@@ -5366,8 +4929,7 @@
                     "meaning": "癌症",
                     "false_meanings": [
                         "感冒",
-                        "发烧",
-                        "头痛"
+                        "发烧"
                     ]
                 },
                 {
@@ -5377,9 +4939,8 @@
                     "part_of_speech": "n.",
                     "meaning": "音乐会；演奏会",
                     "false_meanings": [
-                        "电影院",
-                        "剧院",
-                        "体育馆"
+                        "电影院；电影院",
+                        "剧院；剧院"
                     ]
                 },
                 {
@@ -5389,9 +4950,8 @@
                     "part_of_speech": "n.",
                     "meaning": "现金；金钱；兑现",
                     "false_meanings": [
-                        "信用卡",
-                        "支票",
-                        "借条"
+                        "信用卡；信用卡",
+                        "支票；支票"
                     ]
                 },
                 {
@@ -5401,9 +4961,8 @@
                     "part_of_speech": "n.",
                     "meaning": "研究者；探索者",
                     "false_meanings": [
-                        "学生",
-                        "教师",
-                        "工人"
+                        "学生；学员",
+                        "教师；教师"
                     ]
                 },
                 {
@@ -5413,9 +4972,8 @@
                     "part_of_speech": "n. & v.",
                     "meaning": "研究；调查",
                     "false_meanings": [
-                        "忽略",
-                        "放弃",
-                        "忘记"
+                        "忽略；疏忽",
+                        "放弃；舍弃"
                     ]
                 },
                 {
@@ -5426,8 +4984,7 @@
                     "meaning": "未来学家",
                     "false_meanings": [
                         "历史学家",
-                        "考古学家",
-                        "社会学家"
+                        "考古学家"
                     ]
                 },
                 {
@@ -5437,9 +4994,8 @@
                     "part_of_speech": "n.",
                     "meaning": "交通；运输",
                     "false_meanings": [
-                        "建筑",
-                        "工厂",
-                        "商店"
+                        "建筑；建筑物",
+                        "工厂；厂房"
                     ]
                 },
                 {
@@ -5449,9 +5005,8 @@
                     "part_of_speech": "n.",
                     "meaning": "科技；工艺",
                     "false_meanings": [
-                        "艺术",
-                        "文学",
-                        "音乐"
+                        "艺术；美术",
+                        "文学；文学"
                     ]
                 },
                 {
@@ -5461,9 +5016,8 @@
                     "part_of_speech": "n.",
                     "meaning": "视频；录像系统",
                     "false_meanings": [
-                        "音频",
-                        "图片",
-                        "文字"
+                        "音频；音频",
+                        "图片；图片"
                     ]
                 },
                 {
@@ -5473,9 +5027,8 @@
                     "part_of_speech": "n.",
                     "meaning": "交通运输系统；旅行方式",
                     "false_meanings": [
-                        "建筑",
-                        "通讯",
-                        "娱乐"
+                        "建筑；建筑物",
+                        "通讯；通讯"
                     ]
                 },
                 {
@@ -5486,8 +5039,7 @@
                     "meaning": "系统",
                     "false_meanings": [
                         "个体",
-                        "单元",
-                        "部分"
+                        "单元"
                     ]
                 },
                 {
@@ -5497,9 +5049,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "效率高的；有功效的",
                     "false_meanings": [
-                        "低效的",
-                        "无用的",
-                        "浪费的"
+                        "低效的；低效的样子",
+                        "无用的；无益的"
                     ]
                 },
                 {
@@ -5510,8 +5061,7 @@
                     "meaning": "教育",
                     "false_meanings": [
                         "娱乐",
-                        "商业",
-                        "工业"
+                        "商业"
                     ]
                 },
                 {
@@ -5521,9 +5071,8 @@
                     "part_of_speech": "n.",
                     "meaning": "时长；长度",
                     "false_meanings": [
-                        "宽度",
-                        "高度",
-                        "深度"
+                        "宽度；宽窄",
+                        "高度；高低"
                     ]
                 },
                 {
@@ -5533,9 +5082,8 @@
                     "part_of_speech": "n.",
                     "meaning": "话题；题目；标题",
                     "false_meanings": [
-                        "答案",
-                        "结论",
-                        "结果"
+                        "答案；解答",
+                        "结论；结果"
                     ]
                 },
                 {
@@ -5545,9 +5093,8 @@
                     "part_of_speech": "n.",
                     "meaning": "搭档；同伴",
                     "false_meanings": [
-                        "对手",
-                        "敌人",
-                        "陌生人"
+                        "对手；对手",
+                        "敌人；对手"
                     ]
                 },
                 {
@@ -5557,9 +5104,8 @@
                     "part_of_speech": "modal v.",
                     "meaning": "将要；……好吗",
                     "false_meanings": [
-                        "不会",
-                        "不能",
-                        "可能"
+                        "不会；不会",
+                        "不能；不能"
                     ]
                 },
                 {
@@ -5569,9 +5115,8 @@
                     "part_of_speech": "v.",
                     "meaning": "及格；通过",
                     "false_meanings": [
-                        "失败",
-                        "落后",
-                        "退出"
+                        "失败；败绩",
+                        "落后；落后"
                     ]
                 },
                 {
@@ -5581,9 +5126,8 @@
                     "part_of_speech": "n.",
                     "meaning": "优胜者；成功者",
                     "false_meanings": [
-                        "失败者",
-                        "落后者",
-                        "普通人"
+                        "失败者；失败者",
+                        "落后者；落后者"
                     ]
                 },
                 {
@@ -5593,9 +5137,8 @@
                     "part_of_speech": "n.",
                     "meaning": "药物；疗法",
                     "false_meanings": [
-                        "疾病",
-                        "症状",
-                        "病因"
+                        "疾病；病症",
+                        "症状；症状"
                     ]
                 },
                 {
@@ -5605,9 +5148,8 @@
                     "part_of_speech": "n.",
                     "meaning": "表达；交流",
                     "false_meanings": [
-                        "沉默",
-                        "隔离",
-                        "孤立"
+                        "沉默；静默",
+                        "隔离；分隔"
                     ]
                 },
                 {
@@ -5618,8 +5160,7 @@
                     "meaning": "面对面",
                     "false_meanings": [
                         "背对背",
-                        "遥远",
-                        "隔着"
+                        "遥远"
                     ],
                     "is_phrase": true
                 },
@@ -5630,9 +5171,8 @@
                     "part_of_speech": "n.",
                     "meaning": "（手机）短信息；短信",
                     "false_meanings": [
-                        "电话",
-                        "邮件",
-                        "传真"
+                        "电话；通话",
+                        "邮件；邮件"
                     ],
                     "is_phrase": true
                 },
@@ -5643,9 +5183,8 @@
                     "part_of_speech": "n.",
                     "meaning": "手势；迹象；标志",
                     "false_meanings": [
-                        "声音",
-                        "语言",
-                        "文字"
+                        "声音；响声",
+                        "语言；语言"
                     ]
                 },
                 {
@@ -5655,9 +5194,8 @@
                     "part_of_speech": "n.",
                     "meaning": "说话者；发言者",
                     "false_meanings": [
-                        "听众",
-                        "观众",
-                        "读者"
+                        "听众；听众",
+                        "观众；看客"
                     ]
                 },
                 {
@@ -5667,9 +5205,8 @@
                     "part_of_speech": "n.",
                     "meaning": "排演；排练",
                     "false_meanings": [
-                        "表演",
-                        "演出",
-                        "直播"
+                        "表演；演出",
+                        "演出；表演"
                     ]
                 },
                 {
@@ -5680,8 +5217,7 @@
                     "meaning": "领某人参观",
                     "false_meanings": [
                         "让某人离开",
-                        "把某人赶走",
-                        "禁止某人进入"
+                        "把某人赶走"
                     ],
                     "is_phrase": true
                 },
@@ -5693,8 +5229,7 @@
                     "meaning": "听者",
                     "false_meanings": [
                         "说者",
-                        "演讲者",
-                        "发言人"
+                        "演讲者"
                     ]
                 },
                 {
@@ -5704,9 +5239,8 @@
                     "part_of_speech": "n.",
                     "meaning": "观点；重点",
                     "false_meanings": [
-                        "问题",
-                        "困难",
-                        "障碍"
+                        "问题；疑问",
+                        "困难；艰难的"
                     ]
                 },
                 {
@@ -5716,9 +5250,8 @@
                     "part_of_speech": "adv.",
                     "meaning": "想必；安定",
                     "false_meanings": [
-                        "可能",
-                        "或许",
-                        "大概"
+                        "可能；也许",
+                        "或许；或许"
                     ]
                 },
                 {
@@ -5728,9 +5261,8 @@
                     "part_of_speech": "v.",
                     "meaning": "持续；继续做",
                     "false_meanings": [
-                        "停止",
-                        "结束",
-                        "放弃"
+                        "停止；暂停",
+                        "结束；终止"
                     ]
                 },
                 {
@@ -5740,9 +5272,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "不礼貌的；粗鲁的",
                     "false_meanings": [
-                        "礼貌的",
-                        "友好的",
-                        "尊重的"
+                        "礼貌的；礼貌的样子",
+                        "友好的；友好的样子"
                     ]
                 },
                 {
@@ -5752,9 +5283,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "个人的；私人的",
                     "false_meanings": [
-                        "公共的",
-                        "公众的",
-                        "集体的"
+                        "公共的；公共的样子",
+                        "公众的；公众的样子"
                     ]
                 },
                 {
@@ -5765,8 +5295,7 @@
                     "meaning": "与某人争论",
                     "false_meanings": [
                         "与某人合作",
-                        "与某人交流",
-                        "与某人玩耍"
+                        "与某人交流"
                     ],
                     "is_phrase": true
                 },
@@ -5778,8 +5307,7 @@
                     "meaning": "换话题（别的事）",
                     "false_meanings": [
                         "继续讨论",
-                        "深入讨论",
-                        "重复讨论"
+                        "深入讨论"
                     ],
                     "is_phrase": true
                 },
@@ -5791,8 +5319,7 @@
                     "meaning": "真诚的",
                     "false_meanings": [
                         "虚伪的",
-                        "做作的",
-                        "假装的"
+                        "做作的"
                     ]
                 },
                 {
@@ -5802,9 +5329,8 @@
                     "part_of_speech": "v.",
                     "meaning": "查明；弄清（情况）",
                     "false_meanings": [
-                        "忽略",
-                        "忽视",
-                        "放弃"
+                        "忽略；疏忽",
+                        "忽视；无视"
                     ],
                     "is_phrase": true
                 },
@@ -5815,9 +5341,8 @@
                     "part_of_speech": "v.",
                     "meaning": "付费；交纳；交织",
                     "false_meanings": [
-                        "借",
-                        "欠",
-                        "拿"
+                        "借；租用",
+                        "欠；欠"
                     ]
                 },
                 {
@@ -5827,9 +5352,8 @@
                     "part_of_speech": "v.",
                     "meaning": "注意；关注",
                     "false_meanings": [
-                        "忽视",
-                        "忽略",
-                        "无视"
+                        "忽视；无视",
+                        "忽略；疏忽"
                     ],
                     "is_phrase": true
                 },
@@ -5840,9 +5364,8 @@
                     "part_of_speech": "v.",
                     "meaning": "行为自然；不做作",
                     "false_meanings": [
-                        "假装",
-                        "伪装",
-                        "掩饰"
+                        "假装；假装",
+                        "伪装；伪装"
                     ],
                     "is_phrase": true
                 },
@@ -5853,9 +5376,8 @@
                     "part_of_speech": "v.",
                     "meaning": "提供；主动提出",
                     "false_meanings": [
-                        "拒绝",
-                        "隐藏",
-                        "保留"
+                        "拒绝；否定",
+                        "隐藏；隐藏"
                     ]
                 },
                 {
@@ -5866,8 +5388,7 @@
                     "meaning": "合理的",
                     "false_meanings": [
                         "不合理的",
-                        "荒谬的",
-                        "过分的"
+                        "荒谬的"
                     ]
                 },
                 {
@@ -5877,9 +5398,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "社会的；社交的",
                     "false_meanings": [
-                        "个人的",
-                        "私人的",
-                        "独立的"
+                        "个人的；个体",
+                        "私人的；私有"
                     ]
                 },
                 {
@@ -5890,8 +5410,7 @@
                     "meaning": "媒介",
                     "false_meanings": [
                         "工具",
-                        "机器",
-                        "设备"
+                        "机器"
                     ]
                 },
                 {
@@ -5902,8 +5421,7 @@
                     "meaning": "社交媒体",
                     "false_meanings": [
                         "传统媒体",
-                        "纸质媒体",
-                        "电视媒体"
+                        "纸质媒体"
                     ],
                     "is_phrase": true
                 },
@@ -5914,9 +5432,8 @@
                     "part_of_speech": "n. & v.",
                     "meaning": "信任；相信",
                     "false_meanings": [
-                        "怀疑",
-                        "不信",
-                        "猜疑"
+                        "怀疑；质疑",
+                        "不信；不信"
                     ]
                 },
                 {
@@ -5926,9 +5443,8 @@
                     "part_of_speech": "v.",
                     "meaning": "（使）远离；避免……",
                     "false_meanings": [
-                        "靠近",
-                        "接近",
-                        "接触"
+                        "靠近；靠近",
+                        "接近；接近"
                     ],
                     "is_phrase": true
                 },
@@ -5939,9 +5455,8 @@
                     "part_of_speech": "n.",
                     "meaning": "误解；误会",
                     "false_meanings": [
-                        "理解",
-                        "明白",
-                        "清楚"
+                        "理解；领会",
+                        "明白；懂得"
                     ]
                 },
                 {
@@ -5951,9 +5466,8 @@
                     "part_of_speech": "n.",
                     "meaning": "公开活动；重要事情",
                     "false_meanings": [
-                        "日常事务",
-                        "普通事情",
-                        "小事"
+                        "日常事务；日常事务",
+                        "普通事情；一般的"
                     ]
                 },
                 {
@@ -5963,9 +5477,8 @@
                     "part_of_speech": "v.",
                     "meaning": "发生；进行",
                     "false_meanings": [
-                        "取消",
-                        "停止",
-                        "暂停"
+                        "取消；取消",
+                        "停止；暂停"
                     ],
                     "is_phrase": true
                 },
@@ -5976,9 +5489,8 @@
                     "part_of_speech": "n.",
                     "meaning": "费用；价钱；代价",
                     "false_meanings": [
-                        "利润",
-                        "收入",
-                        "工资"
+                        "利润；利润",
+                        "收入；收入"
                     ]
                 },
                 {
@@ -5988,9 +5500,8 @@
                     "part_of_speech": "n.",
                     "meaning": "机会；时机",
                     "false_meanings": [
-                        "困难",
-                        "障碍",
-                        "问题"
+                        "困难；艰难的",
+                        "障碍；阻碍"
                     ]
                 },
                 {
@@ -6000,9 +5511,8 @@
                     "part_of_speech": "v.",
                     "meaning": "对……有用；使受益",
                     "false_meanings": [
-                        "伤害",
-                        "损害",
-                        "破坏"
+                        "伤害；损害",
+                        "损害；损害"
                     ]
                 },
                 {
@@ -6013,8 +5523,7 @@
                     "meaning": "从……获益",
                     "false_meanings": [
                         "从……受损",
-                        "因……受害",
-                        "被……伤害"
+                        "因……受害"
                     ],
                     "is_phrase": true
                 },
@@ -6025,9 +5534,8 @@
                     "part_of_speech": "n. & v.",
                     "meaning": "回答；回复",
                     "false_meanings": [
-                        "提问",
-                        "询问",
-                        "质问"
+                        "提问；发问",
+                        "询问；追问"
                     ]
                 },
                 {
@@ -6037,9 +5545,8 @@
                     "part_of_speech": "n.",
                     "meaning": "荣幸；尊敬",
                     "false_meanings": [
-                        "耻辱",
-                        "侮辱",
-                        "批评"
+                        "耻辱；耻辱",
+                        "侮辱；侮辱"
                     ]
                 },
                 {
@@ -6049,9 +5556,8 @@
                     "part_of_speech": "n.",
                     "meaning": "句子；判决",
                     "false_meanings": [
-                        "单词",
-                        "字母",
-                        "符号"
+                        "单词；单词",
+                        "字母；字母"
                     ]
                 },
                 {
@@ -6061,9 +5567,8 @@
                     "part_of_speech": "n.",
                     "meaning": "日期；日子；约会",
                     "false_meanings": [
-                        "时间",
-                        "小时",
-                        "分钟"
+                        "时间；时刻",
+                        "小时；三十分钟"
                     ]
                 },
                 {
@@ -6073,9 +5578,8 @@
                     "part_of_speech": "n.",
                     "meaning": "从句；分句",
                     "false_meanings": [
-                        "单词",
-                        "短语",
-                        "词组"
+                        "单词；单词",
+                        "短语；短语"
                     ]
                 },
                 {
@@ -6085,9 +5589,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "结尾的；结束的",
                     "false_meanings": [
-                        "开始的",
-                        "开头的",
-                        "首要的"
+                        "开始的；开始的样子",
+                        "开头的；开头的样子"
                     ]
                 },
                 {
@@ -6097,9 +5600,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "开首的；开始的",
                     "false_meanings": [
-                        "结束的",
-                        "最后的",
-                        "结尾的"
+                        "结束的；结束的样子",
+                        "最后的；最后的样子"
                     ]
                 },
                 {
@@ -6109,9 +5611,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "当地的；地方的",
                     "false_meanings": [
-                        "外国的",
-                        "国际的",
-                        "全球的"
+                        "外国的；外国的样子",
+                        "国际的；国际的样子"
                     ]
                 },
                 {
@@ -6122,8 +5623,7 @@
                     "meaning": "面对面的",
                     "false_meanings": [
                         "远程的",
-                        "网络的",
-                        "虚拟的"
+                        "网络的"
                     ],
                     "is_phrase": true
                 },
@@ -6135,8 +5635,7 @@
                     "meaning": "教授",
                     "false_meanings": [
                         "学生",
-                        "助教",
-                        "研究员"
+                        "助教"
                     ]
                 },
                 {
@@ -6146,9 +5645,8 @@
                     "part_of_speech": "n.",
                     "meaning": "演说；发言",
                     "false_meanings": [
-                        "沉默",
-                        "安静",
-                        "无声"
+                        "沉默；静默",
+                        "安静；寂静"
                     ]
                 },
                 {
@@ -6159,8 +5657,7 @@
                     "meaning": "与……言归于好",
                     "false_meanings": [
                         "与……吵架",
-                        "与……分手",
-                        "与……绝交"
+                        "与……分手"
                     ],
                     "is_phrase": true
                 },
@@ -6171,9 +5668,8 @@
                     "part_of_speech": "adv.",
                     "meaning": "亲身；亲自",
                     "false_meanings": [
-                        "远程",
-                        "代替",
-                        "间接"
+                        "远程；远程",
+                        "代替；代替"
                     ],
                     "is_phrase": true
                 },
@@ -6184,9 +5680,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "镇静的；沉着的",
                     "false_meanings": [
-                        "激动的",
-                        "紧张的",
-                        "焦虑的"
+                        "激动的；激动的样子",
+                        "紧张的；紧张的样子"
                     ]
                 },
                 {
@@ -6197,8 +5692,7 @@
                     "meaning": "为……担心",
                     "false_meanings": [
                         "对……放心",
-                        "对……无所谓",
-                        "对……不在乎"
+                        "对……无所谓"
                     ],
                     "is_phrase": true
                 },
@@ -6209,9 +5703,8 @@
                     "part_of_speech": "n.",
                     "meaning": "表达方式；表达",
                     "false_meanings": [
-                        "隐藏",
-                        "压抑",
-                        "掩饰"
+                        "隐藏；隐藏",
+                        "压抑；压抑"
                     ]
                 },
                 {
@@ -6221,9 +5714,8 @@
                     "part_of_speech": "n.",
                     "meaning": "机会；可能性",
                     "false_meanings": [
-                        "困难",
-                        "障碍",
-                        "问题"
+                        "困难；艰难的",
+                        "障碍；阻碍"
                     ]
                 },
                 {
@@ -6233,9 +5725,8 @@
                     "part_of_speech": "n.",
                     "meaning": "会面；会议",
                     "false_meanings": [
-                        "分别",
-                        "离开",
-                        "告别"
+                        "分别；分别",
+                        "离开；走开"
                     ]
                 },
                 {
@@ -6245,9 +5736,8 @@
                     "part_of_speech": "n.",
                     "meaning": "困难；难题",
                     "false_meanings": [
-                        "容易",
-                        "简单",
-                        "轻松"
+                        "容易；容易",
+                        "简单；容易的"
                     ]
                 },
                 {
@@ -6257,9 +5747,8 @@
                     "part_of_speech": "adv.",
                     "meaning": "立即；马上",
                     "false_meanings": [
-                        "稍后",
-                        "以后",
-                        "将来"
+                        "稍后；稍后",
+                        "以后；之后"
                     ],
                     "is_phrase": true
                 },
@@ -6270,9 +5759,8 @@
                     "part_of_speech": "n.",
                     "meaning": "字行；线",
                     "false_meanings": [
-                        "段落",
-                        "章节",
-                        "页面"
+                        "段落；段落",
+                        "章节；章节"
                     ]
                 },
                 {
@@ -6283,8 +5771,7 @@
                     "meaning": "给……写信",
                     "false_meanings": [
                         "给……打电话",
-                        "给……发邮件",
-                        "给……留言"
+                        "给……发邮件"
                     ],
                     "is_phrase": true
                 },
@@ -6295,9 +5782,8 @@
                     "part_of_speech": "n.",
                     "meaning": "细节；详情",
                     "false_meanings": [
-                        "概述",
-                        "总结",
-                        "大纲"
+                        "概述；概述",
+                        "总结；总结"
                     ]
                 },
                 {
@@ -6307,9 +5793,8 @@
                     "part_of_speech": "n.",
                     "meaning": "团聚；重逢；聚会",
                     "false_meanings": [
-                        "分离",
-                        "离别",
-                        "告别"
+                        "分离；分离",
+                        "离别；离别"
                     ]
                 },
                 {
@@ -6319,9 +5804,8 @@
                     "part_of_speech": "adv.",
                     "meaning": "严肃地；认真地",
                     "false_meanings": [
-                        "随意地",
-                        "轻松地",
-                        "开玩笑地"
+                        "随意地；随意地",
+                        "轻松地；轻松地"
                     ]
                 },
                 {
@@ -6331,9 +5815,8 @@
                     "part_of_speech": "n.",
                     "meaning": "训练；培训",
                     "false_meanings": [
-                        "休息",
-                        "放松",
-                        "娱乐"
+                        "休息；歇息",
+                        "放松；松弛"
                     ]
                 },
                 {
@@ -6343,9 +5826,8 @@
                     "part_of_speech": "adj.",
                     "meaning": "焦虑的；紧张的",
                     "false_meanings": [
-                        "放松的",
-                        "冷静的",
-                        "镇定的"
+                        "放松的；放松的样子",
+                        "冷静的；冷静的样子"
                     ]
                 },
                 {
@@ -6356,8 +5838,7 @@
                     "meaning": "陌生人",
                     "false_meanings": [
                         "朋友",
-                        "熟人",
-                        "亲戚"
+                        "熟人"
                     ]
                 },
                 {
@@ -6367,9 +5848,8 @@
                     "part_of_speech": "n.",
                     "meaning": "指点；实用的提示；尖端",
                     "false_meanings": [
-                        "问题",
-                        "困难",
-                        "障碍"
+                        "问题；疑问",
+                        "困难；艰难的"
                     ]
                 },
                 {
@@ -6379,9 +5859,8 @@
                     "part_of_speech": "adv.",
                     "meaning": "认真地；仔细地；小心地",
                     "false_meanings": [
-                        "粗心地",
-                        "随意地",
-                        "草率地"
+                        "粗心地；粗心地",
+                        "随意地；随意地"
                     ]
                 },
                 {
@@ -6392,8 +5871,7 @@
                     "meaning": "对……表现出兴趣",
                     "false_meanings": [
                         "对……不感兴趣",
-                        "对……忽视",
-                        "对……无所谓"
+                        "对……忽视"
                     ],
                     "is_phrase": true
                 },
@@ -6405,8 +5883,7 @@
                     "meaning": "苏珊",
                     "false_meanings": [
                         "玛丽",
-                        "露西",
-                        "安娜"
+                        "露西"
                     ],
                     "is_proper_noun": true
                 },
@@ -6418,8 +5895,7 @@
                     "meaning": "琼斯",
                     "false_meanings": [
                         "史密斯",
-                        "约翰逊",
-                        "威廉姆斯"
+                        "约翰逊"
                     ],
                     "is_proper_noun": true
                 }
