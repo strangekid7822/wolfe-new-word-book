@@ -190,13 +190,17 @@ export const conversationFlow = {
 
     // ========== HOME CONVERSATION (after login/registration) ==========
 
-    // Entry point - checks if grade is set, routes accordingly
+    // Entry point - sets default grade and goes to menu
     homeConversation: {
         type: 'message',
         delay: 100, // Quick check, no visible delay
         next: () => {
+            // Set default grade if not already set (grade selection hidden)
             const grade = localStorage.getItem('userGrade');
-            return grade ? 'homeMenu' : 'askGrade';
+            if (!grade) {
+                localStorage.setItem('userGrade', '7'); // Default to grade 7
+            }
+            return 'homeMenu';
         }
     },
 
