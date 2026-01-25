@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef } from 'react';
 
 /**
  * BookGallery component
@@ -83,7 +83,7 @@ const BookGallery = ({ books, onSelect }) => {
             {/* Select button */}
             <button
                 onClick={handleSelect}
-                className="btn-primary text-white text-sm font-bold px-6 py-2 rounded-full shadow-md active:scale-95 transition-transform"
+                className="btn-primary text-white text-sm font-bold px-6 py-2 rounded-full shadow-md active:scale-95 transition-transform w-1/3"
             >
                 选这本
             </button>
