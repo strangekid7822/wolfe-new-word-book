@@ -26,13 +26,13 @@ class QuestionService {
       this.currentLibrary = libraryPath;
 
       // Extract all vocabulary words from all textbooks
-      // Filter: only words with >= 3 letters, exclude phrases
+      // Filter: only words with >= 3 letters, exclude phrases and proper nouns
       this.availableWords = [];
       if (data.textbooks && Array.isArray(data.textbooks)) {
         data.textbooks.forEach(textbook => {
           if (textbook.vocabulary && Array.isArray(textbook.vocabulary)) {
             const filteredWords = textbook.vocabulary.filter(word =>
-              word.word.length >= 3 && !word.is_phrase
+              word.word.length >= 3 && !word.is_phrase && !word.is_proper_noun
             );
             this.availableWords.push(...filteredWords);
           }
@@ -71,7 +71,7 @@ class QuestionService {
       this.currentLibrary = libraryPath;
 
       // Extract vocabulary filtered by unit
-      // Filter: only words with >= 3 letters, exclude phrases, match unit
+      // Filter: only words with >= 3 letters, exclude phrases and proper nouns, match unit
       this.availableWords = [];
       if (data.textbooks && Array.isArray(data.textbooks)) {
         data.textbooks.forEach(textbook => {
@@ -79,6 +79,7 @@ class QuestionService {
             const filteredWords = textbook.vocabulary.filter(word =>
               word.word.length >= 3 &&
               !word.is_phrase &&
+              !word.is_proper_noun &&
               word.unit === unitName
             );
             this.availableWords.push(...filteredWords);
