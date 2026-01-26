@@ -64,6 +64,7 @@ const BookGallery = ({ books, onSelect }) => {
                                 src={book.cover}
                                 alt={book.title}
                                 className="w-full h-full object-cover"
+                                onError={(e) => { e.target.src = '/covers/Unfinished.png'; }}
                             />
                         </div>
                         {/* Book title */}

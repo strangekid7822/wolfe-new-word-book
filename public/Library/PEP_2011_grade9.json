@@ -1,0 +1,7308 @@
+{
+  "textbooks": [
+    {
+      "source_file": "人教版_2011版_9年级",
+      "vocabulary": [
+        {
+          "unit": "Unit 1",
+          "word": "textbook",
+          "phonetic": "/ˈtekstbʊk/",
+          "part_of_speech": "n.",
+          "meaning": "教科书；课本",
+          "false_meanings": [
+            "笔记本；日记",
+            "字典；词典"
+          ]
+        },
+        {
+          "unit": "Unit 1",
+          "word": "conversation",
+          "phonetic": "/ˌkɒnvəˈseɪʃn/",
+          "part_of_speech": "n.",
+          "meaning": "交谈；谈话",
+          "false_meanings": [
+            "演讲；讲座",
+            "争论；辩论"
+          ]
+        },
+        {
+          "unit": "Unit 1",
+          "word": "aloud",
+          "phonetic": "/əˈlaʊd/",
+          "part_of_speech": "adv.",
+          "meaning": "大声地；出声地",
+          "false_meanings": [
+            "安静地；轻声地",
+            "快速地；迅速地"
+          ]
+        },
+        {
+          "unit": "Unit 1",
+          "word": "pronunciation",
+          "phonetic": "/prəˌnʌnsiˈeɪʃn/",
+          "part_of_speech": "n.",
+          "meaning": "发音；读音",
+          "false_meanings": [
+            "拼写；书写",
+            "语法；句法"
+          ]
+        },
+        {
+          "unit": "Unit 1",
+          "word": "sentence",
+          "phonetic": "/ˈsentəns/",
+          "part_of_speech": "n.",
+          "meaning": "句子",
+          "false_meanings": [
+            "段落；章节",
+            "单词；词汇"
+          ]
+        },
+        {
+          "unit": "Unit 1",
+          "word": "patient",
+          "phonetic": "/ˈpeɪʃnt/",
+          "part_of_speech": "adj.",
+          "meaning": "有耐心的；能忍耐的",
+          "false_meanings": [
+            "焦虑的；不安的",
+            "懒惰的；懈怠的"
+          ]
+        },
+        {
+          "unit": "Unit 1",
+          "word": "expression",
+          "phonetic": "/ɪkˈspreʃn/",
+          "part_of_speech": "n.",
+          "meaning": "表达（方式）；表示",
+          "false_meanings": [
+            "问题；疑问",
+            "答案；解答"
+          ]
+        },
+        {
+          "unit": "Unit 1",
+          "word": "discover",
+          "phonetic": "/dɪˈskʌvə(r)/",
+          "part_of_speech": "v.",
+          "meaning": "发现；发觉",
+          "false_meanings": [
+            "隐藏；掩盖",
+            "忘记；遗忘"
+          ]
+        },
+        {
+          "unit": "Unit 1",
+          "word": "secret",
+          "phonetic": "/ˈsiːkrət/",
+          "part_of_speech": "n.",
+          "meaning": "秘密；秘诀",
+          "false_meanings": [
+            "谎言；欺骗",
+            "承诺；诺言"
+          ]
+        },
+        {
+          "unit": "Unit 1",
+          "word": "look up",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "（在词典、参考书中或通过电脑）查阅；抬头看",
+          "false_meanings": [
+            "放弃；丢弃",
+            "记住；背诵"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 1",
+          "word": "grammar",
+          "phonetic": "/ˈɡræmə(r)/",
+          "part_of_speech": "n.",
+          "meaning": "语法",
+          "false_meanings": [
+            "发音",
+            "拼写"
+          ]
+        },
+        {
+          "unit": "Unit 1",
+          "word": "repeat",
+          "phonetic": "/rɪˈpiːt/",
+          "part_of_speech": "v.",
+          "meaning": "重复；重做",
+          "false_meanings": [
+            "删除；取消",
+            "开始；启动"
+          ]
+        },
+        {
+          "unit": "Unit 1",
+          "word": "note",
+          "phonetic": "/nəʊt/",
+          "part_of_speech": "n.",
+          "meaning": "笔记；记录",
+          "false_meanings": [
+            "图画；素描",
+            "地图；路线"
+          ]
+        },
+        {
+          "unit": "Unit 1",
+          "word": "pal",
+          "phonetic": "/pæl/",
+          "part_of_speech": "n.",
+          "meaning": "朋友；伙伴",
+          "false_meanings": [
+            "敌人；对手",
+            "老师；导师"
+          ]
+        },
+        {
+          "unit": "Unit 1",
+          "word": "physics",
+          "phonetic": "/ˈfɪzɪks/",
+          "part_of_speech": "n.",
+          "meaning": "物理；物理学",
+          "false_meanings": [
+            "化学；生物",
+            "数学；代数"
+          ]
+        },
+        {
+          "unit": "Unit 1",
+          "word": "chemistry",
+          "phonetic": "/ˈkemɪstri/",
+          "part_of_speech": "n.",
+          "meaning": "化学",
+          "false_meanings": [
+            "地理",
+            "历史"
+          ]
+        },
+        {
+          "unit": "Unit 1",
+          "word": "memorize",
+          "phonetic": "/ˈmeməraɪz/",
+          "part_of_speech": "v.",
+          "meaning": "记忆；记住",
+          "false_meanings": [
+            "忘记；遗忘",
+            "猜测；推测"
+          ]
+        },
+        {
+          "unit": "Unit 1",
+          "word": "pattern",
+          "phonetic": "/ˈpætn/",
+          "part_of_speech": "n.",
+          "meaning": "模式；方式",
+          "false_meanings": [
+            "错误；失误",
+            "问题；困难"
+          ]
+        },
+        {
+          "unit": "Unit 1",
+          "word": "pronounce",
+          "phonetic": "/prəˈnaʊns/",
+          "part_of_speech": "v.",
+          "meaning": "发音",
+          "false_meanings": [
+            "拼写",
+            "翻译"
+          ]
+        },
+        {
+          "unit": "Unit 1",
+          "word": "increase",
+          "phonetic": "/ɪnˈkriːs/",
+          "part_of_speech": "v.",
+          "meaning": "增加；增长",
+          "false_meanings": [
+            "减少；降低",
+            "保持；维持"
+          ]
+        },
+        {
+          "unit": "Unit 1",
+          "word": "speed",
+          "phonetic": "/spiːd/",
+          "part_of_speech": "n.",
+          "meaning": "速度",
+          "false_meanings": [
+            "距离",
+            "时间"
+          ]
+        },
+        {
+          "unit": "Unit 1",
+          "word": "partner",
+          "phonetic": "/ˈpɑːtnə(r)/",
+          "part_of_speech": "n.",
+          "meaning": "搭档；同伴",
+          "false_meanings": [
+            "老师；教练",
+            "竞争者；对手"
+          ]
+        },
+        {
+          "unit": "Unit 1",
+          "word": "born",
+          "phonetic": "/bɔːn/",
+          "part_of_speech": "v.",
+          "meaning": "出生",
+          "false_meanings": [
+            "死亡",
+            "成长"
+          ]
+        },
+        {
+          "unit": "Unit 1",
+          "word": "be born with",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "天生具有",
+          "false_meanings": [
+            "学习获得",
+            "失去拥有"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 1",
+          "word": "ability",
+          "phonetic": "/əˈbɪləti/",
+          "part_of_speech": "n.",
+          "meaning": "能力；才能",
+          "false_meanings": [
+            "困难；障碍",
+            "弱点；缺陷"
+          ]
+        },
+        {
+          "unit": "Unit 1",
+          "word": "create",
+          "phonetic": "/kriˈeɪt/",
+          "part_of_speech": "v.",
+          "meaning": "创造；创建",
+          "false_meanings": [
+            "破坏；毁灭",
+            "复制；模仿"
+          ]
+        },
+        {
+          "unit": "Unit 1",
+          "word": "brain",
+          "phonetic": "/breɪn/",
+          "part_of_speech": "n.",
+          "meaning": "大脑",
+          "false_meanings": [
+            "心脏",
+            "肺部"
+          ]
+        },
+        {
+          "unit": "Unit 1",
+          "word": "active",
+          "phonetic": "/ˈæktɪv/",
+          "part_of_speech": "adj.",
+          "meaning": "活跃的；积极的",
+          "false_meanings": [
+            "懒惰的；消极的",
+            "安静的；平静的"
+          ]
+        },
+        {
+          "unit": "Unit 1",
+          "word": "attention",
+          "phonetic": "/əˈtenʃn/",
+          "part_of_speech": "n.",
+          "meaning": "注意；关注",
+          "false_meanings": [
+            "忽视；冷漠",
+            "分心；走神"
+          ]
+        },
+        {
+          "unit": "Unit 1",
+          "word": "pay attention to",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "注意；关注",
+          "false_meanings": [
+            "忽略；忽视",
+            "反对；抵制"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 1",
+          "word": "connect",
+          "phonetic": "/kəˈnekt/",
+          "part_of_speech": "v.",
+          "meaning": "（使）连接；与……有联系",
+          "false_meanings": [
+            "分离；断开",
+            "隐藏；掩盖"
+          ]
+        },
+        {
+          "unit": "Unit 1",
+          "word": "connect ... with",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "把……和……连接或联系起来",
+          "false_meanings": [
+            "把……和……分开",
+            "忘记……和……的关系"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 1",
+          "word": "overnight",
+          "phonetic": "/ˌəʊvəˈnaɪt/",
+          "part_of_speech": "adv.",
+          "meaning": "一夜之间；在夜间",
+          "false_meanings": [
+            "一周之内",
+            "几个月后"
+          ]
+        },
+        {
+          "unit": "Unit 1",
+          "word": "review",
+          "phonetic": "/rɪˈvjuː/",
+          "part_of_speech": "v.&n.",
+          "meaning": "回顾；复习",
+          "false_meanings": [
+            "预习；准备",
+            "忘记；忽略"
+          ]
+        },
+        {
+          "unit": "Unit 1",
+          "word": "knowledge",
+          "phonetic": "/ˈnɒlɪdʒ/",
+          "part_of_speech": "n.",
+          "meaning": "知识；学问",
+          "false_meanings": [
+            "无知；愚昧",
+            "技能；手艺"
+          ]
+        },
+        {
+          "unit": "Unit 1",
+          "word": "wisely",
+          "phonetic": "/ˈwaɪzli/",
+          "part_of_speech": "adv.",
+          "meaning": "明智地；聪明地",
+          "false_meanings": [
+            "愚蠢地；糊涂地",
+            "匆忙地；草率地"
+          ]
+        },
+        {
+          "unit": "Unit 1",
+          "word": "Annie",
+          "phonetic": "/ˈæni/",
+          "part_of_speech": "n.",
+          "meaning": "安妮（女名）",
+          "false_meanings": [
+            "玛丽（女名）",
+            "露西（女名）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 1",
+          "word": "Alexander Graham Bell",
+          "phonetic": "/ˌælɪɡˈzændə(r) ˈɡreɪəm bel/",
+          "part_of_speech": "n.",
+          "meaning": "亚历山大·格雷厄姆·贝尔",
+          "false_meanings": [
+            "托马斯·爱迪生",
+            "艾萨克·牛顿"
+          ],
+          "is_phrase": true,
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 2",
+          "word": "mooncake",
+          "phonetic": "/ˈmuːnkeɪk/",
+          "part_of_speech": "n.",
+          "meaning": "月饼",
+          "false_meanings": [
+            "粽子",
+            "饺子"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "word": "lantern",
+          "phonetic": "/ˈlæntən/",
+          "part_of_speech": "n.",
+          "meaning": "灯笼",
+          "false_meanings": [
+            "气球",
+            "风筝"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "word": "stranger",
+          "phonetic": "/ˈstreɪndʒə(r)/",
+          "part_of_speech": "n.",
+          "meaning": "陌生人",
+          "false_meanings": [
+            "朋友",
+            "亲戚"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "word": "relative",
+          "phonetic": "/ˈrelətɪv/",
+          "part_of_speech": "n.",
+          "meaning": "亲属；亲戚",
+          "false_meanings": [
+            "同事",
+            "邻居"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "word": "put on",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "增加（体重）；发胖",
+          "false_meanings": [
+            "减肥；瘦身",
+            "保持体重"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 2",
+          "word": "pound",
+          "phonetic": "/paʊnd/",
+          "part_of_speech": "n.",
+          "meaning": "磅（重量单位）；英镑（英国货币单位）",
+          "false_meanings": [
+            "千克（重量单位）；人民币（货币单位）",
+            "盎司（重量单位）；美元（货币单位）"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "word": "folk",
+          "phonetic": "/fəʊk/",
+          "part_of_speech": "adj.",
+          "meaning": "民间的；民俗的",
+          "false_meanings": [
+            "现代的；时尚的",
+            "外国的；进口的"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "word": "goddess",
+          "phonetic": "/ˈɡɒdes/",
+          "part_of_speech": "n.",
+          "meaning": "女神",
+          "false_meanings": [
+            "男神",
+            "天使"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "word": "whoever",
+          "phonetic": "/huːˈevə(r)/",
+          "part_of_speech": "pron.",
+          "meaning": "无论谁",
+          "false_meanings": [
+            "某个人",
+            "没有人"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "word": "steal",
+          "phonetic": "/stiːl/",
+          "part_of_speech": "v.",
+          "meaning": "偷；窃取",
+          "false_meanings": [
+            "归还；送回",
+            "购买；获得"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "word": "lay",
+          "phonetic": "/leɪ/",
+          "part_of_speech": "v.",
+          "meaning": "放置；安放；产（卵）；下（蛋）",
+          "false_meanings": [
+            "拿起；举起",
+            "隐藏；掩埋"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "word": "lay out",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "摆开；布置",
+          "false_meanings": [
+            "收起；整理",
+            "隐藏；掩盖"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 2",
+          "word": "dessert",
+          "phonetic": "/dɪˈzɜːt/",
+          "part_of_speech": "n.",
+          "meaning": "（饭后）甜点；甜食",
+          "false_meanings": [
+            "主菜；正餐",
+            "饮料；汤品"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "word": "garden",
+          "phonetic": "/ˈɡɑːdn/",
+          "part_of_speech": "n.",
+          "meaning": "花园；园子",
+          "false_meanings": [
+            "房间；卧室",
+            "车库；仓库"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "word": "tradition",
+          "phonetic": "/trəˈdɪʃn/",
+          "part_of_speech": "n.",
+          "meaning": "传统",
+          "false_meanings": [
+            "创新",
+            "时尚"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "word": "admire",
+          "phonetic": "/ədˈmaɪə(r)/",
+          "part_of_speech": "v.",
+          "meaning": "欣赏；仰慕",
+          "false_meanings": [
+            "批评；指责",
+            "忽视；轻视"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "word": "tie",
+          "phonetic": "/taɪ/",
+          "part_of_speech": "n.",
+          "meaning": "领带",
+          "false_meanings": [
+            "围巾",
+            "帽子"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "word": "haunted",
+          "phonetic": "/ˈhɔːntɪd/",
+          "part_of_speech": "adj.",
+          "meaning": "有鬼魂出没的；闹鬼的",
+          "false_meanings": [
+            "安全的；平静的",
+            "明亮的；温暖的"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "word": "ghost",
+          "phonetic": "/ɡəʊst/",
+          "part_of_speech": "n.",
+          "meaning": "鬼；鬼魂",
+          "false_meanings": [
+            "天使；仙女",
+            "怪兽；野兽"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "word": "trick",
+          "phonetic": "/trɪk/",
+          "part_of_speech": "n.",
+          "meaning": "花招；把戏",
+          "false_meanings": [
+            "礼物；奖品",
+            "工具；设备"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "word": "treat",
+          "phonetic": "/triːt/",
+          "part_of_speech": "n.",
+          "meaning": "款待；招待",
+          "false_meanings": [
+            "惩罚；处罚",
+            "忽视；冷落"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "word": "spider",
+          "phonetic": "/ˈspaɪdə(r)/",
+          "part_of_speech": "n.",
+          "meaning": "蜘蛛",
+          "false_meanings": [
+            "蚂蚁",
+            "蝴蝶"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "word": "Christmas",
+          "phonetic": "/ˈkrɪsməs/",
+          "part_of_speech": "n.",
+          "meaning": "圣诞节",
+          "false_meanings": [
+            "春节",
+            "感恩节"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "word": "lie",
+          "phonetic": "/laɪ/",
+          "part_of_speech": "v.",
+          "meaning": "存在；平躺；处于",
+          "false_meanings": [
+            "站立；直立",
+            "跳跃；蹦起"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "word": "novel",
+          "phonetic": "/ˈnɒvl/",
+          "part_of_speech": "n.",
+          "meaning": "（长篇）小说",
+          "false_meanings": [
+            "诗歌；散文",
+            "戏剧；剧本"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "word": "eve",
+          "phonetic": "/iːv/",
+          "part_of_speech": "n.",
+          "meaning": "前夕；前夜",
+          "false_meanings": [
+            "早晨；黎明",
+            "正午；中午"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "word": "dead",
+          "phonetic": "/ded/",
+          "part_of_speech": "adj.",
+          "meaning": "死的；失去生命的",
+          "false_meanings": [
+            "活着的；生气勃勃的",
+            "健康的；强壮的"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "word": "business",
+          "phonetic": "/ˈbɪznəs/",
+          "part_of_speech": "n.",
+          "meaning": "生意；商业",
+          "false_meanings": [
+            "学习；教育",
+            "娱乐；休闲"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "word": "punish",
+          "phonetic": "/ˈpʌnɪʃ/",
+          "part_of_speech": "v.",
+          "meaning": "处罚；惩罚",
+          "false_meanings": [
+            "奖励；表扬",
+            "原谅；宽恕"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "word": "warn",
+          "phonetic": "/wɔːn/",
+          "part_of_speech": "v.",
+          "meaning": "警告；告诫",
+          "false_meanings": [
+            "鼓励；激励",
+            "欺骗；误导"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "word": "end up",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "最终成为；最后处于",
+          "false_meanings": [
+            "开始；着手",
+            "避免；逃避"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 2",
+          "word": "present",
+          "phonetic": "/ˈpreznt/",
+          "part_of_speech": "n.",
+          "meaning": "现在；礼物",
+          "false_meanings": [
+            "过去；未来",
+            "问题；困难"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "word": "warmth",
+          "phonetic": "/wɔːmθ/",
+          "part_of_speech": "n.",
+          "meaning": "温暖；暖和",
+          "false_meanings": [
+            "寒冷；冰冷",
+            "潮湿；湿气"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "word": "spread",
+          "phonetic": "/spred/",
+          "part_of_speech": "v.",
+          "meaning": "传播；展开",
+          "false_meanings": [
+            "隐藏；收集",
+            "停止；终止"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "word": "Macao",
+          "phonetic": "/məˈkaʊ/",
+          "part_of_speech": "n.",
+          "meaning": "澳门",
+          "false_meanings": [
+            "香港",
+            "台湾"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 2",
+          "word": "Chiang Mai",
+          "phonetic": "/tʃiˈæŋmaɪ/",
+          "part_of_speech": "n.",
+          "meaning": "清迈（泰国城市）",
+          "false_meanings": [
+            "曼谷（泰国城市）",
+            "新加坡（城市）"
+          ],
+          "is_phrase": true,
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 2",
+          "word": "Water Festival",
+          "phonetic": "",
+          "part_of_speech": "n.",
+          "meaning": "泼水节",
+          "false_meanings": [
+            "春节",
+            "端午节"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 2",
+          "word": "Mid-Autumn Festival",
+          "phonetic": "/ˌmɪd ˈɔːtəm/",
+          "part_of_speech": "n.",
+          "meaning": "中秋节",
+          "false_meanings": [
+            "春节",
+            "清明节"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 2",
+          "word": "Mother's Day",
+          "phonetic": "",
+          "part_of_speech": "n.",
+          "meaning": "母亲节",
+          "false_meanings": [
+            "父亲节",
+            "儿童节"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 2",
+          "word": "Father's Day",
+          "phonetic": "",
+          "part_of_speech": "n.",
+          "meaning": "父亲节",
+          "false_meanings": [
+            "母亲节",
+            "教师节"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 2",
+          "word": "Halloween",
+          "phonetic": "/ˌhæləʊˈiːn/",
+          "part_of_speech": "n.",
+          "meaning": "万圣节前夕",
+          "false_meanings": [
+            "圣诞节",
+            "复活节"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "word": "A Christmas Carol",
+          "phonetic": "",
+          "part_of_speech": "n.",
+          "meaning": "《圣诞欢歌》（小说名）",
+          "false_meanings": [
+            "《福尔摩斯》（小说名）",
+            "《简爱》（小说名）"
+          ],
+          "is_phrase": true,
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 2",
+          "word": "Easter",
+          "phonetic": "/ˈiːstə(r)/",
+          "part_of_speech": "n.",
+          "meaning": "复活节",
+          "false_meanings": [
+            "圣诞节",
+            "万圣节"
+          ]
+        },
+        {
+          "unit": "Unit 2",
+          "word": "Clara",
+          "phonetic": "/ˈklɛrə/",
+          "part_of_speech": "n.",
+          "meaning": "克拉拉（女名）",
+          "false_meanings": [
+            "莉莉（女名）",
+            "艾米（女名）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 2",
+          "word": "Santa Claus",
+          "phonetic": "/ˈsæntə klɔːz/",
+          "part_of_speech": "n.",
+          "meaning": "圣诞老人",
+          "false_meanings": [
+            "复活节兔子",
+            "牙仙子"
+          ],
+          "is_phrase": true,
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 2",
+          "word": "Charles Dickens",
+          "phonetic": "/tʃɑːlz ˈdɪkɪnz/",
+          "part_of_speech": "n.",
+          "meaning": "查尔斯·狄更斯（英国作家）",
+          "false_meanings": [
+            "威廉·莎士比亚（英国作家）",
+            "简·奥斯汀（英国作家）"
+          ],
+          "is_phrase": true,
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 2",
+          "word": "Scrooge",
+          "phonetic": "/skruːdʒ/",
+          "part_of_speech": "n.",
+          "meaning": "斯克鲁奇（人名）",
+          "false_meanings": [
+            "汤姆（人名）",
+            "杰克（人名）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 2",
+          "word": "Jacob Marley",
+          "phonetic": "/ˈdʒeɪkəb ˈmɑːli/",
+          "part_of_speech": "n.",
+          "meaning": "雅各布·马利",
+          "false_meanings": [
+            "彼得·帕克",
+            "约翰·史密斯"
+          ],
+          "is_phrase": true,
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 3",
+          "word": "restroom",
+          "phonetic": "/ˈrestruːm/",
+          "part_of_speech": "n.",
+          "meaning": "（美）洗手间；公共厕所",
+          "false_meanings": [
+            "客厅；起居室",
+            "卧室；寝室"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "stamp",
+          "phonetic": "/stæmp/",
+          "part_of_speech": "n.",
+          "meaning": "邮票；印章",
+          "false_meanings": [
+            "信封；明信片",
+            "钞票；硬币"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "bookstore",
+          "phonetic": "/ˈbʊkstɔː(r)/",
+          "part_of_speech": "n.",
+          "meaning": "书店",
+          "false_meanings": [
+            "图书馆；阅览室",
+            "文具店；超市"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "beside",
+          "phonetic": "/bɪˈsaɪd/",
+          "part_of_speech": "prep.",
+          "meaning": "在……旁边；在……附近",
+          "false_meanings": [
+            "在……后面",
+            "在……里面"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "postcard",
+          "phonetic": "/ˈpəʊstkɑːd/",
+          "part_of_speech": "n.",
+          "meaning": "明信片",
+          "false_meanings": [
+            "信件；邮包",
+            "传单；海报"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "pardon",
+          "phonetic": "/ˈpɑːdn/",
+          "part_of_speech": "v.",
+          "meaning": "原谅",
+          "false_meanings": [
+            "惩罚",
+            "批评"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "washroom",
+          "phonetic": "/ˈwɒʃruːm/",
+          "part_of_speech": "n.",
+          "meaning": "洗手间；厕所",
+          "false_meanings": [
+            "厨房；餐厅",
+            "卧室；书房"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "bathroom",
+          "phonetic": "/ˈbɑːθruːm/",
+          "part_of_speech": "n.",
+          "meaning": "浴室；洗手间",
+          "false_meanings": [
+            "客厅；走廊",
+            "车库；阳台"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "normally",
+          "phonetic": "/ˈnɔːməli/",
+          "part_of_speech": "adv.",
+          "meaning": "通常；正常情况下",
+          "false_meanings": [
+            "偶尔；很少",
+            "从不；决不"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "rush",
+          "phonetic": "/rʌʃ/",
+          "part_of_speech": "v.&n.",
+          "meaning": "仓促；急促",
+          "false_meanings": [
+            "放松；休息",
+            "等待；延迟"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "suggest",
+          "phonetic": "/səˈdʒest/",
+          "part_of_speech": "v.",
+          "meaning": "建议；提议",
+          "false_meanings": [
+            "拒绝；反对",
+            "命令；要求"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "staff",
+          "phonetic": "/stɑːf/",
+          "part_of_speech": "n.",
+          "meaning": "管理人员；职工",
+          "false_meanings": [
+            "顾客；游客",
+            "学生；儿童"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "grape",
+          "phonetic": "/ɡreɪp/",
+          "part_of_speech": "n.",
+          "meaning": "葡萄",
+          "false_meanings": [
+            "苹果",
+            "香蕉"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "central",
+          "phonetic": "/ˈsentrəl/",
+          "part_of_speech": "adj.",
+          "meaning": "中心的；中央的",
+          "false_meanings": [
+            "边缘的；偏远的",
+            "底部的；顶端的"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "mail",
+          "phonetic": "/meɪl/",
+          "part_of_speech": "v.",
+          "meaning": "邮寄；发电子邮件",
+          "false_meanings": [
+            "接收；获得",
+            "删除；丢弃"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "east",
+          "phonetic": "/iːst/",
+          "part_of_speech": "adj.",
+          "meaning": "东方的；东部的",
+          "false_meanings": [
+            "西方的；西部的",
+            "南方的；北方的"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "fascinating",
+          "phonetic": "/ˈfæsɪneɪtɪŋ/",
+          "part_of_speech": "adj.",
+          "meaning": "迷人的；极有吸引力的",
+          "false_meanings": [
+            "无聊的；乏味的",
+            "可怕的；恐怖的"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "inexpensive",
+          "phonetic": "/ˌɪnɪkˈspensɪv/",
+          "part_of_speech": "adj.",
+          "meaning": "不昂贵的",
+          "false_meanings": [
+            "昂贵的；奢侈的",
+            "免费的；赠送的"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "uncrowded",
+          "phonetic": "/ʌnˈkraʊdɪd/",
+          "part_of_speech": "adj.",
+          "meaning": "不拥挤的；人少的",
+          "false_meanings": [
+            "拥挤的；人多的",
+            "空荡的；无人的"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "convenient",
+          "phonetic": "/kənˈviːniənt/",
+          "part_of_speech": "adj.",
+          "meaning": "便利的；方便的",
+          "false_meanings": [
+            "麻烦的；困难的",
+            "遥远的；偏僻的"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "mall",
+          "phonetic": "/mɔːl/",
+          "part_of_speech": "n.",
+          "meaning": "商场；购物中心",
+          "false_meanings": [
+            "公园；广场",
+            "学校；医院"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "clerk",
+          "phonetic": "/klɑːk/",
+          "part_of_speech": "n.",
+          "meaning": "职员",
+          "false_meanings": [
+            "经理；老板",
+            "顾客；买家"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "corner",
+          "phonetic": "/ˈkɔːnə(r)/",
+          "part_of_speech": "n.",
+          "meaning": "拐角；角落",
+          "false_meanings": [
+            "中心；正中",
+            "边界；尽头"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "politely",
+          "phonetic": "/pəˈlaɪtli/",
+          "part_of_speech": "adv.",
+          "meaning": "礼貌地；客气地",
+          "false_meanings": [
+            "粗鲁地；无礼地",
+            "冷淡地；冷漠地"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "request",
+          "phonetic": "/rɪˈkwest/",
+          "part_of_speech": "n.&v.",
+          "meaning": "要求；请求",
+          "false_meanings": [
+            "拒绝；否认",
+            "命令；强制"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "direction",
+          "phonetic": "/dəˈrekʃn/",
+          "part_of_speech": "n.",
+          "meaning": "方向；方位",
+          "false_meanings": [
+            "距离；路程",
+            "速度；时间"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "correct",
+          "phonetic": "/kəˈrekt/",
+          "part_of_speech": "adj.",
+          "meaning": "正确的；恰当的",
+          "false_meanings": [
+            "错误的；不对的",
+            "糟糕的；失败的"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "polite",
+          "phonetic": "/pəˈlaɪt/",
+          "part_of_speech": "adj.",
+          "meaning": "有礼貌的；客气的",
+          "false_meanings": [
+            "粗鲁的；无礼的",
+            "冷漠的；傲慢的"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "direct",
+          "phonetic": "/dəˈrekt/",
+          "part_of_speech": "adj.",
+          "meaning": "直接的；直率的",
+          "false_meanings": [
+            "间接的；拐弯的",
+            "隐晦的；含糊的"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "speaker",
+          "phonetic": "/ˈspiːkə(r)/",
+          "part_of_speech": "n.",
+          "meaning": "讲（某种语言）的人；发言者",
+          "false_meanings": [
+            "听众；观众",
+            "作家；作者"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "whom",
+          "phonetic": "/huːm/",
+          "part_of_speech": "pron.",
+          "meaning": "谁；什么人",
+          "false_meanings": [
+            "哪里；何处",
+            "何时；什么时候"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "impolite",
+          "phonetic": "/ˌɪmpəˈlaɪt/",
+          "part_of_speech": "adj.",
+          "meaning": "不礼貌的；粗鲁的",
+          "false_meanings": [
+            "礼貌的；客气的",
+            "友好的；亲切的"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "address",
+          "phonetic": "/əˈdres/",
+          "part_of_speech": "n.",
+          "meaning": "住址；地址；通讯处",
+          "false_meanings": [
+            "姓名；称呼",
+            "电话；号码"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "underground",
+          "phonetic": "/ˌʌndəˈɡraʊnd/",
+          "part_of_speech": "adj.",
+          "meaning": "地下的",
+          "false_meanings": [
+            "地上的；高空的",
+            "水下的；海底的"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "parking lot",
+          "phonetic": "",
+          "part_of_speech": "n.",
+          "meaning": "停车场；停车区",
+          "false_meanings": [
+            "游乐场；广场",
+            "运动场；操场"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 3",
+          "word": "course",
+          "phonetic": "/kɔːs/",
+          "part_of_speech": "n.",
+          "meaning": "课程；学科",
+          "false_meanings": [
+            "假期；休息",
+            "考试；测验"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "Italian",
+          "phonetic": "/ɪˈtæliən/",
+          "part_of_speech": "adj.",
+          "meaning": "意大利（人）的",
+          "false_meanings": [
+            "法国（人）的",
+            "德国（人）的"
+          ]
+        },
+        {
+          "unit": "Unit 3",
+          "word": "Tim",
+          "phonetic": "/tɪm/",
+          "part_of_speech": "n.",
+          "meaning": "蒂姆（男名）",
+          "false_meanings": [
+            "汤姆（男名）",
+            "杰克（男名）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 4",
+          "word": "humorous",
+          "phonetic": "/ˈhjuːmərəs/",
+          "part_of_speech": "adj.",
+          "meaning": "有幽默感的；滑稽有趣的",
+          "false_meanings": [
+            "严肃的；认真的",
+            "无聊的；乏味的"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "word": "silent",
+          "phonetic": "/ˈsaɪlənt/",
+          "part_of_speech": "adj.",
+          "meaning": "不说话的；沉默的",
+          "false_meanings": [
+            "吵闹的；喧嚣的",
+            "健谈的；多嘴的"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "word": "helpful",
+          "phonetic": "/ˈhelpfl/",
+          "part_of_speech": "adj.",
+          "meaning": "有用的；有帮助的",
+          "false_meanings": [
+            "无用的；无帮助的",
+            "有害的；危险的"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "word": "from time to time",
+          "phonetic": "",
+          "part_of_speech": "adv.",
+          "meaning": "时常；有时",
+          "false_meanings": [
+            "从不；决不",
+            "总是；一直"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 4",
+          "word": "score",
+          "phonetic": "/skɔː(r)/",
+          "part_of_speech": "n.&v.",
+          "meaning": "得分；进球",
+          "false_meanings": [
+            "失分；输球",
+            "犯规；违规"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "word": "background",
+          "phonetic": "/ˈbækɡraʊnd/",
+          "part_of_speech": "n.",
+          "meaning": "背景",
+          "false_meanings": [
+            "前景；焦点",
+            "边缘；角落"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "word": "interview",
+          "phonetic": "/ˈɪntəvjuː/",
+          "part_of_speech": "n.",
+          "meaning": "面试；访谈",
+          "false_meanings": [
+            "考试；测验",
+            "演讲；报告"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "word": "Asian",
+          "phonetic": "/ˈeɪʃn/",
+          "part_of_speech": "adj.",
+          "meaning": "亚洲（人）的",
+          "false_meanings": [
+            "欧洲（人）的",
+            "非洲（人）的"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "word": "deal",
+          "phonetic": "/diːl/",
+          "part_of_speech": "v.",
+          "meaning": "对付；对待",
+          "false_meanings": [
+            "忽视；无视",
+            "逃避；躲避"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "word": "deal with",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "应对；处理",
+          "false_meanings": [
+            "逃避；忽视",
+            "制造；创造"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 4",
+          "word": "shyness",
+          "phonetic": "/ˈʃaɪnəs/",
+          "part_of_speech": "n.",
+          "meaning": "害羞；腼腆",
+          "false_meanings": [
+            "自信；勇敢",
+            "骄傲；自豪"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "word": "dare",
+          "phonetic": "/deə/",
+          "part_of_speech": "v.",
+          "meaning": "敢于；胆敢",
+          "false_meanings": [
+            "害怕；恐惧",
+            "拒绝；躲避"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "word": "crowd",
+          "phonetic": "/kraʊd/",
+          "part_of_speech": "n.",
+          "meaning": "人群；观众",
+          "false_meanings": [
+            "个人；独自",
+            "家庭；朋友"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "word": "ton",
+          "phonetic": "/tʌn/",
+          "part_of_speech": "n.",
+          "meaning": "吨；许多",
+          "false_meanings": [
+            "克；少量",
+            "米；公里"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "word": "private",
+          "phonetic": "/ˈpraɪvət/",
+          "part_of_speech": "adj.",
+          "meaning": "私人的；私密的",
+          "false_meanings": [
+            "公共的；公开的",
+            "官方的；正式的"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "word": "guard",
+          "phonetic": "/ɡɑːd/",
+          "part_of_speech": "n.",
+          "meaning": "警卫；看守",
+          "false_meanings": [
+            "囚犯；犯人",
+            "游客；访客"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "word": "require",
+          "phonetic": "/rɪˈkwaɪə(r)/",
+          "part_of_speech": "v.",
+          "meaning": "需要；要求",
+          "false_meanings": [
+            "拒绝；反对",
+            "提供；供给"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "word": "European",
+          "phonetic": "/ˌjʊərəˈpiːən/",
+          "part_of_speech": "adj.",
+          "meaning": "欧洲（人）的",
+          "false_meanings": [
+            "亚洲（人）的",
+            "美洲（人）的"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "word": "African",
+          "phonetic": "/ˈæfrɪkən/",
+          "part_of_speech": "adj.",
+          "meaning": "非洲（人）的",
+          "false_meanings": [
+            "亚洲（人）的",
+            "欧洲（人）的"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "word": "British",
+          "phonetic": "/ˈbrɪtɪʃ/",
+          "part_of_speech": "adj.",
+          "meaning": "英国（人）的",
+          "false_meanings": [
+            "法国（人）的",
+            "美国（人）的"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "word": "speech",
+          "phonetic": "/spiːtʃ/",
+          "part_of_speech": "n.",
+          "meaning": "讲话；发言",
+          "false_meanings": [
+            "沉默；安静",
+            "写作；文章"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "word": "public",
+          "phonetic": "/ˈpʌblɪk/",
+          "part_of_speech": "adj.",
+          "meaning": "公众的；公开的",
+          "false_meanings": [
+            "私人的；私密的",
+            "隐藏的；秘密的"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "word": "in public",
+          "phonetic": "",
+          "part_of_speech": "adv.",
+          "meaning": "公开地；在别人（尤指生人）面前",
+          "false_meanings": [
+            "秘密地；私下地",
+            "独自地；单独地"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 4",
+          "word": "ant",
+          "phonetic": "/ænt/",
+          "part_of_speech": "n.",
+          "meaning": "蚂蚁",
+          "false_meanings": [
+            "蜜蜂",
+            "蝴蝶"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "word": "insect",
+          "phonetic": "/ˈɪnsekt/",
+          "part_of_speech": "n.",
+          "meaning": "昆虫",
+          "false_meanings": [
+            "鸟类",
+            "鱼类"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "word": "seldom",
+          "phonetic": "/ˈseldəm/",
+          "part_of_speech": "adv.",
+          "meaning": "不常；很少",
+          "false_meanings": [
+            "经常；总是",
+            "有时；偶尔"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "word": "influence",
+          "phonetic": "/ˈɪnfluəns/",
+          "part_of_speech": "v.&n.",
+          "meaning": "影响",
+          "false_meanings": [
+            "忽视；无视",
+            "保持；维持"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "word": "absent",
+          "phonetic": "/ˈæbsənt/",
+          "part_of_speech": "adj.",
+          "meaning": "缺席的；不在的",
+          "false_meanings": [
+            "出席的；在场的",
+            "迟到的；晚到的"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "word": "fail",
+          "phonetic": "/feɪl/",
+          "part_of_speech": "v.",
+          "meaning": "不及格；失败",
+          "false_meanings": [
+            "成功；通过",
+            "坚持；继续"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "word": "examination",
+          "phonetic": "/ɪɡˌzæmɪˈneɪʃn/",
+          "part_of_speech": "n.",
+          "meaning": "考试；审查",
+          "false_meanings": [
+            "假期；休息",
+            "游戏；娱乐"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "word": "boarding school",
+          "phonetic": "/ˈbɔːdɪŋ skuːl/",
+          "part_of_speech": "n.",
+          "meaning": "寄宿学校",
+          "false_meanings": [
+            "走读学校",
+            "幼儿园"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 4",
+          "word": "in person",
+          "phonetic": "",
+          "part_of_speech": "adv.",
+          "meaning": "亲身；亲自",
+          "false_meanings": [
+            "通过电话",
+            "通过网络"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 4",
+          "word": "exactly",
+          "phonetic": "/ɪɡˈzæktli/",
+          "part_of_speech": "adv.",
+          "meaning": "确切地；精确地",
+          "false_meanings": [
+            "大约；差不多",
+            "模糊地；含糊地"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "word": "pride",
+          "phonetic": "/praɪd/",
+          "part_of_speech": "n.",
+          "meaning": "自豪；骄傲",
+          "false_meanings": [
+            "羞耻；羞愧",
+            "失望；沮丧"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "word": "take pride in",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "为……感到自豪",
+          "false_meanings": [
+            "为……感到羞耻",
+            "对……感到失望"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 4",
+          "word": "proud",
+          "phonetic": "/praʊd/",
+          "part_of_speech": "adj.",
+          "meaning": "自豪的；骄傲的",
+          "false_meanings": [
+            "羞愧的；惭愧的",
+            "失望的；沮丧的"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "word": "be proud of",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "为……感到自豪",
+          "false_meanings": [
+            "为……感到羞愧",
+            "对……感到失望"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 4",
+          "word": "general",
+          "phonetic": "/ˈdʒenrəl/",
+          "part_of_speech": "adj.",
+          "meaning": "总的；普遍的",
+          "false_meanings": [
+            "特殊的；个别的",
+            "具体的；详细的"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "word": "introduction",
+          "phonetic": "/ˌɪntrəˈdʌkʃn/",
+          "part_of_speech": "n.",
+          "meaning": "介绍",
+          "false_meanings": [
+            "结论；总结",
+            "告别；再见"
+          ]
+        },
+        {
+          "unit": "Unit 4",
+          "word": "Paula",
+          "phonetic": "/ˈpɔːlə/",
+          "part_of_speech": "n.",
+          "meaning": "葆拉（女名）",
+          "false_meanings": [
+            "露西（女名）",
+            "玛丽（女名）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 4",
+          "word": "Alfred",
+          "phonetic": "/ˈælfrɪd/",
+          "part_of_speech": "n.",
+          "meaning": "艾尔弗雷德（男名）",
+          "false_meanings": [
+            "杰克（男名）",
+            "汤姆（男名）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 4",
+          "word": "Billy",
+          "phonetic": "/ˈbɪli/",
+          "part_of_speech": "n.",
+          "meaning": "比利（男名）",
+          "false_meanings": [
+            "汤姆（男名）",
+            "杰瑞（男名）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 4",
+          "word": "Candy",
+          "phonetic": "/ˈkændi/",
+          "part_of_speech": "n.",
+          "meaning": "坎迪（女名）",
+          "false_meanings": [
+            "露西（女名）",
+            "艾米（女名）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 4",
+          "word": "Jerry",
+          "phonetic": "/ˈdʒeri/",
+          "part_of_speech": "n.",
+          "meaning": "杰里（男名）",
+          "false_meanings": [
+            "汤姆（男名）",
+            "迈克（男名）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 4",
+          "word": "Emily",
+          "phonetic": "/ˈemɪli/",
+          "part_of_speech": "n.",
+          "meaning": "埃米莉（女名）",
+          "false_meanings": [
+            "露西（女名）",
+            "玛丽（女名）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 5",
+          "word": "chopstick",
+          "phonetic": "/ˈtʃɒpstɪk/",
+          "part_of_speech": "n.",
+          "meaning": "筷子",
+          "false_meanings": [
+            "刀叉",
+            "勺子"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "coin",
+          "phonetic": "/kɔɪn/",
+          "part_of_speech": "n.",
+          "meaning": "硬币",
+          "false_meanings": [
+            "纸币；钞票",
+            "信用卡"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "fork",
+          "phonetic": "/fɔːk/",
+          "part_of_speech": "n.",
+          "meaning": "餐叉；叉子",
+          "false_meanings": [
+            "筷子",
+            "勺子"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "blouse",
+          "phonetic": "/blaʊz/",
+          "part_of_speech": "n.",
+          "meaning": "（女式）短上衣；衬衫",
+          "false_meanings": [
+            "长裤；裙子",
+            "外套；大衣"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "silver",
+          "phonetic": "/ˈsɪlvə(r)/",
+          "part_of_speech": "n.",
+          "meaning": "银；银器",
+          "false_meanings": [
+            "金；金器",
+            "铜；铜器"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "glass",
+          "phonetic": "/ɡlɑːs/",
+          "part_of_speech": "n.",
+          "meaning": "玻璃",
+          "false_meanings": [
+            "木头",
+            "金属"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "cotton",
+          "phonetic": "/ˈkɒtn/",
+          "part_of_speech": "n.",
+          "meaning": "棉；棉花",
+          "false_meanings": [
+            "丝绸",
+            "羊毛"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "steel",
+          "phonetic": "/stiːl/",
+          "part_of_speech": "n.",
+          "meaning": "钢；钢铁",
+          "false_meanings": [
+            "木材",
+            "塑料"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "fair",
+          "phonetic": "/feə(r)/",
+          "part_of_speech": "n.",
+          "meaning": "展览会；交易会",
+          "false_meanings": [
+            "商店；超市",
+            "工厂；车间"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "environmental",
+          "phonetic": "/ɪnˌvaɪrənˈmentl/",
+          "part_of_speech": "adj.",
+          "meaning": "自然环境的；有关环境的",
+          "false_meanings": [
+            "经济的；商业的",
+            "政治的；社会的"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "grass",
+          "phonetic": "/ɡrɑːs/",
+          "part_of_speech": "n.",
+          "meaning": "草；草地",
+          "false_meanings": [
+            "花；花园",
+            "树；森林"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "leaf",
+          "phonetic": "/liːf/",
+          "part_of_speech": "n.",
+          "meaning": "叶；叶子",
+          "false_meanings": [
+            "花；花瓣",
+            "果实；种子"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "produce",
+          "phonetic": "/prəˈdjuːs/",
+          "part_of_speech": "v.",
+          "meaning": "生产；制造；出产",
+          "false_meanings": [
+            "消费；使用",
+            "破坏；毁坏"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "widely",
+          "phonetic": "/ˈwaɪdli/",
+          "part_of_speech": "adv.",
+          "meaning": "广泛地；普遍地",
+          "false_meanings": [
+            "狭窄地；有限地",
+            "很少地；罕见地"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "be known for",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "以……闻名；为人知晓",
+          "false_meanings": [
+            "因……被忘记",
+            "对……感到陌生"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 5",
+          "word": "process",
+          "phonetic": "/ˈprəʊses/",
+          "part_of_speech": "v.",
+          "meaning": "加工；处理",
+          "false_meanings": [
+            "丢弃；忽略",
+            "保存；储存"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "pack",
+          "phonetic": "/pæk/",
+          "part_of_speech": "v.",
+          "meaning": "包装；装箱",
+          "false_meanings": [
+            "拆开；打开",
+            "丢弃；扔掉"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "product",
+          "phonetic": "/ˈprɒdʌkt/",
+          "part_of_speech": "n.",
+          "meaning": "产品；制品",
+          "false_meanings": [
+            "垃圾；废品",
+            "原料；材料"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "France",
+          "phonetic": "/frɑːns/",
+          "part_of_speech": "n.",
+          "meaning": "法国",
+          "false_meanings": [
+            "德国",
+            "英国"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 5",
+          "word": "no matter",
+          "phonetic": "",
+          "part_of_speech": "conj.",
+          "meaning": "不论；无论",
+          "false_meanings": [
+            "只有；仅仅",
+            "除非；否则"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 5",
+          "word": "local",
+          "phonetic": "/ˈləʊkl/",
+          "part_of_speech": "adj.",
+          "meaning": "当地的；本地的",
+          "false_meanings": [
+            "外国的；进口的",
+            "全国的；国际的"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "brand",
+          "phonetic": "/brænd/",
+          "part_of_speech": "n.",
+          "meaning": "品牌；牌子",
+          "false_meanings": [
+            "价格；费用",
+            "数量；尺寸"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "avoid",
+          "phonetic": "/əˈvɔɪd/",
+          "part_of_speech": "v.",
+          "meaning": "避免；回避",
+          "false_meanings": [
+            "面对；接受",
+            "追求；寻找"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "handbag",
+          "phonetic": "/ˈhændbæɡ/",
+          "part_of_speech": "n.",
+          "meaning": "小手提包",
+          "false_meanings": [
+            "背包；书包",
+            "行李箱；旅行包"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "mobile",
+          "phonetic": "/ˈməʊbaɪl/",
+          "part_of_speech": "adj.",
+          "meaning": "可移动的；非固定的",
+          "false_meanings": [
+            "固定的；静止的",
+            "永久的；长期的"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "everyday",
+          "phonetic": "/ˈevrɪdeɪ/",
+          "part_of_speech": "adj.",
+          "meaning": "每天的；日常的",
+          "false_meanings": [
+            "特殊的；罕见的",
+            "节日的；周末的"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "boss",
+          "phonetic": "/bɒs/",
+          "part_of_speech": "n.",
+          "meaning": "老板；上司",
+          "false_meanings": [
+            "员工；下属",
+            "顾客；客户"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "Germany",
+          "phonetic": "/ˈdʒɜːməni/",
+          "part_of_speech": "n.",
+          "meaning": "德国",
+          "false_meanings": [
+            "法国",
+            "英国"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 5",
+          "word": "surface",
+          "phonetic": "/ˈsɜːfɪs/",
+          "part_of_speech": "n.",
+          "meaning": "表面；表层",
+          "false_meanings": [
+            "底部；深处",
+            "内部；核心"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "material",
+          "phonetic": "/məˈtɪəriəl/",
+          "part_of_speech": "n.",
+          "meaning": "材料；原料",
+          "false_meanings": [
+            "产品；成品",
+            "垃圾；废料"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "traffic",
+          "phonetic": "/ˈtræfɪk/",
+          "part_of_speech": "n.",
+          "meaning": "交通；路上行驶的车辆",
+          "false_meanings": [
+            "建筑；房屋",
+            "天气；气候"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "postman",
+          "phonetic": "/ˈpəʊstmən/",
+          "part_of_speech": "n.",
+          "meaning": "邮递员",
+          "false_meanings": [
+            "警察",
+            "清洁工"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "cap",
+          "phonetic": "/kæp/",
+          "part_of_speech": "n.",
+          "meaning": "（无檐或有帽舌的）帽子",
+          "false_meanings": [
+            "围巾",
+            "手套"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "glove",
+          "phonetic": "/ɡlʌv/",
+          "part_of_speech": "n.",
+          "meaning": "（分手指的）手套",
+          "false_meanings": [
+            "袜子",
+            "鞋子"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "international",
+          "phonetic": "/ˌɪntəˈnæʃnəl/",
+          "part_of_speech": "adj.",
+          "meaning": "国际的",
+          "false_meanings": [
+            "国内的；本地的",
+            "私人的；个人的"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "competitor",
+          "phonetic": "/kəmˈpetɪtə(r)/",
+          "part_of_speech": "n.",
+          "meaning": "参赛者；竞争者",
+          "false_meanings": [
+            "观众；旁观者",
+            "裁判；评委"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "its",
+          "phonetic": "/ɪts/",
+          "part_of_speech": "adj.",
+          "meaning": "它的",
+          "false_meanings": [
+            "他的",
+            "她的"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "form",
+          "phonetic": "/fɔːm/",
+          "part_of_speech": "n.",
+          "meaning": "形式；类型",
+          "false_meanings": [
+            "内容；实质",
+            "颜色；外观"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "clay",
+          "phonetic": "/kleɪ/",
+          "part_of_speech": "n.",
+          "meaning": "黏土；陶土",
+          "false_meanings": [
+            "石头；岩石",
+            "沙子；泥土"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "celebration",
+          "phonetic": "/ˌselɪˈbreɪʃn/",
+          "part_of_speech": "n.",
+          "meaning": "庆典；庆祝活动",
+          "false_meanings": [
+            "葬礼；追悼会",
+            "会议；讨论会"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "balloon",
+          "phonetic": "/bəˈluːn/",
+          "part_of_speech": "n.",
+          "meaning": "气球",
+          "false_meanings": [
+            "风筝",
+            "灯笼"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "paper cutting",
+          "phonetic": "",
+          "part_of_speech": "n.",
+          "meaning": "剪纸",
+          "false_meanings": [
+            "书法",
+            "绘画"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 5",
+          "word": "scissors",
+          "phonetic": "/ˈsɪzəz/",
+          "part_of_speech": "n.",
+          "meaning": "剪刀",
+          "false_meanings": [
+            "刀子",
+            "尺子"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "lively",
+          "phonetic": "/ˈlaɪvli/",
+          "part_of_speech": "adj.",
+          "meaning": "生气勃勃的；（色彩）鲜艳的",
+          "false_meanings": [
+            "死气沉沉的；暗淡的",
+            "安静的；平静的"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "fairy",
+          "phonetic": "/ˈfeəri/",
+          "part_of_speech": "n.",
+          "meaning": "童话故事（中的人物）",
+          "false_meanings": [
+            "科幻故事",
+            "历史故事"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "historical",
+          "phonetic": "/hɪˈstɒrɪkl/",
+          "part_of_speech": "adj.",
+          "meaning": "（有关）历史的",
+          "false_meanings": [
+            "（有关）未来的",
+            "（有关）现代的"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "heat",
+          "phonetic": "/hiːt/",
+          "part_of_speech": "n.",
+          "meaning": "热；高温",
+          "false_meanings": [
+            "冷；低温",
+            "雨；潮湿"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "polish",
+          "phonetic": "/ˈpɒlɪʃ/",
+          "part_of_speech": "v.",
+          "meaning": "磨光；修改；润色",
+          "false_meanings": [
+            "损坏；毁坏",
+            "隐藏；遮盖"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "complete",
+          "phonetic": "/kəmˈpliːt/",
+          "part_of_speech": "v.",
+          "meaning": "完成",
+          "false_meanings": [
+            "开始",
+            "放弃"
+          ]
+        },
+        {
+          "unit": "Unit 5",
+          "word": "Korea",
+          "phonetic": "/kəˈriə/",
+          "part_of_speech": "n.",
+          "meaning": "朝鲜；韩国",
+          "false_meanings": [
+            "日本",
+            "中国"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 5",
+          "word": "Switzerland",
+          "phonetic": "/ˈswɪtsələnd/",
+          "part_of_speech": "n.",
+          "meaning": "瑞士",
+          "false_meanings": [
+            "瑞典",
+            "奥地利"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 5",
+          "word": "San Francisco",
+          "phonetic": "/sæn frənˈsɪskəʊ/",
+          "part_of_speech": "n.",
+          "meaning": "圣弗朗西斯科（旧金山，美国城市）",
+          "false_meanings": [
+            "洛杉矶（美国城市）",
+            "纽约（美国城市）"
+          ],
+          "is_phrase": true,
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 5",
+          "word": "Marcus",
+          "phonetic": "/ˈmɑːkəs/",
+          "part_of_speech": "n.",
+          "meaning": "马库斯（男名）",
+          "false_meanings": [
+            "汤姆（男名）",
+            "杰克（男名）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 5",
+          "word": "Pam",
+          "phonetic": "/pæm/",
+          "part_of_speech": "n.",
+          "meaning": "帕姆（女名）",
+          "false_meanings": [
+            "玛丽（女名）",
+            "露西（女名）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 6",
+          "word": "heel",
+          "phonetic": "/hiːl/",
+          "part_of_speech": "n.",
+          "meaning": "鞋跟；足跟",
+          "false_meanings": [
+            "脚趾；手指",
+            "膝盖；胳膊"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "scoop",
+          "phonetic": "/skuːp/",
+          "part_of_speech": "n.",
+          "meaning": "勺；铲子",
+          "false_meanings": [
+            "刀子；叉子",
+            "盘子；碗"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "electricity",
+          "phonetic": "/ɪˌlekˈtrɪsəti/",
+          "part_of_speech": "n.",
+          "meaning": "电；电能",
+          "false_meanings": [
+            "水；水能",
+            "风；风能"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "style",
+          "phonetic": "/staɪl/",
+          "part_of_speech": "n.",
+          "meaning": "样式；款式",
+          "false_meanings": [
+            "价格；费用",
+            "数量；尺寸"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "project",
+          "phonetic": "/ˈprɒdʒekt/",
+          "part_of_speech": "n.",
+          "meaning": "项目；工程",
+          "false_meanings": [
+            "假期；休息",
+            "游戏；娱乐"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "pleasure",
+          "phonetic": "/ˈpleʒə(r)/",
+          "part_of_speech": "n.",
+          "meaning": "高兴；愉快",
+          "false_meanings": [
+            "悲伤；难过",
+            "愤怒；生气"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "zipper",
+          "phonetic": "/ˈzɪpə(r)/",
+          "part_of_speech": "n.",
+          "meaning": "拉链",
+          "false_meanings": [
+            "纽扣",
+            "口袋"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "daily",
+          "phonetic": "/ˈdeɪli/",
+          "part_of_speech": "adj.",
+          "meaning": "每日的；日常的",
+          "false_meanings": [
+            "每周的；周末的",
+            "每月的；每年的"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "have a point",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "有道理",
+          "false_meanings": [
+            "没道理；胡说",
+            "开玩笑；逗趣"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 6",
+          "word": "website",
+          "phonetic": "/ˈwebsaɪt/",
+          "part_of_speech": "n.",
+          "meaning": "网站",
+          "false_meanings": [
+            "电视台",
+            "广播电台"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "pioneer",
+          "phonetic": "/ˌpaɪəˈnɪə/",
+          "part_of_speech": "n.",
+          "meaning": "先锋；先驱",
+          "false_meanings": [
+            "追随者；模仿者",
+            "反对者；敌人"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "list",
+          "phonetic": "/lɪst/",
+          "part_of_speech": "v.",
+          "meaning": "列表；列清单",
+          "false_meanings": [
+            "删除；取消",
+            "隐藏；遮盖"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "mention",
+          "phonetic": "/ˈmenʃn/",
+          "part_of_speech": "v.",
+          "meaning": "提及；说到",
+          "false_meanings": [
+            "忘记；忽略",
+            "隐瞒；掩盖"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "accidental",
+          "phonetic": "/ˌæksɪˈdentl/",
+          "part_of_speech": "adj.",
+          "meaning": "意外的；偶然的",
+          "false_meanings": [
+            "故意的；有意的",
+            "计划的；安排的"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "by accident",
+          "phonetic": "",
+          "part_of_speech": "adv.",
+          "meaning": "偶然；意外地",
+          "false_meanings": [
+            "故意；有意地",
+            "计划；安排地"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 6",
+          "word": "ruler",
+          "phonetic": "/ˈruːlə/",
+          "part_of_speech": "n.",
+          "meaning": "统治者；支配者",
+          "false_meanings": [
+            "追随者；服从者",
+            "反抗者；叛逆者"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "boil",
+          "phonetic": "/bɔɪl/",
+          "part_of_speech": "v.",
+          "meaning": "煮沸；烧开",
+          "false_meanings": [
+            "冷冻；冷却",
+            "烘烤；油炸"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "remain",
+          "phonetic": "/rɪˈmeɪn/",
+          "part_of_speech": "v.",
+          "meaning": "保持不变；剩余",
+          "false_meanings": [
+            "改变；变化",
+            "消失；离开"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "smell",
+          "phonetic": "/smel/",
+          "part_of_speech": "n.",
+          "meaning": "气味",
+          "false_meanings": [
+            "声音",
+            "味道"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "saint",
+          "phonetic": "/seɪnt/",
+          "part_of_speech": "n.",
+          "meaning": "圣人；圣徒",
+          "false_meanings": [
+            "罪人；恶人",
+            "普通人；凡人"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "national",
+          "phonetic": "/ˈnæʃnəl/",
+          "part_of_speech": "adj.",
+          "meaning": "国家的；民族的",
+          "false_meanings": [
+            "私人的；个人的",
+            "地方的；本地的"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "trade",
+          "phonetic": "/treɪd/",
+          "part_of_speech": "n.",
+          "meaning": "贸易；交易",
+          "false_meanings": [
+            "战争；冲突",
+            "旅游；观光"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "take place",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "发生；出现",
+          "false_meanings": [
+            "消失；结束",
+            "阻止；避免"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 6",
+          "word": "popularity",
+          "phonetic": "/ˌpɒpjuˈlærəti/",
+          "part_of_speech": "n.",
+          "meaning": "受欢迎；普及",
+          "false_meanings": [
+            "不受欢迎；冷门",
+            "稀有；罕见"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "doubt",
+          "phonetic": "/daʊt/",
+          "part_of_speech": "n.",
+          "meaning": "疑惑；疑问",
+          "false_meanings": [
+            "确信；肯定",
+            "答案；解释"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "without doubt",
+          "phonetic": "",
+          "part_of_speech": "adv.",
+          "meaning": "毫无疑问；的确",
+          "false_meanings": [
+            "可能；也许",
+            "当然不；绝不"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 6",
+          "word": "fridge",
+          "phonetic": "/frɪdʒ/",
+          "part_of_speech": "n.",
+          "meaning": "冰箱",
+          "false_meanings": [
+            "微波炉",
+            "烤箱"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "low",
+          "phonetic": "/ləʊ/",
+          "part_of_speech": "adj.",
+          "meaning": "低的；矮的",
+          "false_meanings": [
+            "高的；高大的",
+            "中等的；平均的"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "somebody",
+          "phonetic": "/ˈsʌmbədi/",
+          "part_of_speech": "pron.",
+          "meaning": "某人；重要人物",
+          "false_meanings": [
+            "没有人",
+            "每个人"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "translate",
+          "phonetic": "/trænzˈleɪt/",
+          "part_of_speech": "v.",
+          "meaning": "翻译",
+          "false_meanings": [
+            "朗读；背诵",
+            "抄写；复制"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "lock",
+          "phonetic": "/lɒk/",
+          "part_of_speech": "v.",
+          "meaning": "锁住；锁上",
+          "false_meanings": [
+            "打开；解锁",
+            "关闭；关上"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "ring",
+          "phonetic": "/rɪŋ/",
+          "part_of_speech": "v.",
+          "meaning": "（铃、电话等）鸣；响",
+          "false_meanings": [
+            "沉默；安静",
+            "停止；结束"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "earthquake",
+          "phonetic": "/ˈɜːθkweɪk/",
+          "part_of_speech": "n.",
+          "meaning": "地震",
+          "false_meanings": [
+            "台风",
+            "洪水"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "sudden",
+          "phonetic": "/ˈsʌdn/",
+          "part_of_speech": "adj.",
+          "meaning": "突然（的）",
+          "false_meanings": [
+            "缓慢（的）",
+            "预期（的）"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "all of a sudden",
+          "phonetic": "",
+          "part_of_speech": "adv.",
+          "meaning": "突然；猛地",
+          "false_meanings": [
+            "缓慢地；渐渐地",
+            "预期中；计划内"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 6",
+          "word": "bell",
+          "phonetic": "/bel/",
+          "part_of_speech": "n.",
+          "meaning": "钟（声）；铃（声）",
+          "false_meanings": [
+            "鼓（声）",
+            "笛（声）"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "biscuit",
+          "phonetic": "/ˈbɪskɪt/",
+          "part_of_speech": "n.",
+          "meaning": "饼干",
+          "false_meanings": [
+            "面包",
+            "蛋糕"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "cookie",
+          "phonetic": "/ˈkʊki/",
+          "part_of_speech": "n.",
+          "meaning": "曲奇饼",
+          "false_meanings": [
+            "糖果",
+            "巧克力"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "musical",
+          "phonetic": "/ˈmjuːzɪkl/",
+          "part_of_speech": "adj.",
+          "meaning": "音乐的；有音乐天赋的",
+          "false_meanings": [
+            "美术的；绘画的",
+            "体育的；运动的"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "instrument",
+          "phonetic": "/ˈɪnstrəmənt/",
+          "part_of_speech": "n.",
+          "meaning": "器械；仪器；工具",
+          "false_meanings": [
+            "玩具；游戏",
+            "书籍；杂志"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "crispy",
+          "phonetic": "/ˈkrɪspi/",
+          "part_of_speech": "adj.",
+          "meaning": "脆的；酥脆的",
+          "false_meanings": [
+            "软的；柔软的",
+            "湿的；潮湿的"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "salty",
+          "phonetic": "/ˈsɔːlti/",
+          "part_of_speech": "adj.",
+          "meaning": "咸的",
+          "false_meanings": [
+            "甜的",
+            "酸的"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "sour",
+          "phonetic": "/ˈsaʊə(r)/",
+          "part_of_speech": "adj.",
+          "meaning": "酸的；有酸味的",
+          "false_meanings": [
+            "甜的",
+            "苦的"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "by mistake",
+          "phonetic": "",
+          "part_of_speech": "adv.",
+          "meaning": "错误地；无意中",
+          "false_meanings": [
+            "故意地；有意地",
+            "正确地；恰当地"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 6",
+          "word": "customer",
+          "phonetic": "/ˈkʌstəmə(r)/",
+          "part_of_speech": "n.",
+          "meaning": "顾客；客户",
+          "false_meanings": [
+            "商人；卖家",
+            "员工；服务员"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "the Olympics",
+          "phonetic": "/əˈlɪmpɪks/",
+          "part_of_speech": "n.",
+          "meaning": "奥林匹克运动会",
+          "false_meanings": [
+            "世界杯",
+            "亚运会"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 6",
+          "word": "Canadian",
+          "phonetic": "/kəˈneɪdiən/",
+          "part_of_speech": "adj.",
+          "meaning": "加拿大的；加拿大人的",
+          "false_meanings": [
+            "美国的；美国人的",
+            "英国的；英国人的"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "divide",
+          "phonetic": "/dɪˈvaɪd/",
+          "part_of_speech": "v.",
+          "meaning": "分开；分散",
+          "false_meanings": [
+            "合并；联合",
+            "收集；聚集"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "divide ... into",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "把……分开",
+          "false_meanings": [
+            "把……合并",
+            "把……混合"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 6",
+          "word": "basket",
+          "phonetic": "/ˈbɑːskɪt/",
+          "part_of_speech": "n.",
+          "meaning": "篮；筐",
+          "false_meanings": [
+            "盒子；箱子",
+            "袋子；包"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "not only ... but also",
+          "phonetic": "",
+          "part_of_speech": "conj.",
+          "meaning": "不但……而且……",
+          "false_meanings": [
+            "只有……才……",
+            "既不……也不……"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 6",
+          "word": "look up to",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "钦佩；仰慕",
+          "false_meanings": [
+            "轻视；看不起",
+            "忽视；忽略"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 6",
+          "word": "hero",
+          "phonetic": "/ˈhɪərəʊ/",
+          "part_of_speech": "n.",
+          "meaning": "英雄",
+          "false_meanings": [
+            "罪犯",
+            "小丑"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "professional",
+          "phonetic": "/prəˈfeʃənl/",
+          "part_of_speech": "adj.",
+          "meaning": "职业的；专业的",
+          "false_meanings": [
+            "业余的；非专业的",
+            "临时的；兼职的"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "nearly",
+          "phonetic": "/ˈnɪəli/",
+          "part_of_speech": "adv.",
+          "meaning": "几乎；差不多",
+          "false_meanings": [
+            "完全；绝对",
+            "从不；决不"
+          ]
+        },
+        {
+          "unit": "Unit 6",
+          "word": "Berlin",
+          "phonetic": "/bɜːˈlɪn/",
+          "part_of_speech": "n.",
+          "meaning": "柏林（德国城市）",
+          "false_meanings": [
+            "巴黎（法国城市）",
+            "伦敦（英国城市）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 6",
+          "word": "NBA",
+          "phonetic": "",
+          "part_of_speech": "n.",
+          "meaning": "（美国）国家篮球协会",
+          "false_meanings": [
+            "（美国）国家足球协会",
+            "（美国）国家棒球协会"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 6",
+          "word": "CBA",
+          "phonetic": "",
+          "part_of_speech": "n.",
+          "meaning": "中国篮球协会",
+          "false_meanings": [
+            "中国足球协会",
+            "中国乒乓球协会"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 6",
+          "word": "Roy",
+          "phonetic": "/rɔɪ/",
+          "part_of_speech": "n.",
+          "meaning": "罗伊（男名）",
+          "false_meanings": [
+            "汤姆（男名）",
+            "杰克（男名）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 6",
+          "word": "Whitcomb Judson",
+          "phonetic": "/ˈwɪtkəm ˈdʒʌdsən/",
+          "part_of_speech": "n.",
+          "meaning": "惠特科姆·贾德森",
+          "false_meanings": [
+            "托马斯·爱迪生",
+            "亚历山大·贝尔"
+          ],
+          "is_phrase": true,
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 6",
+          "word": "Thomas Watson",
+          "phonetic": "/ˈtɒməs ˈwɒtsən/",
+          "part_of_speech": "n.",
+          "meaning": "托马斯·沃森",
+          "false_meanings": [
+            "史蒂夫·乔布斯",
+            "比尔·盖茨"
+          ],
+          "is_phrase": true,
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 6",
+          "word": "George Crum",
+          "phonetic": "/dʒɔːdʒ krʌm/",
+          "part_of_speech": "n.",
+          "meaning": "乔治·克拉姆",
+          "false_meanings": [
+            "詹姆斯·瓦特",
+            "本杰明·富兰克林"
+          ],
+          "is_phrase": true,
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 6",
+          "word": "James Naismith",
+          "phonetic": "/dʒeɪmz ˈneɪsmɪθ/",
+          "part_of_speech": "n.",
+          "meaning": "詹姆斯·奈史密斯",
+          "false_meanings": [
+            "迈克尔·乔丹",
+            "科比·布莱恩特"
+          ],
+          "is_phrase": true,
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 6",
+          "word": "Ruby",
+          "phonetic": "/ˈruːbi/",
+          "part_of_speech": "n.",
+          "meaning": "鲁比（女名）",
+          "false_meanings": [
+            "玛丽（女名）",
+            "露西（女名）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 7",
+          "word": "license",
+          "phonetic": "/ˈlaɪsns/",
+          "part_of_speech": "n.",
+          "meaning": "证；证件",
+          "false_meanings": [
+            "护照；身份证",
+            "信件；邮件"
+          ]
+        },
+        {
+          "unit": "Unit 7",
+          "word": "safety",
+          "phonetic": "/ˈseɪfti/",
+          "part_of_speech": "n.",
+          "meaning": "安全；安全性",
+          "false_meanings": [
+            "危险；风险",
+            "意外；事故"
+          ]
+        },
+        {
+          "unit": "Unit 7",
+          "word": "smoke",
+          "phonetic": "/sməʊk/",
+          "part_of_speech": "v.",
+          "meaning": "吸烟；冒烟",
+          "false_meanings": [
+            "喝水；饮水",
+            "吃饭；进食"
+          ]
+        },
+        {
+          "unit": "Unit 7",
+          "word": "part-time",
+          "phonetic": "/ˈpɑːt taɪm/",
+          "part_of_speech": "adj.",
+          "meaning": "兼职的",
+          "false_meanings": [
+            "全职的",
+            "临时的"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 7",
+          "word": "pierce",
+          "phonetic": "/pɪəs/",
+          "part_of_speech": "v.",
+          "meaning": "扎；刺破；穿透",
+          "false_meanings": [
+            "缝合；修补",
+            "包裹；覆盖"
+          ]
+        },
+        {
+          "unit": "Unit 7",
+          "word": "earring",
+          "phonetic": "/ˈɪərɪŋ/",
+          "part_of_speech": "n.",
+          "meaning": "耳环；耳饰",
+          "false_meanings": [
+            "项链；吊坠",
+            "手镯；戒指"
+          ]
+        },
+        {
+          "unit": "Unit 7",
+          "word": "flash",
+          "phonetic": "/flæʃ/",
+          "part_of_speech": "n.",
+          "meaning": "闪光灯；闪光",
+          "false_meanings": [
+            "音箱；喇叭",
+            "镜头；相机"
+          ]
+        },
+        {
+          "unit": "Unit 7",
+          "word": "tiny",
+          "phonetic": "/ˈtaɪni/",
+          "part_of_speech": "adj.",
+          "meaning": "极小的；微小的",
+          "false_meanings": [
+            "巨大的；庞大的",
+            "中等的；普通的"
+          ]
+        },
+        {
+          "unit": "Unit 7",
+          "word": "cry",
+          "phonetic": "/kraɪ/",
+          "part_of_speech": "v.&n.",
+          "meaning": "哭；叫喊",
+          "false_meanings": [
+            "笑；微笑",
+            "沉默；安静"
+          ]
+        },
+        {
+          "unit": "Unit 7",
+          "word": "field",
+          "phonetic": "/fiːld/",
+          "part_of_speech": "n.",
+          "meaning": "田野；场地",
+          "false_meanings": [
+            "房间；室内",
+            "城市；街道"
+          ]
+        },
+        {
+          "unit": "Unit 7",
+          "word": "hug",
+          "phonetic": "/hʌɡ/",
+          "part_of_speech": "n.&v.",
+          "meaning": "拥抱；搂抱",
+          "false_meanings": [
+            "推开；拒绝",
+            "击打；攻击"
+          ]
+        },
+        {
+          "unit": "Unit 7",
+          "word": "lift",
+          "phonetic": "/lɪft/",
+          "part_of_speech": "v.",
+          "meaning": "举起；抬高",
+          "false_meanings": [
+            "放下；降低",
+            "扔掉；丢弃"
+          ]
+        },
+        {
+          "unit": "Unit 7",
+          "word": "badly",
+          "phonetic": "/ˈbædli/",
+          "part_of_speech": "adv.",
+          "meaning": "严重地；差；非常",
+          "false_meanings": [
+            "轻微地；稍微",
+            "很好地；完美地"
+          ]
+        },
+        {
+          "unit": "Unit 7",
+          "word": "talk back",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "回嘴；顶嘴",
+          "false_meanings": [
+            "道歉；认错",
+            "沉默；不说话"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 7",
+          "word": "awful",
+          "phonetic": "/ˈɔːfl/",
+          "part_of_speech": "adj.",
+          "meaning": "很坏的；讨厌的",
+          "false_meanings": [
+            "很好的；美妙的",
+            "普通的；一般的"
+          ]
+        },
+        {
+          "unit": "Unit 7",
+          "word": "teen",
+          "phonetic": "/tiːn/",
+          "part_of_speech": "n.",
+          "meaning": "（13至19岁之间的）青少年",
+          "false_meanings": [
+            "儿童",
+            "成年人"
+          ]
+        },
+        {
+          "unit": "Unit 7",
+          "word": "regret",
+          "phonetic": "/rɪˈɡret/",
+          "part_of_speech": "v.&n.",
+          "meaning": "感到遗憾；懊悔",
+          "false_meanings": [
+            "感到高兴；庆幸",
+            "感到满意；欣慰"
+          ]
+        },
+        {
+          "unit": "Unit 7",
+          "word": "poem",
+          "phonetic": "/ˈpəʊɪm/",
+          "part_of_speech": "n.",
+          "meaning": "诗；韵文",
+          "false_meanings": [
+            "小说；故事",
+            "文章；散文"
+          ]
+        },
+        {
+          "unit": "Unit 7",
+          "word": "community",
+          "phonetic": "/kəˈmjuːnəti/",
+          "part_of_speech": "n.",
+          "meaning": "社区；社团",
+          "false_meanings": [
+            "公司；企业",
+            "学校；大学"
+          ]
+        },
+        {
+          "unit": "Unit 7",
+          "word": "keep ... away from",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "避免接近；远离",
+          "false_meanings": [
+            "接近；靠近",
+            "保持联系"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 7",
+          "word": "chance",
+          "phonetic": "/tʃɑːns/",
+          "part_of_speech": "n.",
+          "meaning": "机会；可能性",
+          "false_meanings": [
+            "障碍；困难",
+            "失败；挫折"
+          ]
+        },
+        {
+          "unit": "Unit 7",
+          "word": "make one's own decision",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "自己做决定",
+          "false_meanings": [
+            "听从别人",
+            "放弃选择"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 7",
+          "word": "educate",
+          "phonetic": "/ˈedʒukeɪt/",
+          "part_of_speech": "v.",
+          "meaning": "教育；教导",
+          "false_meanings": [
+            "惩罚；批评",
+            "忽视；忽略"
+          ]
+        },
+        {
+          "unit": "Unit 7",
+          "word": "manage",
+          "phonetic": "/ˈmænɪdʒ/",
+          "part_of_speech": "v.",
+          "meaning": "完成（困难的事）；应付（困难局面）",
+          "false_meanings": [
+            "放弃；失败",
+            "逃避；躲避"
+          ]
+        },
+        {
+          "unit": "Unit 7",
+          "word": "society",
+          "phonetic": "/səˈsaɪəti/",
+          "part_of_speech": "n.",
+          "meaning": "社会",
+          "false_meanings": [
+            "家庭",
+            "学校"
+          ]
+        },
+        {
+          "unit": "Unit 7",
+          "word": "get in the way of",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "挡……的路；妨碍",
+          "false_meanings": [
+            "帮助；支持",
+            "鼓励；推动"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 7",
+          "word": "support",
+          "phonetic": "/səˈpɔːt/",
+          "part_of_speech": "v.&n.",
+          "meaning": "支持",
+          "false_meanings": [
+            "反对；抵制",
+            "忽视；冷落"
+          ]
+        },
+        {
+          "unit": "Unit 7",
+          "word": "enter",
+          "phonetic": "/ˈentə(r)/",
+          "part_of_speech": "v.",
+          "meaning": "进来；进去",
+          "false_meanings": [
+            "离开；退出",
+            "等待；停留"
+          ]
+        },
+        {
+          "unit": "Unit 7",
+          "word": "choice",
+          "phonetic": "/tʃɔɪs/",
+          "part_of_speech": "n.",
+          "meaning": "选择；挑选",
+          "false_meanings": [
+            "强迫；命令",
+            "禁止；限制"
+          ]
+        },
+        {
+          "unit": "Unit 7",
+          "word": "Picasso",
+          "phonetic": "",
+          "part_of_speech": "n.",
+          "meaning": "毕加索（西班牙画家）",
+          "false_meanings": [
+            "达芬奇（意大利画家）",
+            "梵高（荷兰画家）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 8",
+          "word": "whose",
+          "phonetic": "/huːz/",
+          "part_of_speech": "adj.&pron.",
+          "meaning": "谁的",
+          "false_meanings": [
+            "什么",
+            "哪里"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "truck",
+          "phonetic": "/trʌk/",
+          "part_of_speech": "n.",
+          "meaning": "卡车；货车",
+          "false_meanings": [
+            "公交车",
+            "自行车"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "picnic",
+          "phonetic": "/ˈpɪknɪk/",
+          "part_of_speech": "n.",
+          "meaning": "野餐",
+          "false_meanings": [
+            "宴会",
+            "聚会"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "rabbit",
+          "phonetic": "/ˈræbɪt/",
+          "part_of_speech": "n.",
+          "meaning": "兔；野兔",
+          "false_meanings": [
+            "猫",
+            "狗"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "attend",
+          "phonetic": "/əˈtend/",
+          "part_of_speech": "v.",
+          "meaning": "出席；参加",
+          "false_meanings": [
+            "缺席；缺勤",
+            "拒绝；谢绝"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "valuable",
+          "phonetic": "/ˈvæljuəbl/",
+          "part_of_speech": "adj.",
+          "meaning": "贵重的；很有用的",
+          "false_meanings": [
+            "无价值的；无用的",
+            "便宜的；廉价的"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "pink",
+          "phonetic": "/pɪŋk/",
+          "part_of_speech": "adj.",
+          "meaning": "粉红色的",
+          "false_meanings": [
+            "绿色的",
+            "紫色的"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "anybody",
+          "phonetic": "/ˈenibɒdi/",
+          "part_of_speech": "pron.",
+          "meaning": "任何人",
+          "false_meanings": [
+            "没有人",
+            "某个人"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "happening",
+          "phonetic": "/ˈhæpənɪŋ/",
+          "part_of_speech": "n.",
+          "meaning": "事件；发生的事情（常指不寻常的）",
+          "false_meanings": [
+            "计划；安排",
+            "习惯；常规"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "noise",
+          "phonetic": "/nɔɪz/",
+          "part_of_speech": "n.",
+          "meaning": "声音；噪音",
+          "false_meanings": [
+            "沉默；安静",
+            "音乐；歌曲"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "policeman",
+          "phonetic": "/pəˈliːsmən/",
+          "part_of_speech": "n.",
+          "meaning": "男警察",
+          "false_meanings": [
+            "消防员",
+            "医生"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "wolf",
+          "phonetic": "/wʊlf/",
+          "part_of_speech": "n.",
+          "meaning": "狼",
+          "false_meanings": [
+            "熊",
+            "虎"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "uneasy",
+          "phonetic": "/ʌnˈiːzi/",
+          "part_of_speech": "adj.",
+          "meaning": "担心的；不安的",
+          "false_meanings": [
+            "放心的；安心的",
+            "快乐的；高兴的"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "laboratory",
+          "phonetic": "/ləˈbɒrətri/",
+          "part_of_speech": "n.",
+          "meaning": "实验室",
+          "false_meanings": [
+            "图书馆",
+            "教室"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "outdoors",
+          "phonetic": "/ˌaʊtˈdɔːz/",
+          "part_of_speech": "adv.",
+          "meaning": "在户外；在野外",
+          "false_meanings": [
+            "在室内",
+            "在地下"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "coat",
+          "phonetic": "/kəʊt/",
+          "part_of_speech": "n.",
+          "meaning": "外衣；外套",
+          "false_meanings": [
+            "衬衫",
+            "裤子"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "sleepy",
+          "phonetic": "/ˈsliːpi/",
+          "part_of_speech": "adj.",
+          "meaning": "困倦的；瞌睡的",
+          "false_meanings": [
+            "清醒的；精神的",
+            "兴奋的；活泼的"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "land",
+          "phonetic": "/lænd/",
+          "part_of_speech": "v.",
+          "meaning": "着陆；降落",
+          "false_meanings": [
+            "起飞；升空",
+            "漂浮；悬浮"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "alien",
+          "phonetic": "/ˈeɪliən/",
+          "part_of_speech": "n.",
+          "meaning": "外星人",
+          "false_meanings": [
+            "地球人",
+            "机器人"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "run after",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "追逐；追赶",
+          "false_meanings": [
+            "逃跑；躲避",
+            "停下；等待"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 8",
+          "word": "suit",
+          "phonetic": "/sjuːt/",
+          "part_of_speech": "n.",
+          "meaning": "西服；套装",
+          "false_meanings": [
+            "睡衣；便装",
+            "运动服；制服"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "express",
+          "phonetic": "/ɪkˈspres/",
+          "part_of_speech": "v.",
+          "meaning": "表示；表达",
+          "false_meanings": [
+            "隐藏；掩盖",
+            "忽略；忽视"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "at the same time",
+          "phonetic": "",
+          "part_of_speech": "adv.",
+          "meaning": "同时；一起",
+          "false_meanings": [
+            "不同时间",
+            "之前；之后"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 8",
+          "word": "circle",
+          "phonetic": "/ˈsɜːkl/",
+          "part_of_speech": "n.",
+          "meaning": "圆圈；圈子",
+          "false_meanings": [
+            "方形；矩形",
+            "三角形"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "Britain",
+          "phonetic": "/ˈbrɪtn/",
+          "part_of_speech": "n.",
+          "meaning": "大不列颠；英国",
+          "false_meanings": [
+            "法国",
+            "德国"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 8",
+          "word": "mystery",
+          "phonetic": "/ˈmɪstri/",
+          "part_of_speech": "n.",
+          "meaning": "奥秘；神秘事物",
+          "false_meanings": [
+            "真相；事实",
+            "答案；解释"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "receive",
+          "phonetic": "/rɪˈsiːv/",
+          "part_of_speech": "v.",
+          "meaning": "接待；接受；收到",
+          "false_meanings": [
+            "发送；寄出",
+            "拒绝；退回"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "historian",
+          "phonetic": "/hɪˈstɔːriən/",
+          "part_of_speech": "n.",
+          "meaning": "历史学家",
+          "false_meanings": [
+            "科学家",
+            "数学家"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "leader",
+          "phonetic": "/ˈliːdə(r)/",
+          "part_of_speech": "n.",
+          "meaning": "领导；领袖",
+          "false_meanings": [
+            "追随者",
+            "观众"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "midsummer",
+          "phonetic": "/ˌmɪdˈsʌmə(r)/",
+          "part_of_speech": "n.",
+          "meaning": "仲夏；中夏",
+          "false_meanings": [
+            "仲冬；隆冬",
+            "初春；早春"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "medical",
+          "phonetic": "/ˈmedɪkl/",
+          "part_of_speech": "adj.",
+          "meaning": "医疗的；医学的",
+          "false_meanings": [
+            "法律的；司法的",
+            "教育的；学术的"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "purpose",
+          "phonetic": "/ˈpɜːpəs/",
+          "part_of_speech": "n.",
+          "meaning": "目的；目标",
+          "false_meanings": [
+            "结果；后果",
+            "过程；经历"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "prevent",
+          "phonetic": "/prɪˈvent/",
+          "part_of_speech": "v.",
+          "meaning": "阻止；阻挡",
+          "false_meanings": [
+            "允许；同意",
+            "鼓励；推动"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "energy",
+          "phonetic": "/ˈenədʒi/",
+          "part_of_speech": "n.",
+          "meaning": "力量；精力",
+          "false_meanings": [
+            "疲劳；虚弱",
+            "休息；放松"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "position",
+          "phonetic": "/pəˈzɪʃn/",
+          "part_of_speech": "n.",
+          "meaning": "位置；地方",
+          "false_meanings": [
+            "方向；路线",
+            "距离；远近"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "burial",
+          "phonetic": "/ˈberiəl/",
+          "part_of_speech": "n.",
+          "meaning": "埋葬；安葬",
+          "false_meanings": [
+            "出生；诞生",
+            "婚礼；典礼"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "honor",
+          "phonetic": "/ˈɒnə/",
+          "part_of_speech": "v.",
+          "meaning": "尊重；表示敬意",
+          "false_meanings": [
+            "侮辱；轻视",
+            "忽视；冷落"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "ancestor",
+          "phonetic": "/ˈænsestə(r)/",
+          "part_of_speech": "n.",
+          "meaning": "祖宗；祖先",
+          "false_meanings": [
+            "后代；子孙",
+            "朋友；邻居"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "victory",
+          "phonetic": "/ˈvɪktəri/",
+          "part_of_speech": "n.",
+          "meaning": "胜利；成功",
+          "false_meanings": [
+            "失败；挫折",
+            "放弃；投降"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "enemy",
+          "phonetic": "/ˈenəmi/",
+          "part_of_speech": "n.",
+          "meaning": "敌人；仇人",
+          "false_meanings": [
+            "朋友；盟友",
+            "伙伴；同事"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "period",
+          "phonetic": "/ˈpɪəriəd/",
+          "part_of_speech": "n.",
+          "meaning": "一段时间；时期",
+          "false_meanings": [
+            "一个地点；位置",
+            "一次活动；事件"
+          ]
+        },
+        {
+          "unit": "Unit 8",
+          "word": "Stonehenge",
+          "phonetic": "/ˈstəʊnhendʒ/",
+          "part_of_speech": "n.",
+          "meaning": "巨石阵",
+          "false_meanings": [
+            "金字塔",
+            "长城"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 8",
+          "word": "Carla",
+          "phonetic": "/ˈkɑːlə/",
+          "part_of_speech": "n.",
+          "meaning": "卡拉（女名）",
+          "false_meanings": [
+            "玛丽（女名）",
+            "露西（女名）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 8",
+          "word": "J. K. Rowling",
+          "phonetic": "/ˈrəʊlɪŋ/",
+          "part_of_speech": "n.",
+          "meaning": "J.K.罗琳（英国作家）",
+          "false_meanings": [
+            "查尔斯·狄更斯（英国作家）",
+            "简·奥斯汀（英国作家）"
+          ],
+          "is_phrase": true,
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 8",
+          "word": "Victor",
+          "phonetic": "/ˈvɪktə(r)/",
+          "part_of_speech": "n.",
+          "meaning": "维克多（男名）",
+          "false_meanings": [
+            "汤姆（男名）",
+            "杰克（男名）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 8",
+          "word": "Jean",
+          "phonetic": "/dʒiːn/",
+          "part_of_speech": "n.",
+          "meaning": "琼（女名）",
+          "false_meanings": [
+            "玛丽（女名）",
+            "露西（女名）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 8",
+          "word": "Paul Stoker",
+          "phonetic": "/stəʊkə(r)/",
+          "part_of_speech": "n.",
+          "meaning": "保罗·斯托克",
+          "false_meanings": [
+            "约翰·史密斯",
+            "托马斯·布朗"
+          ],
+          "is_phrase": true,
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 9",
+          "word": "prefer",
+          "phonetic": "/prɪˈfɜː(r)/",
+          "part_of_speech": "v.",
+          "meaning": "更喜欢",
+          "false_meanings": [
+            "讨厌；厌恶",
+            "忽视；忽略"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "lyrics",
+          "phonetic": "/ˈlɪrɪks/",
+          "part_of_speech": "n.",
+          "meaning": "（歌词）歌词",
+          "false_meanings": [
+            "旋律；曲调",
+            "节奏；拍子"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "Australian",
+          "phonetic": "/ɒˈstreɪliən/",
+          "part_of_speech": "adj.",
+          "meaning": "澳大利亚（人）的",
+          "false_meanings": [
+            "美国（人）的",
+            "英国（人）的"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "electronic",
+          "phonetic": "/ɪˌlekˈtrɒnɪk/",
+          "part_of_speech": "adj.",
+          "meaning": "电子的；电子设备的",
+          "false_meanings": [
+            "机械的；手动的",
+            "化学的；物理的"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "suppose",
+          "phonetic": "/səˈpəʊz/",
+          "part_of_speech": "v.",
+          "meaning": "推断；料想",
+          "false_meanings": [
+            "确定；肯定",
+            "拒绝；否认"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "smooth",
+          "phonetic": "/smuːð/",
+          "part_of_speech": "adj.",
+          "meaning": "悦耳的；平滑的",
+          "false_meanings": [
+            "刺耳的；粗糙的",
+            "嘈杂的；混乱的"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "spare",
+          "phonetic": "/speə/",
+          "part_of_speech": "adj.",
+          "meaning": "空闲的；不用的",
+          "false_meanings": [
+            "忙碌的；繁忙的",
+            "紧张的；急迫的"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "director",
+          "phonetic": "/dəˈrektə(r)/",
+          "part_of_speech": "n.",
+          "meaning": "导演；部门负责人",
+          "false_meanings": [
+            "演员；明星",
+            "观众；粉丝"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "case",
+          "phonetic": "/keɪs/",
+          "part_of_speech": "n.",
+          "meaning": "情况；实情",
+          "false_meanings": [
+            "谎言；虚假",
+            "想象；幻觉"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "in that case",
+          "phonetic": "",
+          "part_of_speech": "adv.",
+          "meaning": "既然那样；假使那样的话",
+          "false_meanings": [
+            "无论如何",
+            "虽然这样"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 9",
+          "word": "war",
+          "phonetic": "/wɔː(r)/",
+          "part_of_speech": "n.",
+          "meaning": "战争；战争状态",
+          "false_meanings": [
+            "和平；和谐",
+            "合作；联盟"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "stick",
+          "phonetic": "/stɪk/",
+          "part_of_speech": "v.",
+          "meaning": "粘贴；将……刺入",
+          "false_meanings": [
+            "分离；移除",
+            "取下；拿走"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "stick to",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "坚持；固守",
+          "false_meanings": [
+            "放弃；改变",
+            "忽视；忽略"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 9",
+          "word": "down",
+          "phonetic": "/daʊn/",
+          "part_of_speech": "adj.",
+          "meaning": "悲哀；沮丧",
+          "false_meanings": [
+            "高兴；兴奋",
+            "平静；安宁"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "dialog",
+          "phonetic": "/ˈdaɪəlɒɡ/",
+          "part_of_speech": "n.",
+          "meaning": "对话；对白",
+          "false_meanings": [
+            "独白；旁白",
+            "沉默；安静"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "ending",
+          "phonetic": "/ˈendɪŋ/",
+          "part_of_speech": "n.",
+          "meaning": "结尾；结局",
+          "false_meanings": [
+            "开始；开端",
+            "过程；中间"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "documentary",
+          "phonetic": "/ˌdɒkjuˈmentri/",
+          "part_of_speech": "n.",
+          "meaning": "纪录片",
+          "false_meanings": [
+            "科幻片",
+            "喜剧片"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "drama",
+          "phonetic": "/ˈdrɑːmə/",
+          "part_of_speech": "n.",
+          "meaning": "戏；剧",
+          "false_meanings": [
+            "歌曲；音乐",
+            "舞蹈；表演"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "plenty",
+          "phonetic": "/ˈplenti/",
+          "part_of_speech": "pron.",
+          "meaning": "大量；众多",
+          "false_meanings": [
+            "少量；稀少",
+            "没有；缺乏"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "plenty of",
+          "phonetic": "",
+          "part_of_speech": "adj.",
+          "meaning": "大量；充足",
+          "false_meanings": [
+            "缺少；不足",
+            "没有；空无"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 9",
+          "word": "shut",
+          "phonetic": "/ʃʌt/",
+          "part_of_speech": "v.",
+          "meaning": "关闭；关上",
+          "false_meanings": [
+            "打开；开启",
+            "修理；恢复"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "shut off",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "关闭；停止运转",
+          "false_meanings": [
+            "打开；启动",
+            "继续；保持"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 9",
+          "word": "superhero",
+          "phonetic": "/ˈsuːpəhɪərəʊ/",
+          "part_of_speech": "n.",
+          "meaning": "超级英雄",
+          "false_meanings": [
+            "普通人",
+            "反派人物"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "once in a while",
+          "phonetic": "",
+          "part_of_speech": "adv.",
+          "meaning": "偶尔地；间或",
+          "false_meanings": [
+            "经常地；总是",
+            "从不；决不"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 9",
+          "word": "intelligent",
+          "phonetic": "/ɪnˈtelɪdʒənt/",
+          "part_of_speech": "adj.",
+          "meaning": "有才智的；聪明的",
+          "false_meanings": [
+            "愚蠢的；笨的",
+            "普通的；一般的"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "sense",
+          "phonetic": "/sens/",
+          "part_of_speech": "v.",
+          "meaning": "感觉到；意识到",
+          "false_meanings": [
+            "忽视；忽略",
+            "遗忘；忘记"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "sadness",
+          "phonetic": "/ˈsædnəs/",
+          "part_of_speech": "n.",
+          "meaning": "悲伤；悲痛",
+          "false_meanings": [
+            "快乐；高兴",
+            "平静；安宁"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "pain",
+          "phonetic": "/peɪn/",
+          "part_of_speech": "n.",
+          "meaning": "痛苦；疼痛；苦恼",
+          "false_meanings": [
+            "快乐；舒适",
+            "健康；强壮"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "reflect",
+          "phonetic": "/rɪˈflekt/",
+          "part_of_speech": "v.",
+          "meaning": "反映；映出",
+          "false_meanings": [
+            "隐藏；遮盖",
+            "忽略；忽视"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "moving",
+          "phonetic": "/ˈmuːvɪŋ/",
+          "part_of_speech": "adj.",
+          "meaning": "令人感动的；动人的",
+          "false_meanings": [
+            "无聊的；乏味的",
+            "可怕的；吓人的"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "perform",
+          "phonetic": "/pəˈfɔːm/",
+          "part_of_speech": "v.",
+          "meaning": "表演；执行",
+          "false_meanings": [
+            "观看；欣赏",
+            "放弃；取消"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "lifetime",
+          "phonetic": "/ˈlaɪftaɪm/",
+          "part_of_speech": "n.",
+          "meaning": "一生；有生之年",
+          "false_meanings": [
+            "一天；短暂时间",
+            "一周；一月"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "pity",
+          "phonetic": "/ˈpɪti/",
+          "part_of_speech": "n.",
+          "meaning": "遗憾；怜悯",
+          "false_meanings": [
+            "幸运；庆幸",
+            "快乐；喜悦"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "total",
+          "phonetic": "/ˈtəʊtl/",
+          "part_of_speech": "n.",
+          "meaning": "总数；合计",
+          "false_meanings": [
+            "部分；少量",
+            "平均；中间"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "in total",
+          "phonetic": "",
+          "part_of_speech": "adv.",
+          "meaning": "总共；合计",
+          "false_meanings": [
+            "部分地",
+            "平均地"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 9",
+          "word": "master",
+          "phonetic": "/ˈmɑːstə/",
+          "part_of_speech": "n.",
+          "meaning": "大师；能手；主人",
+          "false_meanings": [
+            "学生；新手",
+            "仆人；奴隶"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "praise",
+          "phonetic": "/preɪz/",
+          "part_of_speech": "v.&n.",
+          "meaning": "表扬；赞扬",
+          "false_meanings": [
+            "批评；指责",
+            "惩罚；处罚"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "recall",
+          "phonetic": "/rɪˈkɔːl/",
+          "part_of_speech": "v.",
+          "meaning": "回忆起；回想起",
+          "false_meanings": [
+            "遗忘；忘却",
+            "忽视；忽略"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "wound",
+          "phonetic": "/wuːnd/",
+          "part_of_speech": "n.",
+          "meaning": "伤；创伤；伤害",
+          "false_meanings": [
+            "健康；康复",
+            "治愈；恢复"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "painful",
+          "phonetic": "/ˈpeɪnfl/",
+          "part_of_speech": "adj.",
+          "meaning": "令人痛苦的；令人疼痛的",
+          "false_meanings": [
+            "舒适的；愉快的",
+            "轻松的；容易的"
+          ]
+        },
+        {
+          "unit": "Unit 9",
+          "word": "World War II",
+          "phonetic": "",
+          "part_of_speech": "n.",
+          "meaning": "第二次世界大战",
+          "false_meanings": [
+            "第一次世界大战",
+            "冷战"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 9",
+          "word": "Men in Black",
+          "phonetic": "",
+          "part_of_speech": "n.",
+          "meaning": "《黑衣人》（电影名）",
+          "false_meanings": [
+            "《钢铁侠》（电影名）",
+            "《蝙蝠侠》（电影名）"
+          ],
+          "is_phrase": true,
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 9",
+          "word": "Kung Fu Panda",
+          "phonetic": "",
+          "part_of_speech": "n.",
+          "meaning": "《功夫熊猫》（电影名）",
+          "false_meanings": [
+            "《狮子王》（电影名）",
+            "《冰雪奇缘》（电影名）"
+          ],
+          "is_phrase": true,
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 9",
+          "word": "Titanic",
+          "phonetic": "/taɪˈtænɪk/",
+          "part_of_speech": "n.",
+          "meaning": "《泰坦尼克号》（电影名）",
+          "false_meanings": [
+            "《阿凡达》（电影名）",
+            "《珍珠港》（电影名）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 9",
+          "word": "March of the Penguins",
+          "phonetic": "/ˈpeŋɡwɪnz/",
+          "part_of_speech": "n.",
+          "meaning": "《帝企鹅日记》（电影名）",
+          "false_meanings": [
+            "《地球脉动》（电影名）",
+            "《蓝色星球》（电影名）"
+          ],
+          "is_phrase": true,
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 9",
+          "word": "Spider-Man",
+          "phonetic": "",
+          "part_of_speech": "n.",
+          "meaning": "《蜘蛛侠》（电影名）",
+          "false_meanings": [
+            "《超人》（电影名）",
+            "《美国队长》（电影名）"
+          ],
+          "is_phrase": true,
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 9",
+          "word": "Carmen",
+          "phonetic": "/ˈkɑːmən/",
+          "part_of_speech": "n.",
+          "meaning": "卡门（女名）",
+          "false_meanings": [
+            "玛丽（女名）",
+            "露西（女名）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 9",
+          "word": "Dan Dervish",
+          "phonetic": "/ˈdɜːvɪʃ/",
+          "part_of_speech": "n.",
+          "meaning": "丹·德维什",
+          "false_meanings": [
+            "汤姆·史密斯",
+            "杰克·布朗"
+          ],
+          "is_phrase": true,
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 10",
+          "word": "custom",
+          "phonetic": "/ˈkʌstəm/",
+          "part_of_speech": "n.",
+          "meaning": "风俗；习俗",
+          "false_meanings": [
+            "法律；规定",
+            "时尚；潮流"
+          ]
+        },
+        {
+          "unit": "Unit 10",
+          "word": "bow",
+          "phonetic": "/baʊ/",
+          "part_of_speech": "v.&n.",
+          "meaning": "鞠躬",
+          "false_meanings": [
+            "握手",
+            "拥抱"
+          ]
+        },
+        {
+          "unit": "Unit 10",
+          "word": "kiss",
+          "phonetic": "/kɪs/",
+          "part_of_speech": "v.&n.",
+          "meaning": "亲吻；接吻",
+          "false_meanings": [
+            "握手；鞠躬",
+            "拥抱；招手"
+          ]
+        },
+        {
+          "unit": "Unit 10",
+          "word": "greet",
+          "phonetic": "/ɡriːt/",
+          "part_of_speech": "v.",
+          "meaning": "和……打招呼；迎接",
+          "false_meanings": [
+            "告别；离开",
+            "忽视；冷落"
+          ]
+        },
+        {
+          "unit": "Unit 10",
+          "word": "relaxed",
+          "phonetic": "/rɪˈlækst/",
+          "part_of_speech": "adj.",
+          "meaning": "放松的；自在的",
+          "false_meanings": [
+            "紧张的；焦虑的",
+            "疲倦的；劳累的"
+          ]
+        },
+        {
+          "unit": "Unit 10",
+          "word": "value",
+          "phonetic": "/ˈvæljuː/",
+          "part_of_speech": "v.",
+          "meaning": "重视；珍视",
+          "false_meanings": [
+            "忽视；轻视",
+            "浪费；丢弃"
+          ]
+        },
+        {
+          "unit": "Unit 10",
+          "word": "capital",
+          "phonetic": "/ˈkæpɪtl/",
+          "part_of_speech": "n.",
+          "meaning": "首都",
+          "false_meanings": [
+            "乡村；农村",
+            "小镇；县城"
+          ]
+        },
+        {
+          "unit": "Unit 10",
+          "word": "noon",
+          "phonetic": "/nuːn/",
+          "part_of_speech": "n.",
+          "meaning": "正午；中午",
+          "false_meanings": [
+            "午夜；凌晨",
+            "傍晚；黄昏"
+          ]
+        },
+        {
+          "unit": "Unit 10",
+          "word": "mad",
+          "phonetic": "/mæd/",
+          "part_of_speech": "adj.",
+          "meaning": "很生气；疯的",
+          "false_meanings": [
+            "高兴的；满意的",
+            "平静的；冷静的"
+          ]
+        },
+        {
+          "unit": "Unit 10",
+          "word": "get mad",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "大动肝火；气愤",
+          "false_meanings": [
+            "保持冷静",
+            "感到高兴"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 10",
+          "word": "passport",
+          "phonetic": "/ˈpɑːspɔːt/",
+          "part_of_speech": "n.",
+          "meaning": "护照",
+          "false_meanings": [
+            "身份证",
+            "信用卡"
+          ]
+        },
+        {
+          "unit": "Unit 10",
+          "word": "chalk",
+          "phonetic": "/tʃɔːk/",
+          "part_of_speech": "n.",
+          "meaning": "粉笔",
+          "false_meanings": [
+            "铅笔",
+            "钢笔"
+          ]
+        },
+        {
+          "unit": "Unit 10",
+          "word": "blackboard",
+          "phonetic": "/ˈblækbɔːd/",
+          "part_of_speech": "n.",
+          "meaning": "黑板",
+          "false_meanings": [
+            "白板",
+            "课桌"
+          ]
+        },
+        {
+          "unit": "Unit 10",
+          "word": "northern",
+          "phonetic": "/ˈnɔːðən/",
+          "part_of_speech": "adj.",
+          "meaning": "北方的；北部的",
+          "false_meanings": [
+            "南方的；南部的",
+            "东方的；西方的"
+          ]
+        },
+        {
+          "unit": "Unit 10",
+          "word": "coast",
+          "phonetic": "/kəʊst/",
+          "part_of_speech": "n.",
+          "meaning": "海岸；海滨",
+          "false_meanings": [
+            "山区；内陆",
+            "沙漠；草原"
+          ]
+        },
+        {
+          "unit": "Unit 10",
+          "word": "season",
+          "phonetic": "/ˈsiːzn/",
+          "part_of_speech": "n.",
+          "meaning": "季；季节",
+          "false_meanings": [
+            "月份；星期",
+            "年份；世纪"
+          ]
+        },
+        {
+          "unit": "Unit 10",
+          "word": "knock",
+          "phonetic": "/nɒk/",
+          "part_of_speech": "v.",
+          "meaning": "敲；击",
+          "false_meanings": [
+            "推；拉",
+            "关；锁"
+          ]
+        },
+        {
+          "unit": "Unit 10",
+          "word": "eastern",
+          "phonetic": "/ˈiːstən/",
+          "part_of_speech": "adj.",
+          "meaning": "东方的；东部的",
+          "false_meanings": [
+            "西方的；西部的",
+            "南方的；北方的"
+          ]
+        },
+        {
+          "unit": "Unit 10",
+          "word": "worth",
+          "phonetic": "/wɜːθ/",
+          "part_of_speech": "adj.",
+          "meaning": "值得；有……价值（的）",
+          "false_meanings": [
+            "不值得；无价值",
+            "太贵；过分"
+          ]
+        },
+        {
+          "unit": "Unit 10",
+          "word": "manner",
+          "phonetic": "/ˈmænə(r)/",
+          "part_of_speech": "n.",
+          "meaning": "方式；方法",
+          "false_meanings": [
+            "结果；后果",
+            "原因；理由"
+          ]
+        },
+        {
+          "unit": "Unit 10",
+          "word": "empty",
+          "phonetic": "/ˈempti/",
+          "part_of_speech": "adj.",
+          "meaning": "空的；空洞的",
+          "false_meanings": [
+            "满的；充满的",
+            "重的；沉重的"
+          ]
+        },
+        {
+          "unit": "Unit 10",
+          "word": "basic",
+          "phonetic": "/ˈbeɪsɪk/",
+          "part_of_speech": "adj.",
+          "meaning": "基本的；基础的",
+          "false_meanings": [
+            "高级的；复杂的",
+            "特殊的；罕见的"
+          ]
+        },
+        {
+          "unit": "Unit 10",
+          "word": "exchange",
+          "phonetic": "/ɪksˈtʃeɪndʒ/",
+          "part_of_speech": "n.&v.",
+          "meaning": "交换",
+          "false_meanings": [
+            "保留；保存",
+            "丢弃；扔掉"
+          ]
+        },
+        {
+          "unit": "Unit 10",
+          "word": "go out of one's way",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "特地；格外努力",
+          "false_meanings": [
+            "偷懒；敷衍",
+            "随便；马虎"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 10",
+          "word": "make ... feel at home",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "使（某人）感到宾至如归",
+          "false_meanings": [
+            "使（某人）感到不舒服",
+            "使（某人）感到尴尬"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 10",
+          "word": "teenage",
+          "phonetic": "/ˈtiːneɪdʒ/",
+          "part_of_speech": "adj.",
+          "meaning": "十几岁的；青少年的",
+          "false_meanings": [
+            "成年的；成熟的",
+            "幼儿的；儿童的"
+          ]
+        },
+        {
+          "unit": "Unit 10",
+          "word": "granddaughter",
+          "phonetic": "/ˈɡrændɔːtə(r)/",
+          "part_of_speech": "n.",
+          "meaning": "（外）孙女",
+          "false_meanings": [
+            "（外）孙子",
+            "侄女；外甥女"
+          ]
+        },
+        {
+          "unit": "Unit 10",
+          "word": "behave",
+          "phonetic": "/bɪˈheɪv/",
+          "part_of_speech": "v.",
+          "meaning": "表现；举止",
+          "false_meanings": [
+            "隐藏；躲避",
+            "消失；逃走"
+          ]
+        },
+        {
+          "unit": "Unit 10",
+          "word": "except",
+          "phonetic": "/ɪkˈsept/",
+          "part_of_speech": "prep.",
+          "meaning": "除……之外",
+          "false_meanings": [
+            "包括；含有",
+            "加上；还有"
+          ]
+        },
+        {
+          "unit": "Unit 10",
+          "word": "elbow",
+          "phonetic": "/ˈelbəʊ/",
+          "part_of_speech": "n.",
+          "meaning": "肘；胳膊肘",
+          "false_meanings": [
+            "膝盖；腿",
+            "肩膀；手臂"
+          ]
+        },
+        {
+          "unit": "Unit 10",
+          "word": "gradually",
+          "phonetic": "/ˈɡrædʒuəli/",
+          "part_of_speech": "adv.",
+          "meaning": "逐步地；渐进地",
+          "false_meanings": [
+            "立刻地；马上地",
+            "突然地；猛然地"
+          ]
+        },
+        {
+          "unit": "Unit 10",
+          "word": "get used to",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "习惯于",
+          "false_meanings": [
+            "厌倦于",
+            "害怕于"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 10",
+          "word": "suggestion",
+          "phonetic": "/səˈdʒestʃən/",
+          "part_of_speech": "n.",
+          "meaning": "建议",
+          "false_meanings": [
+            "命令；指示",
+            "问题；疑问"
+          ]
+        },
+        {
+          "unit": "Unit 10",
+          "word": "Brazil",
+          "phonetic": "/brəˈzɪl/",
+          "part_of_speech": "n.",
+          "meaning": "巴西",
+          "false_meanings": [
+            "阿根廷",
+            "墨西哥"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 10",
+          "word": "Mexico",
+          "phonetic": "/ˈmeksɪkəʊ/",
+          "part_of_speech": "n.",
+          "meaning": "墨西哥",
+          "false_meanings": [
+            "巴西",
+            "古巴"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 10",
+          "word": "Cali",
+          "phonetic": "/ˈkɑːli/",
+          "part_of_speech": "n.",
+          "meaning": "卡利（哥伦比亚城市）",
+          "false_meanings": [
+            "里约（巴西城市）",
+            "利马（秘鲁城市）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 10",
+          "word": "Colombia",
+          "phonetic": "/kəˈlʌmbiə/",
+          "part_of_speech": "n.",
+          "meaning": "哥伦比亚",
+          "false_meanings": [
+            "委内瑞拉",
+            "智利"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 10",
+          "word": "Lausanne",
+          "phonetic": "/ləʊˈzæn/",
+          "part_of_speech": "n.",
+          "meaning": "洛桑（瑞士城市）",
+          "false_meanings": [
+            "日内瓦（瑞士城市）",
+            "苏黎世（瑞士城市）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 10",
+          "word": "Norway",
+          "phonetic": "/ˈnɔːweɪ/",
+          "part_of_speech": "n.",
+          "meaning": "挪威",
+          "false_meanings": [
+            "瑞典",
+            "芬兰"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 10",
+          "word": "Maria",
+          "phonetic": "/məˈriːə/",
+          "part_of_speech": "n.",
+          "meaning": "玛丽亚（女名）",
+          "false_meanings": [
+            "露西（女名）",
+            "艾米（女名）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 10",
+          "word": "Katie",
+          "phonetic": "/ˈkeɪti/",
+          "part_of_speech": "n.",
+          "meaning": "凯蒂（女名）",
+          "false_meanings": [
+            "玛丽（女名）",
+            "露西（女名）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 10",
+          "word": "Sato",
+          "phonetic": "/ˈsɑːtəʊ/",
+          "part_of_speech": "n.",
+          "meaning": "佐藤（日本姓氏）",
+          "false_meanings": [
+            "田中（日本姓氏）",
+            "山田（日本姓氏）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 10",
+          "word": "Marie",
+          "phonetic": "/məˈriː/",
+          "part_of_speech": "n.",
+          "meaning": "玛丽（女名）",
+          "false_meanings": [
+            "露西（女名）",
+            "艾米（女名）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 10",
+          "word": "Teresa",
+          "phonetic": "/təˈriːzə/",
+          "part_of_speech": "n.",
+          "meaning": "特蕾莎（女名）",
+          "false_meanings": [
+            "玛丽（女名）",
+            "露西（女名）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 10",
+          "word": "Lopez",
+          "phonetic": "/ˈləʊpez/",
+          "part_of_speech": "n.",
+          "meaning": "洛佩兹（姓氏）",
+          "false_meanings": [
+            "史密斯（姓氏）",
+            "布朗（姓氏）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 10",
+          "word": "Marc LeBlanc",
+          "phonetic": "/mɑːk ləˈblɑːŋ/",
+          "part_of_speech": "n.",
+          "meaning": "马克·勒布朗",
+          "false_meanings": [
+            "约翰·史密斯",
+            "汤姆·布朗"
+          ],
+          "is_phrase": true,
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 11",
+          "word": "rather",
+          "phonetic": "/ˈrɑːðə/",
+          "part_of_speech": "adv.",
+          "meaning": "相当；相反",
+          "false_meanings": [
+            "完全不；决不",
+            "稍微地；略微地"
+          ]
+        },
+        {
+          "unit": "Unit 11",
+          "word": "would rather",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "宁愿",
+          "false_meanings": [
+            "不愿意",
+            "必须；应该"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 11",
+          "word": "drive",
+          "phonetic": "/draɪv/",
+          "part_of_speech": "v.",
+          "meaning": "迫使",
+          "false_meanings": [
+            "阻止；禁止",
+            "允许；帮助"
+          ]
+        },
+        {
+          "unit": "Unit 11",
+          "word": "drive sb. crazy/mad",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "使人发疯/发狂",
+          "false_meanings": [
+            "使人冷静",
+            "使人高兴"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 11",
+          "word": "lately",
+          "phonetic": "/ˈleɪtli/",
+          "part_of_speech": "adv.",
+          "meaning": "最近；不久前",
+          "false_meanings": [
+            "很久以前",
+            "将来；以后"
+          ]
+        },
+        {
+          "unit": "Unit 11",
+          "word": "be friends with sb.",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "成为某人的朋友",
+          "false_meanings": [
+            "和某人为敌",
+            "忽视某人"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 11",
+          "word": "leave out",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "忽略；不提及；不包括",
+          "false_meanings": [
+            "包含；提及",
+            "强调；突出"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 11",
+          "word": "friendship",
+          "phonetic": "/ˈfrendʃɪp/",
+          "part_of_speech": "n.",
+          "meaning": "友谊；友情",
+          "false_meanings": [
+            "敌意；仇恨",
+            "陌生；疏远"
+          ]
+        },
+        {
+          "unit": "Unit 11",
+          "word": "king",
+          "phonetic": "/kɪŋ/",
+          "part_of_speech": "n.",
+          "meaning": "国王；君主",
+          "false_meanings": [
+            "女王；公主",
+            "王子；骑士"
+          ]
+        },
+        {
+          "unit": "Unit 11",
+          "word": "power",
+          "phonetic": "/ˈpaʊə(r)/",
+          "part_of_speech": "n.",
+          "meaning": "权力；力量",
+          "false_meanings": [
+            "弱点；缺陷",
+            "和平；安宁"
+          ]
+        },
+        {
+          "unit": "Unit 11",
+          "word": "prime",
+          "phonetic": "/praɪm/",
+          "part_of_speech": "adj.",
+          "meaning": "首要的；基本的",
+          "false_meanings": [
+            "次要的；附属的",
+            "最后的；末尾的"
+          ]
+        },
+        {
+          "unit": "Unit 11",
+          "word": "minister",
+          "phonetic": "/ˈmɪnɪstə(r)/",
+          "part_of_speech": "n.",
+          "meaning": "大臣；部长",
+          "false_meanings": [
+            "士兵；军人",
+            "农民；工人"
+          ]
+        },
+        {
+          "unit": "Unit 11",
+          "word": "prime minister",
+          "phonetic": "",
+          "part_of_speech": "n.",
+          "meaning": "首相；首席大臣",
+          "false_meanings": [
+            "总统；国王",
+            "市长；州长"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 11",
+          "word": "banker",
+          "phonetic": "/ˈbæŋkə(r)/",
+          "part_of_speech": "n.",
+          "meaning": "银行家",
+          "false_meanings": [
+            "律师",
+            "医生"
+          ]
+        },
+        {
+          "unit": "Unit 11",
+          "word": "fame",
+          "phonetic": "/feɪm/",
+          "part_of_speech": "n.",
+          "meaning": "名誉；声望",
+          "false_meanings": [
+            "耻辱；丑闻",
+            "忘记；忽视"
+          ]
+        },
+        {
+          "unit": "Unit 11",
+          "word": "pale",
+          "phonetic": "/peɪl/",
+          "part_of_speech": "adj.",
+          "meaning": "苍白的；灰白的",
+          "false_meanings": [
+            "红润的；健康的",
+            "黝黑的；晒黑的"
+          ]
+        },
+        {
+          "unit": "Unit 11",
+          "word": "queen",
+          "phonetic": "/kwiːn/",
+          "part_of_speech": "n.",
+          "meaning": "王后；女王",
+          "false_meanings": [
+            "国王；君主",
+            "公主；王妃"
+          ]
+        },
+        {
+          "unit": "Unit 11",
+          "word": "call in",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "召来；叫来",
+          "false_meanings": [
+            "送走；驱走",
+            "忽视；冷落"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 11",
+          "word": "examine",
+          "phonetic": "/ɪɡˈzæmɪn/",
+          "part_of_speech": "v.",
+          "meaning": "（仔细地）检查；检验",
+          "false_meanings": [
+            "忽视；忽略",
+            "丢弃；放弃"
+          ]
+        },
+        {
+          "unit": "Unit 11",
+          "word": "nor",
+          "phonetic": "/nɔː(r)/",
+          "part_of_speech": "conj.&adv.",
+          "meaning": "也不",
+          "false_meanings": [
+            "也是",
+            "但是"
+          ]
+        },
+        {
+          "unit": "Unit 11",
+          "word": "neither ... nor",
+          "phonetic": "",
+          "part_of_speech": "conj.",
+          "meaning": "既不……也不……",
+          "false_meanings": [
+            "既……又……",
+            "或者……或者……"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 11",
+          "word": "palace",
+          "phonetic": "/ˈpæləs/",
+          "part_of_speech": "n.",
+          "meaning": "王宫；宫殿",
+          "false_meanings": [
+            "茅屋；草房",
+            "公寓；住宅"
+          ]
+        },
+        {
+          "unit": "Unit 11",
+          "word": "wealth",
+          "phonetic": "/welθ/",
+          "part_of_speech": "n.",
+          "meaning": "财富",
+          "false_meanings": [
+            "贫穷；穷困",
+            "债务；负担"
+          ]
+        },
+        {
+          "unit": "Unit 11",
+          "word": "grey",
+          "phonetic": "/ɡreɪ/",
+          "part_of_speech": "adj.",
+          "meaning": "（天空）阴沉的；灰色的",
+          "false_meanings": [
+            "晴朗的；明亮的",
+            "红色的；蓝色的"
+          ]
+        },
+        {
+          "unit": "Unit 11",
+          "word": "lemon",
+          "phonetic": "/ˈlemən/",
+          "part_of_speech": "n.",
+          "meaning": "柠檬",
+          "false_meanings": [
+            "橘子",
+            "苹果"
+          ]
+        },
+        {
+          "unit": "Unit 11",
+          "word": "uncomfortable",
+          "phonetic": "/ʌnˈkʌmfətəbl/",
+          "part_of_speech": "adj.",
+          "meaning": "使人不舒服的；令人不舒适的",
+          "false_meanings": [
+            "舒适的；惬意的",
+            "温暖的；温馨的"
+          ]
+        },
+        {
+          "unit": "Unit 11",
+          "word": "weight",
+          "phonetic": "/weɪt/",
+          "part_of_speech": "n.",
+          "meaning": "重量；分量",
+          "false_meanings": [
+            "高度；长度",
+            "颜色；形状"
+          ]
+        },
+        {
+          "unit": "Unit 11",
+          "word": "shoulder",
+          "phonetic": "/ˈʃəʊldə(r)/",
+          "part_of_speech": "n.",
+          "meaning": "肩；肩膀",
+          "false_meanings": [
+            "脖子；头部",
+            "腰部；臀部"
+          ]
+        },
+        {
+          "unit": "Unit 11",
+          "word": "goal",
+          "phonetic": "/ɡəʊl/",
+          "part_of_speech": "n.",
+          "meaning": "球门；射门；目标",
+          "false_meanings": [
+            "失败；错误",
+            "障碍；困难"
+          ]
+        },
+        {
+          "unit": "Unit 11",
+          "word": "coach",
+          "phonetic": "/kəʊtʃ/",
+          "part_of_speech": "n.",
+          "meaning": "教练；私人教师",
+          "false_meanings": [
+            "学生；队员",
+            "观众；粉丝"
+          ]
+        },
+        {
+          "unit": "Unit 11",
+          "word": "kick",
+          "phonetic": "/kɪk/",
+          "part_of_speech": "v.",
+          "meaning": "踢；踹",
+          "false_meanings": [
+            "打；推",
+            "抱；抬"
+          ]
+        },
+        {
+          "unit": "Unit 11",
+          "word": "kick sb. off",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "开除某人",
+          "false_meanings": [
+            "录用某人",
+            "表扬某人"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 11",
+          "word": "besides",
+          "phonetic": "/bɪˈsaɪdz/",
+          "part_of_speech": "adv.",
+          "meaning": "而且",
+          "false_meanings": [
+            "但是",
+            "然而"
+          ]
+        },
+        {
+          "unit": "Unit 11",
+          "word": "teammate",
+          "phonetic": "/ˈtiːmmeɪt/",
+          "part_of_speech": "n.",
+          "meaning": "同队队员；队友",
+          "false_meanings": [
+            "对手；敌人",
+            "裁判；教练"
+          ]
+        },
+        {
+          "unit": "Unit 11",
+          "word": "courage",
+          "phonetic": "/ˈkʌrɪdʒ/",
+          "part_of_speech": "n.",
+          "meaning": "勇敢；勇气",
+          "false_meanings": [
+            "胆怯；懦弱",
+            "冷漠；麻木"
+          ]
+        },
+        {
+          "unit": "Unit 11",
+          "word": "rather than",
+          "phonetic": "",
+          "part_of_speech": "conj.",
+          "meaning": "而不是",
+          "false_meanings": [
+            "以及；和",
+            "或者；否则"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 11",
+          "word": "guy",
+          "phonetic": "/ɡaɪ/",
+          "part_of_speech": "n.",
+          "meaning": "（非正式）家伙",
+          "false_meanings": [
+            "女孩",
+            "老人"
+          ]
+        },
+        {
+          "unit": "Unit 11",
+          "word": "pull",
+          "phonetic": "/pʊl/",
+          "part_of_speech": "v.",
+          "meaning": "拉；拖",
+          "false_meanings": [
+            "推；压",
+            "扔；丢"
+          ]
+        },
+        {
+          "unit": "Unit 11",
+          "word": "pull together",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "齐心协力；通力合作",
+          "false_meanings": [
+            "各自为战",
+            "互相竞争"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 11",
+          "word": "relief",
+          "phonetic": "/rɪˈliːf/",
+          "part_of_speech": "n.",
+          "meaning": "轻松；解脱",
+          "false_meanings": [
+            "紧张；焦虑",
+            "痛苦；悲伤"
+          ]
+        },
+        {
+          "unit": "Unit 11",
+          "word": "nod",
+          "phonetic": "/nɒd/",
+          "part_of_speech": "v.",
+          "meaning": "点头",
+          "false_meanings": [
+            "摇头",
+            "转头"
+          ]
+        },
+        {
+          "unit": "Unit 11",
+          "word": "fault",
+          "phonetic": "/fɔːlt/",
+          "part_of_speech": "n.",
+          "meaning": "过失；缺点",
+          "false_meanings": [
+            "优点；长处",
+            "功劳；贡献"
+          ]
+        },
+        {
+          "unit": "Unit 11",
+          "word": "disappoint",
+          "phonetic": "/ˌdɪsəˈpɔɪnt/",
+          "part_of_speech": "v.",
+          "meaning": "使失望",
+          "false_meanings": [
+            "使满意",
+            "使高兴"
+          ]
+        },
+        {
+          "unit": "Unit 11",
+          "word": "Bert",
+          "phonetic": "/bɜːt/",
+          "part_of_speech": "n.",
+          "meaning": "伯特（男名）",
+          "false_meanings": [
+            "汤姆（男名）",
+            "杰克（男名）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 11",
+          "word": "Holly",
+          "phonetic": "/ˈhɒli/",
+          "part_of_speech": "n.",
+          "meaning": "霍莉（女名）",
+          "false_meanings": [
+            "玛丽（女名）",
+            "露西（女名）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 12",
+          "word": "unexpected",
+          "phonetic": "/ˌʌnɪkˈspektɪd/",
+          "part_of_speech": "adj.",
+          "meaning": "出乎意料的；始料不及的",
+          "false_meanings": [
+            "预料之中的；意料之内的",
+            "普通的；常见的"
+          ]
+        },
+        {
+          "unit": "Unit 12",
+          "word": "by the time",
+          "phonetic": "",
+          "part_of_speech": "conj.",
+          "meaning": "在……以前",
+          "false_meanings": [
+            "在……之后",
+            "在……期间"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 12",
+          "word": "backpack",
+          "phonetic": "/ˈbækpæk/",
+          "part_of_speech": "n.",
+          "meaning": "背包",
+          "false_meanings": [
+            "手提包",
+            "行李箱"
+          ]
+        },
+        {
+          "unit": "Unit 12",
+          "word": "oversleep",
+          "phonetic": "/ˌəʊvəˈsliːp/",
+          "part_of_speech": "v.",
+          "meaning": "睡过头；睡得太久",
+          "false_meanings": [
+            "失眠；睡不着",
+            "早起；起得早"
+          ]
+        },
+        {
+          "unit": "Unit 12",
+          "word": "give ... a lift",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "捎（某人）一程",
+          "false_meanings": [
+            "拒绝帮助",
+            "自己走路"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 12",
+          "word": "block",
+          "phonetic": "/blɒk/",
+          "part_of_speech": "n.",
+          "meaning": "街区",
+          "false_meanings": [
+            "广场",
+            "公园"
+          ]
+        },
+        {
+          "unit": "Unit 12",
+          "word": "in line with",
+          "phonetic": "",
+          "part_of_speech": "prep.",
+          "meaning": "与……成一排",
+          "false_meanings": [
+            "与……冲突",
+            "与……无关"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 12",
+          "word": "worker",
+          "phonetic": "/ˈwɜːkə(r)/",
+          "part_of_speech": "n.",
+          "meaning": "工作者；工人",
+          "false_meanings": [
+            "老板；经理",
+            "学生；儿童"
+          ]
+        },
+        {
+          "unit": "Unit 12",
+          "word": "stare",
+          "phonetic": "/steə/",
+          "part_of_speech": "v.",
+          "meaning": "盯着看；凝视",
+          "false_meanings": [
+            "忽视；无视",
+            "闭眼；躲避"
+          ]
+        },
+        {
+          "unit": "Unit 12",
+          "word": "disbelief",
+          "phonetic": "/ˌdɪsbɪˈliːf/",
+          "part_of_speech": "n.",
+          "meaning": "不信；怀疑",
+          "false_meanings": [
+            "相信；信任",
+            "确信；肯定"
+          ]
+        },
+        {
+          "unit": "Unit 12",
+          "word": "above",
+          "phonetic": "/əˈbʌv/",
+          "part_of_speech": "prep.",
+          "meaning": "在……上面",
+          "false_meanings": [
+            "在……下面",
+            "在……旁边"
+          ]
+        },
+        {
+          "unit": "Unit 12",
+          "word": "burn",
+          "phonetic": "/bɜːn/",
+          "part_of_speech": "v.",
+          "meaning": "着火；燃烧",
+          "false_meanings": [
+            "熄灭；冷却",
+            "冻结；结冰"
+          ]
+        },
+        {
+          "unit": "Unit 12",
+          "word": "burning",
+          "phonetic": "/ˈbɜːnɪŋ/",
+          "part_of_speech": "adj.",
+          "meaning": "着火的；燃烧的",
+          "false_meanings": [
+            "熄灭的；冷却的",
+            "潮湿的；冰冷的"
+          ]
+        },
+        {
+          "unit": "Unit 12",
+          "word": "alive",
+          "phonetic": "/əˈlaɪv/",
+          "part_of_speech": "adj.",
+          "meaning": "活着的；有生气的",
+          "false_meanings": [
+            "死的；无生命的",
+            "安静的；沉寂的"
+          ]
+        },
+        {
+          "unit": "Unit 12",
+          "word": "airport",
+          "phonetic": "/ˈeəpɔːt/",
+          "part_of_speech": "n.",
+          "meaning": "机场",
+          "false_meanings": [
+            "车站",
+            "港口"
+          ]
+        },
+        {
+          "unit": "Unit 12",
+          "word": "till",
+          "phonetic": "/tɪl/",
+          "part_of_speech": "prep.&conj.",
+          "meaning": "到；直到",
+          "false_meanings": [
+            "从；自从",
+            "在……之前"
+          ]
+        },
+        {
+          "unit": "Unit 12",
+          "word": "west",
+          "phonetic": "/west/",
+          "part_of_speech": "adv.",
+          "meaning": "向西；朝西",
+          "false_meanings": [
+            "向东；朝东",
+            "向南；朝南"
+          ]
+        },
+        {
+          "unit": "Unit 12",
+          "word": "cream",
+          "phonetic": "/kriːm/",
+          "part_of_speech": "n.",
+          "meaning": "奶油；乳脂",
+          "false_meanings": [
+            "牛奶；酸奶",
+            "黄油；芝士"
+          ]
+        },
+        {
+          "unit": "Unit 12",
+          "word": "workday",
+          "phonetic": "/ˈwɜːkdeɪ/",
+          "part_of_speech": "n.",
+          "meaning": "工作日",
+          "false_meanings": [
+            "休息日；周末",
+            "假期；节日"
+          ]
+        },
+        {
+          "unit": "Unit 12",
+          "word": "show up",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "赶到；露面",
+          "false_meanings": [
+            "离开；消失",
+            "迟到；缺席"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 12",
+          "word": "bean",
+          "phonetic": "/biːn/",
+          "part_of_speech": "n.",
+          "meaning": "豆；豆荚",
+          "false_meanings": [
+            "米饭；面条",
+            "水果；蔬菜"
+          ]
+        },
+        {
+          "unit": "Unit 12",
+          "word": "market",
+          "phonetic": "/ˈmɑːkɪt/",
+          "part_of_speech": "n.",
+          "meaning": "市场；集市",
+          "false_meanings": [
+            "公园；广场",
+            "学校；医院"
+          ]
+        },
+        {
+          "unit": "Unit 12",
+          "word": "by the end of",
+          "phonetic": "",
+          "part_of_speech": "prep.",
+          "meaning": "在（某时间点）以前",
+          "false_meanings": [
+            "在（某时间点）之后",
+            "在（某时间点）期间"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 12",
+          "word": "fool",
+          "phonetic": "/fuːl/",
+          "part_of_speech": "n.",
+          "meaning": "蠢人；傻瓜",
+          "false_meanings": [
+            "聪明人；天才",
+            "陌生人；路人"
+          ]
+        },
+        {
+          "unit": "Unit 12",
+          "word": "costume",
+          "phonetic": "/ˈkɒstjuːm/",
+          "part_of_speech": "n.",
+          "meaning": "（特定场合穿的）服装；装束",
+          "false_meanings": [
+            "睡衣；便装",
+            "内衣；泳装"
+          ]
+        },
+        {
+          "unit": "Unit 12",
+          "word": "embarrassed",
+          "phonetic": "/ɪmˈbærəst/",
+          "part_of_speech": "adj.",
+          "meaning": "窘迫的；害羞的",
+          "false_meanings": [
+            "自信的；自豪的",
+            "放松的；自在的"
+          ]
+        },
+        {
+          "unit": "Unit 12",
+          "word": "costume party",
+          "phonetic": "",
+          "part_of_speech": "n.",
+          "meaning": "化装舞会",
+          "false_meanings": [
+            "生日派对",
+            "毕业典礼"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 12",
+          "word": "announce",
+          "phonetic": "/əˈnaʊns/",
+          "part_of_speech": "v.",
+          "meaning": "宣布；宣告",
+          "false_meanings": [
+            "隐藏；保密",
+            "取消；放弃"
+          ]
+        },
+        {
+          "unit": "Unit 12",
+          "word": "spaghetti",
+          "phonetic": "/spəˈɡeti/",
+          "part_of_speech": "n.",
+          "meaning": "意大利面条",
+          "false_meanings": [
+            "披萨饼",
+            "汉堡包"
+          ]
+        },
+        {
+          "unit": "Unit 12",
+          "word": "hoax",
+          "phonetic": "/həʊks/",
+          "part_of_speech": "n.",
+          "meaning": "骗局；恶作剧",
+          "false_meanings": [
+            "礼物；惊喜",
+            "真相；事实"
+          ]
+        },
+        {
+          "unit": "Unit 12",
+          "word": "sell out",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "卖光",
+          "false_meanings": [
+            "进货",
+            "换货"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 12",
+          "word": "discovery",
+          "phonetic": "/dɪsˈkʌvəri/",
+          "part_of_speech": "n.",
+          "meaning": "发现",
+          "false_meanings": [
+            "失去；丢失",
+            "隐藏；掩盖"
+          ]
+        },
+        {
+          "unit": "Unit 12",
+          "word": "lady",
+          "phonetic": "/ˈleɪdi/",
+          "part_of_speech": "n.",
+          "meaning": "女士；女子",
+          "false_meanings": [
+            "先生；绅士",
+            "孩子；小孩"
+          ]
+        },
+        {
+          "unit": "Unit 12",
+          "word": "cancel",
+          "phonetic": "/ˈkænsl/",
+          "part_of_speech": "v.",
+          "meaning": "取消；终止",
+          "false_meanings": [
+            "确认；批准",
+            "安排；计划"
+          ]
+        },
+        {
+          "unit": "Unit 12",
+          "word": "officer",
+          "phonetic": "/ˈɒfɪsə/",
+          "part_of_speech": "n.",
+          "meaning": "军官；官员",
+          "false_meanings": [
+            "士兵；队员",
+            "市民；百姓"
+          ]
+        },
+        {
+          "unit": "Unit 12",
+          "word": "believable",
+          "phonetic": "/bɪˈliːvəbl/",
+          "part_of_speech": "adj.",
+          "meaning": "可相信的；可信任的",
+          "false_meanings": [
+            "不可信的；虚假的",
+            "荒谬的；可笑的"
+          ]
+        },
+        {
+          "unit": "Unit 12",
+          "word": "disappear",
+          "phonetic": "/ˌdɪsəˈpɪə/",
+          "part_of_speech": "v.",
+          "meaning": "消失；不见",
+          "false_meanings": [
+            "出现；出席",
+            "保持；维持"
+          ]
+        },
+        {
+          "unit": "Unit 12",
+          "word": "embarrassing",
+          "phonetic": "/ɪmˈbærəsɪŋ/",
+          "part_of_speech": "adj.",
+          "meaning": "使人害羞的（难堪的或惭愧的）",
+          "false_meanings": [
+            "使人骄傲的",
+            "使人放松的"
+          ]
+        },
+        {
+          "unit": "Unit 12",
+          "word": "New Zealand",
+          "phonetic": "/njuːˈziːlənd/",
+          "part_of_speech": "n.",
+          "meaning": "新西兰",
+          "false_meanings": [
+            "澳大利亚",
+            "新加坡"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 12",
+          "word": "Italy",
+          "phonetic": "/ˈɪtəli/",
+          "part_of_speech": "n.",
+          "meaning": "意大利",
+          "false_meanings": [
+            "法国",
+            "西班牙"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 12",
+          "word": "Mars",
+          "phonetic": "/mɑːz/",
+          "part_of_speech": "n.",
+          "meaning": "火星",
+          "false_meanings": [
+            "金星",
+            "木星"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 12",
+          "word": "Matt",
+          "phonetic": "/mæt/",
+          "part_of_speech": "n.",
+          "meaning": "马特（男名）",
+          "false_meanings": [
+            "汤姆（男名）",
+            "杰克（男名）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 12",
+          "word": "Kevin",
+          "phonetic": "/ˈkevɪn/",
+          "part_of_speech": "n.",
+          "meaning": "凯文（男名）",
+          "false_meanings": [
+            "迈克（男名）",
+            "汤姆（男名）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 12",
+          "word": "Carl",
+          "phonetic": "/kɑːl/",
+          "part_of_speech": "n.",
+          "meaning": "卡尔（男名）",
+          "false_meanings": [
+            "汤姆（男名）",
+            "杰克（男名）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 12",
+          "word": "Orson Welles",
+          "phonetic": "/ˈɔːsən welz/",
+          "part_of_speech": "n.",
+          "meaning": "奥森·韦尔斯",
+          "false_meanings": [
+            "史蒂夫·乔布斯",
+            "比尔·盖茨"
+          ],
+          "is_phrase": true,
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 13",
+          "word": "litter",
+          "phonetic": "/ˈlɪtə(r)/",
+          "part_of_speech": "v.",
+          "meaning": "乱扔",
+          "false_meanings": [
+            "捡起；收集",
+            "整理；清洁"
+          ]
+        },
+        {
+          "unit": "Unit 13",
+          "word": "bottom",
+          "phonetic": "/ˈbɒtəm/",
+          "part_of_speech": "n.",
+          "meaning": "底部；最下部",
+          "false_meanings": [
+            "顶部；最上部",
+            "中间；中部"
+          ]
+        },
+        {
+          "unit": "Unit 13",
+          "word": "fisherman",
+          "phonetic": "/ˈfɪʃəmən/",
+          "part_of_speech": "n.",
+          "meaning": "渔民；钓鱼的人",
+          "false_meanings": [
+            "农民；农夫",
+            "猎人；捕猎者"
+          ]
+        },
+        {
+          "unit": "Unit 13",
+          "word": "coal",
+          "phonetic": "/kəʊl/",
+          "part_of_speech": "n.",
+          "meaning": "煤；煤块",
+          "false_meanings": [
+            "石油；天然气",
+            "木材；木炭"
+          ]
+        },
+        {
+          "unit": "Unit 13",
+          "word": "ugly",
+          "phonetic": "/ˈʌɡli/",
+          "part_of_speech": "adj.",
+          "meaning": "丑陋的；难看的",
+          "false_meanings": [
+            "美丽的；漂亮的",
+            "普通的；一般的"
+          ]
+        },
+        {
+          "unit": "Unit 13",
+          "word": "advantage",
+          "phonetic": "/ədˈvɑːntɪdʒ/",
+          "part_of_speech": "n.",
+          "meaning": "优点；有利条件",
+          "false_meanings": [
+            "缺点；不利条件",
+            "特点；普通条件"
+          ]
+        },
+        {
+          "unit": "Unit 13",
+          "word": "cost",
+          "phonetic": "/kɒst/",
+          "part_of_speech": "v.",
+          "meaning": "花费",
+          "false_meanings": [
+            "节省；储存",
+            "赚取；获得"
+          ]
+        },
+        {
+          "unit": "Unit 13",
+          "word": "wooden",
+          "phonetic": "/ˈwʊdn/",
+          "part_of_speech": "adj.",
+          "meaning": "木制的；木头的",
+          "false_meanings": [
+            "金属制的；铁制的",
+            "塑料制的；橡胶的"
+          ]
+        },
+        {
+          "unit": "Unit 13",
+          "word": "plastic",
+          "phonetic": "/ˈplæstɪk/",
+          "part_of_speech": "adj.",
+          "meaning": "塑料的",
+          "false_meanings": [
+            "金属的",
+            "木制的"
+          ]
+        },
+        {
+          "unit": "Unit 13",
+          "word": "takeaway",
+          "phonetic": "/ˈteɪkəweɪ/",
+          "part_of_speech": "n.",
+          "meaning": "外卖食物",
+          "false_meanings": [
+            "堂食；自助餐",
+            "自制食品"
+          ]
+        },
+        {
+          "unit": "Unit 13",
+          "word": "bin",
+          "phonetic": "/bɪn/",
+          "part_of_speech": "n.",
+          "meaning": "垃圾箱",
+          "false_meanings": [
+            "购物袋",
+            "收纳盒"
+          ]
+        },
+        {
+          "unit": "Unit 13",
+          "word": "shark",
+          "phonetic": "/ʃɑːk/",
+          "part_of_speech": "n.",
+          "meaning": "鲨鱼",
+          "false_meanings": [
+            "海豚",
+            "鲸鱼"
+          ]
+        },
+        {
+          "unit": "Unit 13",
+          "word": "fin",
+          "phonetic": "/fɪn/",
+          "part_of_speech": "n.",
+          "meaning": "（鱼）鳍",
+          "false_meanings": [
+            "（鸟）翅膀",
+            "（鱼）尾巴"
+          ]
+        },
+        {
+          "unit": "Unit 13",
+          "word": "cruel",
+          "phonetic": "/ˈkruːəl/",
+          "part_of_speech": "adj.",
+          "meaning": "残酷的；残忍的",
+          "false_meanings": [
+            "仁慈的；善良的",
+            "温柔的；体贴的"
+          ]
+        },
+        {
+          "unit": "Unit 13",
+          "word": "harmful",
+          "phonetic": "/ˈhɑːmfl/",
+          "part_of_speech": "adj.",
+          "meaning": "有害的",
+          "false_meanings": [
+            "有益的；无害的",
+            "中性的；普通的"
+          ]
+        },
+        {
+          "unit": "Unit 13",
+          "word": "be harmful to",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "对……有害",
+          "false_meanings": [
+            "对……有益",
+            "对……无影响"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 13",
+          "word": "at the top of",
+          "phonetic": "",
+          "part_of_speech": "prep.",
+          "meaning": "在……顶部或顶端",
+          "false_meanings": [
+            "在……底部",
+            "在……中间"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 13",
+          "word": "chain",
+          "phonetic": "/tʃeɪn/",
+          "part_of_speech": "n.",
+          "meaning": "链子；链条",
+          "false_meanings": [
+            "绳子；皮带",
+            "锁；钥匙"
+          ]
+        },
+        {
+          "unit": "Unit 13",
+          "word": "the food chain",
+          "phonetic": "",
+          "part_of_speech": "n.",
+          "meaning": "食物链",
+          "false_meanings": [
+            "生态系统",
+            "自然循环"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 13",
+          "word": "ecosystem",
+          "phonetic": "/ˈiːkəʊsɪstəm/",
+          "part_of_speech": "n.",
+          "meaning": "生态系统",
+          "false_meanings": [
+            "食物链",
+            "自然资源"
+          ]
+        },
+        {
+          "unit": "Unit 13",
+          "word": "industry",
+          "phonetic": "/ˈɪndəstri/",
+          "part_of_speech": "n.",
+          "meaning": "工业；行业",
+          "false_meanings": [
+            "农业；牧业",
+            "商业；贸易"
+          ]
+        },
+        {
+          "unit": "Unit 13",
+          "word": "law",
+          "phonetic": "/lɔː/",
+          "part_of_speech": "n.",
+          "meaning": "法律；法规",
+          "false_meanings": [
+            "习俗；传统",
+            "命令；指示"
+          ]
+        },
+        {
+          "unit": "Unit 13",
+          "word": "scientific",
+          "phonetic": "/ˌsaɪənˈtɪfɪk/",
+          "part_of_speech": "adj.",
+          "meaning": "科学上的；科学的",
+          "false_meanings": [
+            "艺术的；文学的",
+            "宗教的；神秘的"
+          ]
+        },
+        {
+          "unit": "Unit 13",
+          "word": "take part in",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "参加",
+          "false_meanings": [
+            "退出；离开",
+            "忽视；拒绝"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 13",
+          "word": "afford",
+          "phonetic": "/əˈfɔːd/",
+          "part_of_speech": "v.",
+          "meaning": "承担得起（后果）；买得起",
+          "false_meanings": [
+            "买不起；负担不起",
+            "浪费；挥霍"
+          ]
+        },
+        {
+          "unit": "Unit 13",
+          "word": "turn off",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "关掉",
+          "false_meanings": [
+            "打开；启动",
+            "调高；增大"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 13",
+          "word": "pay for",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "付费；付出代价",
+          "false_meanings": [
+            "免费获得",
+            "拒绝付款"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 13",
+          "word": "reusable",
+          "phonetic": "/riːˈjuːzəbl/",
+          "part_of_speech": "adj.",
+          "meaning": "可重复使用的；可再次使用的",
+          "false_meanings": [
+            "一次性的；不可回收的",
+            "易碎的；容易损坏的"
+          ]
+        },
+        {
+          "unit": "Unit 13",
+          "word": "take action",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "采取行动",
+          "false_meanings": [
+            "袖手旁观",
+            "放弃行动"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 13",
+          "word": "transportation",
+          "phonetic": "/ˌtrænspɔːˈteɪʃn/",
+          "part_of_speech": "n.",
+          "meaning": "运输业；交通运输",
+          "false_meanings": [
+            "建筑业；制造业",
+            "服务业；餐饮业"
+          ]
+        },
+        {
+          "unit": "Unit 13",
+          "word": "recycle",
+          "phonetic": "/ˌriːˈsaɪkl/",
+          "part_of_speech": "v.",
+          "meaning": "回收利用",
+          "false_meanings": [
+            "丢弃；浪费",
+            "购买；消费"
+          ]
+        },
+        {
+          "unit": "Unit 13",
+          "word": "napkin",
+          "phonetic": "/ˈnæpkɪn/",
+          "part_of_speech": "n.",
+          "meaning": "餐巾；餐巾纸",
+          "false_meanings": [
+            "毛巾；浴巾",
+            "纸巾；面巾纸"
+          ]
+        },
+        {
+          "unit": "Unit 13",
+          "word": "throw away",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "扔掉；抛弃",
+          "false_meanings": [
+            "保留；收集",
+            "回收；利用"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 13",
+          "word": "put sth. to good use",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "好好利用某物",
+          "false_meanings": [
+            "浪费某物",
+            "丢弃某物"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 13",
+          "word": "pull ... down",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "拆下；摧毁",
+          "false_meanings": [
+            "建造；建立",
+            "保护；修复"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 13",
+          "word": "upside down",
+          "phonetic": "",
+          "part_of_speech": "adv.",
+          "meaning": "上下颠倒；倒转",
+          "false_meanings": [
+            "正面朝上",
+            "侧面朝外"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 13",
+          "word": "gate",
+          "phonetic": "/ɡeɪt/",
+          "part_of_speech": "n.",
+          "meaning": "大门",
+          "false_meanings": [
+            "窗户",
+            "墙壁"
+          ]
+        },
+        {
+          "unit": "Unit 13",
+          "word": "bottle",
+          "phonetic": "/ˈbɒtl/",
+          "part_of_speech": "n.",
+          "meaning": "瓶子",
+          "false_meanings": [
+            "杯子",
+            "碗"
+          ]
+        },
+        {
+          "unit": "Unit 13",
+          "word": "president",
+          "phonetic": "/ˈprezɪdənt/",
+          "part_of_speech": "n.",
+          "meaning": "负责人；主席；总统",
+          "false_meanings": [
+            "员工；职员",
+            "顾客；客户"
+          ]
+        },
+        {
+          "unit": "Unit 13",
+          "word": "inspiration",
+          "phonetic": "/ˌɪnspəˈreɪʃn/",
+          "part_of_speech": "n.",
+          "meaning": "灵感",
+          "false_meanings": [
+            "疲劳；倦怠",
+            "失败；挫折"
+          ]
+        },
+        {
+          "unit": "Unit 13",
+          "word": "iron",
+          "phonetic": "/ˈaɪən/",
+          "part_of_speech": "n.",
+          "meaning": "铁",
+          "false_meanings": [
+            "铜",
+            "银"
+          ]
+        },
+        {
+          "unit": "Unit 13",
+          "word": "work",
+          "phonetic": "/wɜːk/",
+          "part_of_speech": "n.",
+          "meaning": "作品",
+          "false_meanings": [
+            "游戏；娱乐",
+            "休息；假期"
+          ]
+        },
+        {
+          "unit": "Unit 13",
+          "word": "metal",
+          "phonetic": "/ˈmetl/",
+          "part_of_speech": "n.",
+          "meaning": "金属",
+          "false_meanings": [
+            "塑料",
+            "木材"
+          ]
+        },
+        {
+          "unit": "Unit 13",
+          "word": "bring back",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "恢复；使想起；归还",
+          "false_meanings": [
+            "忘记；丢失",
+            "扔掉；丢弃"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 13",
+          "word": "creativity",
+          "phonetic": "/ˌkriːeɪˈtɪvəti/",
+          "part_of_speech": "n.",
+          "meaning": "创造力；独创性",
+          "false_meanings": [
+            "模仿力；复制力",
+            "破坏力；毁灭力"
+          ]
+        },
+        {
+          "unit": "Unit 13",
+          "word": "WildAid",
+          "phonetic": "/ˈwaɪldeɪd/",
+          "part_of_speech": "n.",
+          "meaning": "野生救援协会（美国）",
+          "false_meanings": [
+            "世界自然基金会",
+            "绿色和平组织"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 13",
+          "word": "WWF",
+          "phonetic": "",
+          "part_of_speech": "n.",
+          "meaning": "世界自然基金会",
+          "false_meanings": [
+            "世界卫生组织",
+            "联合国"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 13",
+          "word": "Jason",
+          "phonetic": "/ˈdʒeɪsən/",
+          "part_of_speech": "n.",
+          "meaning": "贾森（男名）",
+          "false_meanings": [
+            "汤姆（男名）",
+            "杰克（男名）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 13",
+          "word": "Hayes",
+          "phonetic": "/heɪz/",
+          "part_of_speech": "n.",
+          "meaning": "海斯（姓）",
+          "false_meanings": [
+            "史密斯（姓）",
+            "布朗（姓）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 13",
+          "word": "Jessica",
+          "phonetic": "/ˈdʒesɪkə/",
+          "part_of_speech": "n.",
+          "meaning": "杰西卡（女名）",
+          "false_meanings": [
+            "玛丽（女名）",
+            "露西（女名）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 14",
+          "word": "survey",
+          "phonetic": "/ˈsɜːveɪ/",
+          "part_of_speech": "n.",
+          "meaning": "调查",
+          "false_meanings": [
+            "报告；发布",
+            "实验；测试"
+          ]
+        },
+        {
+          "unit": "Unit 14",
+          "word": "standard",
+          "phonetic": "/ˈstændəd/",
+          "part_of_speech": "n.",
+          "meaning": "标准；水平",
+          "false_meanings": [
+            "结果；成就",
+            "方法；途径"
+          ]
+        },
+        {
+          "unit": "Unit 14",
+          "word": "row",
+          "phonetic": "/rəʊ/",
+          "part_of_speech": "n.",
+          "meaning": "一排；一列；一行",
+          "false_meanings": [
+            "一堆；一群",
+            "一块；一片"
+          ]
+        },
+        {
+          "unit": "Unit 14",
+          "word": "in a row",
+          "phonetic": "",
+          "part_of_speech": "adv.",
+          "meaning": "连续几次地",
+          "false_meanings": [
+            "偶尔一次",
+            "断断续续地"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 14",
+          "word": "keyboard",
+          "phonetic": "/ˈkiːbɔːd/",
+          "part_of_speech": "n.",
+          "meaning": "键盘",
+          "false_meanings": [
+            "鼠标",
+            "显示器"
+          ]
+        },
+        {
+          "unit": "Unit 14",
+          "word": "method",
+          "phonetic": "/ˈmeθəd/",
+          "part_of_speech": "n.",
+          "meaning": "方法；措施",
+          "false_meanings": [
+            "结果；成效",
+            "问题；困难"
+          ]
+        },
+        {
+          "unit": "Unit 14",
+          "word": "instruction",
+          "phonetic": "/ɪnˈstrʌkʃn/",
+          "part_of_speech": "n.",
+          "meaning": "指示；命令",
+          "false_meanings": [
+            "请求；恳求",
+            "建议；推荐"
+          ]
+        },
+        {
+          "unit": "Unit 14",
+          "word": "double",
+          "phonetic": "/ˈdʌbl/",
+          "part_of_speech": "v.",
+          "meaning": "加倍；是……的两倍",
+          "false_meanings": [
+            "减半；降低",
+            "保持；维持"
+          ]
+        },
+        {
+          "unit": "Unit 14",
+          "word": "shall",
+          "phonetic": "/ʃæl/",
+          "part_of_speech": "modal v.",
+          "meaning": "将要；将会",
+          "false_meanings": [
+            "应该；必须",
+            "可能；也许"
+          ]
+        },
+        {
+          "unit": "Unit 14",
+          "word": "look back at",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "回首（往事）；回忆；回顾",
+          "false_meanings": [
+            "展望未来",
+            "忘记过去"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 14",
+          "word": "overcome",
+          "phonetic": "/ˌəʊvəˈkʌm/",
+          "part_of_speech": "v.",
+          "meaning": "克服；战胜",
+          "false_meanings": [
+            "失败于；屈服于",
+            "逃避；回避"
+          ]
+        },
+        {
+          "unit": "Unit 14",
+          "word": "make a mess",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "弄得一团糟（一塌糊涂）",
+          "false_meanings": [
+            "整理干净",
+            "完美完成"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 14",
+          "word": "graduate",
+          "phonetic": "/ˈɡrædʒueɪt/",
+          "part_of_speech": "v.",
+          "meaning": "毕业",
+          "false_meanings": [
+            "入学；注册",
+            "辍学；退学"
+          ]
+        },
+        {
+          "unit": "Unit 14",
+          "word": "keep one's cool",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "沉住气；保持冷静",
+          "false_meanings": [
+            "发脾气；生气",
+            "紧张焦虑"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 14",
+          "word": "caring",
+          "phonetic": "/ˈkeərɪŋ/",
+          "part_of_speech": "adj.",
+          "meaning": "体贴人的；关心他人的",
+          "false_meanings": [
+            "冷漠的；自私的",
+            "无情的；残忍的"
+          ]
+        },
+        {
+          "unit": "Unit 14",
+          "word": "ours",
+          "phonetic": "/aʊəz/",
+          "part_of_speech": "pron.",
+          "meaning": "我们的",
+          "false_meanings": [
+            "你们的",
+            "他们的"
+          ]
+        },
+        {
+          "unit": "Unit 14",
+          "word": "senior",
+          "phonetic": "/ˈsiːniə(r)/",
+          "part_of_speech": "adj.",
+          "meaning": "级别（或地位）高的",
+          "false_meanings": [
+            "级别低的；初级的",
+            "普通的；一般的"
+          ]
+        },
+        {
+          "unit": "Unit 14",
+          "word": "senior high school",
+          "phonetic": "",
+          "part_of_speech": "n.",
+          "meaning": "高中",
+          "false_meanings": [
+            "初中",
+            "小学"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 14",
+          "word": "text",
+          "phonetic": "/tekst/",
+          "part_of_speech": "n.",
+          "meaning": "课文；文本",
+          "false_meanings": [
+            "图画；照片",
+            "音乐；视频"
+          ]
+        },
+        {
+          "unit": "Unit 14",
+          "word": "go by",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "（时间）逝去；过去",
+          "false_meanings": [
+            "（时间）停止",
+            "（时间）倒流"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 14",
+          "word": "level",
+          "phonetic": "/ˈlevl/",
+          "part_of_speech": "n.",
+          "meaning": "水平",
+          "false_meanings": [
+            "方向",
+            "距离"
+          ]
+        },
+        {
+          "unit": "Unit 14",
+          "word": "degree",
+          "phonetic": "/dɪˈɡriː/",
+          "part_of_speech": "n.",
+          "meaning": "（大学）学位",
+          "false_meanings": [
+            "证书；文凭",
+            "奖项；荣誉"
+          ]
+        },
+        {
+          "unit": "Unit 14",
+          "word": "manager",
+          "phonetic": "/ˈmænɪdʒə(r)/",
+          "part_of_speech": "n.",
+          "meaning": "经理；经营者",
+          "false_meanings": [
+            "员工；职员",
+            "顾客；客户"
+          ]
+        },
+        {
+          "unit": "Unit 14",
+          "word": "believe in",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "信任；信赖",
+          "false_meanings": [
+            "怀疑；不信",
+            "忽视；忽略"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 14",
+          "word": "gentleman",
+          "phonetic": "/ˈdʒentlmən/",
+          "part_of_speech": "n.",
+          "meaning": "先生；绅士",
+          "false_meanings": [
+            "女士；淑女",
+            "孩子；少年"
+          ]
+        },
+        {
+          "unit": "Unit 14",
+          "word": "graduation",
+          "phonetic": "/ˌɡrædʒuˈeɪʃn/",
+          "part_of_speech": "n.",
+          "meaning": "毕业",
+          "false_meanings": [
+            "入学；注册",
+            "退学；辍学"
+          ]
+        },
+        {
+          "unit": "Unit 14",
+          "word": "ceremony",
+          "phonetic": "/ˈserəməni/",
+          "part_of_speech": "n.",
+          "meaning": "典礼；仪式",
+          "false_meanings": [
+            "派对；聚会",
+            "比赛；竞赛"
+          ]
+        },
+        {
+          "unit": "Unit 14",
+          "word": "first of all",
+          "phonetic": "",
+          "part_of_speech": "adv.",
+          "meaning": "首先",
+          "false_meanings": [
+            "最后；终于",
+            "其次；然后"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 14",
+          "word": "congratulate",
+          "phonetic": "/kənˈɡrætʃuleɪt/",
+          "part_of_speech": "v.",
+          "meaning": "祝贺",
+          "false_meanings": [
+            "批评；指责",
+            "安慰；同情"
+          ]
+        },
+        {
+          "unit": "Unit 14",
+          "word": "thirsty",
+          "phonetic": "/ˈθɜːsti/",
+          "part_of_speech": "adj.",
+          "meaning": "渴望的；口渴的",
+          "false_meanings": [
+            "满足的；饱足的",
+            "厌倦的；疲惫的"
+          ]
+        },
+        {
+          "unit": "Unit 14",
+          "word": "be thirsty for",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "渴望；渴求",
+          "false_meanings": [
+            "厌倦于",
+            "满足于"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 14",
+          "word": "thankful",
+          "phonetic": "/ˈθæŋkfl/",
+          "part_of_speech": "adj.",
+          "meaning": "感谢；感激",
+          "false_meanings": [
+            "忘恩的；不感激的",
+            "抱怨的；不满的"
+          ]
+        },
+        {
+          "unit": "Unit 14",
+          "word": "be thankful to sb.",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "对某人心存感激",
+          "false_meanings": [
+            "对某人不满",
+            "忽视某人"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 14",
+          "word": "lastly",
+          "phonetic": "/ˈlɑːstli/",
+          "part_of_speech": "adv.",
+          "meaning": "最后",
+          "false_meanings": [
+            "首先",
+            "其次"
+          ]
+        },
+        {
+          "unit": "Unit 14",
+          "word": "task",
+          "phonetic": "/tɑːsk/",
+          "part_of_speech": "n.",
+          "meaning": "任务；工作",
+          "false_meanings": [
+            "休息；假期",
+            "游戏；娱乐"
+          ]
+        },
+        {
+          "unit": "Unit 14",
+          "word": "ahead",
+          "phonetic": "/əˈhed/",
+          "part_of_speech": "adv.",
+          "meaning": "向前面；在前面",
+          "false_meanings": [
+            "向后面；在后面",
+            "向旁边；在旁边"
+          ]
+        },
+        {
+          "unit": "Unit 14",
+          "word": "ahead of",
+          "phonetic": "",
+          "part_of_speech": "prep.",
+          "meaning": "在……前面",
+          "false_meanings": [
+            "在……后面",
+            "在……旁边"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 14",
+          "word": "along with",
+          "phonetic": "",
+          "part_of_speech": "prep.",
+          "meaning": "连同；除……以外还",
+          "false_meanings": [
+            "没有；除了",
+            "只有；仅仅"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 14",
+          "word": "responsible",
+          "phonetic": "/rɪˈspɒnsəbl/",
+          "part_of_speech": "adj.",
+          "meaning": "有责任；负责任",
+          "false_meanings": [
+            "不负责任的",
+            "无关的；不相干的"
+          ]
+        },
+        {
+          "unit": "Unit 14",
+          "word": "be responsible for",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "对……有责任",
+          "false_meanings": [
+            "对……不负责",
+            "与……无关"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 14",
+          "word": "separate",
+          "phonetic": "/ˈseprət/",
+          "part_of_speech": "adj.",
+          "meaning": "单独的；分离的",
+          "false_meanings": [
+            "联合的；合并的",
+            "相同的；一样的"
+          ]
+        },
+        {
+          "unit": "Unit 14",
+          "word": "set out",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "出发；启程",
+          "false_meanings": [
+            "返回；回来",
+            "停留；等待"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 14",
+          "word": "separate from",
+          "phonetic": "",
+          "part_of_speech": "v.",
+          "meaning": "分离；隔开",
+          "false_meanings": [
+            "联合；合并",
+            "接近；靠近"
+          ],
+          "is_phrase": true
+        },
+        {
+          "unit": "Unit 14",
+          "word": "wing",
+          "phonetic": "/wɪŋ/",
+          "part_of_speech": "n.",
+          "meaning": "翅膀；翼",
+          "false_meanings": [
+            "腿；爪子",
+            "尾巴；鳍"
+          ]
+        },
+        {
+          "unit": "Unit 14",
+          "word": "Luke",
+          "phonetic": "/luːk/",
+          "part_of_speech": "n.",
+          "meaning": "卢克（男名）",
+          "false_meanings": [
+            "汤姆（男名）",
+            "杰克（男名）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 14",
+          "word": "Brian",
+          "phonetic": "/ˈbraɪən/",
+          "part_of_speech": "n.",
+          "meaning": "布赖恩（男名）",
+          "false_meanings": [
+            "迈克（男名）",
+            "汤姆（男名）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 14",
+          "word": "Griffin",
+          "phonetic": "/ˈɡrɪfɪn/",
+          "part_of_speech": "n.",
+          "meaning": "格里芬（姓）",
+          "false_meanings": [
+            "史密斯（姓）",
+            "布朗（姓）"
+          ],
+          "is_proper_noun": true
+        },
+        {
+          "unit": "Unit 14",
+          "word": "Trent",
+          "phonetic": "/trent/",
+          "part_of_speech": "n.",
+          "meaning": "特伦特（姓）",
+          "false_meanings": [
+            "约翰（姓）",
+            "威尔逊（姓）"
+          ],
+          "is_proper_noun": true
+        }
+      ]
+    }
+  ]
+}
