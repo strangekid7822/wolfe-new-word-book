@@ -48,7 +48,7 @@ This is a React-based word learning application built with Vite and styled with 
 - `AvatarUploader.jsx` - Image upload button with base64 conversion for localStorage storage
 - `TypingIndicator.jsx` - Animated bouncing dots in chat bubble style
 - `InputAreaWrapper.jsx` - Fixed bottom container with slide-up/down animation for input components
-- `BookGallery.jsx` - Horizontal scrollable gallery for textbook version selection with cover images and titles
+- `BookGallery.jsx` - Horizontal scrollable gallery for textbook version selection with cover images, titles, and automatic fallback to `Unfinished.png` for missing covers
 
 **Configuration** (`src/config/`):
 - `conversationFlow.js` - Config-driven conversation flow system defining all dialog steps, messages, input types, validation rules, and navigation logic
