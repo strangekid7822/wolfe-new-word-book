@@ -119,20 +119,19 @@ body {
 
   /* Submit button specific styles matching play button dimensions */
   .btn-submit-wrapper {
-    /* Gradient border wrapper matching play button size */
-    @apply rounded-full p-1 mx-auto shadow-md flex items-center [animation:border-spin_1.3s_linear_infinite];
-    background: conic-gradient(from var(--border-angle), #ec4899 0%, #3b82f6 25%, #facc15 50%, #22c55e 75%, #ec4899 100%);
-    transition: opacity 0.3s ease-in-out;
+    /* Simple wrapper for submit button */
+    @apply mx-auto flex items-center;
     width: 7.5rem;
     height: 3rem;
   }
 
   .btn-submit {
-    /* Inner submit button filling the wrapper */
-    @apply w-full h-full rounded-full text-lg font-medium transition-colors bg-[var(--color-primary)] text-white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* Matches send button style (btn-primary) */
+    @apply w-full h-full rounded-full text-sm font-bold text-white flex items-center justify-center;
+    background: linear-gradient(to bottom, #1ab6ff, var(--color-primary));
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 100, 180, 0.4);
+    transition: all 0.15s ease;
   }
 
   .btn-submit-disabled-wrapper {

@@ -35,7 +35,7 @@ This is a React-based word learning application built with Vite and styled with 
 - `WordTestTimer.jsx` - 3-minute countdown timer with color-coded progress bar and digital display
 - `Layout.jsx` - Main layout wrapper with navigation bar and consistent styling
 - `WordTestNavBar.jsx` - Bottom navigation bar with active state icons and navigation protection
-- `SubmitButton.jsx` - Animated submit button with colorful rotating border animation
+- `SubmitButton.jsx` - Submit button matching send button style with gradient background
 - `Option.jsx` - Multiple choice option buttons for Chinese meaning selection with glassmorphism effects
 
 **Home Components** (`src/components/home/`):
