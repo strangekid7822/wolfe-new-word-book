@@ -32,6 +32,9 @@ This is a React-based word learning application built with Vite and styled with 
 **Core Components** (`src/components/`):
 - `WordTestCardGallery.jsx` - Horizontal scrolling gallery with snap-to-card behavior, dynamic question generation, and infinite card flow controlled by timer
 - `WordTestWordCard.jsx` - Individual word card with expandable sections: audio play button with automatic pronunciation, spelling inputs, Chinese meaning options, and submit button
+- `SpellingInputs.jsx` - Compact letter input boxes (16px width, no gaps, bottom border only) with text-xl font, correct/wrong feedback shadows, and flip animations
+- `OptionsSection.jsx` - Chinese meaning selection header (text-xl) and option buttons container with stagger animation
+- `WordTestStats.jsx` - Correct/wrong/accuracy stats display (text-xl) at top of test interface
 - `WordTestTimer.jsx` - 3-minute countdown timer with color-coded progress bar and digital display
 - `Layout.jsx` - Main layout wrapper with navigation bar and consistent styling
 - `WordTestNavBar.jsx` - Bottom navigation bar with active state icons and navigation protection

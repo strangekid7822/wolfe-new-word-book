@@ -1,21 +1,19 @@
 import Option from './Option';
 
 /**
- * Component for rendering Chinese meaning options
- * Handles option selection and feedback display
+ * Chinese meaning options with A/B/C/D labels
+ * Handles selection and correct/wrong feedback
  */
-const OptionsSection = ({ 
-  cardData, 
-  feedbackState, 
-  onOptionSelect, 
-  getOptionFeedbackType 
+const OptionsSection = ({
+  cardData,
+  feedbackState,
+  onOptionSelect,
+  getOptionFeedbackType
 }) => {
   return (
     <div className="space-y-1.5 mb-4">
-      {/* Options section header - no layout-affecting animations */}
-      <p className="text-[var(--color-black)] [--txt-body-lg]">选择中文意思:</p>
-      
-      {/* Options container - reserves full space immediately */}
+      <p className="text-[var(--color-black)] text-xl">选择中文意思:</p>
+
       <div className="grid grid-cols-1 gap-1">
         {cardData.chineseMeanings.map((meaning, index) => {
           const feedbackType = getOptionFeedbackType(index);
